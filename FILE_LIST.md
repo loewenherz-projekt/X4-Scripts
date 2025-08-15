@@ -32,7 +32,7 @@
 | ./08/aiscripts/interrupt.job.remove.xml | AI script interrupt job remove. |
 | ./08/aiscripts/interrupt.lostreservation.xml | AI script interrupt lostreservation. |
 | ./08/aiscripts/interrupt.missilelock.xml | AI script interrupt missilelock. |
-| ./08/aiscripts/interrupt.npc.usecases.xml | Library of helper actions to trigger NPC usecases in MD from AI scripts, to be used via <include_interrupt_actions>. |
+| ./08/aiscripts/interrupt.npc.usecases.xml | Library of helper actions to trigger NPC usecases in MD from AI scripts, to be used via |
 | ./08/aiscripts/interrupt.restock.xml | Param="'resupply'" param2="[$urgent. |
 | ./08/aiscripts/interrupt.scanned.xml | AI script interrupt scanned. |
 | ./08/aiscripts/interrupt.stoporder.xml | AI script interrupt stoporder. |
@@ -60,7 +60,7 @@
 | ./08/aiscripts/masstraffic.fight.xml | AI script masstraffic fight. |
 | ./08/aiscripts/masstraffic.flee.xml | Mass Traffic Agent Script for Fleeing by Michael. |
 | ./08/aiscripts/masstraffic.generic.xml | Generic Mass Traffic Agent Script by Michael. |
-| ./08/aiscripts/masstraffic.handler.attacked.xml | <debug_text text="'%1(%2) has been attacked by %3(%4)'. |
+| ./08/aiscripts/masstraffic.handler.attacked.xml | Handles mass traffic units that have been attacked. |
 | ./08/aiscripts/masstraffic.move.waitforsignal.xml | This script launches a drone, waits for a signal and docks it again. |
 | ./08/aiscripts/masstraffic.police.xml | AI script masstraffic police. |
 | ./08/aiscripts/masstraffic.return.xml | AI script masstraffic return. |
@@ -78,7 +78,7 @@
 | ./08/aiscripts/move.collect.ship.smallship.xml | Script for a ship to collect crates from space Handled cases: - small ship collecting crates of inventory wares via flying into it. |
 | ./08/aiscripts/move.crewtransferpod.xml | AI script move crewtransferpod. |
 | ./08/aiscripts/move.escapepod.xml | AI script move escapepod. |
-| ./08/aiscripts/move.evade.xml | Evade routines: <behaviour name="hardbrake" <behaviour name="evasive_loop" <behaviour name="evasive_simple" <behaviour name="evasive_roll" <behaviour name="evasive_spiral" <behaviour name="evasive_random" <behaviour name="crazyivan" <behaviour name="spiral" <behaviour name="gaindistance" If it is 'gaindistance' it will try to use the boosters. |
+| ./08/aiscripts/move.evade.xml | Evade routines for various maneuver behaviors. |
 | ./08/aiscripts/move.flee.boost.xml | Flee using boost. |
 | ./08/aiscripts/move.flee.dock.xml | Flee to dock. |
 | ./08/aiscripts/move.flee.highway.xml | AI script move flee highway. |
@@ -99,7 +99,7 @@
 | ./08/aiscripts/move.unpark.xml | Make a ship leave its parking position and disconnect from the tradeoffer location. |
 | ./08/aiscripts/move.wareexchange.xml | AI script move wareexchange. |
 | ./08/aiscripts/order.assign.commander.xml | Simple order to assign/remove to this object a commander (with entity type) by Adrian. |
-| ./08/aiscripts/order.assist.xml | <handler> <conditions> <event_object_subordinate_promoted object="$orderobject"/> <check_value value="event. |
+| ./08/aiscripts/order.assist.xml | Order script to assist another object. |
 | ./08/aiscripts/order.build.deploy.xml | Deploy CV to a Build Module of a station's Build Storage by Owen Send a Construction Vessel to a station, for it to deploy to the build module of the build storage. |
 | ./08/aiscripts/order.build.equip.xml | Build order to fly to an object and restock ammo and units If cancelled, the build task is removed from the building object. |
 | ./08/aiscripts/order.build.find.task.xml | Order for a CV to find tasks to aid in building or repair by Owen. |
@@ -255,12 +255,12 @@
 | ./08/libraries/inputmap_defaults_vpc_constellation_ap_2.xml | Input actions. |
 | ./08/libraries/jobs.xml | Activate large traders when they get working storage, DONE activate large mining ships when drones make it in, DONE and when the ships can handle them. |
 | ./08/libraries/languages.xml | Library languages. |
-| ./08/libraries/lens_effects.xml | Element name="glow2" part="part_glows05" position="1" minsize="2" maxsize="10" distancefactor="125000" distancescale="quadratic" inviewvariation="5" inviewduration="1" blendorder="behind" shinebehind="0" glow="0"></element. |
+| ./08/libraries/lens_effects.xml | Element name="glow2" part="part_glows05" position="1" minsize="2" maxsize="10" distancefactor="125000" distancescale="quadratic" inviewvariation="5" inviewduration="1" blendorder="behind" shinebehind="0" glow="0">|
 | ./08/libraries/loadoutrules.xml | Used for all player property. |
 | ./08/libraries/loadouts.xml | Library loadouts. |
 | ./08/libraries/macro.xml | Library macro. |
 | ./08/libraries/mapdefaults.xml | Map Defaults This file contains various properties for clusters, sectors, zones etc. |
-| ./08/libraries/material_library.xml | Property type="BitMap" name="diffuse_map" value="assets\test\textures\gasgiant_v3_sharp_diff" /> <property type="Float" name="diffuseStr" value="0. |
+| ./08/libraries/material_library.xml | Property type="BitMap" name="diffuse_map" value="assets\test\textures\gasgiant_v3_sharp_diff" /> |
 | ./08/libraries/material_library_1.xml | Library material library 1. |
 | ./08/libraries/medium_library.xml | Library medium library. |
 | ./08/libraries/missiongroups.xml | Library missiongroups. |
@@ -280,8 +280,8 @@
 | ./08/libraries/people.xml | Argon. |
 | ./08/libraries/posts.xml | Library posts. |
 | ./08/libraries/progressbar.xml | Library progressbar. |
-| ./08/libraries/propgroups.xml | Example <group name="dummy" > <select macro="[props_01_dockarea_arg_m_station_01_hightech_macro, props_01_dockarea_arg_m_station_01_hightech_macro, props_02_dockarea_arg_m_station_01_hightech_macro]" /> <select macro="[props_02_dockarea_arg_m_station_01_hightech_macro, props_02_dockarea_arg_m_station_01_hightech_macro, props_01_dockarea_arg_m_station_01_hightech_macro]" /> </group>. |
-| ./08/libraries/props.xml | Example <prop id="dummy" group="dummy"> <category tags="corner" macro="[dockarea_arg_m_station_01_hightech_macro, dockarea_arg_m_station_02_hightech_macro]" flags="canbuildships policechief factionrepresentative"> <economy min="0. |
+| ./08/libraries/propgroups.xml | Example |
+| ./08/libraries/props.xml | Example |
 | ./08/libraries/purposes.xml | Library purposes. |
 | ./08/libraries/quotas.xml | Library quotas. |
 | ./08/libraries/races.xml | Last exported: 22. |
@@ -305,14 +305,14 @@
 | ./08/libraries/stationgroups.xml | Library stationgroups. |
 | ./08/libraries/stations.xml | Library stations. |
 | ./08/libraries/stats.xml | Time. |
-| ./08/libraries/stock.xml | <stock id="stockid" faction="argon" entitytype="trader" tags="one two three"> - all entries except id are optional <ware ref="wareid" min="1" max="100" chance="50"/> - single ware, present in quantity between min/max with percentage chance. |
+| ./08/libraries/stock.xml | Defines stock entries for trading. |
 | ./08/libraries/targetpoints.xml | Library targetpoints. |
 | ./08/libraries/terraforming.xml | Freezing: white. |
 | ./08/libraries/themes.xml | For groups which contain selections the group node MUST include paintmod="" and/or clothingmod="" to indicate which types of mod(s) the group supports. |
 | ./08/libraries/timeline.xml | Library timeline. |
 | ./08/libraries/trail_effects.xml | Trails for each ship size category. |
 | ./08/libraries/trigger_events.xml | Library trigger events. |
-| ./08/libraries/unlocks.xml | <discount id="example" name="Example Discount" description="This is a syntax example"> <conditions weight="15"> <owner factions="argongovernment aquarius" negate="false" /> <wares sells="energycells graphene" matchall="true"/> <viewangle max="20"/> <distance min="300m" max="400m"/> <relation min="friend" max="self" /> </conditions> <actions> <amount min="2" max="6" profile="bell"/> <duration min="24h" max="48h"/> </actions> <rechecktime min="40min" max="1h"/> </discount>. |
+| ./08/libraries/unlocks.xml | Discount and unlock configuration examples. |
 | ./08/libraries/voicesequences.xml | Library voicesequences. |
 | ./08/libraries/volume_library.xml | Library volume library. |
 | ./08/libraries/waregroups.xml | Library waregroups. |
@@ -325,7 +325,7 @@
 | ./08/md/crisis_manager.xml | ######################## Libraries to be called from outside to inform the crisis manager ############################. |
 | ./08/md/crisis_xenon_khaak_combo.xml | Xenon / Terraformers. |
 | ./08/md/diplomacy.xml | List of Factions that have a diplomat and are currently active. |
-| ./08/md/drain_stations.xml | <check_value value="false" comment="Remove to enable"/>. |
+| ./08/md/drain_stations.xml | Mission script to drain station resources. |
 | ./08/md/encounters.xml | ***Signal cues***. |
 | ./08/md/faction_relations.xml | Mission Director script faction relations. |
 | ./08/md/factiongoal_hold_space.xml | Add goal to global variable. |
@@ -334,7 +334,7 @@
 | ./08/md/factiongoal_plunder.xml | Hook into signals from friendly stations for needed resources and urgency. |
 | ./08/md/factionlogic.xml | Cue to be signalled to inform the faction manager of something The first element in the parameter list must be the faction e. |
 | ./08/md/factionlogic_economy.xml | Mission Director script factionlogic economy. |
-| ./08/md/factionlogic_staticdefense.xml | <do_if value="@$DebugChance" comment="smaller and less dense for quicker completions"> <set_value name="$Size_LaserTowerNetwork" exact="10km" /> <set_value name="$IntervalDist_LaserTowers" exact="10km" /> <set_value name="$Size_Minefield" exact="10km" /> <set_value name="$IntervalDist_Mines" exact="10km" /> <set_value name="$DeployableCount_ForInactiveField" exact="1" /> </do_if> <do_else>. |
+| ./08/md/factionlogic_staticdefense.xml | Faction logic for static defense setups. |
 | ./08/md/factionlogic_stations.xml | Faction logic module to manage the presence of major stations of a faction throughout the galaxy Depending on faction, this library will trigger the building of new Shipyards, Wharfs, Trade stations and Pirate bases Defence stations will be handled by faction goals. |
 | ./08/md/factionsubgoal_buildstation.xml | Event. |
 | ./08/md/factionsubgoal_defendarea.xml | Event. |
@@ -406,7 +406,7 @@
 | ./08/md/lib_holomapbriefing.xml | $errorvalue: -101: No Target exists -102: No MissionCue exists -103: No ForceCleanupCue exists. |
 | ./08/md/lib_holomaptarget.xml | $errorvalue: -103: $Components has no existing components -102: $Components has only 1 existing components -101: $Components is neither a list or group. |
 | ./08/md/lib_processed_trades.xml | This library keeps track of the last few trades which missions have found interesting It's purpose is to keep two missions processing the same trade so that they both progress. |
-| ./08/md/lib_reward_balancing.xml | <cue name="RewardTest" instantiate="true"> <conditions> <event_cue_signalled/> </conditions> <actions> <set_value name="$DoCredits" exact="true"/> <set_value name="$DoNotoriety" exact="false"/> <set_value name="$DoTradeInfo" exact="true"/> <set_value name="$DoStationInfo" exact="true"/> <set_value name="$DiffList" exact="[level. |
+| ./08/md/lib_reward_balancing.xml | Library for balancing mission rewards. |
 | ./08/md/mainmenu.xml | Param2 == selected component ID. |
 | ./08/md/mc_management.xml | Table where the key is the static cue of a submission, and the value a group of mission objects/spaces used by those missions. |
 | ./08/md/modes.xml | Mission Director script modes. |
@@ -422,24 +422,24 @@
 | ./08/md/npc_state_machines.xml | Mission Director script npc state machines. |
 | ./08/md/npc_usecase_definitions.xml | Mission Director script npc usecase definitions. |
 | ./08/md/npc_usecases.xml | Mission Director script npc usecases. |
-| ./08/md/orders.xml | <debug_text text="'Player gave trade order to %s (%s)'. |
+| ./08/md/orders.xml | Mission Director order handling script. |
 | ./08/md/placedobjects.xml | Default placement of objects in the universe. |
 | ./08/md/player_evaluator.xml | Find the sector which has the worth at the requested factor of total empire worth, with the total empire worth being at 1. |
 | ./08/md/playerreputation.xml | Mission Director script playerreputation. |
 | ./08/md/plot.xml | Mission Director script plot. |
 | ./08/md/rml_achievecoverage.xml | This RML is intended for use in Master-Missions. |
 | ./08/md/rml_acquire_crew.xml | XR-style mission (used in Upkeep. |
-| ./08/md/rml_assign_builder.xml | $feedbackvalue: -103: Both $CommanderObject nor $CommanderEntity exist. |
-| ./08/md/rml_assign_subordinate.xml | $feedbackvalue: -103: Both $CommanderObject nor $CommanderEntity exist. |
+| ./08/md/rml_assign_builder.xml | Mission script. |
+| ./08/md/rml_assign_subordinate.xml | Mission script. |
 | ./08/md/rml_barterwares.xml | This RML is intended for use in Master-Missions. |
 | ./08/md/rml_board_ship.xml | This RML is intended for use in Master-Missions. |
-| ./08/md/rml_build_object.xml | $feedbackvalue: -103: ChildComponentMacro is not valid -102: Object invalid -101: EndSignalCue or MissionCue not defined -100: Undefined failure. |
+| ./08/md/rml_build_object.xml | Mission script. |
 | ./08/md/rml_buildstation.xml | This RML is intended for use in Master-Missions. |
-| ./08/md/rml_capture.xml | $feedbackvalue: -120: defined Target is invalid -113: TargetClass not defined -112: TargetSpace not defined -111: TargetFaction not defined -110: Target not defined -101: Started with invalid or incomplete parameters -100: Undefined failure. |
+| ./08/md/rml_capture.xml | Mission script. |
 | ./08/md/rml_claim_space.xml | This RML is intended for use in Master-Missions. |
 | ./08/md/rml_claimplot.xml | This RML is intended for use in Master-Missions. |
-| ./08/md/rml_collect_crates.xml | $feedbackvalue: Mission Errors <=-100 -104: PositionObject and Range must be provided together -103: Provided group Targets was empty and no position parameters passed to find more -102: EndSignalCue or MissionCue not defined -101: $Targets is not of type group -100: Undefined failure. |
-| ./08/md/rml_collect_inventory.xml | $feedbackvalue: Mission Errors <=-100 -104: EndSignalCue was not defined while FinishOnCompletion is true -103: no valid entry in $WaresParam -102: MissionCue not defined -101: Provided $WaresParam is not a table -100: Undefined failure. |
+| ./08/md/rml_collect_crates.xml | Mission script. |
+| ./08/md/rml_collect_inventory.xml | Mission script. |
 | ./08/md/rml_craft_item.xml | Mission Director script rml craft item. |
 | ./08/md/rml_deliver_crew.xml | This RML is intended for use in Master-Missions. |
 | ./08/md/rml_deliver_fleet.xml | This RML is intended for use in Master-Missions. |
@@ -449,51 +449,51 @@
 | ./08/md/rml_deliver_wares_to_player_object.xml | Mission library to handle missions where wares are to be 'delivered' to a player owned object. |
 | ./08/md/rml_deploy_in_sectors.xml | Mission Director script rml deploy in sectors. |
 | ./08/md/rml_deployinplace.xml | This RML is intended for use in Master-Missions. |
-| ./08/md/rml_destroy_components.xml | $feedbackvalue: Mission Errors <=-100 -105: Number of targets does not exceed $EndObjectAmount -104: No Targets were operational -103: Provided group Targets_Param was empty -102: EndSignalCue or MissionCue not defined -101: $Targets is not of type group -100: Undefined failure. |
-| ./08/md/rml_destroy_entities.xml | $feedbackvalue: Mission Errors <=-100 -104: No Targets were operational -103: Provided group Targets_Param was empty -102: EndSignalCue or MissionCue not defined -101: $Targets is not of type group -100: Undefined failure. |
-| ./08/md/rml_destroy_matching_objects.xml | $feedbackvalue: -101: EndSignalCue or MissionCue not defined -100: Undefined failure. |
+| ./08/md/rml_destroy_components.xml | Mission script. |
+| ./08/md/rml_destroy_entities.xml | Mission script. |
+| ./08/md/rml_destroy_matching_objects.xml | Mission script. |
 | ./08/md/rml_destroy_rarelyonsight.xml | This RML is intended for use in Master-Missions. |
-| ./08/md/rml_drop_objects.xml | $feedbackvalue: Mission Errors <=-100 -103: No drop macro defined -102: EndSignalCue or MissionCue not defined -101: No valid $Locations defined -100: Undefined failure. |
-| ./08/md/rml_enforce_surrender.xml | $feedbackvalue: -102: $TargetShip is not defined, is not operational or has no pilot -101: Cue parameters not defined -100: Undefined failure. |
-| ./08/md/rml_escort.xml | $feedbackvalue: -103: EndSignalCue or MissionCue not defined -102: TargetShip not defined -101: Destinations list not valid -100: Undefined failure. |
+| ./08/md/rml_drop_objects.xml | Mission script. |
+| ./08/md/rml_enforce_surrender.xml | Mission script. |
+| ./08/md/rml_escort.xml | Mission script. |
 | ./08/md/rml_escort_ambiguous.xml | This RML is intended for use in Master-Missions. |
-| ./08/md/rml_escort_convoy.xml | $feedbackvalue: Mission Errors <=-100 -102: Cue parameters are not valid -101: Convoy group parameter is not valid -100: Undefined failure. |
+| ./08/md/rml_escort_convoy.xml | Mission script. |
 | ./08/md/rml_find_object.xml | This RML is intended for use in Master-Missions. |
-| ./08/md/rml_find_resources.xml | $feedbackvalue: Mission Errors <=-100 -106: Space is not of class space -105: ResourceYieldList should have same size as ResourceList. |
-| ./08/md/rml_flyto.xml | $feedbackvalue: -103: MissionCue not defined -102: EndSignalCue is not defined while EndOnCompletion is true -101: Target does not exist on start -100: Undefined failure. |
-| ./08/md/rml_follow_object.xml | $feedbackvalue: -104: Invalid range parameters -103: Invalid $Target parameter -102: MissionCue not defined -101: EndSignalCue is not defined while EndOnCompletion is true -100: Undefined failure. |
-| ./08/md/rml_hack_object.xml | $feedbackvalue: Mission Errors <=-100 -104: Targets_Param contained no valid operational objects -103: Targets_Param was empty -102: EndSignalCue or MissionCue not defined -101: Targets_Param is not a valid group -100: Undefined failure. |
-| ./08/md/rml_harvest_resources.xml | $feedbackvalue: -103: EndSignalCue or MissionCue not defined -102: Ware does not exist -101: Space does not exist -100: Undefined failure. |
-| ./08/md/rml_joinsubscription.xml | This RML is intended for use in Master-Missions It handles checking if the player transported (any) ware to the specified station $feedbackvalue: -103 $Reputation is incorrectly defined. |
+| ./08/md/rml_find_resources.xml | Mission script. |
+| ./08/md/rml_flyto.xml | Mission script. |
+| ./08/md/rml_follow_object.xml | Mission script. |
+| ./08/md/rml_hack_object.xml | Mission script. |
+| ./08/md/rml_harvest_resources.xml | Mission script. |
+| ./08/md/rml_joinsubscription.xml | This RML is intended for use in Master-Missions It handles checking if the player transported (any) ware to the specified station |
 | ./08/md/rml_largesupply.xml | This RML is intended for use in Master-Missions. |
 | ./08/md/rml_locate_object.xml | This RML is intended for use in Master-Missions. |
 | ./08/md/rml_long_range_scan.xml | Set a boolean variable to state whether or not the target objects were targeted or destroyed. |
 | ./08/md/rml_map_space.xml | Find any unknown, non-temp zone in the given area. |
-| ./08/md/rml_patrol.xml | $feedbackvalue: -103: EndSignalCue or MissionCue not defined -102: Destinations list empty -101: Destinations list not valid -100: Undefined failure. |
+| ./08/md/rml_patrol.xml | Mission script. |
 | ./08/md/rml_pickup_passengers.xml | XR-style mission (used in Upkeep. |
-| ./08/md/rml_player_npc_patrol.xml | $FeedbackValue: Mission Errors <= 100 -105: No $Time was defined. |
-| ./08/md/rml_protect_object.xml | $feedbackvalue: -102: EndSignalCue or MissionCue not defined -101: Object does not exist at start -100: Undefined failure. |
-| ./08/md/rml_race_timetrial.xml | $feedbackvalue: -104: The first of $TrackObjects is not in the $StartSector -103: $StartSector is not valid -102: No valid track objects -101: EndSignalCue or MissionCue not defined -100: Undefined failure. |
+| ./08/md/rml_player_npc_patrol.xml | $FeedbackValue: Mission Errors |
+| ./08/md/rml_protect_object.xml | Mission script. |
+| ./08/md/rml_race_timetrial.xml | Mission script. |
 | ./08/md/rml_repairobject.xml | This RML is intended for use in Master-Missions. |
 | ./08/md/rml_repairsignalleaks.xml | This RML is intended for use in Master-Missions. |
-| ./08/md/rml_repeat_customevent.xml | $feedbackvalue: Mission Errors <=-100 -103: MaxTriggerAmount is non-positive -102: TriggerSignalCue not defined -101: EndSignalCue or MissionCue not defined -100: Undefined failure. |
-| ./08/md/rml_reputation.xml | This RML is intended for use in Master-Missions $feedbackvalue: -103 $Reputation is incorrectly defined. |
+| ./08/md/rml_repeat_customevent.xml | Mission script. |
+| ./08/md/rml_reputation.xml | This RML is intended for use in Master-Missions |
 | ./08/md/rml_rescueship.xml | This RML is intended for use in Master-Missions. |
 | ./08/md/rml_rescueship_2.xml | This RML is intended for use in Master-Missions. |
-| ./08/md/rml_restock_drones.xml | $feedbackvalue: -103: Both $CommanderObject nor $CommanderEntity exist. |
-| ./08/md/rml_retrieveitem.xml | $feedbackvalue: -104: $ItemWare is not allowed to be dropped -103: $ItemWare is not an inventory ware -102: $TargetShip is not defined, is not operational or has no pilot -101: Cue parameters not defined -100: Undefined failure. |
+| ./08/md/rml_restock_drones.xml | Mission script. |
+| ./08/md/rml_retrieveitem.xml | Mission script. |
 | ./08/md/rml_sabotage.xml | This RML is intended for use in Master-Missions. |
 | ./08/md/rml_scan.xml | This RML is intended for use in Master-Missions. |
-| ./08/md/rml_scan_anomaly.xml | $feedbackvalue: -102: EndSignalCue or MissionCue not defined -101: Anomaly does not exist -100: Undefined failure. |
+| ./08/md/rml_scan_anomaly.xml | Mission script. |
 | ./08/md/rml_supplybuildstorage.xml | This RML is intended for use in Master-Missions. |
 | ./08/md/rml_supplyfactory.xml | This RML is intended for use in Master-Missions. |
 | ./08/md/rml_support_invasion.xml | Mission Director script rml support invasion. |
-| ./08/md/rml_trackship.xml | $feedbackvalue: -103 $TargetShip is mass traffic -102 $TargetShip not defined or is not operational -101 Cue parameters not defined -100: Undefined failure. |
+| ./08/md/rml_trackship.xml | Mission script. |
 | ./08/md/rml_trade_wares.xml | Mission Director script rml trade wares. |
-| ./08/md/rml_transfer_money.xml | $feedbackvalue: -102: $NPC did not exist -101: EndSignalCue or MissionCue not defined -100: Undefined failure. |
+| ./08/md/rml_transfer_money.xml | Mission script. |
 | ./08/md/rml_transport_passengers.xml | This RML is intended for use in Master-Missions. |
-| ./08/md/rml_transport_passengers_v2.xml | $feedbackvalue: -107 $PlacementTable was not a valid cue -106 Neither Passenger nor StartObject exists. |
-| ./08/md/rml_unlock_crates.xml | $FeedbackValue: Mission Errors <= -100 -103: No valid entry for $Crates -102: $Crates contains something that is not unlockable -101: $MissionCue was not defined -100: Undefined error. |
+| ./08/md/rml_transport_passengers_v2.xml | Mission script. |
+| ./08/md/rml_unlock_crates.xml | $FeedbackValue: Mission Errors |
 | ./08/md/scenario_advanced.xml | Find all cluster for later reference. |
 | ./08/md/scenario_combat.xml | Mission Director script scenario combat. |
 | ./08/md/scenario_tutorials.xml | Create a list of tutorial cues to trigger in that order. |
@@ -502,9 +502,9 @@
 | ./08/md/showcases.xml | Mission Director script showcases. |
 | ./08/md/signal_leaks.xml | Required variables: - $LeakObject Result variables: - $LeakLocations. |
 | ./08/md/skill_gain.xml | Last lock destroyed is still operational when event is dispatched. |
-| ./08/md/story_buccaneers.xml | <set_value name="$Page" exact="00000"/>. |
+| ./08/md/story_buccaneers.xml | Story script for the Buccaneers faction. |
 | ./08/md/story_diplomacy_intro.xml | Mission Director script story diplomacy intro. |
-| ./08/md/story_paranid.xml | <event_cue_signalled/>. |
+| ./08/md/story_paranid.xml | Story script for the Paranid faction. |
 | ./08/md/story_research_embassy.xml | Used to Patch User data even when loading saves with completed research. |
 | ./08/md/story_research_welfare_1.xml | Default values. |
 | ./08/md/story_research_xen_equipment.xml | Mission Director script story research xen equipment. |
@@ -516,7 +516,7 @@
 | ./08/md/tutorial_crew.xml | Objective step="4" action="objective. |
 | ./08/md/tutorial_deploy.xml | Accept case. |
 | ./08/md/tutorial_flight.xml | Accept case. |
-| ./08/md/tutorial_global.xml | Cue name="NearWharfHint" checktime="120s" checkinterval="11s" instantiate="true"> <conditions>. |
+| ./08/md/tutorial_global.xml | Cue name="NearWharfHint" checktime="120s" checkinterval="11s" instantiate="true"> |
 | ./08/md/tutorial_inputdev.xml | Accept case. |
 | ./08/md/tutorial_map.xml | Accept case. |
 | ./08/md/tutorial_map_advanced.xml | Count_ships owner="faction. |
@@ -639,7 +639,7 @@
 | ./extensions/ego_dlc_split/ext_03/libraries/character_components.xml | Library character components. |
 | ./extensions/ego_dlc_split/ext_03/libraries/character_macros.xml | ============== Player Macros ==============. |
 | ./extensions/ego_dlc_split/ext_03/libraries/charactergroups.xml | Library charactergroups. |
-| ./extensions/ego_dlc_split/ext_03/libraries/characters.xml | <character id="TEMP_manager_split_random" group="split. |
+| ./extensions/ego_dlc_split/ext_03/libraries/characters.xml | Character definitions for the Split DLC. |
 | ./extensions/ego_dlc_split/ext_03/libraries/classcatalog.xml | Library classcatalog. |
 | ./extensions/ego_dlc_split/ext_03/libraries/constructionplans.xml | Library constructionplans. |
 | ./extensions/ego_dlc_split/ext_03/libraries/diplomacy.xml | Library diplomacy. |
@@ -756,12 +756,12 @@
 | ./extensions/ego_dlc_terran/ext_03/md/setup_dlc_terran.xml | Will run once, either on gamestart or when a game is loaded where this DLC was not active before. |
 | ./extensions/ego_dlc_terran/ext_03/md/setup_gamestarts.xml | Mission Director script setup gamestarts. |
 | ./extensions/ego_dlc_terran/ext_03/md/story_covert_operations.xml | Custom gamestart flags (only reliable after 6. |
-| ./extensions/ego_dlc_terran/ext_03/md/story_hq_discovery.xml | <check_value value="false" comment="prevent savegame compatibility issues during development"/>. |
+| ./extensions/ego_dlc_terran/ext_03/md/story_hq_discovery.xml | Story script for discovering the headquarters. |
 | ./extensions/ego_dlc_terran/ext_03/md/story_paranid.xml | Mission Director script story paranid. |
 | ./extensions/ego_dlc_terran/ext_03/md/story_terraforming.xml | Custom gamestart flags. |
 | ./extensions/ego_dlc_terran/ext_03/md/story_terran_core.xml | Find mars-asteroidbelt accelerator. |
 | ./extensions/ego_dlc_terran/ext_03/md/story_terran_prelude.xml | Started on the terran side. |
-| ./extensions/ego_dlc_terran/ext_03/md/story_yaki.xml | <check_value value="false" comment="prevent savegame compatibility issues during development"/>. |
+| ./extensions/ego_dlc_terran/ext_03/md/story_yaki.xml | Story script involving the Yaki. |
 | ./extensions/ego_dlc_terran/ext_03/md/terraforming.xml | Mission Director script terraforming. |
 | ./extensions/ego_dlc_terran/ext_03/md/x4ep1_trade_subscriptions.xml | Terran DLC war-subscription, use xml-patch-code to inject into base-game. |
 | ./extensions/ego_dlc_terran/ext_03/md/x4ep1_trade_terran.xml | DLC - This is dependent on the base game X4Ep1_Trade_Subscriptions. |
