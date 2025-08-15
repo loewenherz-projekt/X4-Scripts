@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<components>
+	<component name="ui_helmet_01" class="accessory">
+		<source geometry="assets\ui\ui_helmet_01_data"/>
+		<layers>
+			<layer>
+				<waypoints/>
+				<lights/>
+			</layer>
+		</layers>
+		<connections>
+			<connection name="container" tags="contents" value="0" optional="0"/>
+			<connection name="position" tags="position" value="1" optional="1"/>
+			<connection name="space" tags="accessory">
+				<offset/>
+			</connection>
+
+<!--	temporary removed during shader changes -->
+<!--		
+			<connection name="Connection01" tags="part nocollision  ">
+				<offset>
+					<position x="-4.133941E-08" y="-4.133941E-08" z="-3.992294E-02"/>
+				</offset>
+				<parts>
+					<part name="nocollision_main">
+						<lods>
+							<lod index="0">
+								<materials>
+									<material id="1" ref="p1.p1_ui_helmet_01"/>
+								</materials>
+							</lod>
+						</lods>
+						<size>
+							<max x="0.1878196" y="0.1138463" z="4.231367E-02"/>
+							<center x="-2.194309E-07" y="1.153709E-08" z="0.2537519"/>
+						</size>
+					</part>
+				</parts>
+			</connection>
+-->
+			
+		</connections>
+	</component>
+</components>

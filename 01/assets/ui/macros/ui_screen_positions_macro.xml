@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Chris (192.168.3.133) at 04.09.2017_17-32-43-->
+<macros>
+  <macro name="ui_screen_positions_macro" class="positional">
+    <component ref="ui_screen_positions" />
+    <properties>
+      <identification unique="0" />
+    </properties>
+  </macro>
+</macros>

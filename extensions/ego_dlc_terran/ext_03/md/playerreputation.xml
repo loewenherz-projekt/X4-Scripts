@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<diff>
+  <!--replace sel="//do_if[@value='@$AccessGrantedCoHPatchMarker']/@value">($licence.type == 'innercore_access') and ($Faction == faction.terran)</replace-->
+
+  <replace sel="//do_if[@value='@$AccessGrantedCoHPatchMarker']">
+    <do_if value="($licence.type == 'innercore_access') and ($Faction == faction.terran)" comment="Get permission to enter the Sol Inner Core">
+      <unlock_achievement name="COH_ACCESS_GRANTED"/>
+    </do_if>
+  </replace>
+
+</diff>

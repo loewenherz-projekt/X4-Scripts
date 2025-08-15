@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Matthias (192.168.3.144) at 13.08.2019_17-54-25-->
+<macros>
+  <macro name="ui_screen_positions_cutscene_macro" class="positional">
+    <component ref="ui_screen_positions_cutscene" />
+  </macro>
+</macros>

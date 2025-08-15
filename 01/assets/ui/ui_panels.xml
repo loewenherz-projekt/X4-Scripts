@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<components>
+	<component name="ui_panels" class="accessory">
+		<source geometry="assets\ui\ui_panels_data"/>
+		<layers>
+			<layer>
+				<waypoints/>
+				<lights/>
+			</layer>
+		</layers>
+		<connections>
+			<connection name="container" tags="contents" value="0" optional="0"/>
+			<connection name="position" tags="position" value="1" optional="1"/>
+			<connection name="space" tags="accessory">
+				<offset/>
+			</connection>
+			<connection name="con_primarypanel" tags="uianchor_primarypanel">
+				<offset>
+					<position x="-0.244652" y="0.1198886" z="0.3533133"/>
+					<quaternion qx="0.1102196" qy="0.2656363" qz="2.601826E-02" qw="-0.9573986"/>
+				</offset>
+			</connection>
+			<connection name="con_secondarypanel" tags="uianchor_secondarpanel">
+				<offset>
+					<position x="0.245" y="0.1191426" z="0.353"/>
+					<quaternion qx="0.1079028" qy="-0.2646853" qz="-3.438456E-02" qw="-0.9576619"/>
+				</offset>
+			</connection>
+			<connection name="con_shipstatus" tags="uianchor_shipstatus">
+				<offset>
+					<position x="3.084354E-05" y="0.1743648" z="0.4085554"/>
+					<quaternion qx="0.1731428" qy="-0" qz="-0" qw="-0.9848967"/>
+				</offset>
+			</connection>
+			<connection name="con_speedbar" tags="uianchor_speedbar">
+				<offset>
+					<position x="3.084773E-05" y="0.1424123" z="0.4224791"/>
+					<quaternion qx="0.131611" qy="-0" qz="-0" qw="-0.9913015"/>
+				</offset>
+			</connection>
+			<connection name="con_em" tags="uianchor_eventmonitor">
+				<offset>
+					<position x="0.2390198" y="-0.103684" z="0.3613726"/>
+					<quaternion qx="-0.1119743" qy="-0.2655901" qz="2.650535E-02" qw="-0.9571944"/>
+				</offset>
+			</connection>
+			<connection name="con_radar" tags="uianchor_radar">
+				<offset>
+					<position x="-0.2383197" y="-0.1037185" z="0.3619651"/>
+					<quaternion qx="-0.1096592" qy="0.2646199" qz="-3.486975E-02" qw="-0.9574629"/>
+				</offset>
+			</connection>
+			<connection name="con_crosshair" tags="uianchor_crosshair">
+				<offset>
+					<position x="3.084773E-05" y="5.716563E-02" z="0.4400228"/>
+					<quaternion qx="0.131611" qy="-0" qz="-0" qw="-0.9913015"/>
+				</offset>
+			</connection>
+		</connections>
+	</component>
+</components>

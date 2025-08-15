@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Exported by: Simon (192.168.3.108) at 28.04.2015_17-32-08-->
+<macros>
+  <macro name="ui_helmet_01_macro" class="accessory">
+    <component ref="ui_helmet_01" />
+    <properties>
+      <identification unique="0" />
+    </properties>
+  </macro>
+</macros>

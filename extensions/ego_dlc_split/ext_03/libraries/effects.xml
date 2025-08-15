@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<effects xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../libraries/effects.xsd">
+  <effect name="muzzle_spl_m_flak_01_mk1_base" alignment="object">
+    <elements>
+      <!-- Muzzle Smoke-->
+      <element id="1" ref="dummyemitter_macro" forkeffect="shotgun_muzzle_smoke_01" alignment="object" duration="1.0" minscale="1.0" maxscale="1.0" forklod="none"></element>
+      <!-- Geometry Light -->
+      <element id="2" ref="impact_light_orange_macro" forkeffect="none" duration="0.1" minscale="1.0" maxscale="1.0" fadeout="0.1" forklod="largeeffect"></element>
+      <!-- Geometry -->
+      <element id="3" ref="muzzle_spl_m_flak_01_mk1_macro" forkeffect="none" duration="0.12" minscale="1.0" maxscale="1.0" forklod="largeeffect" fadeout="0.02"></element>
+    </elements>
+  </effect>
+  <effect name="muzzle_spl_m_flak_01_mk1" alignment="object">
+    <references>
+      <reference effect="muzzle_spl_m_flak_01_mk1_base"/>
+    </references>
+    <elements>
+      <element id="4" ref="effect_dummy_macro" forkeffect="none" duration="1.5" forklod="none">
+        <sound ref="turret_flak_muzzle"/>
+      </element>
+    </elements>
+  </effect>
+  <effect name="muzzle_turret_spl_m_flak_01_mk1" alignment="object">
+    <references>
+      <reference effect="muzzle_spl_m_flak_01_mk1_base"/>
+    </references>
+    <elements>
+      <element id="4" ref="effect_dummy_macro" forkeffect="none" duration="1.5" forklod="none">
+        <sound ref="turret_flak_muzzle"/>
+      </element>
+    </elements>
+  </effect>
+  <effect name="impact_spl_m_flak_01_mk1" alignment="random" emitterspace="zone">
+    <elements>
+      <!-- 6 Lightsources to make sure at liest one is outsite of the mesh -->
+      <element id="1" ref="missile_impact_01_light_macro" forkeffect="none" alignment="random" duration="0.8" forklod="none"></element>
+      <!-- Explosion Fork Particles-->
+      <element id="2" ref="dummyemitter_macro" forkeffect="flak_split_impact" alignment="random" emitterspace="zone" forcezonespace="true" duration="0.80" minscale="1.4" maxscale="2.0" forklod="largeeffect"></element>
+      <!--element id="7" ref="dummyemitter_macro" forkeffect="sparkcloud" alignment="random" duration="7.0" minscale="2.0" maxscale="4.0" forklod="mediumeffect"></element-->
+      <!-- Area DMG -->
+      <element id="3" ref="effect_dummy_macro" forkeffect="none" duration="1.0" forklod="none">
+        <areadamage range="128" falloff="1.0" duration="1.0"/>
+      </element>
+      <!-- Sound -->
+      <element id="4" ref="effect_dummy_macro" forkeffect="none" duration="2.5" forklod="mediumeffect">
+        <sound ref="flak_impact"></sound>
+      </element>
+    </elements>
+  </effect>
+  <effect name="muzzle_spl_s_gatling_01_mk1" alignment="object">
+    <elements>
+      <!-- Bullet Shells -->
+      <!--<element id="1" ref="dummyemitter_up_macro" forkeffect="gatling_bullet_shells" alignment="object" minscale="0.5" maxscale="0.5" duration="1.0" forklod="none"></element> -->
+      <!-- Muzzle Smoke-->
+      <element id="2" ref="dummyemitter_up_macro" forkeffect="gatling_muzzle_smoke_01" alignment="object" duration="0.5" minscale="0.2" maxscale="0.20" forklod="none"></element>
+      <!-- Geometry -->
+      <element id="3" ref="muzzle_gen_s_gatling_01_mk1_macro" forkeffect="none" duration="0.05" minscale="0.1" maxscale="0.20" forklod="none"></element>
+      <!-- Geometry Light -->
+      <element id="4" ref="impact_light_orange_macro" forkeffect="none" duration="0.1" minscale="1.0" maxscale="1.0" fadeout="0.0" forklod="none"></element>
+      <element id="5" ref="effect_dummy_macro" forkeffect="none" delay="0" duration="0.2" forklod="none">
+        <force range="35" falloff="0.0">
+          <rumble>
+            <camera>
+              <component frequency="2" attackduration="0.1" sustainduration="0" releaseduration="0.1">
+                <amplitude randomize="false">
+                  <position x="0.002" y="0.002" z="0.002" />
+                </amplitude>
+              </component>
+            </camera>
+            <controller>
+              <low startvalue="0.0" sustainvalue="0.025" endvalue="0.0" attackduration="0.1" sustainduration="0.0" releaseduration="0.1" />
+            </controller>
+          </rumble>
+        </force>
+      </element>
+      <!-- Sound -->
+      <!--element id="6" ref="effect_dummy_macro" forkeffect="none" duration="1.5" forklod="none">
+        <sound ref="wpn_mg_muzzle"></sound>
+      </element -->
+    </elements>
+  </effect>
+  <effect name="startshooting_spl_s_gatling_01_mk1" alignment="object" emitterspace="zone">
+    <elements>
+      <element id="1" ref="effect_dummy_macro" duration="1">
+        <sound ref="wpn_spl_gatling_startshooting" />
+      </element>
+    </elements>
+  </effect>
+  <effect name="stopshooting_spl_s_gatling_01_mk1" alignment="object" emitterspace="zone">
+    <elements>
+      <element id="1" ref="effect_dummy_macro" duration="1">
+        <sound ref="wpn_spl_gatling_stopshooting" />
+      </element>
+    </elements>
+  </effect>
+  <effect name="disruptor_impact" alignment="normal">
+    <elements>
+      <!-- Particles -->
+      <!--element id="1" ref="dummyemitter_macro" emitterspace="zone" forkeffect="explosion_fiery" alignment="random" duration="1.0" minscale="5.0" maxscale="5.0" forklod="megaeffect"></element-->
+      <element id="1" ref="fx_emp_m_01_macro" forkeffect="none" duration="4.0" minscale="0.30" maxscale="0.30" fadein="0" fadeout="0.1" forklod="megaeffect" emitterspace="local" ></element>
+      <element id="2" ref="effect_dummy_macro" forkeffect="none" duration="4.0" forklod="megaeffect" emitterspace="local">
+        <sound ref="signal_leak_discharge"></sound>
+      </element>
+      <!-- 6 Lightsources to make sure at liest one is outsite of the mesh -->
+      <element id="3" ref="missile_impact_01_medium_macro" forkeffect="none" alignment="normal" duration="0.8" forklod="none"></element>
+      <!-- Explosion Fork Particles-->
+      <!--element id="8" ref="dummyemitter_macro" forkeffect="missile_explosion_medium_01" duration="7" minscale="5" maxscale="6" forklod="mediumeffect"></element-->
+      <element id="4" ref="dummyemitter_macro" forkeffect="punch_through_effect" alignment="object" duration="7.0" minscale="1.0" maxscale="2.0" forklod="mediumeffect"></element>
+      <element id="5" ref="dummyemitter_macro" forkeffect="missile_explo_part1" alignment="random" duration="7.0" minscale="4.0" maxscale="6.0" forklod="mediumeffect"></element>
+      <element id="6" ref="dummyemitter_macro" forkeffect="sparkcloud" alignment="random" duration="7.0" minscale="4.0" maxscale="6.0" forklod="mediumeffect"></element>
+
+      <!-- Area DMG -->
+      <element id="7" ref="effect_dummy_macro" forkeffect="none" duration="4.0" forklod="none">
+        <areadamage range="128" falloff="1.0" duration="1.0"/>
+      </element>
+      <!-- Sound -->
+      <element id="8" ref="effect_dummy_macro" forkeffect="none" duration="6.6" forklod="smalleffect">
+        <sound ref="explosion_medium"></sound>
+      </element>
+      <element id="9" ref="effect_dummy_macro" forkeffect="none" duration="3.0" forklod="mediumeffect">
+        <sound ref="explosion_medium_lp"></sound>
+      </element>
+    </elements>
+  </effect>
+</effects>

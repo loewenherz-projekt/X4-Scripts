@@ -1,0 +1,151 @@
+<?xml version="1.0"?>
+<components>
+	<component name="ui_screen_positions" class="positional">
+		<source geometry="assets\ui\ui_screen_positions_data"/>
+		<layers>
+			<layer>
+				<waypoints/>
+				<lights/>
+			</layer>
+		</layers>
+		<connections>
+			<connection name="container" tags="contents" value="0"/>
+			<connection name="position" tags="position" value="1"/>
+			<connection name="space" tags="positional">
+				<offset/>
+			</connection>
+			<connection name="uianchor_connection" tags="uianchor ">
+				<offset/>
+			</connection>
+			<connection name="con_menu_right" tags="uianchor_right">
+				<offset>
+					<position x="0.2527543" y="2.403496E-02" z="5.268511E-02"/>
+					<quaternion qx="1.053671E-08" qy="-0.7071068" qz="-1.053671E-08" qw="-0.7071067"/>
+				</offset>
+			</connection>
+			<connection name="con_menu_left" tags="uianchor_left">
+				<offset>
+					<position x="-0.2646381" y="2.403496E-02" z="4.587704E-02"/>
+					<quaternion qx="1.053671E-08" qy="0.7071066" qz="1.053671E-08" qw="-0.7071069"/>
+				</offset>
+			</connection>
+			<connection name="con_crosshair" tags="uianchor_crosshair">
+				<offset>
+					<position x="0" y="0" z="0.2906321"/>
+				</offset>
+			</connection>
+			<connection name="con_radar" tags="uianchor_radar">
+				<offset>
+					<position x="-1.511685E-10" y="-0.1934366" z="0.3991139"/>
+					<quaternion qx="-8.715573E-02" qy="3.063767E-09" qz="1.292559E-09" qw="-0.9961947"/>
+				</offset>
+			</connection>
+			<connection name="con_sw" tags="uianchor_secondarpanel">
+				<offset>
+					<position x="0.2162433" y="8.739983E-02" z="0.3539673"/>
+					<quaternion qx="0.1079028" qy="-0.2646853" qz="-3.438456E-02" qw="-0.9576619"/>
+				</offset>
+			</connection>
+			<connection name="con_em" tags="uianchor_eventmonitor">
+				<offset>
+					<position x="0.2000083" y="-0.1396395" z="0.3519724"/>
+					<quaternion qx="-0.1119743" qy="-0.2655901" qz="2.650535E-02" qw="-0.9571944"/>
+				</offset>
+			</connection>
+			<connection name="con_menu_front" tags="uianchor_front">
+				<offset>
+					<position x="0" y="0" z="0.3469819"/>
+				</offset>
+			</connection>
+			<connection name="con_speed" tags="uianchor_speedbar">
+				<offset>
+					<position x="1.797519E-03" y="0.1072589" z="0.4104678"/>
+					<quaternion qx="0.131611" qy="-0" qz="-0" qw="-0.9913015"/>
+				</offset>
+			</connection>
+			<connection name="con_shieldhull" tags="uianchor_shipstatus">
+				<offset>
+					<position x="1.797513E-03" y="0.1633024" z="0.3912041"/>
+					<quaternion qx="0.1731428" qy="-0" qz="-0" qw="-0.9848967"/>
+				</offset>
+			</connection>
+			<connection name="con_pw" tags="uianchor_primarypanel">
+				<offset>
+					<position x="-0.2127385" y="8.739983E-02" z="0.3539673"/>
+					<quaternion qx="0.1102196" qy="0.2656363" qz="2.601825E-02" qw="-0.9573986"/>
+				</offset>
+			</connection>
+			<connection name="con_dronehud" tags="uianchor_drone_hud">
+				<offset>
+					<position x="3.084773E-05" y="0" z="0.291"/>
+				</offset>
+			</connection>
+			<connection name="con_debugline" tags="uianchor_debugline">
+				<offset>
+					<position x="0" y="8.666515E-05" z="0.3180768"/>
+				</offset>
+			</connection>
+			<connection name="con_debugbar" tags="uianchor_debugbar">
+				<offset>
+					<position x="0" y="-4.107293E-02" z="0.3180768"/>
+				</offset>
+			</connection>
+			<connection name="con_infobar" tags="uianchor_infobar">
+				<offset>
+					<position x="0" y="-7.894606E-02" z="0.3180768"/>
+				</offset>
+			</connection>
+			<connection name="con_infobar2" tags="uianchor_infobar2">
+				<offset>
+					<position x="0" y="0.0862675" z="0.3180768"/>
+				</offset>
+			</connection>
+			<connection name="con_missionbar" tags="uianchor_missionbar">
+				<offset>
+					<position x="0" y="-7.586386E-02" z="0.3180768"/>
+				</offset>
+			</connection>
+			<connection name="con_dialogmenu" tags="uianchor_dialogmenu">
+				<offset>
+					<position x="0" y="-0.1125771" z="0.3180768"/>
+				</offset>
+			</connection>
+			<connection name="con_subchannel" tags="uianchor_subchannel">
+				<offset>
+					<position x="0" y="-0.17" z="0.3180768"/>
+				</offset>
+			</connection>
+			<connection name="con_infobar3" tags="uianchor_infobar3">
+				<offset>
+					<position x="0" y="-7.029358E-02" z="0.3180768"/>
+				</offset>
+			</connection>
+			<connection name="con_circularmenu" tags="uianchor_circularmenu">
+				<offset>
+					<position x="0" y="0" z="0.2943379"/>
+				</offset>
+			</connection>
+			<connection name="con_gameover" tags="uianchor_gameover">
+				<offset>
+					<position x="3.084773E-05" y="0" z="0.2846453"/>
+				</offset>
+			</connection>
+			<connection name="con_infobar4" tags="uianchor_infobar4">
+				<offset>
+					<position x="0" y="6.396353E-03" z="0.2908361"/>
+				</offset>
+			</connection>
+			<connection name="con_messageticker" tags="uianchor_messageticker">
+				<offset>
+					<position x="-0.1983831" y="-0.1410382" z="0.3524311"/>
+					<quaternion qx="-0.1096581" qy="0.2646199" qz="-3.486944E-02" qw="-0.957463"/>
+				</offset>
+			</connection>
+			<connection name="con_messageticker_plain" tags="uianchor_messageticker_plain ">
+				<offset>
+					<position x="-0.1983831" y="-0.166" z="0.3524311"/>
+				</offset>
+			</connection>
+		</connections>
+	</component>
+</components>
