@@ -10,3 +10,4 @@ Dieses Projekt enthält Beispielskripte und Ressourcen für X4: Foundations.
 - `LUA_FUNCTION_REFERENCE.md` – automatisch erzeugte Liste aller in den Skripten definierten
   Lua-Funktionen mit Vorkommen, Beispieldatei und Kurzbeschreibung.
 
+
