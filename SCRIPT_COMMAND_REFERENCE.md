@@ -78,11 +78,11 @@ Automatisch generierte Liste aller XML-Tag-Befehle aus den vorhandenen Skriptver
 | `animate_chair` | 5 | `08/md/npc_state_machines.xml` | Animate chair (Attribute: slot, actor, chairtrigger). |
 | `append_list_elements` | 287 | `extensions/ego_dlc_split/ext_03/md/cinematiccamera.xml` | Append list elements (Attribute: name, other). |
 | `append_to_list` | 2115 | `08/aiscripts/order.deployobjectsatgates.xml` | Append to list (Attribute: name, exact). |
-| `apply_attackstrength` | 15 | `08/aiscripts/fight.attack.object.capital.xml` | Apply attackstrength (Attribute: object, attacker, hullshield, hullonly, shieldonly, hullnoshield, module). |
-| `apply_construction_sequence` | 16 | `extensions/ego_dlc_terran/ext_03/md/story_hq_discovery.xml` | Apply construction sequence (Attribute: station, sequence, remove). |
-| `apply_experience` | 71 | `08/aiscripts/order.wait.signal.xml` | Apply experience (Attribute: entity, experience, factor). |
-| `apply_loadout` | 37 | `extensions/ego_dlc_terran/ext_03/md/story_hq_discovery.xml` | Apply loadout (Attribute: object, flags, loadout). |
-| `apply_player_influence` | 6 | `08/md/diplomacy.xml` | Apply player influence (Attribute: influence). |
+| `apply_attackstrength` | 15 | `08/aiscripts/fight.attack.object.capital.xml` | Wendet attackstrength an (Attribute: object, attacker, hullshield, hullonly, shieldonly, hullnoshield, module). |
+| `apply_construction_sequence` | 16 | `extensions/ego_dlc_terran/ext_03/md/story_hq_discovery.xml` | Wendet construction sequence an (Attribute: station, sequence, remove). |
+| `apply_experience` | 71 | `08/aiscripts/order.wait.signal.xml` | Wendet experience an (Attribute: entity, experience, factor). |
+| `apply_loadout` | 37 | `extensions/ego_dlc_terran/ext_03/md/story_hq_discovery.xml` | Wendet loadout an (Attribute: object, flags, loadout). |
+| `apply_player_influence` | 6 | `08/md/diplomacy.xml` | Wendet player influence an (Attribute: influence). |
 | `assert` | 1024 | `extensions/ego_dlc_terran/ext_03/md/x4ep1_trade_terran.xml` | Assert (Attribute: value). |
 | `assign_construction_vessel` | 2 | `08/aiscripts/order.build.deploy.xml` | Assign construction vessel (Attribute: object, buildmodule). |
 | `assign_control_entity` | 55 | `08/md/npc_shadyguy.xml` | Assign control entity (Attribute: actor, object, post). |
@@ -128,31 +128,31 @@ Automatisch generierte Liste aller XML-Tag-Befehle aus den vorhandenen Skriptver
 | `claim_ship` | 4 | `08/aiscripts/move.claim.xml` | Claim ship (Attribute: target, pilot). |
 | `clamp_equipment_amount` | 1 | `08/aiscripts/interrupt.restock.xml` | Clamp equipment amount (Attribute: resultammo, resultunits, object, builder, ammo, units). |
 | `clamp_trade_amount` | 13 | `08/aiscripts/order.trade.wareexchange.ship.xml` | Clamp trade amount (Attribute: trade, amount, buyer, seller, result, updatedeal). |
-| `clear_actor_current_chair` | 1 | `08/md/npc_state_machines.xml` | Clear actor current chair (Attribute: actor). |
-| `clear_actor_emotion` | 5 | `08/md/npc_usecases.xml` | Clear actor emotion. |
-| `clear_actor_lookat` | 15 | `08/md/npc_usecases.xml` | Clear actor lookat. |
-| `clear_actor_pod_arrival_time` | 2 | `08/md/npc_state_machines.xml` | Clear actor pod arrival time (Attribute: actor). |
-| `clear_actor_roomslot` | 17 | `08/md/scenario_combat.xml` | Clear actor roomslot (Attribute: actor). |
-| `clear_actor_tool` | 4 | `08/md/npc_state_machines.xml` | Clear actor tool (Attribute: actor). |
-| `clear_buildanchor` | 2 | `08/aiscripts/build.shiptrader.xml` | Clear buildanchor (Attribute: buildprocessor). |
-| `clear_collision_filter` | 1 | `08/aiscripts/mining.collect.drone.xml` | Clear collision filter (Attribute: object). |
-| `clear_dismantling_target` | 5 | `08/aiscripts/order.salvage.routine.xml` | Clear dismantling target (Attribute: object, wreck). |
-| `clear_entity_role` | 4 | `08/md/x4ep1_trade_subscriptions.xml` | Clear entity role (Attribute: entity). |
-| `clear_entity_role_object` | 4 | `08/md/npc_state_machines.xml` | Clear entity role object (Attribute: entity). |
-| `clear_faction_diplomacy_exclusion` | 31 | `extensions/ego_dlc_split/ext_03/md/story_split.xml` | Clear faction diplomacy exclusion (Attribute: faction, otherfaction, flags). |
-| `clear_fleet_ship_build_issues` | 1 | `08/md/fleet_reconstitution.xml` | Clear fleet ship build issues (Attribute: fleetunit). |
-| `clear_fog_of_war` | 2 | `08/md/scenario_tutorials.xml` | Clear fog of war (Attribute: sector, range). |
-| `clear_group` | 166 | `08/md/rml_barterwares.xml` | Clear group (Attribute: group). |
-| `clear_list` | 69 | `08/aiscripts/lib.target.selection.xml` | Clear list (Attribute: list). |
-| `clear_object_access_licence` | 1 | `extensions/ego_dlc_terran/ext_03/md/story_terran_core.xml` | Clear object access licence (Attribute: object). |
-| `clear_object_name` | 3 | `08/md/x4ep1_mentor_subscription.xml` | Clear object name (Attribute: object). |
-| `clear_object_sound_override` | 2 | `extensions/ego_dlc_terran/ext_03/md/story_yaki.xml` | Clear object sound override (Attribute: object, type). |
-| `clear_order_failure` | 25 | `08/aiscripts/order.trade.routine.xml` | Clear order failure (Attribute: order). |
-| `clear_recurring_order_failure` | 11 | `08/aiscripts/order.salvage.collect.xml` | Clear recurring order failure (Attribute: object, id). |
-| `clear_ship_undocking` | 2 | `08/aiscripts/move.undock.xml` | Clear ship undocking (Attribute: ship). |
-| `clear_shortage_reports` | 2 | `08/md/factionlogic.xml` | Clear shortage reports (Attribute: object). |
-| `clear_table` | 65 | `08/aiscripts/fight.attack.object.capital.xml` | Clear table (Attribute: table). |
-| `clear_tow_target` | 1 | `08/aiscripts/order.salvage.collect.xml` | Clear tow target (Attribute: ship, object). |
+| `clear_actor_current_chair` | 1 | `08/md/npc_state_machines.xml` | Leert actor current chair (Attribute: actor). |
+| `clear_actor_emotion` | 5 | `08/md/npc_usecases.xml` | Leert actor emotion. |
+| `clear_actor_lookat` | 15 | `08/md/npc_usecases.xml` | Leert actor lookat. |
+| `clear_actor_pod_arrival_time` | 2 | `08/md/npc_state_machines.xml` | Leert actor pod arrival time (Attribute: actor). |
+| `clear_actor_roomslot` | 17 | `08/md/scenario_combat.xml` | Leert actor roomslot (Attribute: actor). |
+| `clear_actor_tool` | 4 | `08/md/npc_state_machines.xml` | Leert actor tool (Attribute: actor). |
+| `clear_buildanchor` | 2 | `08/aiscripts/build.shiptrader.xml` | Leert buildanchor (Attribute: buildprocessor). |
+| `clear_collision_filter` | 1 | `08/aiscripts/mining.collect.drone.xml` | Leert collision filter (Attribute: object). |
+| `clear_dismantling_target` | 5 | `08/aiscripts/order.salvage.routine.xml` | Leert dismantling target (Attribute: object, wreck). |
+| `clear_entity_role` | 4 | `08/md/x4ep1_trade_subscriptions.xml` | Leert entity role (Attribute: entity). |
+| `clear_entity_role_object` | 4 | `08/md/npc_state_machines.xml` | Leert entity role object (Attribute: entity). |
+| `clear_faction_diplomacy_exclusion` | 31 | `extensions/ego_dlc_split/ext_03/md/story_split.xml` | Leert faction diplomacy exclusion (Attribute: faction, otherfaction, flags). |
+| `clear_fleet_ship_build_issues` | 1 | `08/md/fleet_reconstitution.xml` | Leert fleet ship build issues (Attribute: fleetunit). |
+| `clear_fog_of_war` | 2 | `08/md/scenario_tutorials.xml` | Leert fog of war (Attribute: sector, range). |
+| `clear_group` | 166 | `08/md/rml_barterwares.xml` | Leert group (Attribute: group). |
+| `clear_list` | 69 | `08/aiscripts/lib.target.selection.xml` | Leert list (Attribute: list). |
+| `clear_object_access_licence` | 1 | `extensions/ego_dlc_terran/ext_03/md/story_terran_core.xml` | Leert object access licence (Attribute: object). |
+| `clear_object_name` | 3 | `08/md/x4ep1_mentor_subscription.xml` | Leert object name (Attribute: object). |
+| `clear_object_sound_override` | 2 | `extensions/ego_dlc_terran/ext_03/md/story_yaki.xml` | Leert object sound override (Attribute: object, type). |
+| `clear_order_failure` | 25 | `08/aiscripts/order.trade.routine.xml` | Leert order failure (Attribute: order). |
+| `clear_recurring_order_failure` | 11 | `08/aiscripts/order.salvage.collect.xml` | Leert recurring order failure (Attribute: object, id). |
+| `clear_ship_undocking` | 2 | `08/aiscripts/move.undock.xml` | Leert ship undocking (Attribute: ship). |
+| `clear_shortage_reports` | 2 | `08/md/factionlogic.xml` | Leert shortage reports (Attribute: object). |
+| `clear_table` | 65 | `08/aiscripts/fight.attack.object.capital.xml` | Leert table (Attribute: table). |
+| `clear_tow_target` | 1 | `08/aiscripts/order.salvage.collect.xml` | Leert tow target (Attribute: ship, object). |
 | `col` | 15 | `08/md/scenario_combat.xml` | Col (Attribute: idx, textcolor, text, bgcolor, fontsize, halign, valign). |
 | `collect_asteroid` | 2 | `08/aiscripts/mining.collect.ship.medium.xml` | Collect asteroid (Attribute: object, asteroid). |
 | `collect_deployable` | 3 | `08/aiscripts/move.collect.ship.smallship.xml` | Collect deployable (Attribute: object, deployable). |
@@ -174,49 +174,49 @@ Automatisch generierte Liste aller XML-Tag-Befehle aus den vorhandenen Skriptver
 | `count_rooms` | 4 | `08/md/npc_instantiation.xml` | Count rooms (Attribute: object, roomtype, exact). |
 | `count_ships` | 19 | `extensions/ego_dlc_terran/ext_03/md/story_terraforming.xml` | Count ships (Attribute: result, owner, space, min, masstraffic, checkoperational, class). |
 | `count_stations` | 13 | `extensions/ego_dlc_split/ext_03/md/story_split.xml` | Count stations (Attribute: trueowner, min, space). |
-| `create_ai_unit` | 5 | `08/aiscripts/build.shiptrader.xml` | Create ai unit (Attribute: object). |
-| `create_boarding_operation` | 1 | `08/md/showcases.xml` | Create boarding operation (Attribute: faction, target, result, approach, insertion). |
-| `create_build_storage` | 1 | `08/md/inituniverse.xml` | Create build storage (Attribute: station). |
-| `create_construction_sequence` | 23 | `extensions/ego_dlc_terran/ext_03/md/story_yaki.xml` | Create construction sequence (Attribute: macros, station, base). |
-| `create_control_entity` | 25 | `08/aiscripts/build.shiptrader.xml` | Create control entity (Attribute: name, object, post). |
-| `create_crate` | 10 | `extensions/ego_dlc_split/ext_03/md/story_split.xml` | Create crate (Attribute: name, macro, slot). |
-| `create_cue_actor` | 269 | `extensions/ego_dlc_terran/ext_03/md/x4ep1_trade_terran.xml` | Create cue actor (Attribute: name, cue, group). |
-| `create_diplomacy_event_operation` | 2 | `08/md/diplomacy.xml` | Create diplomacy event operation (Attribute: result, event, agent, faction, otherfaction, source, owner). |
-| `create_dynamic_interior` | 54 | `extensions/ego_dlc_terran/ext_03/md/x4ep1_trade_terran.xml` | Create dynamic interior (Attribute: object, corridor, room, name, interiorname, corridorname, roomname). |
-| `create_factory` | 5 | `08/md/factionlogic_economy.xml` | Create factory (Attribute: name, modules, resultbasesequence, sector, race, owner, originalproduct). |
-| `create_formation` | 6 | `08/aiscripts/order.fight.escort.xml` | Create formation (Attribute: leader, follower, formation, param, maxshipsperline, rollmembers, rollformation). |
-| `create_god_factory` | 20 | `08/md/setup.xml` | Create god factory (Attribute: groupname, id). |
-| `create_god_station` | 38 | `08/md/factionlogic_stations.xml` | Create god station (Attribute: name, id, state). |
-| `create_group` | 517 | `extensions/ego_dlc_split/ext_03/md/x4ep1_war_subscriptions.xml` | Create group (Attribute: groupname). |
-| `create_list` | 393 | `08/md/gm_ambush.xml` | Create list (Attribute: name). |
-| `create_loadout` | 30 | `extensions/ego_dlc_split/ext_03/md/gs_split1.xml` | Create loadout (Attribute: result). |
-| `create_lockbox` | 10 | `08/md/placedobjects.xml` | Create lockbox (Attribute: name, macro, sector). |
-| `create_mission` | 438 | `extensions/ego_dlc_terran/ext_03/md/x4ep1_trade_terran.xml` | Create mission (Attribute: cue, type, name, description, difficulty, faction, group, activate, comment). |
-| `create_mission_thread` | 7 | `extensions/ego_dlc_terran/ext_03/md/story_covert_operations.xml` | Create mission thread (Attribute: cue, name, description, rewardtext). |
-| `create_mission_thread_offer` | 4 | `08/md/mc_management.xml` | Create mission thread offer (Attribute: cue, actor, type, difficulty, threadtype, group). |
-| `create_npc_from_template` | 7 | `08/aiscripts/lib.respond.foundabandonedship.xml` | Create npc from template (Attribute: name, object, slot, template, owner). |
-| `create_npc_template` | 37 | `extensions/ego_dlc_split/ext_03/md/gs_split1.xml` | Create npc template (Attribute: object, entity, role). |
-| `create_object` | 173 | `extensions/ego_dlc_terran/ext_03/md/story_hq_discovery.xml` | Create object (Attribute: name, groupname, macro, owner, sector). |
-| `create_offer` | 86 | `08/md/gm_ambush.xml` | Create offer (Attribute: cue, location, distance, name, description, difficulty, actor). |
-| `create_order` | 1059 | `08/aiscripts/move.park.xml` | Create order (Attribute: id, object, immediate). |
-| `create_order_syncpoint` | 1 | `08/aiscripts/order.fight.tactical.xml` | Create order syncpoint (Attribute: owner). |
-| `create_orientation` | 67 | `08/md/rml_barterwares.xml` | Create orientation (Attribute: name, orientation, refobject). |
-| `create_platform_actor` | 2 | `08/md/inituniverse.xml` | Create platform actor (Attribute: room, post). |
-| `create_position` | 640 | `08/aiscripts/order.collect.ship.xml` | Create position (Attribute: name, space, object). |
-| `create_position_outside_boundingbox` | 1 | `08/aiscripts/move.nearby.xml` | Create position outside boundingbox (Attribute: name, distance, component). |
-| `create_presentation_cluster` | 33 | `08/md/gm_ambush.xml` | Create presentation cluster (Attribute: name, background). |
-| `create_prop` | 2 | `08/md/story_diplomacy_intro.xml` | Create prop (Attribute: name, slot, macro). |
-| `create_random_position_in_boundingbox` | 1 | `08/aiscripts/masstraffic.watchdog.xml` | Create random position in boundingbox (Attribute: component, name). |
-| `create_replacement_subordinates` | 1 | `08/aiscripts/order.restock.subordinates.xml` | Create replacement subordinates (Attribute: name, commander, buildobject, init, max, multiple). |
-| `create_representative_actor` | 1 | `08/md/factionlogic.xml` | Create representative actor (Attribute: name, station, faction). |
-| `create_rotation` | 46 | `extensions/ego_dlc_split/ext_03/md/gs_split1.xml` | Create rotation (Attribute: name, yaw). |
-| `create_ship` | 453 | `08/md/gm_ambush.xml` | Create ship (Attribute: name, macro, zone). |
-| `create_ship--` | 2 | `extensions/ego_dlc_split/ext_03/md/story_split.xml` | Create ship--. |
-| `create_signal_leak` | 46 | `extensions/ego_dlc_terran/ext_03/md/story_hq_discovery.xml` | Create signal leak (Attribute: groupname, macro, type, object). |
-| `create_station` | 55 | `extensions/ego_dlc_split/ext_03/md/setup_dlc_split.xml` | Create station (Attribute: rawname, name, sector, macro, owner). |
-| `create_trade_computer` | 2 | `08/md/rml_barterwares.xml` | Create trade computer (Attribute: object). |
-| `create_trade_offer` | 13 | `08/md/rml_barterwares.xml` | Create trade offer (Attribute: name, object, buyer, ware, amount, price, virtual, virtualmoney, playeronly). |
-| `create_trade_order` | 13 | `08/md/rml_barterwares.xml` | Create trade order (Attribute: name, object, tradeoffer, amount, immediate). |
+| `create_ai_unit` | 5 | `08/aiscripts/build.shiptrader.xml` | Erstellt ai unit (Attribute: object). |
+| `create_boarding_operation` | 1 | `08/md/showcases.xml` | Erstellt boarding operation (Attribute: faction, target, result, approach, insertion). |
+| `create_build_storage` | 1 | `08/md/inituniverse.xml` | Erstellt build storage (Attribute: station). |
+| `create_construction_sequence` | 23 | `extensions/ego_dlc_terran/ext_03/md/story_yaki.xml` | Erstellt construction sequence (Attribute: macros, station, base). |
+| `create_control_entity` | 25 | `08/aiscripts/build.shiptrader.xml` | Erstellt control entity (Attribute: name, object, post). |
+| `create_crate` | 10 | `extensions/ego_dlc_split/ext_03/md/story_split.xml` | Erstellt crate (Attribute: name, macro, slot). |
+| `create_cue_actor` | 269 | `extensions/ego_dlc_terran/ext_03/md/x4ep1_trade_terran.xml` | Erstellt cue actor (Attribute: name, cue, group). |
+| `create_diplomacy_event_operation` | 2 | `08/md/diplomacy.xml` | Erstellt diplomacy event operation (Attribute: result, event, agent, faction, otherfaction, source, owner). |
+| `create_dynamic_interior` | 54 | `extensions/ego_dlc_terran/ext_03/md/x4ep1_trade_terran.xml` | Erstellt dynamic interior (Attribute: object, corridor, room, name, interiorname, corridorname, roomname). |
+| `create_factory` | 5 | `08/md/factionlogic_economy.xml` | Erstellt factory (Attribute: name, modules, resultbasesequence, sector, race, owner, originalproduct). |
+| `create_formation` | 6 | `08/aiscripts/order.fight.escort.xml` | Erstellt formation (Attribute: leader, follower, formation, param, maxshipsperline, rollmembers, rollformation). |
+| `create_god_factory` | 20 | `08/md/setup.xml` | Erstellt god factory (Attribute: groupname, id). |
+| `create_god_station` | 38 | `08/md/factionlogic_stations.xml` | Erstellt god station (Attribute: name, id, state). |
+| `create_group` | 517 | `extensions/ego_dlc_split/ext_03/md/x4ep1_war_subscriptions.xml` | Erstellt group (Attribute: groupname). |
+| `create_list` | 393 | `08/md/gm_ambush.xml` | Erstellt list (Attribute: name). |
+| `create_loadout` | 30 | `extensions/ego_dlc_split/ext_03/md/gs_split1.xml` | Erstellt loadout (Attribute: result). |
+| `create_lockbox` | 10 | `08/md/placedobjects.xml` | Erstellt lockbox (Attribute: name, macro, sector). |
+| `create_mission` | 438 | `extensions/ego_dlc_terran/ext_03/md/x4ep1_trade_terran.xml` | Erstellt mission (Attribute: cue, type, name, description, difficulty, faction, group, activate, comment). |
+| `create_mission_thread` | 7 | `extensions/ego_dlc_terran/ext_03/md/story_covert_operations.xml` | Erstellt mission thread (Attribute: cue, name, description, rewardtext). |
+| `create_mission_thread_offer` | 4 | `08/md/mc_management.xml` | Erstellt mission thread offer (Attribute: cue, actor, type, difficulty, threadtype, group). |
+| `create_npc_from_template` | 7 | `08/aiscripts/lib.respond.foundabandonedship.xml` | Erstellt npc from template (Attribute: name, object, slot, template, owner). |
+| `create_npc_template` | 37 | `extensions/ego_dlc_split/ext_03/md/gs_split1.xml` | Erstellt npc template (Attribute: object, entity, role). |
+| `create_object` | 173 | `extensions/ego_dlc_terran/ext_03/md/story_hq_discovery.xml` | Erstellt object (Attribute: name, groupname, macro, owner, sector). |
+| `create_offer` | 86 | `08/md/gm_ambush.xml` | Erstellt offer (Attribute: cue, location, distance, name, description, difficulty, actor). |
+| `create_order` | 1059 | `08/aiscripts/move.park.xml` | Erstellt order (Attribute: id, object, immediate). |
+| `create_order_syncpoint` | 1 | `08/aiscripts/order.fight.tactical.xml` | Erstellt order syncpoint (Attribute: owner). |
+| `create_orientation` | 67 | `08/md/rml_barterwares.xml` | Erstellt orientation (Attribute: name, orientation, refobject). |
+| `create_platform_actor` | 2 | `08/md/inituniverse.xml` | Erstellt platform actor (Attribute: room, post). |
+| `create_position` | 640 | `08/aiscripts/order.collect.ship.xml` | Erstellt position (Attribute: name, space, object). |
+| `create_position_outside_boundingbox` | 1 | `08/aiscripts/move.nearby.xml` | Erstellt position outside boundingbox (Attribute: name, distance, component). |
+| `create_presentation_cluster` | 33 | `08/md/gm_ambush.xml` | Erstellt presentation cluster (Attribute: name, background). |
+| `create_prop` | 2 | `08/md/story_diplomacy_intro.xml` | Erstellt prop (Attribute: name, slot, macro). |
+| `create_random_position_in_boundingbox` | 1 | `08/aiscripts/masstraffic.watchdog.xml` | Erstellt random position in boundingbox (Attribute: component, name). |
+| `create_replacement_subordinates` | 1 | `08/aiscripts/order.restock.subordinates.xml` | Erstellt replacement subordinates (Attribute: name, commander, buildobject, init, max, multiple). |
+| `create_representative_actor` | 1 | `08/md/factionlogic.xml` | Erstellt representative actor (Attribute: name, station, faction). |
+| `create_rotation` | 46 | `extensions/ego_dlc_split/ext_03/md/gs_split1.xml` | Erstellt rotation (Attribute: name, yaw). |
+| `create_ship` | 453 | `08/md/gm_ambush.xml` | Erstellt ship (Attribute: name, macro, zone). |
+| `create_ship--` | 2 | `extensions/ego_dlc_split/ext_03/md/story_split.xml` | Erstellt ship--. |
+| `create_signal_leak` | 46 | `extensions/ego_dlc_terran/ext_03/md/story_hq_discovery.xml` | Erstellt signal leak (Attribute: groupname, macro, type, object). |
+| `create_station` | 55 | `extensions/ego_dlc_split/ext_03/md/setup_dlc_split.xml` | Erstellt station (Attribute: rawname, name, sector, macro, owner). |
+| `create_trade_computer` | 2 | `08/md/rml_barterwares.xml` | Erstellt trade computer (Attribute: object). |
+| `create_trade_offer` | 13 | `08/md/rml_barterwares.xml` | Erstellt trade offer (Attribute: name, object, buyer, ware, amount, price, virtual, virtualmoney, playeronly). |
+| `create_trade_order` | 13 | `08/md/rml_barterwares.xml` | Erstellt trade order (Attribute: name, object, tradeoffer, amount, immediate). |
 | `crew` | 6 | `extensions/ego_dlc_terran/ext_03/md/gs_terran2.xml` | Crew. |
 | `cue` | 14685 | `extensions/ego_dlc_split/ext_03/md/x4ep1_war_subscriptions.xml` | Cue (Attribute: name, version, ref). |
 | `cue_is_cancelled` | 3 | `extensions/ego_dlc_split/ext_03/md/story_split.xml` | Cue is cancelled (Attribute: cue). |
@@ -233,13 +233,13 @@ Automatisch generierte Liste aller XML-Tag-Befehle aus den vorhandenen Skriptver
 | `delivery` | 7 | `08/md/gm_getexactcrew.xml` | Delivery. |
 | `deplete_yield` | 3 | `08/aiscripts/fight.attack.object.capital.xml` | Deplete yield (Attribute: sector, container, ware, amount). |
 | `deploy_construction_vessel` | 1 | `08/aiscripts/order.build.deploy.xml` | Deploy construction vessel (Attribute: object, buildmodule). |
-| `destroy_group` | 58 | `08/md/scenario_combat.xml` | Destroy group (Attribute: group, explosion). |
-| `destroy_object` | 449 | `extensions/ego_dlc_terran/ext_03/md/x4ep1_trade_terran.xml` | Destroy object (Attribute: object). |
+| `destroy_group` | 58 | `08/md/scenario_combat.xml` | Zerstört group (Attribute: group, explosion). |
+| `destroy_object` | 449 | `extensions/ego_dlc_terran/ext_03/md/x4ep1_trade_terran.xml` | Zerstört object (Attribute: object). |
 | `detach_from_masstraffic` | 10 | `08/aiscripts/order.trade.wareexchange.ship.xml` | Detach from masstraffic (Attribute: object, wait). |
 | `diff` | 32 | `extensions/ego_dlc_split/ext_03/md/scenario_combat.xml` | Diff. |
-| `disable_collision_response` | 9 | `08/aiscripts/boarding.pod.xml` | Disable collision response (Attribute: object). |
-| `disable_collisions_between` | 16 | `08/aiscripts/move.park.xml` | Disable collisions between (Attribute: object, target). |
-| `disable_travel_mode` | 2 | `08/md/scenario_tutorials.xml` | Disable travel mode (Attribute: ship, duration). |
+| `disable_collision_response` | 9 | `08/aiscripts/boarding.pod.xml` | Deaktiviert collision response (Attribute: object). |
+| `disable_collisions_between` | 16 | `08/aiscripts/move.park.xml` | Deaktiviert collisions between (Attribute: object, target). |
+| `disable_travel_mode` | 2 | `08/md/scenario_tutorials.xml` | Deaktiviert travel mode (Attribute: ship, duration). |
 | `disconnect_from_trade_location` | 10 | `08/aiscripts/move.park.xml` | Disconnect from trade location (Attribute: ship). |
 | `disengage_construction_vessel` | 8 | `08/aiscripts/order.build.deploy.xml` | Disengage construction vessel (Attribute: object). |
 | `dismiss_control_entity` | 26 | `extensions/ego_dlc_split/ext_03/md/gs_split1.xml` | Dismiss control entity (Attribute: object, actor). |
@@ -266,9 +266,9 @@ Automatisch generierte Liste aller XML-Tag-Befehle aus den vorhandenen Skriptver
 | `editable` | 7 | `08/aiscripts/order.fight.tactical.xml` | Editable. |
 | `eject_npcs` | 3 | `extensions/ego_dlc_split/ext_03/md/story_split.xml` | Eject npcs (Attribute: object). |
 | `eject_people` | 8 | `extensions/ego_dlc_split/ext_03/md/story_split.xml` | Eject people (Attribute: object). |
-| `enable_collision_response` | 4 | `08/aiscripts/move.undock.xml` | Enable collision response (Attribute: object). |
-| `enable_collisions_between` | 14 | `08/aiscripts/move.park.xml` | Enable collisions between (Attribute: object, target). |
-| `enable_lost_ship_replacement` | 2 | `08/md/fleet_reconstitution.xml` | Enable lost ship replacement. |
+| `enable_collision_response` | 4 | `08/aiscripts/move.undock.xml` | Aktiviert collision response (Attribute: object). |
+| `enable_collisions_between` | 14 | `08/aiscripts/move.park.xml` | Aktiviert collisions between (Attribute: object, target). |
+| `enable_lost_ship_replacement` | 2 | `08/md/fleet_reconstitution.xml` | Aktiviert lost ship replacement. |
 | `end` | 29 | `extensions/ego_dlc_terran/ext_03/md/story_hq_discovery.xml` | End (Attribute: value). |
 | `end_boarding_operation` | 5 | `extensions/ego_dlc_terran/ext_03/md/story_hq_discovery.xml` | End boarding operation (Attribute: operation). |
 | `end_repair_mass_traffic` | 2 | `08/aiscripts/engineer.ai.xml` | End repair mass traffic (Attribute: object). |
@@ -281,313 +281,313 @@ Automatisch generierte Liste aller XML-Tag-Befehle aus den vorhandenen Skriptver
 | `evaluate_diplomacy_event_operation_outcome` | 1 | `08/md/diplomacy.xml` | Evaluate diplomacy event operation outcome (Attribute: result, operation, seed). |
 | `evaluate_missile_storage` | 2 | `08/aiscripts/interrupt.restock.xml` | Evaluate missile storage (Attribute: object, level). |
 | `evaluate_unit_storage` | 5 | `08/aiscripts/interrupt.restock.xml` | Evaluate unit storage (Attribute: object, level). |
-| `event_alert_level_changed` | 1 | `08/md/npc_state_machines.xml` | Event alert level changed (Attribute: object, check). |
-| `event_autopilot_deactivated` | 1 | `08/md/notifications.xml` | Event autopilot deactivated. |
-| `event_autopilot_target_set` | 2 | `08/md/scenario_tutorials.xml` | Event autopilot target set. |
-| `event_boarding_operation_created` | 1 | `08/md/boarding.xml` | Event boarding operation created. |
-| `event_boarding_operation_removed` | 2 | `08/md/showcases.xml` | Event boarding operation removed (Attribute: operation). |
-| `event_boarding_operation_started` | 2 | `08/aiscripts/interrupt.disengage.xml` | Event boarding operation started. |
-| `event_boarding_phase_changed` | 1 | `08/md/boarding.xml` | Event boarding phase changed (Attribute: operation). |
-| `event_boost_stopped` | 1 | `08/aiscripts/move.nohighway.xml` | Event boost stopped (Attribute: object). |
-| `event_briefing_cancelled` | 61 | `08/md/gm_ambush.xml` | Event briefing cancelled (Attribute: cue). |
-| `event_briefing_started` | 61 | `08/md/gm_ambush.xml` | Event briefing started (Attribute: cue). |
-| `event_briefing_submission_selected` | 58 | `08/md/gm_ambush.xml` | Event briefing submission selected (Attribute: cue). |
-| `event_briefing_submission_unselected` | 58 | `08/md/gm_ambush.xml` | Event briefing submission unselected (Attribute: cue). |
-| `event_build_added` | 3 | `08/aiscripts/build.shiptrader.xml` | Event build added (Attribute: object). |
-| `event_build_cancelled` | 5 | `08/aiscripts/order.restock.subordinates.xml` | Event build cancelled (Attribute: object). |
-| `event_build_finished` | 16 | `08/aiscripts/fight.attack.object.capital.xml` | Event build finished (Attribute: object). |
-| `event_build_finished_components` | 4 | `extensions/ego_dlc_split/ext_03/md/setup_dlc_split.xml` | Event build finished components (Attribute: object). |
-| `event_build_loadout_applied` | 1 | `08/aiscripts/order.build.equip.xml` | Event build loadout applied (Attribute: object, build). |
-| `event_build_started` | 7 | `08/aiscripts/order.restock.subordinates.xml` | Event build started (Attribute: object). |
-| `event_character_animation_finished` | 23 | `08/md/npc_state_machines.xml` | Event character animation finished (Attribute: object). |
-| `event_character_animation_started` | 7 | `08/md/scenario_combat.xml` | Event character animation started (Attribute: group, id). |
-| `event_contained_object_changed_true_owner` | 3 | `08/md/rml_board_ship.xml` | Event contained object changed true owner (Attribute: space, owner). |
-| `event_contained_object_relation_range_changed` | 5 | `08/aiscripts/fight.attack.object.capital.xml` | Event contained object relation range changed (Attribute: group, faction). |
-| `event_contained_sector_changed_owner` | 1 | `08/md/setup.xml` | Event contained sector changed owner (Attribute: owner, space). |
-| `event_contained_sector_changed_true_owner` | 1 | `08/md/finalisestations.xml` | Event contained sector changed true owner (Attribute: space). |
-| `event_control_entity_added` | 14 | `08/aiscripts/fight.attack.object.capital.xml` | Event control entity added (Attribute: object, entity). |
-| `event_control_entity_removed` | 11 | `08/aiscripts/fight.attack.object.capital.xml` | Event control entity removed (Attribute: object, entity). |
-| `event_conversation_finished` | 136 | `08/md/rml_barterwares.xml` | Event conversation finished (Attribute: actor). |
-| `event_conversation_next_section` | 331 | `extensions/ego_dlc_terran/ext_03/md/x4ep1_trade_terran.xml` | Event conversation next section (Attribute: actor). |
-| `event_conversation_returned_to_section` | 50 | `extensions/ego_dlc_terran/ext_03/md/x4ep1_trade_terran.xml` | Event conversation returned to section (Attribute: actor). |
-| `event_conversation_started` | 258 | `extensions/ego_dlc_terran/ext_03/md/x4ep1_trade_terran.xml` | Event conversation started (Attribute: actor). |
-| `event_cue_activated` | 3 | `extensions/ego_dlc_terran/ext_03/md/story_covert_operations.xml` | Event cue activated (Attribute: cue). |
-| `event_cue_cancelled` | 57 | `08/md/rml_transport_passengers_v2.xml` | Event cue cancelled (Attribute: cue). |
-| `event_cue_completed` | 290 | `08/md/gm_ambush.xml` | Event cue completed (Attribute: cue). |
-| `event_cue_signalled` | 5667 | `extensions/ego_dlc_terran/ext_03/md/x4ep1_trade_terran.xml` | Event cue signalled. |
-| `event_cutscene_ready` | 1 | `08/md/npc_usecases.xml` | Event cutscene ready (Attribute: cutscene). |
-| `event_cutscene_signal` | 1 | `extensions/ego_dlc_terran/ext_03/md/story_terran_prelude.xml` | Event cutscene signal (Attribute: name). |
-| `event_cutscene_started` | 28 | `extensions/ego_dlc_terran/ext_03/md/gs_terran2.xml` | Event cutscene started (Attribute: cutscene). |
-| `event_cutscene_stopped` | 41 | `08/md/rml_barterwares.xml` | Event cutscene stopped (Attribute: cutscene). |
-| `event_diplomacy_action_operation_aborted` | 20 | `08/md/diplomacy.xml` | Event diplomacy action operation aborted (Attribute: operation). |
-| `event_diplomacy_action_operation_completed` | 1 | `08/md/diplomacy.xml` | Event diplomacy action operation completed. |
-| `event_diplomacy_action_operation_started` | 22 | `08/md/diplomacy.xml` | Event diplomacy action operation started. |
-| `event_diplomacy_event_operation_completed` | 1 | `08/md/diplomacy.xml` | Event diplomacy event operation completed. |
-| `event_diplomacy_event_operation_option_chosen` | 1 | `08/md/diplomacy.xml` | Event diplomacy event operation option chosen (Attribute: operation). |
-| `event_diplomacy_event_operation_started` | 1 | `08/md/diplomacy.xml` | Event diplomacy event operation started. |
-| `event_entity_entered` | 2 | `08/md/scenario_combat.xml` | Event entity entered (Attribute: space). |
-| `event_entity_left` | 3 | `08/md/cover.xml` | Event entity left (Attribute: space). |
-| `event_entity_transport_finished` | 1 | `08/md/npc_state_machines.xml` | Event entity transport finished (Attribute: entity). |
-| `event_faction_activated` | 3 | `08/md/setup.xml` | Event faction activated. |
-| `event_faction_deactivated` | 33 | `extensions/ego_dlc_terran/ext_03/md/x4ep1_trade_terran.xml` | Event faction deactivated (Attribute: faction). |
-| `event_faction_headquarters_changed` | 1 | `08/md/rml_escort_ambiguous.xml` | Event faction headquarters changed. |
-| `event_faction_police_changed` | 3 | `08/aiscripts/order.move.recon.xml` | Event faction police changed (Attribute: faction). |
-| `event_faction_relation_changed` | 35 | `extensions/ego_dlc_terran/ext_03/md/x4ep1_war_terran.xml` | Event faction relation changed (Attribute: faction, otherfaction). |
-| `event_faction_representative_changed` | 2 | `08/md/playerreputation.xml` | Event faction representative changed (Attribute: faction). |
-| `event_game_loaded` | 29 | `extensions/ego_dlc_split/ext_03/md/setup_dlc_split.xml` | Event game loaded. |
-| `event_game_saved` | 1 | `08/md/notifications.xml` | Event game saved (Attribute: success). |
-| `event_game_started` | 2 | `08/md/npc_usecases.xml` | Event game started. |
-| `event_god_created_factory` | 2 | `08/md/finalisestations.xml` | Event god created factory (Attribute: space). |
-| `event_god_created_object` | 1 | `08/md/rml_locate_object.xml` | Event god created object (Attribute: space). |
-| `event_god_created_station` | 1 | `08/md/inituniverse.xml` | Event god created station (Attribute: space). |
-| `event_gravidar_has_scanned` | 16 | `08/aiscripts/fight.attack.object.capital.xml` | Event gravidar has scanned (Attribute: object). |
-| `event_guidance_disabled` | 2 | `08/md/rml_buildstation.xml` | Event guidance disabled (Attribute: cue). |
-| `event_guidance_enabled` | 6 | `08/md/x4ep1_mentor_subscription.xml` | Event guidance enabled (Attribute: cue). |
-| `event_inventory_added` | 13 | `08/md/story_research_xen_equipment.xml` | Event inventory added (Attribute: object). |
-| `event_inventory_removed` | 4 | `08/md/rml_craft_item.xml` | Event inventory removed (Attribute: object). |
-| `event_job_ship_activated` | 2 | `extensions/ego_dlc_terran/ext_03/md/story_terran_core.xml` | Event job ship activated. |
-| `event_lasertower_launched` | 2 | `08/md/rml_deployinplace.xml` | Event lasertower launched (Attribute: space). |
-| `event_lock_acquired` | 1 | `08/aiscripts/interrupt.missilelock.xml` | Event lock acquired (Attribute: target). |
-| `event_lock_initiated` | 2 | `08/aiscripts/interrupt.missilelock.xml` | Event lock initiated (Attribute: target). |
-| `event_lockbox_opened` | 2 | `08/md/scenario_tutorials.xml` | Event lockbox opened (Attribute: object). |
-| `event_long_range_scan_ping` | 11 | `extensions/ego_dlc_terran/ext_03/md/story_yaki.xml` | Event long range scan ping (Attribute: group). |
-| `event_long_range_scan_sent` | 6 | `extensions/ego_dlc_terran/ext_03/md/story_terraforming.xml` | Event long range scan sent (Attribute: group). |
-| `event_masstraffic_ship_removed` | 4 | `08/aiscripts/order.move.recon.xml` | Event masstraffic ship removed (Attribute: object). |
-| `event_mine_launched` | 2 | `08/md/rml_deployinplace.xml` | Event mine launched (Attribute: space). |
-| `event_mission_aborted` | 106 | `extensions/ego_dlc_terran/ext_03/md/x4ep1_trade_terran.xml` | Event mission aborted (Attribute: cue). |
-| `event_navbeacon_launched` | 5 | `extensions/ego_dlc_terran/ext_03/md/story_terraforming.xml` | Event navbeacon launched (Attribute: space). |
-| `event_npc_created` | 2 | `08/md/scenario_tutorials.xml` | Event npc created. |
-| `event_npc_slots_validated` | 6 | `08/md/gm_transport_passengers.xml` | Event npc slots validated (Attribute: object, check). |
-| `event_npc_walk_finished` | 2 | `08/md/npc_state_machines.xml` | Event npc walk finished (Attribute: object). |
-| `event_object_abandoned` | 37 | `08/aiscripts/order.fight.escort.xml` | Event object abandoned (Attribute: object, check). |
-| `event_object_activated_weapon` | 1 | `08/aiscripts/fight.attack.object.bigtarget.xml` | Event object activated weapon (Attribute: object). |
-| `event_object_approaching_waypoint` | 11 | `08/aiscripts/boarding.pod.xml` | Event object approaching waypoint (Attribute: object). |
-| `event_object_arrived_at_waypoint` | 4 | `08/md/factiongoal_patrolcoordinationservice.xml` | Event object arrived at waypoint (Attribute: object). |
-| `event_object_attacked` | 102 | `08/aiscripts/fight.attack.object.capital.xml` | Event object attacked (Attribute: object). |
-| `event_object_attacked_object` | 20 | `08/aiscripts/mining.collect.ship.capital.xml` | Event object attacked object (Attribute: object, attacked). |
-| `event_object_bomb_attached` | 4 | `extensions/ego_dlc_terran/ext_03/md/story_yaki.xml` | Event object bomb attached (Attribute: object). |
-| `event_object_build_storage_moved` | 1 | `08/aiscripts/order.build.deploy.xml` | Event object build storage moved (Attribute: object, check). |
-| `event_object_built_ship` | 1 | `extensions/ego_dlc_terran/ext_03/md/story_yaki.xml` | Event object built ship (Attribute: group). |
-| `event_object_built_station` | 1 | `08/aiscripts/build.buildstorage.xml` | Event object built station (Attribute: object). |
-| `event_object_changed_assignment` | 10 | `08/aiscripts/order.fight.escort.xml` | Event object changed assignment (Attribute: object). |
-| `event_object_changed_attention` | 76 | `extensions/ego_dlc_terran/ext_03/md/x4ep1_trade_terran.xml` | Event object changed attention (Attribute: object). |
-| `event_object_changed_cluster` | 23 | `extensions/ego_dlc_terran/ext_03/md/story_covert_operations.xml` | Event object changed cluster (Attribute: object). |
-| `event_object_changed_contested_state` | 1 | `08/md/factionlogic.xml` | Event object changed contested state (Attribute: group, contested). |
-| `event_object_changed_object` | 23 | `extensions/ego_dlc_split/ext_03/md/story_split.xml` | Event object changed object (Attribute: object). |
-| `event_object_changed_owner` | 49 | `08/md/rml_barterwares.xml` | Event object changed owner (Attribute: object, previous). |
-| `event_object_changed_room` | 54 | `08/md/scenario_combat.xml` | Event object changed room (Attribute: object). |
-| `event_object_changed_sector` | 165 | `08/aiscripts/fight.attack.object.capital.xml` | Event object changed sector (Attribute: object). |
-| `event_object_changed_state` | 1 | `08/md/npc_state_machines.xml` | Event object changed state (Attribute: object, state). |
-| `event_object_changed_subordinategroup` | 1 | `08/aiscripts/order.fight.tactical.xml` | Event object changed subordinategroup (Attribute: object). |
-| `event_object_changed_true_owner` | 82 | `08/md/gm_ambush.xml` | Event object changed true owner (Attribute: group, owner). |
-| `event_object_changed_zone` | 82 | `08/aiscripts/fight.attack.object.capital.xml` | Event object changed zone (Attribute: object). |
-| `event_object_claimed` | 2 | `extensions/ego_dlc_terran/ext_03/md/story_yaki.xml` | Event object claimed (Attribute: claimed). |
-| `event_object_collected_ware` | 2 | `08/md/rml_harvest_resources.xml` | Event object collected ware (Attribute: group). |
-| `event_object_collided` | 5 | `08/aiscripts/masstraffic.watchdog.xml` | Event object collided (Attribute: object, comment). |
-| `event_object_commander_set` | 6 | `08/aiscripts/order.fight.escort.xml` | Event object commander set (Attribute: group). |
-| `event_object_construction_sequence_created` | 17 | `extensions/ego_dlc_terran/ext_03/md/story_yaki.xml` | Event object construction sequence created (Attribute: object). |
-| `event_object_deactivated_weapon` | 1 | `08/aiscripts/fight.attack.object.bigtarget.xml` | Event object deactivated weapon (Attribute: object). |
-| `event_object_defencedronemode_changed` | 2 | `08/aiscripts/fight.attack.object.capital.xml` | Event object defencedronemode changed (Attribute: object). |
-| `event_object_defencedrones_armed` | 2 | `08/aiscripts/fight.attack.object.capital.xml` | Event object defencedrones armed (Attribute: object). |
-| `event_object_defencedrones_disarmed` | 2 | `08/aiscripts/fight.attack.object.capital.xml` | Event object defencedrones disarmed (Attribute: object). |
-| `event_object_destroyed` | 670 | `extensions/ego_dlc_terran/ext_03/md/x4ep1_trade_terran.xml` | Event object destroyed (Attribute: object). |
-| `event_object_dismantled_object` | 1 | `08/aiscripts/order.salvage.crush.xml` | Event object dismantled object (Attribute: object). |
-| `event_object_dock_assigned` | 12 | `08/aiscripts/order.fight.escort.xml` | Event object dock assigned (Attribute: object). |
-| `event_object_dock_assigned_at` | 1 | `08/md/npc_instantiation.xml` | Event object dock assigned at (Attribute: group). |
-| `event_object_dock_too_far` | 1 | `08/md/notifications.xml` | Event object dock too far (Attribute: group). |
-| `event_object_dock_unassigned` | 1 | `08/aiscripts/order.dock.xml` | Event object dock unassigned (Attribute: object). |
-| `event_object_dock_unassigned_from` | 2 | `08/aiscripts/build.shiptrader.xml` | Event object dock unassigned from (Attribute: container, comment). |
-| `event_object_docked` | 62 | `08/md/rml_barterwares.xml` | Event object docked (Attribute: object). |
-| `event_object_docked_at` | 32 | `extensions/ego_dlc_terran/ext_03/md/x4ep1_trade_terran.xml` | Event object docked at (Attribute: container). |
-| `event_object_docking_aborted` | 2 | `08/aiscripts/order.rescue.ship.xml` | Event object docking aborted (Attribute: object). |
-| `event_object_docking_denied` | 5 | `08/aiscripts/order.fight.escort.xml` | Event object docking denied (Attribute: object). |
-| `event_object_docking_impossible` | 3 | `extensions/ego_dlc_split/ext_03/md/story_split.xml` | Event object docking impossible (Attribute: group). |
-| `event_object_docking_queued` | 1 | `08/md/notifications.xml` | Event object docking queued (Attribute: group). |
-| `event_object_docking_started` | 5 | `08/md/cinematiccamera.xml` | Event object docking started (Attribute: object). |
-| `event_object_dropped_objects` | 19 | `08/aiscripts/fight.attack.object.station.xml` | Event object dropped objects (Attribute: object). |
-| `event_object_drops_found` | 1 | `08/aiscripts/order.plunder.xml` | Event object drops found (Attribute: object). |
-| `event_object_enemy_found` | 13 | `08/aiscripts/fight.attack.object.capital.xml` | Event object enemy found (Attribute: object, comment). |
-| `event_object_entered` | 7 | `extensions/ego_dlc_terran/ext_03/md/story_yaki.xml` | Event object entered (Attribute: space). |
-| `event_object_entered_anomaly` | 1 | `08/aiscripts/interrupt.changedsector.xml` | Event object entered anomaly (Attribute: object). |
-| `event_object_entered_gate` | 2 | `08/aiscripts/interrupt.changedsector.xml` | Event object entered gate (Attribute: object). |
-| `event_object_entered_live_view` | 1 | `08/md/scenario_tutorials.xml` | Event object entered live view (Attribute: group). |
-| `event_object_formation_update_failed` | 2 | `08/aiscripts/order.fight.escort.xml` | Event object formation update failed (Attribute: object). |
-| `event_object_formation_update_succeeded` | 2 | `08/aiscripts/order.fight.escort.xml` | Event object formation update succeeded (Attribute: object). |
-| `event_object_hull_above_function_threshold` | 22 | `extensions/ego_dlc_terran/ext_03/md/story_terraforming.xml` | Event object hull above function threshold (Attribute: object, check). |
-| `event_object_hull_below_function_threshold` | 26 | `extensions/ego_dlc_terran/ext_03/md/story_terraforming.xml` | Event object hull below function threshold (Attribute: object, check). |
-| `event_object_hull_damaged` | 13 | `08/md/scenario_combat.xml` | Event object hull damaged (Attribute: group). |
-| `event_object_hull_repaired` | 8 | `extensions/ego_dlc_split/ext_03/md/story_split.xml` | Event object hull repaired (Attribute: group). |
-| `event_object_incoming_missile` | 8 | `08/aiscripts/fight.attack.object.capital.xml` | Event object incoming missile (Attribute: object). |
-| `event_object_interiors_despawning` | 29 | `extensions/ego_dlc_terran/ext_03/md/x4ep1_trade_terran.xml` | Event object interiors despawning (Attribute: object). |
-| `event_object_killed_object` | 6 | `08/md/setup.xml` | Event object killed object (Attribute: group). |
-| `event_object_known_to_player` | 5 | `08/md/placedobjects.xml` | Event object known to player (Attribute: object). |
-| `event_object_launched_lasertower` | 2 | `08/aiscripts/order.deploy.staticdefensestrategy.xml` | Event object launched lasertower (Attribute: object). |
-| `event_object_launched_mine` | 2 | `08/aiscripts/order.deploy.staticdefensestrategy.xml` | Event object launched mine (Attribute: object). |
-| `event_object_launched_missile` | 2 | `08/aiscripts/fight.attack.object.fighter.xml` | Event object launched missile (Attribute: object). |
-| `event_object_launched_resourceprobe` | 1 | `08/md/scenario_tutorials.xml` | Event object launched resourceprobe (Attribute: group). |
-| `event_object_launched_satellite` | 3 | `extensions/ego_dlc_terran/ext_03/md/story_covert_operations.xml` | Event object launched satellite (Attribute: object). |
-| `event_object_left` | 3 | `08/md/rml_deployinplace.xml` | Event object left (Attribute: group). |
-| `event_object_left_live_view` | 4 | `08/aiscripts/order.fight.lasertower.xml` | Event object left live view (Attribute: object, check). |
-| `event_object_miningdronemode_changed` | 1 | `08/aiscripts/fight.attack.object.capital.xml` | Event object miningdronemode changed (Attribute: object). |
-| `event_object_miningdrones_armed` | 3 | `08/aiscripts/fight.attack.object.capital.xml` | Event object miningdrones armed (Attribute: object). |
-| `event_object_miningdrones_disarmed` | 1 | `08/aiscripts/fight.attack.object.capital.xml` | Event object miningdrones disarmed (Attribute: object). |
-| `event_object_money_updated` | 1 | `08/aiscripts/trade.station.xml` | Event object money updated (Attribute: object). |
-| `event_object_moved_into_internal_storage` | 2 | `08/aiscripts/order.dock.xml` | Event object moved into internal storage (Attribute: object). |
-| `event_object_order_cancelled` | 14 | `08/aiscripts/orders.base.xml` | Event object order cancelled (Attribute: object, immediate). |
-| `event_object_order_finished` | 11 | `extensions/ego_dlc_terran/ext_03/md/story_yaki.xml` | Event object order finished (Attribute: object). |
-| `event_object_order_param_edited` | 1 | `08/aiscripts/order.fight.tactical.xml` | Event object order param edited (Attribute: object). |
-| `event_object_order_ready` | 14 | `08/aiscripts/orders.base.xml` | Event object order ready (Attribute: object, order). |
-| `event_object_order_syncpoint_released` | 2 | `08/aiscripts/orders.base.xml` | Event object order syncpoint released (Attribute: object). |
-| `event_object_picked_up` | 2 | `08/aiscripts/drone.pickup.xml` | Event object picked up (Attribute: object). |
-| `event_object_picked_up_object` | 1 | `08/md/gmc_supervised_mining.xml` | Event object picked up object (Attribute: group). |
-| `event_object_processingmodule_available` | 1 | `08/aiscripts/order.salvage.deliver.xml` | Event object processingmodule available (Attribute: object). |
-| `event_object_production_finished` | 1 | `08/md/factionlogic_economy.xml` | Event object production finished (Attribute: group). |
-| `event_object_props_despawning` | 3 | `08/md/gm_transport_passengers.xml` | Event object props despawning (Attribute: object). |
-| `event_object_relation_range_changed` | 11 | `08/aiscripts/fight.attack.object.capital.xml` | Event object relation range changed (Attribute: group, faction). |
-| `event_object_removed_from_formation` | 2 | `08/aiscripts/order.fight.escort.xml` | Event object removed from formation (Attribute: object). |
-| `event_object_retrieved_from_internal_storage` | 1 | `08/md/lib_generic.xml` | Event object retrieved from internal storage (Attribute: object). |
-| `event_object_salvage_claim_lost` | 1 | `08/aiscripts/order.salvage.crush.xml` | Event object salvage claim lost (Attribute: object). |
-| `event_object_shield_damaged` | 8 | `08/md/scenario_combat.xml` | Event object shield damaged (Attribute: group). |
-| `event_object_signalled` | 340 | `08/aiscripts/move.park.xml` | Event object signalled (Attribute: object, param). |
-| `event_object_started_to_dock_at` | 1 | `08/md/npc_state_machines.xml` | Event object started to dock at (Attribute: container). |
-| `event_object_started_to_undock_from` | 1 | `08/md/npc_state_machines.xml` | Event object started to undock from (Attribute: container). |
-| `event_object_subordinate_added` | 6 | `08/aiscripts/fight.attack.object.station.xml` | Event object subordinate added (Attribute: object). |
-| `event_object_subordinate_promoted` | 3 | `extensions/ego_dlc_terran/ext_03/md/story_terran_core.xml` | Event object subordinate promoted (Attribute: group). |
-| `event_object_subordinate_removed` | 1 | `08/aiscripts/order.fight.tactical.xml` | Event object subordinate removed (Attribute: object). |
-| `event_object_target_invalid` | 8 | `08/aiscripts/move.park.xml` | Event object target invalid (Attribute: object). |
-| `event_object_took_area_damage` | 1 | `08/md/notifications.xml` | Event object took area damage (Attribute: group). |
-| `event_object_towed_recyclable_near_furnace` | 1 | `08/aiscripts/order.salvage.deliver.xml` | Event object towed recyclable near furnace (Attribute: object). |
-| `event_object_transportdronemode_changed` | 1 | `08/aiscripts/fight.attack.object.capital.xml` | Event object transportdronemode changed (Attribute: object). |
-| `event_object_transportdrones_armed` | 1 | `08/aiscripts/fight.attack.object.capital.xml` | Event object transportdrones armed (Attribute: object). |
-| `event_object_transportdrones_disarmed` | 1 | `08/aiscripts/fight.attack.object.capital.xml` | Event object transportdrones disarmed (Attribute: object). |
-| `event_object_triggered` | 1 | `08/md/rml_race_timetrial.xml` | Event object triggered (Attribute: object). |
-| `event_object_undocked` | 24 | `08/md/scenario_combat.xml` | Event object undocked (Attribute: group). |
-| `event_object_undocked_from` | 14 | `extensions/ego_dlc_terran/ext_03/md/gs_terran2.xml` | Event object undocked from (Attribute: container). |
-| `event_object_undocking_cleared` | 1 | `08/aiscripts/move.undock.xml` | Event object undocking cleared (Attribute: object). |
-| `event_object_undocking_started` | 3 | `08/md/scenario_combat.xml` | Event object undocking started (Attribute: group). |
-| `event_object_weapon_ammo_changed` | 1 | `08/md/scenario_tutorials.xml` | Event object weapon ammo changed (Attribute: group). |
-| `event_object_weaponmode_changed` | 6 | `08/aiscripts/fight.attack.object.capital.xml` | Event object weaponmode changed (Attribute: object). |
-| `event_offer_accepted` | 1 | `08/md/genericmissions.xml` | Event offer accepted (Attribute: cue). |
-| `event_platform_actor_created` | 2 | `08/md/npc_itemtrader.xml` | Event platform actor created. |
-| `event_player_activated_cockpit_view` | 3 | `08/md/scenario_tutorials.xml` | Event player activated cockpit view. |
-| `event_player_activated_external_target_view` | 1 | `08/md/scenario_tutorials.xml` | Event player activated external target view. |
-| `event_player_activated_external_view` | 1 | `08/md/scenario_tutorials.xml` | Event player activated external view. |
-| `event_player_activated_floating_view` | 1 | `08/md/scenario_tutorials.xml` | Event player activated floating view. |
-| `event_player_activated_platform_trigger` | 1 | `extensions/ego_dlc_terran/ext_03/md/story_covert_operations.xml` | Event player activated platform trigger (Attribute: component, group). |
-| `event_player_activated_weapon` | 6 | `08/md/scenario_tutorials.xml` | Event player activated weapon. |
-| `event_player_activated_weapongroup` | 4 | `08/md/scenario_tutorials.xml` | Event player activated weapongroup (Attribute: primary). |
-| `event_player_alert` | 1 | `08/md/notifications.xml` | Event player alert. |
-| `event_player_assigned_hired_actor` | 2 | `08/md/conversations.xml` | Event player assigned hired actor. |
-| `event_player_attacked_object` | 4 | `08/md/scenario_combat.xml` | Event player attacked object (Attribute: attacked). |
-| `event_player_blueprint_added` | 10 | `08/md/tutorial_stations_shipyard.xml` | Event player blueprint added (Attribute: ware, comment). |
-| `event_player_bomb_attached` | 12 | `extensions/ego_dlc_split/ext_03/md/story_split.xml` | Event player bomb attached. |
-| `event_player_boost_charging_started` | 1 | `extensions/ego_dlc_terran/ext_03/md/story_terraforming.xml` | Event player boost charging started. |
-| `event_player_boost_started` | 5 | `08/md/scenario_combat.xml` | Event player boost started. |
-| `event_player_boost_stopped` | 3 | `08/md/scenario_advanced.xml` | Event player boost stopped. |
-| `event_player_build_added` | 1 | `08/md/lib_generic.xml` | Event player build added (Attribute: container). |
-| `event_player_build_finished` | 3 | `08/md/tutorial_stations_shipyard.xml` | Event player build finished. |
-| `event_player_build_finished_components` | 10 | `08/md/upkeep.xml` | Event player build finished components (Attribute: comment). |
-| `event_player_build_plot_changed` | 1 | `08/md/rml_buildstation.xml` | Event player build plot changed (Attribute: comment). |
-| `event_player_build_started` | 2 | `08/md/story_ventures.xml` | Event player build started. |
-| `event_player_built_ship` | 2 | `08/md/notifications.xml` | Event player built ship. |
-| `event_player_built_station` | 2 | `08/md/inituniverse.xml` | Event player built station. |
-| `event_player_changed_activity` | 21 | `extensions/ego_dlc_split/ext_03/md/gs_split1.xml` | Event player changed activity (Attribute: activity). |
-| `event_player_changed_target` | 24 | `08/aiscripts/fight.attack.object.capital.xml` | Event player changed target. |
-| `event_player_collect_ware_failed` | 1 | `08/md/notifications.xml` | Event player collect ware failed. |
-| `event_player_collected_ammo` | 4 | `extensions/ego_dlc_terran/ext_03/md/story_yaki.xml` | Event player collected ammo (Attribute: macro). |
-| `event_player_collected_ware` | 5 | `08/md/scenario_tutorials.xml` | Event player collected ware. |
-| `event_player_commission_added` | 1 | `08/md/notifications.xml` | Event player commission added. |
-| `event_player_crafted_ammo` | 1 | `08/md/notifications.xml` | Event player crafted ammo. |
-| `event_player_created_signal_leaks` | 6 | `extensions/ego_dlc_split/ext_03/md/story_split.xml` | Event player created signal leaks. |
-| `event_player_cycled_active_weapon_ammo` | 1 | `08/md/scenario_tutorials.xml` | Event player cycled active weapon ammo. |
-| `event_player_detected_object` | 1 | `08/md/scenario_tutorials.xml` | Event player detected object. |
-| `event_player_discount_added` | 1 | `08/md/notifications.xml` | Event player discount added. |
-| `event_player_discovered_mission_offer` | 1 | `08/md/genericmissions.xml` | Event player discovered mission offer (Attribute: cue). |
-| `event_player_discovered_object` | 5 | `08/md/scenario_tutorials.xml` | Event player discovered object. |
-| `event_player_ejected` | 2 | `08/md/notifications.xml` | Event player ejected. |
-| `event_player_ejecting` | 1 | `08/md/notifications.xml` | Event player ejecting. |
-| `event_player_entered_anomaly` | 3 | `08/md/x4ep1_mentor_subscription.xml` | Event player entered anomaly (Attribute: exit). |
-| `event_player_entered_gate` | 1 | `08/md/story_diplomacy_intro.xml` | Event player entered gate. |
-| `event_player_fired_empty_weapon_group` | 2 | `08/md/tutorial_global.xml` | Event player fired empty weapon group. |
-| `event_player_hacked_object` | 3 | `extensions/ego_dlc_terran/ext_03/md/story_covert_operations.xml` | Event player hacked object. |
-| `event_player_influence_updated` | 1 | `08/md/diplomacy.xml` | Event player influence updated. |
-| `event_player_interaction` | 23 | `08/md/rml_barterwares.xml` | Event player interaction (Attribute: param, param2). |
-| `event_player_killed_object` | 9 | `08/md/gm_killmasstraffic.xml` | Event player killed object. |
-| `event_player_launched_missile` | 1 | `08/md/scenario_tutorials.xml` | Event player launched missile. |
-| `event_player_licence_added` | 6 | `08/md/tutorial_stations_shipyard.xml` | Event player licence added (Attribute: licence, comment). |
-| `event_player_lost_volatile_wares` | 1 | `08/md/notifications.xml` | Event player lost volatile wares. |
-| `event_player_money_updated` | 3 | `extensions/ego_dlc_split/ext_03/md/story_split.xml` | Event player money updated. |
-| `event_player_opened_crate` | 7 | `extensions/ego_dlc_split/ext_03/md/story_split.xml` | Event player opened crate. |
-| `event_player_opened_lockbox` | 1 | `08/md/notifications.xml` | Event player opened lockbox. |
-| `event_player_out_of_ammo` | 1 | `08/md/notifications.xml` | Event player out of ammo. |
-| `event_player_owned_attacked` | 2 | `extensions/ego_dlc_split/ext_03/md/story_split.xml` | Event player owned attacked. |
-| `event_player_owned_attacked_object` | 2 | `08/md/story_diplomacy_intro.xml` | Event player owned attacked object. |
-| `event_player_owned_destroyed` | 2 | `08/md/notifications.xml` | Event player owned destroyed. |
-| `event_player_owned_dropped_objects` | 2 | `08/md/scenario_tutorials.xml` | Event player owned dropped objects. |
-| `event_player_owned_killed_object` | 1 | `08/md/rml_destroy_rarelyonsight.xml` | Event player owned killed object (Attribute: comment). |
-| `event_player_owned_money_updated` | 2 | `08/md/scenario_tutorials.xml` | Event player owned money updated. |
-| `event_player_paid_build_plot_changed` | 3 | `08/md/rml_buildstation.xml` | Event player paid build plot changed. |
-| `event_player_production_cancelled` | 8 | `08/md/x4ep1_mentor_subscription.xml` | Event player production cancelled (Attribute: research). |
-| `event_player_production_finished` | 7 | `08/md/x4ep1_mentor_subscription.xml` | Event player production finished (Attribute: research). |
-| `event_player_production_started` | 8 | `08/md/x4ep1_mentor_subscription.xml` | Event player production started (Attribute: research). |
-| `event_player_recyclable_processed` | 1 | `08/md/notifications.xml` | Event player recyclable processed. |
-| `event_player_recyclable_processing_started` | 1 | `08/md/notifications.xml` | Event player recyclable processing started. |
-| `event_player_relation_changed` | 29 | `extensions/ego_dlc_terran/ext_03/md/x4ep1_war_terran.xml` | Event player relation changed (Attribute: faction). |
-| `event_player_repaired_object` | 1 | `08/md/rml_repairobject.xml` | Event player repaired object. |
-| `event_player_repaired_signal_leak` | 40 | `extensions/ego_dlc_terran/ext_03/md/story_hq_discovery.xml` | Event player repaired signal leak. |
-| `event_player_research_unlocked` | 7 | `08/md/story_research_xen_equipment.xml` | Event player research unlocked (Attribute: ware). |
-| `event_player_ship_hit` | 2 | `08/md/npc_usecases.xml` | Event player ship hit (Attribute: comment). |
-| `event_player_signal_unlock_failed` | 5 | `08/md/tutorial_modes.xml` | Event player signal unlock failed. |
-| `event_player_signal_unlock_finished` | 53 | `extensions/ego_dlc_terran/ext_03/md/story_hq_discovery.xml` | Event player signal unlock finished. |
-| `event_player_signal_unlock_impossible` | 6 | `extensions/ego_dlc_terran/ext_03/md/story_hq_discovery.xml` | Event player signal unlock impossible. |
-| `event_player_signal_unlock_started` | 3 | `08/md/tutorial_modes.xml` | Event player signal unlock started. |
-| `event_player_started_control` | 21 | `08/md/rml_barterwares.xml` | Event player started control. |
-| `event_player_stopped_control` | 17 | `08/md/rml_barterwares.xml` | Event player stopped control. |
-| `event_player_teleport_successful` | 25 | `extensions/ego_dlc_terran/ext_03/md/x4ep1_trade_terran.xml` | Event player teleport successful (Attribute: comment). |
-| `event_player_toggled_cockpit` | 2 | `08/md/scenario_tutorials.xml` | Event player toggled cockpit. |
-| `event_player_towed_recyclable_near_furnace` | 1 | `08/md/notifications.xml` | Event player towed recyclable near furnace. |
-| `event_player_trade_completed` | 2 | `08/md/rml_largesupply.xml` | Event player trade completed. |
-| `event_player_travelmode_charge_aborted` | 1 | `08/md/scenario_tutorials.xml` | Event player travelmode charge aborted. |
-| `event_player_travelmode_charge_started` | 6 | `extensions/ego_dlc_terran/ext_03/md/story_terraforming.xml` | Event player travelmode charge started. |
-| `event_player_travelmode_started` | 10 | `08/md/scenario_combat.xml` | Event player travelmode started. |
-| `event_player_travelmode_stopped` | 4 | `08/md/scenario_combat.xml` | Event player travelmode stopped. |
-| `event_player_unlocked_platform_trigger` | 3 | `extensions/ego_dlc_split/ext_03/md/story_split.xml` | Event player unlocked platform trigger (Attribute: component, group). |
-| `event_player_warning` | 1 | `08/md/notifications.xml` | Event player warning. |
-| `event_region_asteroid_mined` | 1 | `08/md/khaak_activity.xml` | Event region asteroid mined (Attribute: group). |
-| `event_resourceprobe_launched` | 5 | `08/md/rml_deployinplace.xml` | Event resourceprobe launched (Attribute: space). |
-| `event_satellite_launched` | 8 | `extensions/ego_dlc_split/ext_03/md/story_split.xml` | Event satellite launched (Attribute: space). |
-| `event_scan_aborted` | 2 | `08/md/scenario_tutorials.xml` | Event scan aborted (Attribute: scanner, scanned). |
-| `event_scan_finished` | 10 | `08/aiscripts/order.fight.lasertower.xml` | Event scan finished (Attribute: scanned). |
-| `event_scan_started` | 1 | `08/md/scenario_tutorials.xml` | Event scan started (Attribute: scanner, scanned). |
-| `event_sector_resource_depleted` | 2 | `08/md/khaak_activity.xml` | Event sector resource depleted (Attribute: sector, check). |
-| `event_space_reservation_expired` | 2 | `08/aiscripts/interrupt.lostreservation.xml` | Event space reservation expired (Attribute: object, check). |
-| `event_speak_finished` | 418 | `extensions/ego_dlc_terran/ext_03/md/x4ep1_trade_terran.xml` | Event speak finished (Attribute: actor, line, comment). |
-| `event_speak_line_finished` | 8 | `extensions/ego_dlc_split/ext_03/md/story_split.xml` | Event speak line finished (Attribute: actor, line, comment). |
-| `event_speak_timer_triggered` | 1 | `08/md/npc_usecases.xml` | Event speak timer triggered (Attribute: actor, page, line). |
-| `event_station_built` | 2 | `extensions/ego_dlc_split/ext_03/md/story_split.xml` | Event station built. |
-| `event_terraforming_event_started` | 1 | `08/md/terraforming.xml` | Event terraforming event started (Attribute: group, project). |
-| `event_terraforming_habitability_changed` | 1 | `08/md/terraforming.xml` | Event terraforming habitability changed (Attribute: group). |
-| `event_terraforming_project_available` | 2 | `08/md/terraforming.xml` | Event terraforming project available (Attribute: group). |
-| `event_terraforming_project_completed` | 5 | `08/md/terraforming.xml` | Event terraforming project completed (Attribute: group). |
-| `event_terraforming_project_failed` | 4 | `08/md/terraforming.xml` | Event terraforming project failed (Attribute: group). |
-| `event_terraforming_project_started` | 3 | `08/md/x4ep1_mentor_subscription.xml` | Event terraforming project started (Attribute: cluster). |
-| `event_terraforming_project_started_production` | 4 | `08/md/x4ep1_mentor_subscription.xml` | Event terraforming project started production (Attribute: cluster). |
-| `event_terraforming_project_succeeded` | 40 | `extensions/ego_dlc_terran/ext_03/md/terraforming.xml` | Event terraforming project succeeded (Attribute: cluster, project). |
-| `event_terraforming_stat_added` | 5 | `08/md/terraforming.xml` | Event terraforming stat added (Attribute: group, stat). |
-| `event_terraforming_stat_changed` | 28 | `08/md/terraforming.xml` | Event terraforming stat changed (Attribute: group, stat). |
-| `event_terraforming_stat_removed` | 5 | `08/md/terraforming.xml` | Event terraforming stat removed (Attribute: group, stat). |
-| `event_trade_cancelled` | 5 | `08/aiscripts/order.trade.wareexchange.ship.xml` | Event trade cancelled (Attribute: seller). |
-| `event_trade_completed` | 11 | `08/md/rml_barterwares.xml` | Event trade completed (Attribute: seller). |
-| `event_trade_started` | 1 | `08/md/rml_trade_wares.xml` | Event trade started (Attribute: tradeoffer, comment). |
-| `event_ui_triggered` | 569 | `extensions/ego_dlc_terran/ext_03/md/story_hq_discovery.xml` | Event ui triggered (Attribute: screen, control). |
-| `event_unit_destroyed` | 1 | `08/aiscripts/order.salvage.crush.xml` | Event unit destroyed (Attribute: object). |
-| `event_universe_generated` | 3 | `extensions/ego_dlc_terran/ext_03/md/story_terran_core.xml` | Event universe generated. |
-| `event_venture_mission_aborted` | 1 | `08/aiscripts/order.wait.venture.xml` | Event venture mission aborted. |
-| `event_venture_mission_completed` | 2 | `08/aiscripts/order.wait.venture.xml` | Event venture mission completed. |
-| `event_venture_ship_added` | 1 | `08/md/setup.xml` | Event venture ship added. |
-| `event_venture_ship_removed` | 1 | `08/md/setup.xml` | Event venture ship removed. |
-| `event_weapon_fired` | 10 | `08/md/scenario_combat.xml` | Event weapon fired (Attribute: group). |
-| `event_weapon_overheated` | 2 | `08/md/scenario_combat.xml` | Event weapon overheated (Attribute: group). |
+| `event_alert_level_changed` | 1 | `08/md/npc_state_machines.xml` | Wird ausgelöst, wenn alert level changed (Attribute: object, check). |
+| `event_autopilot_deactivated` | 1 | `08/md/notifications.xml` | Wird ausgelöst, wenn autopilot deactivated. |
+| `event_autopilot_target_set` | 2 | `08/md/scenario_tutorials.xml` | Wird ausgelöst, wenn autopilot target set. |
+| `event_boarding_operation_created` | 1 | `08/md/boarding.xml` | Wird ausgelöst, wenn boarding operation created. |
+| `event_boarding_operation_removed` | 2 | `08/md/showcases.xml` | Wird ausgelöst, wenn boarding operation removed (Attribute: operation). |
+| `event_boarding_operation_started` | 2 | `08/aiscripts/interrupt.disengage.xml` | Wird ausgelöst, wenn boarding operation started. |
+| `event_boarding_phase_changed` | 1 | `08/md/boarding.xml` | Wird ausgelöst, wenn boarding phase changed (Attribute: operation). |
+| `event_boost_stopped` | 1 | `08/aiscripts/move.nohighway.xml` | Wird ausgelöst, wenn boost stopped (Attribute: object). |
+| `event_briefing_cancelled` | 61 | `08/md/gm_ambush.xml` | Wird ausgelöst, wenn briefing cancelled (Attribute: cue). |
+| `event_briefing_started` | 61 | `08/md/gm_ambush.xml` | Wird ausgelöst, wenn briefing started (Attribute: cue). |
+| `event_briefing_submission_selected` | 58 | `08/md/gm_ambush.xml` | Wird ausgelöst, wenn briefing submission selected (Attribute: cue). |
+| `event_briefing_submission_unselected` | 58 | `08/md/gm_ambush.xml` | Wird ausgelöst, wenn briefing submission unselected (Attribute: cue). |
+| `event_build_added` | 3 | `08/aiscripts/build.shiptrader.xml` | Wird ausgelöst, wenn build added (Attribute: object). |
+| `event_build_cancelled` | 5 | `08/aiscripts/order.restock.subordinates.xml` | Wird ausgelöst, wenn build cancelled (Attribute: object). |
+| `event_build_finished` | 16 | `08/aiscripts/fight.attack.object.capital.xml` | Wird ausgelöst, wenn build finished (Attribute: object). |
+| `event_build_finished_components` | 4 | `extensions/ego_dlc_split/ext_03/md/setup_dlc_split.xml` | Wird ausgelöst, wenn build finished components (Attribute: object). |
+| `event_build_loadout_applied` | 1 | `08/aiscripts/order.build.equip.xml` | Wird ausgelöst, wenn build loadout applied (Attribute: object, build). |
+| `event_build_started` | 7 | `08/aiscripts/order.restock.subordinates.xml` | Wird ausgelöst, wenn build started (Attribute: object). |
+| `event_character_animation_finished` | 23 | `08/md/npc_state_machines.xml` | Wird ausgelöst, wenn character animation finished (Attribute: object). |
+| `event_character_animation_started` | 7 | `08/md/scenario_combat.xml` | Wird ausgelöst, wenn character animation started (Attribute: group, id). |
+| `event_contained_object_changed_true_owner` | 3 | `08/md/rml_board_ship.xml` | Wird ausgelöst, wenn contained object changed true owner (Attribute: space, owner). |
+| `event_contained_object_relation_range_changed` | 5 | `08/aiscripts/fight.attack.object.capital.xml` | Wird ausgelöst, wenn contained object relation range changed (Attribute: group, faction). |
+| `event_contained_sector_changed_owner` | 1 | `08/md/setup.xml` | Wird ausgelöst, wenn contained sector changed owner (Attribute: owner, space). |
+| `event_contained_sector_changed_true_owner` | 1 | `08/md/finalisestations.xml` | Wird ausgelöst, wenn contained sector changed true owner (Attribute: space). |
+| `event_control_entity_added` | 14 | `08/aiscripts/fight.attack.object.capital.xml` | Wird ausgelöst, wenn control entity added (Attribute: object, entity). |
+| `event_control_entity_removed` | 11 | `08/aiscripts/fight.attack.object.capital.xml` | Wird ausgelöst, wenn control entity removed (Attribute: object, entity). |
+| `event_conversation_finished` | 136 | `08/md/rml_barterwares.xml` | Wird ausgelöst, wenn conversation finished (Attribute: actor). |
+| `event_conversation_next_section` | 331 | `extensions/ego_dlc_terran/ext_03/md/x4ep1_trade_terran.xml` | Wird ausgelöst, wenn conversation next section (Attribute: actor). |
+| `event_conversation_returned_to_section` | 50 | `extensions/ego_dlc_terran/ext_03/md/x4ep1_trade_terran.xml` | Wird ausgelöst, wenn conversation returned to section (Attribute: actor). |
+| `event_conversation_started` | 258 | `extensions/ego_dlc_terran/ext_03/md/x4ep1_trade_terran.xml` | Wird ausgelöst, wenn conversation started (Attribute: actor). |
+| `event_cue_activated` | 3 | `extensions/ego_dlc_terran/ext_03/md/story_covert_operations.xml` | Wird ausgelöst, wenn cue activated (Attribute: cue). |
+| `event_cue_cancelled` | 57 | `08/md/rml_transport_passengers_v2.xml` | Wird ausgelöst, wenn cue cancelled (Attribute: cue). |
+| `event_cue_completed` | 290 | `08/md/gm_ambush.xml` | Wird ausgelöst, wenn cue completed (Attribute: cue). |
+| `event_cue_signalled` | 5667 | `extensions/ego_dlc_terran/ext_03/md/x4ep1_trade_terran.xml` | Wird ausgelöst, wenn cue signalled. |
+| `event_cutscene_ready` | 1 | `08/md/npc_usecases.xml` | Wird ausgelöst, wenn cutscene ready (Attribute: cutscene). |
+| `event_cutscene_signal` | 1 | `extensions/ego_dlc_terran/ext_03/md/story_terran_prelude.xml` | Wird ausgelöst, wenn cutscene signal (Attribute: name). |
+| `event_cutscene_started` | 28 | `extensions/ego_dlc_terran/ext_03/md/gs_terran2.xml` | Wird ausgelöst, wenn cutscene started (Attribute: cutscene). |
+| `event_cutscene_stopped` | 41 | `08/md/rml_barterwares.xml` | Wird ausgelöst, wenn cutscene stopped (Attribute: cutscene). |
+| `event_diplomacy_action_operation_aborted` | 20 | `08/md/diplomacy.xml` | Wird ausgelöst, wenn diplomacy action operation aborted (Attribute: operation). |
+| `event_diplomacy_action_operation_completed` | 1 | `08/md/diplomacy.xml` | Wird ausgelöst, wenn diplomacy action operation completed. |
+| `event_diplomacy_action_operation_started` | 22 | `08/md/diplomacy.xml` | Wird ausgelöst, wenn diplomacy action operation started. |
+| `event_diplomacy_event_operation_completed` | 1 | `08/md/diplomacy.xml` | Wird ausgelöst, wenn diplomacy event operation completed. |
+| `event_diplomacy_event_operation_option_chosen` | 1 | `08/md/diplomacy.xml` | Wird ausgelöst, wenn diplomacy event operation option chosen (Attribute: operation). |
+| `event_diplomacy_event_operation_started` | 1 | `08/md/diplomacy.xml` | Wird ausgelöst, wenn diplomacy event operation started. |
+| `event_entity_entered` | 2 | `08/md/scenario_combat.xml` | Wird ausgelöst, wenn entity entered (Attribute: space). |
+| `event_entity_left` | 3 | `08/md/cover.xml` | Wird ausgelöst, wenn entity left (Attribute: space). |
+| `event_entity_transport_finished` | 1 | `08/md/npc_state_machines.xml` | Wird ausgelöst, wenn entity transport finished (Attribute: entity). |
+| `event_faction_activated` | 3 | `08/md/setup.xml` | Wird ausgelöst, wenn faction activated. |
+| `event_faction_deactivated` | 33 | `extensions/ego_dlc_terran/ext_03/md/x4ep1_trade_terran.xml` | Wird ausgelöst, wenn faction deactivated (Attribute: faction). |
+| `event_faction_headquarters_changed` | 1 | `08/md/rml_escort_ambiguous.xml` | Wird ausgelöst, wenn faction headquarters changed. |
+| `event_faction_police_changed` | 3 | `08/aiscripts/order.move.recon.xml` | Wird ausgelöst, wenn faction police changed (Attribute: faction). |
+| `event_faction_relation_changed` | 35 | `extensions/ego_dlc_terran/ext_03/md/x4ep1_war_terran.xml` | Wird ausgelöst, wenn faction relation changed (Attribute: faction, otherfaction). |
+| `event_faction_representative_changed` | 2 | `08/md/playerreputation.xml` | Wird ausgelöst, wenn faction representative changed (Attribute: faction). |
+| `event_game_loaded` | 29 | `extensions/ego_dlc_split/ext_03/md/setup_dlc_split.xml` | Wird ausgelöst, wenn game loaded. |
+| `event_game_saved` | 1 | `08/md/notifications.xml` | Wird ausgelöst, wenn game saved (Attribute: success). |
+| `event_game_started` | 2 | `08/md/npc_usecases.xml` | Wird ausgelöst, wenn game started. |
+| `event_god_created_factory` | 2 | `08/md/finalisestations.xml` | Wird ausgelöst, wenn god created factory (Attribute: space). |
+| `event_god_created_object` | 1 | `08/md/rml_locate_object.xml` | Wird ausgelöst, wenn god created object (Attribute: space). |
+| `event_god_created_station` | 1 | `08/md/inituniverse.xml` | Wird ausgelöst, wenn god created station (Attribute: space). |
+| `event_gravidar_has_scanned` | 16 | `08/aiscripts/fight.attack.object.capital.xml` | Wird ausgelöst, wenn gravidar has scanned (Attribute: object). |
+| `event_guidance_disabled` | 2 | `08/md/rml_buildstation.xml` | Wird ausgelöst, wenn guidance disabled (Attribute: cue). |
+| `event_guidance_enabled` | 6 | `08/md/x4ep1_mentor_subscription.xml` | Wird ausgelöst, wenn guidance enabled (Attribute: cue). |
+| `event_inventory_added` | 13 | `08/md/story_research_xen_equipment.xml` | Wird ausgelöst, wenn inventory added (Attribute: object). |
+| `event_inventory_removed` | 4 | `08/md/rml_craft_item.xml` | Wird ausgelöst, wenn inventory removed (Attribute: object). |
+| `event_job_ship_activated` | 2 | `extensions/ego_dlc_terran/ext_03/md/story_terran_core.xml` | Wird ausgelöst, wenn job ship activated. |
+| `event_lasertower_launched` | 2 | `08/md/rml_deployinplace.xml` | Wird ausgelöst, wenn lasertower launched (Attribute: space). |
+| `event_lock_acquired` | 1 | `08/aiscripts/interrupt.missilelock.xml` | Wird ausgelöst, wenn lock acquired (Attribute: target). |
+| `event_lock_initiated` | 2 | `08/aiscripts/interrupt.missilelock.xml` | Wird ausgelöst, wenn lock initiated (Attribute: target). |
+| `event_lockbox_opened` | 2 | `08/md/scenario_tutorials.xml` | Wird ausgelöst, wenn lockbox opened (Attribute: object). |
+| `event_long_range_scan_ping` | 11 | `extensions/ego_dlc_terran/ext_03/md/story_yaki.xml` | Wird ausgelöst, wenn long range scan ping (Attribute: group). |
+| `event_long_range_scan_sent` | 6 | `extensions/ego_dlc_terran/ext_03/md/story_terraforming.xml` | Wird ausgelöst, wenn long range scan sent (Attribute: group). |
+| `event_masstraffic_ship_removed` | 4 | `08/aiscripts/order.move.recon.xml` | Wird ausgelöst, wenn masstraffic ship removed (Attribute: object). |
+| `event_mine_launched` | 2 | `08/md/rml_deployinplace.xml` | Wird ausgelöst, wenn mine launched (Attribute: space). |
+| `event_mission_aborted` | 106 | `extensions/ego_dlc_terran/ext_03/md/x4ep1_trade_terran.xml` | Wird ausgelöst, wenn mission aborted (Attribute: cue). |
+| `event_navbeacon_launched` | 5 | `extensions/ego_dlc_terran/ext_03/md/story_terraforming.xml` | Wird ausgelöst, wenn navbeacon launched (Attribute: space). |
+| `event_npc_created` | 2 | `08/md/scenario_tutorials.xml` | Wird ausgelöst, wenn npc created. |
+| `event_npc_slots_validated` | 6 | `08/md/gm_transport_passengers.xml` | Wird ausgelöst, wenn npc slots validated (Attribute: object, check). |
+| `event_npc_walk_finished` | 2 | `08/md/npc_state_machines.xml` | Wird ausgelöst, wenn npc walk finished (Attribute: object). |
+| `event_object_abandoned` | 37 | `08/aiscripts/order.fight.escort.xml` | Wird ausgelöst, wenn object abandoned (Attribute: object, check). |
+| `event_object_activated_weapon` | 1 | `08/aiscripts/fight.attack.object.bigtarget.xml` | Wird ausgelöst, wenn object activated weapon (Attribute: object). |
+| `event_object_approaching_waypoint` | 11 | `08/aiscripts/boarding.pod.xml` | Wird ausgelöst, wenn object approaching waypoint (Attribute: object). |
+| `event_object_arrived_at_waypoint` | 4 | `08/md/factiongoal_patrolcoordinationservice.xml` | Wird ausgelöst, wenn object arrived at waypoint (Attribute: object). |
+| `event_object_attacked` | 102 | `08/aiscripts/fight.attack.object.capital.xml` | Wird ausgelöst, wenn object attacked (Attribute: object). |
+| `event_object_attacked_object` | 20 | `08/aiscripts/mining.collect.ship.capital.xml` | Wird ausgelöst, wenn object attacked object (Attribute: object, attacked). |
+| `event_object_bomb_attached` | 4 | `extensions/ego_dlc_terran/ext_03/md/story_yaki.xml` | Wird ausgelöst, wenn object bomb attached (Attribute: object). |
+| `event_object_build_storage_moved` | 1 | `08/aiscripts/order.build.deploy.xml` | Wird ausgelöst, wenn object build storage moved (Attribute: object, check). |
+| `event_object_built_ship` | 1 | `extensions/ego_dlc_terran/ext_03/md/story_yaki.xml` | Wird ausgelöst, wenn object built ship (Attribute: group). |
+| `event_object_built_station` | 1 | `08/aiscripts/build.buildstorage.xml` | Wird ausgelöst, wenn object built station (Attribute: object). |
+| `event_object_changed_assignment` | 10 | `08/aiscripts/order.fight.escort.xml` | Wird ausgelöst, wenn object changed assignment (Attribute: object). |
+| `event_object_changed_attention` | 76 | `extensions/ego_dlc_terran/ext_03/md/x4ep1_trade_terran.xml` | Wird ausgelöst, wenn object changed attention (Attribute: object). |
+| `event_object_changed_cluster` | 23 | `extensions/ego_dlc_terran/ext_03/md/story_covert_operations.xml` | Wird ausgelöst, wenn object changed cluster (Attribute: object). |
+| `event_object_changed_contested_state` | 1 | `08/md/factionlogic.xml` | Wird ausgelöst, wenn object changed contested state (Attribute: group, contested). |
+| `event_object_changed_object` | 23 | `extensions/ego_dlc_split/ext_03/md/story_split.xml` | Wird ausgelöst, wenn object changed object (Attribute: object). |
+| `event_object_changed_owner` | 49 | `08/md/rml_barterwares.xml` | Wird ausgelöst, wenn object changed owner (Attribute: object, previous). |
+| `event_object_changed_room` | 54 | `08/md/scenario_combat.xml` | Wird ausgelöst, wenn object changed room (Attribute: object). |
+| `event_object_changed_sector` | 165 | `08/aiscripts/fight.attack.object.capital.xml` | Wird ausgelöst, wenn object changed sector (Attribute: object). |
+| `event_object_changed_state` | 1 | `08/md/npc_state_machines.xml` | Wird ausgelöst, wenn object changed state (Attribute: object, state). |
+| `event_object_changed_subordinategroup` | 1 | `08/aiscripts/order.fight.tactical.xml` | Wird ausgelöst, wenn object changed subordinategroup (Attribute: object). |
+| `event_object_changed_true_owner` | 82 | `08/md/gm_ambush.xml` | Wird ausgelöst, wenn object changed true owner (Attribute: group, owner). |
+| `event_object_changed_zone` | 82 | `08/aiscripts/fight.attack.object.capital.xml` | Wird ausgelöst, wenn object changed zone (Attribute: object). |
+| `event_object_claimed` | 2 | `extensions/ego_dlc_terran/ext_03/md/story_yaki.xml` | Wird ausgelöst, wenn object claimed (Attribute: claimed). |
+| `event_object_collected_ware` | 2 | `08/md/rml_harvest_resources.xml` | Wird ausgelöst, wenn object collected ware (Attribute: group). |
+| `event_object_collided` | 5 | `08/aiscripts/masstraffic.watchdog.xml` | Wird ausgelöst, wenn object collided (Attribute: object, comment). |
+| `event_object_commander_set` | 6 | `08/aiscripts/order.fight.escort.xml` | Wird ausgelöst, wenn object commander set (Attribute: group). |
+| `event_object_construction_sequence_created` | 17 | `extensions/ego_dlc_terran/ext_03/md/story_yaki.xml` | Wird ausgelöst, wenn object construction sequence created (Attribute: object). |
+| `event_object_deactivated_weapon` | 1 | `08/aiscripts/fight.attack.object.bigtarget.xml` | Wird ausgelöst, wenn object deactivated weapon (Attribute: object). |
+| `event_object_defencedronemode_changed` | 2 | `08/aiscripts/fight.attack.object.capital.xml` | Wird ausgelöst, wenn object defencedronemode changed (Attribute: object). |
+| `event_object_defencedrones_armed` | 2 | `08/aiscripts/fight.attack.object.capital.xml` | Wird ausgelöst, wenn object defencedrones armed (Attribute: object). |
+| `event_object_defencedrones_disarmed` | 2 | `08/aiscripts/fight.attack.object.capital.xml` | Wird ausgelöst, wenn object defencedrones disarmed (Attribute: object). |
+| `event_object_destroyed` | 670 | `extensions/ego_dlc_terran/ext_03/md/x4ep1_trade_terran.xml` | Wird ausgelöst, wenn object destroyed (Attribute: object). |
+| `event_object_dismantled_object` | 1 | `08/aiscripts/order.salvage.crush.xml` | Wird ausgelöst, wenn object dismantled object (Attribute: object). |
+| `event_object_dock_assigned` | 12 | `08/aiscripts/order.fight.escort.xml` | Wird ausgelöst, wenn object dock assigned (Attribute: object). |
+| `event_object_dock_assigned_at` | 1 | `08/md/npc_instantiation.xml` | Wird ausgelöst, wenn object dock assigned at (Attribute: group). |
+| `event_object_dock_too_far` | 1 | `08/md/notifications.xml` | Wird ausgelöst, wenn object dock too far (Attribute: group). |
+| `event_object_dock_unassigned` | 1 | `08/aiscripts/order.dock.xml` | Wird ausgelöst, wenn object dock unassigned (Attribute: object). |
+| `event_object_dock_unassigned_from` | 2 | `08/aiscripts/build.shiptrader.xml` | Wird ausgelöst, wenn object dock unassigned from (Attribute: container, comment). |
+| `event_object_docked` | 62 | `08/md/rml_barterwares.xml` | Wird ausgelöst, wenn object docked (Attribute: object). |
+| `event_object_docked_at` | 32 | `extensions/ego_dlc_terran/ext_03/md/x4ep1_trade_terran.xml` | Wird ausgelöst, wenn object docked at (Attribute: container). |
+| `event_object_docking_aborted` | 2 | `08/aiscripts/order.rescue.ship.xml` | Wird ausgelöst, wenn object docking aborted (Attribute: object). |
+| `event_object_docking_denied` | 5 | `08/aiscripts/order.fight.escort.xml` | Wird ausgelöst, wenn object docking denied (Attribute: object). |
+| `event_object_docking_impossible` | 3 | `extensions/ego_dlc_split/ext_03/md/story_split.xml` | Wird ausgelöst, wenn object docking impossible (Attribute: group). |
+| `event_object_docking_queued` | 1 | `08/md/notifications.xml` | Wird ausgelöst, wenn object docking queued (Attribute: group). |
+| `event_object_docking_started` | 5 | `08/md/cinematiccamera.xml` | Wird ausgelöst, wenn object docking started (Attribute: object). |
+| `event_object_dropped_objects` | 19 | `08/aiscripts/fight.attack.object.station.xml` | Wird ausgelöst, wenn object dropped objects (Attribute: object). |
+| `event_object_drops_found` | 1 | `08/aiscripts/order.plunder.xml` | Wird ausgelöst, wenn object drops found (Attribute: object). |
+| `event_object_enemy_found` | 13 | `08/aiscripts/fight.attack.object.capital.xml` | Wird ausgelöst, wenn object enemy found (Attribute: object, comment). |
+| `event_object_entered` | 7 | `extensions/ego_dlc_terran/ext_03/md/story_yaki.xml` | Wird ausgelöst, wenn object entered (Attribute: space). |
+| `event_object_entered_anomaly` | 1 | `08/aiscripts/interrupt.changedsector.xml` | Wird ausgelöst, wenn object entered anomaly (Attribute: object). |
+| `event_object_entered_gate` | 2 | `08/aiscripts/interrupt.changedsector.xml` | Wird ausgelöst, wenn object entered gate (Attribute: object). |
+| `event_object_entered_live_view` | 1 | `08/md/scenario_tutorials.xml` | Wird ausgelöst, wenn object entered live view (Attribute: group). |
+| `event_object_formation_update_failed` | 2 | `08/aiscripts/order.fight.escort.xml` | Wird ausgelöst, wenn object formation update failed (Attribute: object). |
+| `event_object_formation_update_succeeded` | 2 | `08/aiscripts/order.fight.escort.xml` | Wird ausgelöst, wenn object formation update succeeded (Attribute: object). |
+| `event_object_hull_above_function_threshold` | 22 | `extensions/ego_dlc_terran/ext_03/md/story_terraforming.xml` | Wird ausgelöst, wenn object hull above function threshold (Attribute: object, check). |
+| `event_object_hull_below_function_threshold` | 26 | `extensions/ego_dlc_terran/ext_03/md/story_terraforming.xml` | Wird ausgelöst, wenn object hull below function threshold (Attribute: object, check). |
+| `event_object_hull_damaged` | 13 | `08/md/scenario_combat.xml` | Wird ausgelöst, wenn object hull damaged (Attribute: group). |
+| `event_object_hull_repaired` | 8 | `extensions/ego_dlc_split/ext_03/md/story_split.xml` | Wird ausgelöst, wenn object hull repaired (Attribute: group). |
+| `event_object_incoming_missile` | 8 | `08/aiscripts/fight.attack.object.capital.xml` | Wird ausgelöst, wenn object incoming missile (Attribute: object). |
+| `event_object_interiors_despawning` | 29 | `extensions/ego_dlc_terran/ext_03/md/x4ep1_trade_terran.xml` | Wird ausgelöst, wenn object interiors despawning (Attribute: object). |
+| `event_object_killed_object` | 6 | `08/md/setup.xml` | Wird ausgelöst, wenn object killed object (Attribute: group). |
+| `event_object_known_to_player` | 5 | `08/md/placedobjects.xml` | Wird ausgelöst, wenn object known to player (Attribute: object). |
+| `event_object_launched_lasertower` | 2 | `08/aiscripts/order.deploy.staticdefensestrategy.xml` | Wird ausgelöst, wenn object launched lasertower (Attribute: object). |
+| `event_object_launched_mine` | 2 | `08/aiscripts/order.deploy.staticdefensestrategy.xml` | Wird ausgelöst, wenn object launched mine (Attribute: object). |
+| `event_object_launched_missile` | 2 | `08/aiscripts/fight.attack.object.fighter.xml` | Wird ausgelöst, wenn object launched missile (Attribute: object). |
+| `event_object_launched_resourceprobe` | 1 | `08/md/scenario_tutorials.xml` | Wird ausgelöst, wenn object launched resourceprobe (Attribute: group). |
+| `event_object_launched_satellite` | 3 | `extensions/ego_dlc_terran/ext_03/md/story_covert_operations.xml` | Wird ausgelöst, wenn object launched satellite (Attribute: object). |
+| `event_object_left` | 3 | `08/md/rml_deployinplace.xml` | Wird ausgelöst, wenn object left (Attribute: group). |
+| `event_object_left_live_view` | 4 | `08/aiscripts/order.fight.lasertower.xml` | Wird ausgelöst, wenn object left live view (Attribute: object, check). |
+| `event_object_miningdronemode_changed` | 1 | `08/aiscripts/fight.attack.object.capital.xml` | Wird ausgelöst, wenn object miningdronemode changed (Attribute: object). |
+| `event_object_miningdrones_armed` | 3 | `08/aiscripts/fight.attack.object.capital.xml` | Wird ausgelöst, wenn object miningdrones armed (Attribute: object). |
+| `event_object_miningdrones_disarmed` | 1 | `08/aiscripts/fight.attack.object.capital.xml` | Wird ausgelöst, wenn object miningdrones disarmed (Attribute: object). |
+| `event_object_money_updated` | 1 | `08/aiscripts/trade.station.xml` | Wird ausgelöst, wenn object money updated (Attribute: object). |
+| `event_object_moved_into_internal_storage` | 2 | `08/aiscripts/order.dock.xml` | Wird ausgelöst, wenn object moved into internal storage (Attribute: object). |
+| `event_object_order_cancelled` | 14 | `08/aiscripts/orders.base.xml` | Wird ausgelöst, wenn object order cancelled (Attribute: object, immediate). |
+| `event_object_order_finished` | 11 | `extensions/ego_dlc_terran/ext_03/md/story_yaki.xml` | Wird ausgelöst, wenn object order finished (Attribute: object). |
+| `event_object_order_param_edited` | 1 | `08/aiscripts/order.fight.tactical.xml` | Wird ausgelöst, wenn object order param edited (Attribute: object). |
+| `event_object_order_ready` | 14 | `08/aiscripts/orders.base.xml` | Wird ausgelöst, wenn object order ready (Attribute: object, order). |
+| `event_object_order_syncpoint_released` | 2 | `08/aiscripts/orders.base.xml` | Wird ausgelöst, wenn object order syncpoint released (Attribute: object). |
+| `event_object_picked_up` | 2 | `08/aiscripts/drone.pickup.xml` | Wird ausgelöst, wenn object picked up (Attribute: object). |
+| `event_object_picked_up_object` | 1 | `08/md/gmc_supervised_mining.xml` | Wird ausgelöst, wenn object picked up object (Attribute: group). |
+| `event_object_processingmodule_available` | 1 | `08/aiscripts/order.salvage.deliver.xml` | Wird ausgelöst, wenn object processingmodule available (Attribute: object). |
+| `event_object_production_finished` | 1 | `08/md/factionlogic_economy.xml` | Wird ausgelöst, wenn object production finished (Attribute: group). |
+| `event_object_props_despawning` | 3 | `08/md/gm_transport_passengers.xml` | Wird ausgelöst, wenn object props despawning (Attribute: object). |
+| `event_object_relation_range_changed` | 11 | `08/aiscripts/fight.attack.object.capital.xml` | Wird ausgelöst, wenn object relation range changed (Attribute: group, faction). |
+| `event_object_removed_from_formation` | 2 | `08/aiscripts/order.fight.escort.xml` | Wird ausgelöst, wenn object removed from formation (Attribute: object). |
+| `event_object_retrieved_from_internal_storage` | 1 | `08/md/lib_generic.xml` | Wird ausgelöst, wenn object retrieved from internal storage (Attribute: object). |
+| `event_object_salvage_claim_lost` | 1 | `08/aiscripts/order.salvage.crush.xml` | Wird ausgelöst, wenn object salvage claim lost (Attribute: object). |
+| `event_object_shield_damaged` | 8 | `08/md/scenario_combat.xml` | Wird ausgelöst, wenn object shield damaged (Attribute: group). |
+| `event_object_signalled` | 340 | `08/aiscripts/move.park.xml` | Wird ausgelöst, wenn object signalled (Attribute: object, param). |
+| `event_object_started_to_dock_at` | 1 | `08/md/npc_state_machines.xml` | Wird ausgelöst, wenn object started to dock at (Attribute: container). |
+| `event_object_started_to_undock_from` | 1 | `08/md/npc_state_machines.xml` | Wird ausgelöst, wenn object started to undock from (Attribute: container). |
+| `event_object_subordinate_added` | 6 | `08/aiscripts/fight.attack.object.station.xml` | Wird ausgelöst, wenn object subordinate added (Attribute: object). |
+| `event_object_subordinate_promoted` | 3 | `extensions/ego_dlc_terran/ext_03/md/story_terran_core.xml` | Wird ausgelöst, wenn object subordinate promoted (Attribute: group). |
+| `event_object_subordinate_removed` | 1 | `08/aiscripts/order.fight.tactical.xml` | Wird ausgelöst, wenn object subordinate removed (Attribute: object). |
+| `event_object_target_invalid` | 8 | `08/aiscripts/move.park.xml` | Wird ausgelöst, wenn object target invalid (Attribute: object). |
+| `event_object_took_area_damage` | 1 | `08/md/notifications.xml` | Wird ausgelöst, wenn object took area damage (Attribute: group). |
+| `event_object_towed_recyclable_near_furnace` | 1 | `08/aiscripts/order.salvage.deliver.xml` | Wird ausgelöst, wenn object towed recyclable near furnace (Attribute: object). |
+| `event_object_transportdronemode_changed` | 1 | `08/aiscripts/fight.attack.object.capital.xml` | Wird ausgelöst, wenn object transportdronemode changed (Attribute: object). |
+| `event_object_transportdrones_armed` | 1 | `08/aiscripts/fight.attack.object.capital.xml` | Wird ausgelöst, wenn object transportdrones armed (Attribute: object). |
+| `event_object_transportdrones_disarmed` | 1 | `08/aiscripts/fight.attack.object.capital.xml` | Wird ausgelöst, wenn object transportdrones disarmed (Attribute: object). |
+| `event_object_triggered` | 1 | `08/md/rml_race_timetrial.xml` | Wird ausgelöst, wenn object triggered (Attribute: object). |
+| `event_object_undocked` | 24 | `08/md/scenario_combat.xml` | Wird ausgelöst, wenn object undocked (Attribute: group). |
+| `event_object_undocked_from` | 14 | `extensions/ego_dlc_terran/ext_03/md/gs_terran2.xml` | Wird ausgelöst, wenn object undocked from (Attribute: container). |
+| `event_object_undocking_cleared` | 1 | `08/aiscripts/move.undock.xml` | Wird ausgelöst, wenn object undocking cleared (Attribute: object). |
+| `event_object_undocking_started` | 3 | `08/md/scenario_combat.xml` | Wird ausgelöst, wenn object undocking started (Attribute: group). |
+| `event_object_weapon_ammo_changed` | 1 | `08/md/scenario_tutorials.xml` | Wird ausgelöst, wenn object weapon ammo changed (Attribute: group). |
+| `event_object_weaponmode_changed` | 6 | `08/aiscripts/fight.attack.object.capital.xml` | Wird ausgelöst, wenn object weaponmode changed (Attribute: object). |
+| `event_offer_accepted` | 1 | `08/md/genericmissions.xml` | Wird ausgelöst, wenn offer accepted (Attribute: cue). |
+| `event_platform_actor_created` | 2 | `08/md/npc_itemtrader.xml` | Wird ausgelöst, wenn platform actor created. |
+| `event_player_activated_cockpit_view` | 3 | `08/md/scenario_tutorials.xml` | Wird ausgelöst, wenn player activated cockpit view. |
+| `event_player_activated_external_target_view` | 1 | `08/md/scenario_tutorials.xml` | Wird ausgelöst, wenn player activated external target view. |
+| `event_player_activated_external_view` | 1 | `08/md/scenario_tutorials.xml` | Wird ausgelöst, wenn player activated external view. |
+| `event_player_activated_floating_view` | 1 | `08/md/scenario_tutorials.xml` | Wird ausgelöst, wenn player activated floating view. |
+| `event_player_activated_platform_trigger` | 1 | `extensions/ego_dlc_terran/ext_03/md/story_covert_operations.xml` | Wird ausgelöst, wenn player activated platform trigger (Attribute: component, group). |
+| `event_player_activated_weapon` | 6 | `08/md/scenario_tutorials.xml` | Wird ausgelöst, wenn player activated weapon. |
+| `event_player_activated_weapongroup` | 4 | `08/md/scenario_tutorials.xml` | Wird ausgelöst, wenn player activated weapongroup (Attribute: primary). |
+| `event_player_alert` | 1 | `08/md/notifications.xml` | Wird ausgelöst, wenn player alert. |
+| `event_player_assigned_hired_actor` | 2 | `08/md/conversations.xml` | Wird ausgelöst, wenn player assigned hired actor. |
+| `event_player_attacked_object` | 4 | `08/md/scenario_combat.xml` | Wird ausgelöst, wenn player attacked object (Attribute: attacked). |
+| `event_player_blueprint_added` | 10 | `08/md/tutorial_stations_shipyard.xml` | Wird ausgelöst, wenn player blueprint added (Attribute: ware, comment). |
+| `event_player_bomb_attached` | 12 | `extensions/ego_dlc_split/ext_03/md/story_split.xml` | Wird ausgelöst, wenn player bomb attached. |
+| `event_player_boost_charging_started` | 1 | `extensions/ego_dlc_terran/ext_03/md/story_terraforming.xml` | Wird ausgelöst, wenn player boost charging started. |
+| `event_player_boost_started` | 5 | `08/md/scenario_combat.xml` | Wird ausgelöst, wenn player boost started. |
+| `event_player_boost_stopped` | 3 | `08/md/scenario_advanced.xml` | Wird ausgelöst, wenn player boost stopped. |
+| `event_player_build_added` | 1 | `08/md/lib_generic.xml` | Wird ausgelöst, wenn player build added (Attribute: container). |
+| `event_player_build_finished` | 3 | `08/md/tutorial_stations_shipyard.xml` | Wird ausgelöst, wenn player build finished. |
+| `event_player_build_finished_components` | 10 | `08/md/upkeep.xml` | Wird ausgelöst, wenn player build finished components (Attribute: comment). |
+| `event_player_build_plot_changed` | 1 | `08/md/rml_buildstation.xml` | Wird ausgelöst, wenn player build plot changed (Attribute: comment). |
+| `event_player_build_started` | 2 | `08/md/story_ventures.xml` | Wird ausgelöst, wenn player build started. |
+| `event_player_built_ship` | 2 | `08/md/notifications.xml` | Wird ausgelöst, wenn player built ship. |
+| `event_player_built_station` | 2 | `08/md/inituniverse.xml` | Wird ausgelöst, wenn player built station. |
+| `event_player_changed_activity` | 21 | `extensions/ego_dlc_split/ext_03/md/gs_split1.xml` | Wird ausgelöst, wenn player changed activity (Attribute: activity). |
+| `event_player_changed_target` | 24 | `08/aiscripts/fight.attack.object.capital.xml` | Wird ausgelöst, wenn player changed target. |
+| `event_player_collect_ware_failed` | 1 | `08/md/notifications.xml` | Wird ausgelöst, wenn player collect ware failed. |
+| `event_player_collected_ammo` | 4 | `extensions/ego_dlc_terran/ext_03/md/story_yaki.xml` | Wird ausgelöst, wenn player collected ammo (Attribute: macro). |
+| `event_player_collected_ware` | 5 | `08/md/scenario_tutorials.xml` | Wird ausgelöst, wenn player collected ware. |
+| `event_player_commission_added` | 1 | `08/md/notifications.xml` | Wird ausgelöst, wenn player commission added. |
+| `event_player_crafted_ammo` | 1 | `08/md/notifications.xml` | Wird ausgelöst, wenn player crafted ammo. |
+| `event_player_created_signal_leaks` | 6 | `extensions/ego_dlc_split/ext_03/md/story_split.xml` | Wird ausgelöst, wenn player created signal leaks. |
+| `event_player_cycled_active_weapon_ammo` | 1 | `08/md/scenario_tutorials.xml` | Wird ausgelöst, wenn player cycled active weapon ammo. |
+| `event_player_detected_object` | 1 | `08/md/scenario_tutorials.xml` | Wird ausgelöst, wenn player detected object. |
+| `event_player_discount_added` | 1 | `08/md/notifications.xml` | Wird ausgelöst, wenn player discount added. |
+| `event_player_discovered_mission_offer` | 1 | `08/md/genericmissions.xml` | Wird ausgelöst, wenn player discovered mission offer (Attribute: cue). |
+| `event_player_discovered_object` | 5 | `08/md/scenario_tutorials.xml` | Wird ausgelöst, wenn player discovered object. |
+| `event_player_ejected` | 2 | `08/md/notifications.xml` | Wird ausgelöst, wenn player ejected. |
+| `event_player_ejecting` | 1 | `08/md/notifications.xml` | Wird ausgelöst, wenn player ejecting. |
+| `event_player_entered_anomaly` | 3 | `08/md/x4ep1_mentor_subscription.xml` | Wird ausgelöst, wenn player entered anomaly (Attribute: exit). |
+| `event_player_entered_gate` | 1 | `08/md/story_diplomacy_intro.xml` | Wird ausgelöst, wenn player entered gate. |
+| `event_player_fired_empty_weapon_group` | 2 | `08/md/tutorial_global.xml` | Wird ausgelöst, wenn player fired empty weapon group. |
+| `event_player_hacked_object` | 3 | `extensions/ego_dlc_terran/ext_03/md/story_covert_operations.xml` | Wird ausgelöst, wenn player hacked object. |
+| `event_player_influence_updated` | 1 | `08/md/diplomacy.xml` | Wird ausgelöst, wenn player influence updated. |
+| `event_player_interaction` | 23 | `08/md/rml_barterwares.xml` | Wird ausgelöst, wenn player interaction (Attribute: param, param2). |
+| `event_player_killed_object` | 9 | `08/md/gm_killmasstraffic.xml` | Wird ausgelöst, wenn player killed object. |
+| `event_player_launched_missile` | 1 | `08/md/scenario_tutorials.xml` | Wird ausgelöst, wenn player launched missile. |
+| `event_player_licence_added` | 6 | `08/md/tutorial_stations_shipyard.xml` | Wird ausgelöst, wenn player licence added (Attribute: licence, comment). |
+| `event_player_lost_volatile_wares` | 1 | `08/md/notifications.xml` | Wird ausgelöst, wenn player lost volatile wares. |
+| `event_player_money_updated` | 3 | `extensions/ego_dlc_split/ext_03/md/story_split.xml` | Wird ausgelöst, wenn player money updated. |
+| `event_player_opened_crate` | 7 | `extensions/ego_dlc_split/ext_03/md/story_split.xml` | Wird ausgelöst, wenn player opened crate. |
+| `event_player_opened_lockbox` | 1 | `08/md/notifications.xml` | Wird ausgelöst, wenn player opened lockbox. |
+| `event_player_out_of_ammo` | 1 | `08/md/notifications.xml` | Wird ausgelöst, wenn player out of ammo. |
+| `event_player_owned_attacked` | 2 | `extensions/ego_dlc_split/ext_03/md/story_split.xml` | Wird ausgelöst, wenn player owned attacked. |
+| `event_player_owned_attacked_object` | 2 | `08/md/story_diplomacy_intro.xml` | Wird ausgelöst, wenn player owned attacked object. |
+| `event_player_owned_destroyed` | 2 | `08/md/notifications.xml` | Wird ausgelöst, wenn player owned destroyed. |
+| `event_player_owned_dropped_objects` | 2 | `08/md/scenario_tutorials.xml` | Wird ausgelöst, wenn player owned dropped objects. |
+| `event_player_owned_killed_object` | 1 | `08/md/rml_destroy_rarelyonsight.xml` | Wird ausgelöst, wenn player owned killed object (Attribute: comment). |
+| `event_player_owned_money_updated` | 2 | `08/md/scenario_tutorials.xml` | Wird ausgelöst, wenn player owned money updated. |
+| `event_player_paid_build_plot_changed` | 3 | `08/md/rml_buildstation.xml` | Wird ausgelöst, wenn player paid build plot changed. |
+| `event_player_production_cancelled` | 8 | `08/md/x4ep1_mentor_subscription.xml` | Wird ausgelöst, wenn player production cancelled (Attribute: research). |
+| `event_player_production_finished` | 7 | `08/md/x4ep1_mentor_subscription.xml` | Wird ausgelöst, wenn player production finished (Attribute: research). |
+| `event_player_production_started` | 8 | `08/md/x4ep1_mentor_subscription.xml` | Wird ausgelöst, wenn player production started (Attribute: research). |
+| `event_player_recyclable_processed` | 1 | `08/md/notifications.xml` | Wird ausgelöst, wenn player recyclable processed. |
+| `event_player_recyclable_processing_started` | 1 | `08/md/notifications.xml` | Wird ausgelöst, wenn player recyclable processing started. |
+| `event_player_relation_changed` | 29 | `extensions/ego_dlc_terran/ext_03/md/x4ep1_war_terran.xml` | Wird ausgelöst, wenn player relation changed (Attribute: faction). |
+| `event_player_repaired_object` | 1 | `08/md/rml_repairobject.xml` | Wird ausgelöst, wenn player repaired object. |
+| `event_player_repaired_signal_leak` | 40 | `extensions/ego_dlc_terran/ext_03/md/story_hq_discovery.xml` | Wird ausgelöst, wenn player repaired signal leak. |
+| `event_player_research_unlocked` | 7 | `08/md/story_research_xen_equipment.xml` | Wird ausgelöst, wenn player research unlocked (Attribute: ware). |
+| `event_player_ship_hit` | 2 | `08/md/npc_usecases.xml` | Wird ausgelöst, wenn player ship hit (Attribute: comment). |
+| `event_player_signal_unlock_failed` | 5 | `08/md/tutorial_modes.xml` | Wird ausgelöst, wenn player signal unlock failed. |
+| `event_player_signal_unlock_finished` | 53 | `extensions/ego_dlc_terran/ext_03/md/story_hq_discovery.xml` | Wird ausgelöst, wenn player signal unlock finished. |
+| `event_player_signal_unlock_impossible` | 6 | `extensions/ego_dlc_terran/ext_03/md/story_hq_discovery.xml` | Wird ausgelöst, wenn player signal unlock impossible. |
+| `event_player_signal_unlock_started` | 3 | `08/md/tutorial_modes.xml` | Wird ausgelöst, wenn player signal unlock started. |
+| `event_player_started_control` | 21 | `08/md/rml_barterwares.xml` | Wird ausgelöst, wenn player started control. |
+| `event_player_stopped_control` | 17 | `08/md/rml_barterwares.xml` | Wird ausgelöst, wenn player stopped control. |
+| `event_player_teleport_successful` | 25 | `extensions/ego_dlc_terran/ext_03/md/x4ep1_trade_terran.xml` | Wird ausgelöst, wenn player teleport successful (Attribute: comment). |
+| `event_player_toggled_cockpit` | 2 | `08/md/scenario_tutorials.xml` | Wird ausgelöst, wenn player toggled cockpit. |
+| `event_player_towed_recyclable_near_furnace` | 1 | `08/md/notifications.xml` | Wird ausgelöst, wenn player towed recyclable near furnace. |
+| `event_player_trade_completed` | 2 | `08/md/rml_largesupply.xml` | Wird ausgelöst, wenn player trade completed. |
+| `event_player_travelmode_charge_aborted` | 1 | `08/md/scenario_tutorials.xml` | Wird ausgelöst, wenn player travelmode charge aborted. |
+| `event_player_travelmode_charge_started` | 6 | `extensions/ego_dlc_terran/ext_03/md/story_terraforming.xml` | Wird ausgelöst, wenn player travelmode charge started. |
+| `event_player_travelmode_started` | 10 | `08/md/scenario_combat.xml` | Wird ausgelöst, wenn player travelmode started. |
+| `event_player_travelmode_stopped` | 4 | `08/md/scenario_combat.xml` | Wird ausgelöst, wenn player travelmode stopped. |
+| `event_player_unlocked_platform_trigger` | 3 | `extensions/ego_dlc_split/ext_03/md/story_split.xml` | Wird ausgelöst, wenn player unlocked platform trigger (Attribute: component, group). |
+| `event_player_warning` | 1 | `08/md/notifications.xml` | Wird ausgelöst, wenn player warning. |
+| `event_region_asteroid_mined` | 1 | `08/md/khaak_activity.xml` | Wird ausgelöst, wenn region asteroid mined (Attribute: group). |
+| `event_resourceprobe_launched` | 5 | `08/md/rml_deployinplace.xml` | Wird ausgelöst, wenn resourceprobe launched (Attribute: space). |
+| `event_satellite_launched` | 8 | `extensions/ego_dlc_split/ext_03/md/story_split.xml` | Wird ausgelöst, wenn satellite launched (Attribute: space). |
+| `event_scan_aborted` | 2 | `08/md/scenario_tutorials.xml` | Wird ausgelöst, wenn scan aborted (Attribute: scanner, scanned). |
+| `event_scan_finished` | 10 | `08/aiscripts/order.fight.lasertower.xml` | Wird ausgelöst, wenn scan finished (Attribute: scanned). |
+| `event_scan_started` | 1 | `08/md/scenario_tutorials.xml` | Wird ausgelöst, wenn scan started (Attribute: scanner, scanned). |
+| `event_sector_resource_depleted` | 2 | `08/md/khaak_activity.xml` | Wird ausgelöst, wenn sector resource depleted (Attribute: sector, check). |
+| `event_space_reservation_expired` | 2 | `08/aiscripts/interrupt.lostreservation.xml` | Wird ausgelöst, wenn space reservation expired (Attribute: object, check). |
+| `event_speak_finished` | 418 | `extensions/ego_dlc_terran/ext_03/md/x4ep1_trade_terran.xml` | Wird ausgelöst, wenn speak finished (Attribute: actor, line, comment). |
+| `event_speak_line_finished` | 8 | `extensions/ego_dlc_split/ext_03/md/story_split.xml` | Wird ausgelöst, wenn speak line finished (Attribute: actor, line, comment). |
+| `event_speak_timer_triggered` | 1 | `08/md/npc_usecases.xml` | Wird ausgelöst, wenn speak timer triggered (Attribute: actor, page, line). |
+| `event_station_built` | 2 | `extensions/ego_dlc_split/ext_03/md/story_split.xml` | Wird ausgelöst, wenn station built. |
+| `event_terraforming_event_started` | 1 | `08/md/terraforming.xml` | Wird ausgelöst, wenn terraforming event started (Attribute: group, project). |
+| `event_terraforming_habitability_changed` | 1 | `08/md/terraforming.xml` | Wird ausgelöst, wenn terraforming habitability changed (Attribute: group). |
+| `event_terraforming_project_available` | 2 | `08/md/terraforming.xml` | Wird ausgelöst, wenn terraforming project available (Attribute: group). |
+| `event_terraforming_project_completed` | 5 | `08/md/terraforming.xml` | Wird ausgelöst, wenn terraforming project completed (Attribute: group). |
+| `event_terraforming_project_failed` | 4 | `08/md/terraforming.xml` | Wird ausgelöst, wenn terraforming project failed (Attribute: group). |
+| `event_terraforming_project_started` | 3 | `08/md/x4ep1_mentor_subscription.xml` | Wird ausgelöst, wenn terraforming project started (Attribute: cluster). |
+| `event_terraforming_project_started_production` | 4 | `08/md/x4ep1_mentor_subscription.xml` | Wird ausgelöst, wenn terraforming project started production (Attribute: cluster). |
+| `event_terraforming_project_succeeded` | 40 | `extensions/ego_dlc_terran/ext_03/md/terraforming.xml` | Wird ausgelöst, wenn terraforming project succeeded (Attribute: cluster, project). |
+| `event_terraforming_stat_added` | 5 | `08/md/terraforming.xml` | Wird ausgelöst, wenn terraforming stat added (Attribute: group, stat). |
+| `event_terraforming_stat_changed` | 28 | `08/md/terraforming.xml` | Wird ausgelöst, wenn terraforming stat changed (Attribute: group, stat). |
+| `event_terraforming_stat_removed` | 5 | `08/md/terraforming.xml` | Wird ausgelöst, wenn terraforming stat removed (Attribute: group, stat). |
+| `event_trade_cancelled` | 5 | `08/aiscripts/order.trade.wareexchange.ship.xml` | Wird ausgelöst, wenn trade cancelled (Attribute: seller). |
+| `event_trade_completed` | 11 | `08/md/rml_barterwares.xml` | Wird ausgelöst, wenn trade completed (Attribute: seller). |
+| `event_trade_started` | 1 | `08/md/rml_trade_wares.xml` | Wird ausgelöst, wenn trade started (Attribute: tradeoffer, comment). |
+| `event_ui_triggered` | 569 | `extensions/ego_dlc_terran/ext_03/md/story_hq_discovery.xml` | Wird ausgelöst, wenn ui triggered (Attribute: screen, control). |
+| `event_unit_destroyed` | 1 | `08/aiscripts/order.salvage.crush.xml` | Wird ausgelöst, wenn unit destroyed (Attribute: object). |
+| `event_universe_generated` | 3 | `extensions/ego_dlc_terran/ext_03/md/story_terran_core.xml` | Wird ausgelöst, wenn universe generated. |
+| `event_venture_mission_aborted` | 1 | `08/aiscripts/order.wait.venture.xml` | Wird ausgelöst, wenn venture mission aborted. |
+| `event_venture_mission_completed` | 2 | `08/aiscripts/order.wait.venture.xml` | Wird ausgelöst, wenn venture mission completed. |
+| `event_venture_ship_added` | 1 | `08/md/setup.xml` | Wird ausgelöst, wenn venture ship added. |
+| `event_venture_ship_removed` | 1 | `08/md/setup.xml` | Wird ausgelöst, wenn venture ship removed. |
+| `event_weapon_fired` | 10 | `08/md/scenario_combat.xml` | Wird ausgelöst, wenn weapon fired (Attribute: group). |
+| `event_weapon_overheated` | 2 | `08/md/scenario_combat.xml` | Wird ausgelöst, wenn weapon overheated (Attribute: group). |
 | `execute_custom_trade` | 2 | `08/aiscripts/order.plunder.xml` | Execute custom trade (Attribute: ware, amount, seller, buyer, commandaction, sinceversion). |
 | `execute_recyclable_trade` | 1 | `08/aiscripts/order.salvage.deliver.xml` | Execute recyclable trade (Attribute: module, tradepartner, trade, result). |
 | `execute_trade` | 3 | `08/aiscripts/order.trade.wareexchange.ship.xml` | Execute trade (Attribute: tradeoffer, tradepartner, amount, result, custom). |
@@ -730,15 +730,15 @@ Automatisch generierte Liste aller XML-Tag-Befehle aus den vorhandenen Skriptver
 | `linear` | 15 | `extensions/ego_dlc_terran/ext_03/md/story_hq_discovery.xml` | Linear (Attribute: x, y, z). |
 | `loadout` | 293 | `extensions/ego_dlc_split/ext_03/md/scenario_combat.xml` | Loadout (Attribute: ref). |
 | `location` | 63 | `08/aiscripts/order.collect.ship.deployable.xml` | Location (Attribute: condition, object, additionalobjects). |
-| `lock_all_firstperson_input` | 2 | `08/md/scenario_tutorials.xml` | Lock all firstperson input. |
-| `lock_all_flight_input` | 5 | `08/md/scenario_tutorials.xml` | Lock all flight input. |
-| `lock_all_holomap_input` | 3 | `08/md/scenario_tutorials.xml` | Lock all holomap input. |
-| `lock_all_shooting_input` | 3 | `08/md/scenario_tutorials.xml` | Lock all shooting input. |
-| `lock_flight_strafe_input` | 3 | `08/md/scenario_tutorials.xml` | Lock flight strafe input. |
-| `lock_flight_throttle_input` | 5 | `08/md/scenario_tutorials.xml` | Lock flight throttle input. |
-| `lock_getup` | 3 | `08/md/scenario_tutorials.xml` | Lock getup. |
-| `lock_primary_shooting_input` | 3 | `08/md/scenario_tutorials.xml` | Lock primary shooting input. |
-| `lock_secondary_shooting_input` | 1 | `08/md/scenario_tutorials.xml` | Lock secondary shooting input. |
+| `lock_all_firstperson_input` | 2 | `08/md/scenario_tutorials.xml` | Sperrt all firstperson input. |
+| `lock_all_flight_input` | 5 | `08/md/scenario_tutorials.xml` | Sperrt all flight input. |
+| `lock_all_holomap_input` | 3 | `08/md/scenario_tutorials.xml` | Sperrt all holomap input. |
+| `lock_all_shooting_input` | 3 | `08/md/scenario_tutorials.xml` | Sperrt all shooting input. |
+| `lock_flight_strafe_input` | 3 | `08/md/scenario_tutorials.xml` | Sperrt flight strafe input. |
+| `lock_flight_throttle_input` | 5 | `08/md/scenario_tutorials.xml` | Sperrt flight throttle input. |
+| `lock_getup` | 3 | `08/md/scenario_tutorials.xml` | Sperrt getup. |
+| `lock_primary_shooting_input` | 3 | `08/md/scenario_tutorials.xml` | Sperrt primary shooting input. |
+| `lock_secondary_shooting_input` | 1 | `08/md/scenario_tutorials.xml` | Sperrt secondary shooting input. |
 | `macro` | 20 | `extensions/ego_dlc_terran/ext_03/md/story_covert_operations.xml` | Macro (Attribute: ref). |
 | `macros` | 30 | `extensions/ego_dlc_split/ext_03/md/gs_split1.xml` | Macros. |
 | `marines` | 2 | `08/md/showcases.xml` | Marines (Attribute: amounts, skills). |
@@ -781,14 +781,14 @@ Automatisch generierte Liste aller XML-Tag-Befehle aus den vorhandenen Skriptver
 | `missileresult` | 7 | `08/aiscripts/fight.attack.object.capital.xml` | Missileresult (Attribute: ammo, hullshield, hullonly, shieldonly, hullnoshield). |
 | `mission` | 5 | `08/md/mc_management.xml` | Mission (Attribute: step, name, type, faction, reward, rewardtext, duration). |
 | `mods` | 1 | `08/md/mc_management.xml` | Mods (Attribute: list). |
-| `move_docking` | 2 | `08/aiscripts/boarding.pod.return.xml` | Move docking (Attribute: object, dock, flightbehaviour). |
-| `move_gate` | 2 | `08/aiscripts/move.gate.xml` | Move gate (Attribute: object, gate, abortpath). |
-| `move_navmesh` | 1 | `08/aiscripts/masstraffic.flee.xml` | Move navmesh (Attribute: object, destination, flightbehaviour, finishonapproach, forcesteering). |
-| `move_order` | 4 | `08/aiscripts/orders.base.tradecomputer.xml` | Move order (Attribute: order, newindex, result, chance). |
-| `move_strafe` | 5 | `08/aiscripts/move.park.xml` | Move strafe (Attribute: object, destination, forcerotation). |
-| `move_to` | 157 | `08/aiscripts/move.park.xml` | Move to (Attribute: destination, object). |
-| `move_undocking` | 3 | `08/aiscripts/move.undock.xml` | Move undocking (Attribute: object, dock, chance). |
-| `move_waypoints` | 4 | `08/aiscripts/move.undock.xml` | Move waypoints (Attribute: object, destination, tags, starttags, finishonapproach, relativemovement, flightbehaviour, forcesteering, commandaction, abortpath). |
+| `move_docking` | 2 | `08/aiscripts/boarding.pod.return.xml` | Bewegt docking (Attribute: object, dock, flightbehaviour). |
+| `move_gate` | 2 | `08/aiscripts/move.gate.xml` | Bewegt gate (Attribute: object, gate, abortpath). |
+| `move_navmesh` | 1 | `08/aiscripts/masstraffic.flee.xml` | Bewegt navmesh (Attribute: object, destination, flightbehaviour, finishonapproach, forcesteering). |
+| `move_order` | 4 | `08/aiscripts/orders.base.tradecomputer.xml` | Bewegt order (Attribute: order, newindex, result, chance). |
+| `move_strafe` | 5 | `08/aiscripts/move.park.xml` | Bewegt strafe (Attribute: object, destination, forcerotation). |
+| `move_to` | 157 | `08/aiscripts/move.park.xml` | Bewegt to (Attribute: destination, object). |
+| `move_undocking` | 3 | `08/aiscripts/move.undock.xml` | Bewegt undocking (Attribute: object, dock, chance). |
+| `move_waypoints` | 4 | `08/aiscripts/move.undock.xml` | Bewegt waypoints (Attribute: object, destination, tags, starttags, finishonapproach, relativemovement, flightbehaviour, forcesteering, commandaction, abortpath). |
 | `muffle_sound` | 3 | `08/md/cinematiccamera.xml` | Muffle sound (Attribute: strength, duration). |
 | `name` | 28 | `extensions/ego_dlc_terran/ext_03/md/story_terran_core.xml` | Name (Attribute: name). |
 | `notify_universe_generated` | 1 | `08/md/finalisestations.xml` | Notify universe generated. |
@@ -800,9 +800,9 @@ Automatisch generierte Liste aller XML-Tag-Befehle aus den vorhandenen Skriptver
 | `offsetrotation` | 11 | `extensions/ego_dlc_terran/ext_03/md/story_hq_discovery.xml` | Offsetrotation (Attribute: value). |
 | `on_abort` | 62 | `08/aiscripts/move.park.xml` | On abort. |
 | `on_attentionchange` | 2 | `08/aiscripts/fight.attack.object.capital.xml` | On attentionchange. |
-| `open_conversation_menu` | 54 | `extensions/ego_dlc_split/ext_03/md/story_split.xml` | Open conversation menu (Attribute: menu, param). |
-| `open_lockbox` | 1 | `08/aiscripts/order.collect.ship.lockbox.xml` | Open lockbox (Attribute: object, lockbox). |
-| `open_menu` | 32 | `08/md/cinematiccamera.xml` | Open menu (Attribute: menu, param). |
+| `open_conversation_menu` | 54 | `extensions/ego_dlc_split/ext_03/md/story_split.xml` | Öffnet conversation menu (Attribute: menu, param). |
+| `open_lockbox` | 1 | `08/aiscripts/order.collect.ship.lockbox.xml` | Öffnet lockbox (Attribute: object, lockbox). |
+| `open_menu` | 32 | `08/md/cinematiccamera.xml` | Öffnet menu (Attribute: menu, param). |
 | `order` | 85 | `08/aiscripts/order.collect.ship.deployable.xml` | Order (Attribute: id, name, description, category, allowinloop). |
 | `order.move.recon` | 7 | `08/aiscripts/order.move.recon.xml` | Order.move.recon. |
 | `organise_job_ship_subordinates` | 1 | `08/aiscripts/order.restock.subordinates.xml` | Organise job ship subordinates (Attribute: commander). |
@@ -904,13 +904,13 @@ Automatisch generierte Liste aller XML-Tag-Befehle aus den vorhandenen Skriptver
 | `request_undocking` | 2 | `08/aiscripts/move.undock.xml` | Request undocking (Attribute: ship, queuedresult, grantedresult, highpriority). |
 | `requires` | 79 | `08/aiscripts/order.collect.ship.deployable.xml` | Requires. |
 | `reserve_space` | 4 | `08/aiscripts/order.build.deploy.xml` | Reserve space (Attribute: space, component, duration, index, safezone). |
-| `reset_adaptive_steering` | 1 | `08/md/scenario_tutorials.xml` | Reset adaptive steering. |
-| `reset_avoid_collisions` | 16 | `08/aiscripts/masstraffic.move.waitforsignal.xml` | Reset avoid collisions (Attribute: object). |
-| `reset_control_mode_messages` | 1 | `08/md/scenario_tutorials.xml` | Reset control mode messages. |
-| `reset_cue` | 1340 | `extensions/ego_dlc_terran/ext_03/md/x4ep1_trade_terran.xml` | Reset cue (Attribute: cue). |
-| `reset_flight_behaviour` | 9 | `08/aiscripts/move.flightbehaviour.xml` | Reset flight behaviour (Attribute: object). |
-| `reset_relation_boost` | 43 | `08/aiscripts/fight.attack.object.capital.xml` | Reset relation boost (Attribute: object, otherobject). |
-| `reset_weapongroups` | 2 | `08/aiscripts/order.fight.attack.object.xml` | Reset weapongroups (Attribute: object). |
+| `reset_adaptive_steering` | 1 | `08/md/scenario_tutorials.xml` | Setzt adaptive steering zurück. |
+| `reset_avoid_collisions` | 16 | `08/aiscripts/masstraffic.move.waitforsignal.xml` | Setzt avoid collisions zurück (Attribute: object). |
+| `reset_control_mode_messages` | 1 | `08/md/scenario_tutorials.xml` | Setzt control mode messages zurück. |
+| `reset_cue` | 1340 | `extensions/ego_dlc_terran/ext_03/md/x4ep1_trade_terran.xml` | Setzt cue zurück (Attribute: cue). |
+| `reset_flight_behaviour` | 9 | `08/aiscripts/move.flightbehaviour.xml` | Setzt flight behaviour zurück (Attribute: object). |
+| `reset_relation_boost` | 43 | `08/aiscripts/fight.attack.object.capital.xml` | Setzt relation boost zurück (Attribute: object, otherobject). |
+| `reset_weapongroups` | 2 | `08/aiscripts/order.fight.attack.object.xml` | Setzt weapongroups zurück (Attribute: object). |
 | `resize_list` | 8 | `08/md/factionlogic_economy.xml` | Resize list (Attribute: list, count). |
 | `restore_object` | 7 | `extensions/ego_dlc_split/ext_03/md/story_split.xml` | Restore object (Attribute: object, recursive). |
 | `result` | 24 | `08/aiscripts/fight.attack.object.capital.xml` | Result (Attribute: hullshield, hullonly, shieldonly, hullnoshield). |
@@ -927,9 +927,9 @@ Automatisch generierte Liste aller XML-Tag-Befehle aus den vorhandenen Skriptver
 | `run_order_script` | 2 | `08/aiscripts/orders.base.xml` | Run order script (Attribute: order). |
 | `run_script` | 324 | `08/aiscripts/order.collect.ship.deployable.xml` | Run script (Attribute: name). |
 | `safepos` | 416 | `08/md/gm_ambush.xml` | Safepos (Attribute: value, radius). |
-| `save_retval` | 13 | `08/aiscripts/order.fight.attack.inrange.xml` | Save retval (Attribute: name, variable). |
+| `save_retval` | 13 | `08/aiscripts/order.fight.attack.inrange.xml` | Speichert retval (Attribute: name, variable). |
 | `select` | 547 | `08/md/gm_ambush.xml` | Select (Attribute: faction, tags). |
-| `select_flight_behaviour` | 5 | `08/aiscripts/move.evade.xml` | Select flight behaviour (Attribute: entity, evasive, result). |
+| `select_flight_behaviour` | 5 | `08/aiscripts/move.evade.xml` | Wählt flight behaviour aus (Attribute: entity, evasive, result). |
 | `set_active_mission_waypoint_known` | 1 | `08/md/conversations.xml` | Setzt active mission waypoint known. |
 | `set_actor_current_chair` | 6 | `08/md/npc_state_machines.xml` | Setzt actor current chair (Attribute: actor, roomslot). |
 | `set_actor_emotion` | 2 | `08/md/npc_usecases.xml` | Setzt actor emotion (Attribute: actor, emotion). |
@@ -1070,12 +1070,12 @@ Automatisch generierte Liste aller XML-Tag-Befehle aus den vorhandenen Skriptver
 | `ships` | 1 | `08/md/rml_deliver_fleet.xml` | Ships (Attribute: list). |
 | `shoot` | 2 | `08/md/crisis_xenon_khaak_combo.xml` | Shoot (Attribute: object, primary, secondary). |
 | `shoot_at` | 24 | `08/aiscripts/fight.attack.object.capital.xml` | Shoot at (Attribute: object, target, largetarget, additional_targets, fixedtarget). |
-| `show_help` | 607 | `extensions/ego_dlc_split/ext_03/md/gs_split1.xml` | Show help (Attribute: line, log, position, force, width, duration, comment, allowclose). |
-| `show_help_multi` | 145 | `extensions/ego_dlc_terran/ext_03/md/story_yaki.xml` | Show help multi (Attribute: allowclose, position, force). |
-| `show_help_overlay` | 376 | `08/md/tutorial_modes.xml` | Show help overlay (Attribute: id, highlightonly). |
-| `show_interactive_notification` | 1 | `08/md/notifications.xml` | Show interactive notification (Attribute: caption, text). |
-| `show_notification` | 256 | `08/md/gm_ambush.xml` | Show notification (Attribute: text, sound, comment). |
-| `show_overlay_text` | 3 | `08/md/scenario_combat.xml` | Show overlay text (Attribute: relwidth, reloffsetx, reloffsety, fadein, fadeout). |
+| `show_help` | 607 | `extensions/ego_dlc_split/ext_03/md/gs_split1.xml` | Zeigt help (Attribute: line, log, position, force, width, duration, comment, allowclose). |
+| `show_help_multi` | 145 | `extensions/ego_dlc_terran/ext_03/md/story_yaki.xml` | Zeigt help multi (Attribute: allowclose, position, force). |
+| `show_help_overlay` | 376 | `08/md/tutorial_modes.xml` | Zeigt help overlay (Attribute: id, highlightonly). |
+| `show_interactive_notification` | 1 | `08/md/notifications.xml` | Zeigt interactive notification (Attribute: caption, text). |
+| `show_notification` | 256 | `08/md/gm_ambush.xml` | Zeigt notification (Attribute: text, sound, comment). |
+| `show_overlay_text` | 3 | `08/md/scenario_combat.xml` | Zeigt overlay text (Attribute: relwidth, reloffsetx, reloffsety, fadein, fadeout). |
 | `shuffle_group` | 19 | `extensions/ego_dlc_split/ext_03/md/x4ep1_war_subscriptions.xml` | Shuffle group (Attribute: group). |
 | `shuffle_list` | 326 | `08/aiscripts/order.deployobjectsatgates.xml` | Shuffle list (Attribute: list). |
 | `signal_cue` | 4976 | `extensions/ego_dlc_terran/ext_03/md/x4ep1_trade_terran.xml` | Signal cue (Attribute: cue). |
@@ -1090,37 +1090,37 @@ Automatisch generierte Liste aller XML-Tag-Befehle aus den vorhandenen Skriptver
 | `sort_people` | 1 | `08/md/boarding.xml` | Sort people (Attribute: name, object, templatelist, sorter). |
 | `sort_trades` | 8 | `08/aiscripts/order.mining.routine.xml` | Sort trades (Attribute: name, tradelist, sorter). |
 | `spacereservation` | 40 | `08/aiscripts/move.park.xml` | Spacereservation (Attribute: component, index, duration, safezone). |
-| `spawn_docked` | 2 | `extensions/ego_dlc_terran/ext_03/md/story_hq_discovery.xml` | Spawn docked (Attribute: ship, dock). |
-| `spawn_drop` | 2 | `extensions/ego_dlc_split/ext_03/md/story_split.xml` | Spawn drop (Attribute: object, drop). |
-| `spawn_waiting_job_ship` | 1 | `08/md/story_diplomacy_intro.xml` | Spawn waiting job ship (Attribute: ship, sector). |
+| `spawn_docked` | 2 | `extensions/ego_dlc_terran/ext_03/md/story_hq_discovery.xml` | Erzeugt docked (Attribute: ship, dock). |
+| `spawn_drop` | 2 | `extensions/ego_dlc_split/ext_03/md/story_split.xml` | Erzeugt drop (Attribute: object, drop). |
+| `spawn_waiting_job_ship` | 1 | `08/md/story_diplomacy_intro.xml` | Erzeugt waiting job ship (Attribute: ship, sector). |
 | `speak` | 778 | `extensions/ego_dlc_terran/ext_03/md/x4ep1_trade_terran.xml` | Speak (Attribute: actor, priority). |
 | `start` | 24 | `08/aiscripts/order.restock.subordinates.xml` | Start (Attribute: object). |
-| `start_actor_sequence` | 60 | `extensions/ego_dlc_terran/ext_03/md/story_hq_discovery.xml` | Start actor sequence (Attribute: actor, type, behavior, transition, immediate). |
-| `start_actor_walk` | 12 | `08/md/npc_state_machines.xml` | Start actor walk (Attribute: actor, target, roomslot, speed, triggeranimation). |
-| `start_attack` | 6 | `08/aiscripts/masstraffic.watchdog.xml` | Start attack (Attribute: object, target). |
-| `start_boarding_operation` | 1 | `08/md/showcases.xml` | Start boarding operation (Attribute: operation). |
-| `start_boost` | 2 | `extensions/ego_dlc_terran/ext_03/md/story_hq_discovery.xml` | Start boost (Attribute: object). |
-| `start_conversation` | 47 | `08/md/rml_barterwares.xml` | Start conversation (Attribute: actor, conversation). |
-| `start_diplomacy_event_operation` | 1 | `08/md/diplomacy.xml` | Start diplomacy event operation (Attribute: operation). |
-| `start_dismantling` | 1 | `08/aiscripts/order.salvage.crush.xml` | Start dismantling (Attribute: object, wreck). |
-| `start_observation` | 1 | `08/aiscripts/masstraffic.watchdog.xml` | Start observation (Attribute: object, target, range). |
-| `start_player_autopilot` | 1 | `08/md/story_paranid.xml` | Start player autopilot (Attribute: destination). |
-| `start_script` | 23 | `08/aiscripts/fight.attack.object.capital.xml` | Start script (Attribute: name, object). |
-| `start_towing_object` | 1 | `08/aiscripts/order.salvage.collect.xml` | Start towing object (Attribute: ship, object). |
+| `start_actor_sequence` | 60 | `extensions/ego_dlc_terran/ext_03/md/story_hq_discovery.xml` | Startet actor sequence (Attribute: actor, type, behavior, transition, immediate). |
+| `start_actor_walk` | 12 | `08/md/npc_state_machines.xml` | Startet actor walk (Attribute: actor, target, roomslot, speed, triggeranimation). |
+| `start_attack` | 6 | `08/aiscripts/masstraffic.watchdog.xml` | Startet attack (Attribute: object, target). |
+| `start_boarding_operation` | 1 | `08/md/showcases.xml` | Startet boarding operation (Attribute: operation). |
+| `start_boost` | 2 | `extensions/ego_dlc_terran/ext_03/md/story_hq_discovery.xml` | Startet boost (Attribute: object). |
+| `start_conversation` | 47 | `08/md/rml_barterwares.xml` | Startet conversation (Attribute: actor, conversation). |
+| `start_diplomacy_event_operation` | 1 | `08/md/diplomacy.xml` | Startet diplomacy event operation (Attribute: operation). |
+| `start_dismantling` | 1 | `08/aiscripts/order.salvage.crush.xml` | Startet dismantling (Attribute: object, wreck). |
+| `start_observation` | 1 | `08/aiscripts/masstraffic.watchdog.xml` | Startet observation (Attribute: object, target, range). |
+| `start_player_autopilot` | 1 | `08/md/story_paranid.xml` | Startet player autopilot (Attribute: destination). |
+| `start_script` | 23 | `08/aiscripts/fight.attack.object.capital.xml` | Startet script (Attribute: name, object). |
+| `start_towing_object` | 1 | `08/aiscripts/order.salvage.collect.xml` | Startet towing object (Attribute: ship, object). |
 | `startposition` | 2 | `08/md/rml_trackship.xml` | Startposition (Attribute: value). |
 | `stocklevel` | 1 | `08/aiscripts/trade.station.xml` | Stocklevel (Attribute: min). |
-| `stop_actor_walk` | 3 | `08/md/npc_state_machines.xml` | Stop actor walk (Attribute: actor). |
-| `stop_attack` | 6 | `08/aiscripts/masstraffic.watchdog.xml` | Stop attack (Attribute: object, target). |
-| `stop_boost` | 11 | `08/aiscripts/move.evade.xml` | Stop boost (Attribute: object). |
-| `stop_cutscene` | 204 | `08/md/gm_ambush.xml` | Stop cutscene (Attribute: key). |
-| `stop_firing_at_target` | 2 | `08/aiscripts/lib.target.selection.singletarget.xml` | Stop firing at target (Attribute: object, target). |
-| `stop_interactive_notification` | 1 | `08/md/notifications.xml` | Stop interactive notification (Attribute: id). |
-| `stop_moving` | 69 | `08/aiscripts/order.trade.wareexchange.ship.xml` | Stop moving (Attribute: object). |
-| `stop_music` | 4 | `extensions/ego_dlc_terran/ext_03/md/gs_terran2.xml` | Stop music. |
-| `stop_observation` | 11 | `08/aiscripts/masstraffic.watchdog.xml` | Stop observation (Attribute: object, target). |
-| `stop_player_autopilot` | 15 | `extensions/ego_dlc_split/ext_03/md/story_split.xml` | Stop player autopilot. |
-| `stop_shooting` | 17 | `08/aiscripts/fight.attack.object.capital.xml` | Stop shooting (Attribute: object). |
-| `stop_towing_object` | 10 | `08/aiscripts/order.salvage.collect.xml` | Stop towing object (Attribute: ship). |
+| `stop_actor_walk` | 3 | `08/md/npc_state_machines.xml` | Stoppt actor walk (Attribute: actor). |
+| `stop_attack` | 6 | `08/aiscripts/masstraffic.watchdog.xml` | Stoppt attack (Attribute: object, target). |
+| `stop_boost` | 11 | `08/aiscripts/move.evade.xml` | Stoppt boost (Attribute: object). |
+| `stop_cutscene` | 204 | `08/md/gm_ambush.xml` | Stoppt cutscene (Attribute: key). |
+| `stop_firing_at_target` | 2 | `08/aiscripts/lib.target.selection.singletarget.xml` | Stoppt firing at target (Attribute: object, target). |
+| `stop_interactive_notification` | 1 | `08/md/notifications.xml` | Stoppt interactive notification (Attribute: id). |
+| `stop_moving` | 69 | `08/aiscripts/order.trade.wareexchange.ship.xml` | Stoppt moving (Attribute: object). |
+| `stop_music` | 4 | `extensions/ego_dlc_terran/ext_03/md/gs_terran2.xml` | Stoppt music. |
+| `stop_observation` | 11 | `08/aiscripts/masstraffic.watchdog.xml` | Stoppt observation (Attribute: object, target). |
+| `stop_player_autopilot` | 15 | `extensions/ego_dlc_split/ext_03/md/story_split.xml` | Stoppt player autopilot. |
+| `stop_shooting` | 17 | `08/aiscripts/fight.attack.object.capital.xml` | Stoppt shooting (Attribute: object). |
+| `stop_towing_object` | 10 | `08/aiscripts/order.salvage.collect.xml` | Stoppt towing object (Attribute: ship). |
 | `storage` | 1 | `08/md/lib_generic.xml` | Storage (Attribute: skiptimeout). |
 | `store_trade_offer_snapshot` | 4 | `08/aiscripts/order.trade.wareexchange.ship.xml` | Store trade offer snapshot (Attribute: object). |
 | `substitute_text` | 431 | `extensions/ego_dlc_terran/ext_03/md/x4ep1_trade_terran.xml` | Substitute text (Attribute: text, source, comment). |
@@ -1145,31 +1145,31 @@ Automatisch generierte Liste aller XML-Tag-Befehle aus den vorhandenen Skriptver
 | `undock` | 5 | `extensions/ego_dlc_terran/ext_03/md/story_hq_discovery.xml` | Undock (Attribute: ship). |
 | `unit` | 37 | `extensions/ego_dlc_split/ext_03/md/story_split.xml` | Unit (Attribute: macro, exact). |
 | `units` | 17 | `08/md/rml_buildstation.xml` | Units. |
-| `unlock_achievement` | 107 | `extensions/ego_dlc_split/ext_03/md/gs_split1.xml` | Unlock achievement (Attribute: name, comment). |
-| `unlock_all_firstperson_input` | 1 | `08/md/scenario_tutorials.xml` | Unlock all firstperson input. |
-| `unlock_all_flight_input` | 4 | `08/md/scenario_tutorials.xml` | Unlock all flight input. |
-| `unlock_all_holomap_input` | 3 | `08/md/scenario_tutorials.xml` | Unlock all holomap input. |
-| `unlock_all_shooting_input` | 1 | `08/md/scenario_tutorials.xml` | Unlock all shooting input. |
-| `unlock_firstperson_crouch_input` | 1 | `08/md/scenario_tutorials.xml` | Unlock firstperson crouch input. |
-| `unlock_firstperson_jump_input` | 1 | `08/md/scenario_tutorials.xml` | Unlock firstperson jump input. |
-| `unlock_firstperson_look_input` | 1 | `08/md/scenario_tutorials.xml` | Unlock firstperson look input. |
-| `unlock_firstperson_walk_input` | 1 | `08/md/scenario_tutorials.xml` | Unlock firstperson walk input. |
-| `unlock_flight_steering_input` | 2 | `08/md/scenario_tutorials.xml` | Unlock flight steering input. |
-| `unlock_flight_strafe_input` | 2 | `08/md/scenario_tutorials.xml` | Unlock flight strafe input. |
-| `unlock_flight_throttle_input` | 3 | `08/md/scenario_tutorials.xml` | Unlock flight throttle input. |
-| `unlock_getup` | 5 | `08/md/scenario_tutorials.xml` | Unlock getup. |
-| `unlock_holomap_rotation_input` | 1 | `08/md/scenario_tutorials.xml` | Unlock holomap rotation input. |
-| `unlock_holomap_zoom_input` | 3 | `08/md/scenario_tutorials.xml` | Unlock holomap zoom input. |
-| `unlock_primary_shooting_input` | 2 | `08/md/scenario_tutorials.xml` | Unlock primary shooting input. |
-| `unlock_secondary_shooting_input` | 1 | `08/md/scenario_tutorials.xml` | Unlock secondary shooting input. |
+| `unlock_achievement` | 107 | `extensions/ego_dlc_split/ext_03/md/gs_split1.xml` | Entsperrt achievement (Attribute: name, comment). |
+| `unlock_all_firstperson_input` | 1 | `08/md/scenario_tutorials.xml` | Entsperrt all firstperson input. |
+| `unlock_all_flight_input` | 4 | `08/md/scenario_tutorials.xml` | Entsperrt all flight input. |
+| `unlock_all_holomap_input` | 3 | `08/md/scenario_tutorials.xml` | Entsperrt all holomap input. |
+| `unlock_all_shooting_input` | 1 | `08/md/scenario_tutorials.xml` | Entsperrt all shooting input. |
+| `unlock_firstperson_crouch_input` | 1 | `08/md/scenario_tutorials.xml` | Entsperrt firstperson crouch input. |
+| `unlock_firstperson_jump_input` | 1 | `08/md/scenario_tutorials.xml` | Entsperrt firstperson jump input. |
+| `unlock_firstperson_look_input` | 1 | `08/md/scenario_tutorials.xml` | Entsperrt firstperson look input. |
+| `unlock_firstperson_walk_input` | 1 | `08/md/scenario_tutorials.xml` | Entsperrt firstperson walk input. |
+| `unlock_flight_steering_input` | 2 | `08/md/scenario_tutorials.xml` | Entsperrt flight steering input. |
+| `unlock_flight_strafe_input` | 2 | `08/md/scenario_tutorials.xml` | Entsperrt flight strafe input. |
+| `unlock_flight_throttle_input` | 3 | `08/md/scenario_tutorials.xml` | Entsperrt flight throttle input. |
+| `unlock_getup` | 5 | `08/md/scenario_tutorials.xml` | Entsperrt getup. |
+| `unlock_holomap_rotation_input` | 1 | `08/md/scenario_tutorials.xml` | Entsperrt holomap rotation input. |
+| `unlock_holomap_zoom_input` | 3 | `08/md/scenario_tutorials.xml` | Entsperrt holomap zoom input. |
+| `unlock_primary_shooting_input` | 2 | `08/md/scenario_tutorials.xml` | Entsperrt primary shooting input. |
+| `unlock_secondary_shooting_input` | 1 | `08/md/scenario_tutorials.xml` | Entsperrt secondary shooting input. |
 | `unpause_spacesuit_oxygen` | 1 | `08/md/lib_generic.xml` | Unpause spacesuit oxygen (Attribute: object). |
-| `update_mission` | 451 | `08/md/gm_ambush.xml` | Update mission (Attribute: cue). |
-| `update_mission_thread` | 5 | `extensions/ego_dlc_terran/ext_03/md/story_covert_operations.xml` | Update mission thread (Attribute: cue, group). |
-| `update_mission_thread_offer` | 3 | `08/md/x4ep1_war_subscriptions.xml` | Update mission thread offer (Attribute: cue, space). |
-| `update_objective_progress` | 8 | `08/md/x4ep1_mentor_subscription.xml` | Update objective progress (Attribute: cue, progress, max). |
-| `update_offer` | 27 | `extensions/ego_dlc_terran/ext_03/md/story_covert_operations.xml` | Update offer (Attribute: cue, group). |
-| `update_signal_leak_voice` | 11 | `08/md/gm_board_ship.xml` | Update signal leak voice (Attribute: object, page, lines). |
-| `update_trade` | 2 | `08/aiscripts/order.trade.wareexchange.ship.xml` | Update trade (Attribute: trade, amount, desiredamount). |
+| `update_mission` | 451 | `08/md/gm_ambush.xml` | Aktualisiert mission (Attribute: cue). |
+| `update_mission_thread` | 5 | `extensions/ego_dlc_terran/ext_03/md/story_covert_operations.xml` | Aktualisiert mission thread (Attribute: cue, group). |
+| `update_mission_thread_offer` | 3 | `08/md/x4ep1_war_subscriptions.xml` | Aktualisiert mission thread offer (Attribute: cue, space). |
+| `update_objective_progress` | 8 | `08/md/x4ep1_mentor_subscription.xml` | Aktualisiert objective progress (Attribute: cue, progress, max). |
+| `update_offer` | 27 | `extensions/ego_dlc_terran/ext_03/md/story_covert_operations.xml` | Aktualisiert offer (Attribute: cue, group). |
+| `update_signal_leak_voice` | 11 | `08/md/gm_board_ship.xml` | Aktualisiert signal leak voice (Attribute: object, page, lines). |
+| `update_trade` | 2 | `08/aiscripts/order.trade.wareexchange.ship.xml` | Aktualisiert trade (Attribute: trade, amount, desiredamount). |
 | `variation` | 12 | `extensions/ego_dlc_split/ext_03/md/gs_split1.xml` | Variation (Attribute: exact). |
 | `version` | 1 | `08/md/finalisestations.xml` | Version (Attribute: date, status, number). |
 | `virtualmacros` | 29 | `extensions/ego_dlc_split/ext_03/md/gs_split1.xml` | Virtualmacros. |
