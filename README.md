@@ -6,7 +6,8 @@ Dieses Projekt enthält Beispielskripte und Ressourcen für X4: Foundations.
 
 - `CODE_REFERENCE.md` – kuratierte Übersicht wichtiger Funktionen und Befehle.
 - `SCRIPT_COMMAND_REFERENCE.md` – automatisch erzeugte Liste aller in den Skripten verwendeten
-  XML-Befehle mit Vorkommen und Beispieldatei.
+  XML-Befehle mit Vorkommen, Beispieldatei und Kurzbeschreibung.
 - `LUA_FUNCTION_REFERENCE.md` – automatisch erzeugte Liste aller in den Skripten definierten
-  Lua-Funktionen mit Vorkommen und Beispieldatei.
+  Lua-Funktionen mit Vorkommen, Beispieldatei und Kurzbeschreibung.
+
 
