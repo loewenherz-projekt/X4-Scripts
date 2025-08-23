@@ -12,8 +12,8 @@ Automatisch generierte Liste aller in den Skripten definierten Lua-Funktionen.
 | `CallWidgetEventScripts` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt call widget event scripts aus (Parameter: widget, eventName, ...). |
 | `GetLiveData` | 1 | `08/ui/addons/ego_targetmonitor/targetmonitor.lua` | Gibt live data zurück (Parameter: placeholder, component, templateConnectionName). |
 | `GetTargetMonitorDetails` | 1 | `08/ui/addons/ego_targetmonitor/targetmonitor.lua` | Gibt target monitor details zurück (Parameter: component, templateConnectionName, isSofttarget). |
-| `Helper.activateEditBox` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt activate edit box aus (Parameter: tableobj, row, col, cursorpos, shiftstartpos). |
-| `Helper.activateSliderCellInput` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt activate slider cell input aus (Parameter: tableobj, row, col). |
+| `Helper.activateEditBox` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Aktiviert edit box (Parameter: tableobj, row, col, cursorpos, shiftstartpos). |
+| `Helper.activateSliderCellInput` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Aktiviert slider cell input (Parameter: tableobj, row, col). |
 | `Helper.addConversationReturnHandler` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Fügt conversation return handler hinzu (Parameter: menu). |
 | `Helper.addDelayedOneTimeCallbackOnUpdate` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Fügt delayed one time callback on update hinzu (Parameter: callback, blockinput, delaytime). |
 | `Helper.addDisplayedMenu` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Fügt displayed menu hinzu (Parameter: array, index, offset). |
@@ -51,26 +51,26 @@ Automatisch generierte Liste aller in den Skripten definierten Lua-Funktionen.
 | `Helper.checkboxSetTradeRuleOverride` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt checkbox set trade rule override aus (Parameter: menu, container, type, ware, checked). |
 | `Helper.checkboxStorageLevelOverride` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt checkbox storage level override aus (Parameter: menu, container, ware, row, currentlimit, checked). |
 | `Helper.checkboxStorageWarePriceOverride` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt checkbox storage ware price override aus (Parameter: menu, container, ware, row, buysellswitch, price, checked). |
-| `Helper.clearBuyLimit` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt clear buy limit aus (Parameter: menu, container64, ware). |
-| `Helper.clearChatUpdateHandler` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt clear chat update handler aus. |
-| `Helper.clearDataForRefresh` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt clear data for refresh aus (Parameter: menu, layer). |
-| `Helper.clearFrame` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt clear frame aus (Parameter: menu, layer). |
-| `Helper.clearMenu` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt clear menu aus (Parameter: menu). |
-| `Helper.clearSellLimit` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt clear sell limit aus (Parameter: menu, container64, ware). |
-| `Helper.clearShipComparisonData` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt clear ship comparison data aus. |
-| `Helper.clearStationEditorState` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt clear station editor state aus. |
-| `Helper.clearTableConnectionColumn` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt clear table connection column aus (Parameter: menu, col). |
-| `Helper.closeDropDownOptions` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt close drop down options aus (Parameter: tableobj, row, col). |
-| `Helper.closeInteractMenu` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt close interact menu aus. |
-| `Helper.closeMenu` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt close menu aus (Parameter: menu, dueToClose, allowAutoMenu, sound). |
-| `Helper.closeMenuAndCancel` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt close menu and cancel aus (Parameter: menu). |
-| `Helper.closeMenuAndOpenNewMenu` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt close menu and open new menu aus (Parameter: menu, newname, param, noreturn, quickaccess). |
-| `Helper.closeMenuAndReturn` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt close menu and return aus (Parameter: menu, returnparam). |
-| `Helper.closeMenuForNewConversation` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt close menu for new conversation aus (Parameter: menu, conversation, actor, convparam, disablereturn). |
-| `Helper.closeMenuForSection` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt close menu for section aus (Parameter: menu, nextsection, choiceparam). |
-| `Helper.closeMenuForSubConversation` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt close menu for sub conversation aus (Parameter: menu, nextconversation, nextactor, convparam). |
-| `Helper.closeMenuForSubSection` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt close menu for sub section aus (Parameter: menu, nextsection, choiceparam). |
-| `Helper.closeMinimizedMenus` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt close minimized menus aus. |
+| `Helper.clearBuyLimit` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Leert buy limit (Parameter: menu, container64, ware). |
+| `Helper.clearChatUpdateHandler` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Leert chat update handler. |
+| `Helper.clearDataForRefresh` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Leert data for refresh (Parameter: menu, layer). |
+| `Helper.clearFrame` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Leert frame (Parameter: menu, layer). |
+| `Helper.clearMenu` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Leert menu (Parameter: menu). |
+| `Helper.clearSellLimit` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Leert sell limit (Parameter: menu, container64, ware). |
+| `Helper.clearShipComparisonData` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Leert ship comparison data. |
+| `Helper.clearStationEditorState` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Leert station editor state. |
+| `Helper.clearTableConnectionColumn` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Leert table connection column (Parameter: menu, col). |
+| `Helper.closeDropDownOptions` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Schließt drop down options (Parameter: tableobj, row, col). |
+| `Helper.closeInteractMenu` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Schließt interact menu. |
+| `Helper.closeMenu` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Schließt menu (Parameter: menu, dueToClose, allowAutoMenu, sound). |
+| `Helper.closeMenuAndCancel` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Schließt menu and cancel (Parameter: menu). |
+| `Helper.closeMenuAndOpenNewMenu` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Schließt menu and open new menu (Parameter: menu, newname, param, noreturn, quickaccess). |
+| `Helper.closeMenuAndReturn` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Schließt menu and return (Parameter: menu, returnparam). |
+| `Helper.closeMenuForNewConversation` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Schließt menu for new conversation (Parameter: menu, conversation, actor, convparam, disablereturn). |
+| `Helper.closeMenuForSection` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Schließt menu for section (Parameter: menu, nextsection, choiceparam). |
+| `Helper.closeMenuForSubConversation` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Schließt menu for sub conversation (Parameter: menu, nextconversation, nextactor, convparam). |
+| `Helper.closeMenuForSubSection` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Schließt menu for sub section (Parameter: menu, nextsection, choiceparam). |
+| `Helper.closeMinimizedMenus` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Schließt minimized menus. |
 | `Helper.comparePositions` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt compare positions aus (Parameter: pos1, pos2, deviation). |
 | `Helper.confirmEditBoxInput` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt confirm edit box input aus (Parameter: tableobj, row, col). |
 | `Helper.contactSearchHelper` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt contact search helper aus (Parameter: entry, text). |
@@ -79,36 +79,36 @@ Automatisch generierte Liste aller in den Skripten definierten Lua-Funktionen.
 | `Helper.convertGameTimeToXTimeString` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt convert game time to xtime string aus (Parameter: time, dateonly). |
 | `Helper.convertLoadout` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt convert loadout aus (Parameter: object, macro, loadout, softwaredata, loadoutType). |
 | `Helper.convertLoadoutStats` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt convert loadout stats aus (Parameter: stats). |
-| `Helper.createButton` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt create button aus (Parameter: text, icon, noscaling, active, offsetx, offsety, width, height, color, hotkey, icon2, mouseovertext, helpoverlayid). |
-| `Helper.createButtonIcon` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt create button icon aus (Parameter: icon, swapicon, red, green, blue, alpha, width, height, offsetx, offsety). |
-| `Helper.createComponentClassLookup` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt create component class lookup aus. |
-| `Helper.createDropDown` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt create drop down aus (Parameter: options, startoption, text, icon, noscaling, active, offsetx, offsety, width, height, color, hotkey, mouseovertext, optionwidth, allowmouseoverinteraction, optionheight). |
-| `Helper.createDropWaresContext` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt create drop wares context aus (Parameter: menu, frame, instance). |
-| `Helper.createEditBox` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt create edit box aus (Parameter: text, noscaling, offsetx, offsety, width, height, color, hotkey, closemenuonback, mouseovertext, defaulttext, texthidden). |
-| `Helper.createFrameHandle` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt create frame handle aus (Parameter: menu, properties). |
-| `Helper.createLSOStorageNode` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt create lsostorage node aus (Parameter: menu, container, ware, planned, hasstorage, iscargo). |
-| `Helper.createPlayerInfoConfig` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt create player info config aus. |
-| `Helper.createRightSideBar` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt create right side bar aus (Parameter: frame, container, condition, currentmode, callback, selfcallback). |
-| `Helper.createScriptValueWrapper` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt create script value wrapper aus (Parameter: type, value). |
-| `Helper.createSliderCell` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt create slider cell aus (Parameter: text, noscaling, offsetx, offsety, width, height, bgcolor, valuecolor, scale, mouseovertext). |
-| `Helper.createTextInfo` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt create text info aus (Parameter: text, alignment, fontname, fontsize, red, green, blue, alpha, offsetx, offsety). |
-| `Helper.createTopLevelConfig` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt create top level config aus. |
-| `Helper.createTopLevelTab` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt create top level tab aus (Parameter: menu, id, frame, overrideText, locked, noreturn). |
-| `Helper.createTransactionLog` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt create transaction log aus (Parameter: frame, container, tableProperties, refreshCallback, selectionData). |
-| `Helper.createUserQuestionContext` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt create user question context aus (Parameter: menu, frame). |
-| `Helper.createVentureContactContext` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt create venture contact context aus (Parameter: menu, frame). |
-| `Helper.createVentureContacts` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt create venture contacts aus (Parameter: menu, frame, instance, width, x, y, globalx, globaly). |
-| `Helper.createVentureContactsHeader` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt create venture contacts header aus (Parameter: menu, frame, instance, x, y). |
-| `Helper.createVentureContactsTab` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt create venture contacts tab aus (Parameter: menu, frame, instance, mode, width, x, y, globalx, globaly). |
+| `Helper.createButton` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Erstellt button (Parameter: text, icon, noscaling, active, offsetx, offsety, width, height, color, hotkey, icon2, mouseovertext, helpoverlayid). |
+| `Helper.createButtonIcon` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Erstellt button icon (Parameter: icon, swapicon, red, green, blue, alpha, width, height, offsetx, offsety). |
+| `Helper.createComponentClassLookup` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Erstellt component class lookup. |
+| `Helper.createDropDown` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Erstellt drop down (Parameter: options, startoption, text, icon, noscaling, active, offsetx, offsety, width, height, color, hotkey, mouseovertext, optionwidth, allowmouseoverinteraction, optionheight). |
+| `Helper.createDropWaresContext` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Erstellt drop wares context (Parameter: menu, frame, instance). |
+| `Helper.createEditBox` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Erstellt edit box (Parameter: text, noscaling, offsetx, offsety, width, height, color, hotkey, closemenuonback, mouseovertext, defaulttext, texthidden). |
+| `Helper.createFrameHandle` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Erstellt frame handle (Parameter: menu, properties). |
+| `Helper.createLSOStorageNode` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Erstellt lsostorage node (Parameter: menu, container, ware, planned, hasstorage, iscargo). |
+| `Helper.createPlayerInfoConfig` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Erstellt player info config. |
+| `Helper.createRightSideBar` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Erstellt right side bar (Parameter: frame, container, condition, currentmode, callback, selfcallback). |
+| `Helper.createScriptValueWrapper` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Erstellt script value wrapper (Parameter: type, value). |
+| `Helper.createSliderCell` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Erstellt slider cell (Parameter: text, noscaling, offsetx, offsety, width, height, bgcolor, valuecolor, scale, mouseovertext). |
+| `Helper.createTextInfo` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Erstellt text info (Parameter: text, alignment, fontname, fontsize, red, green, blue, alpha, offsetx, offsety). |
+| `Helper.createTopLevelConfig` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Erstellt top level config. |
+| `Helper.createTopLevelTab` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Erstellt top level tab (Parameter: menu, id, frame, overrideText, locked, noreturn). |
+| `Helper.createTransactionLog` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Erstellt transaction log (Parameter: frame, container, tableProperties, refreshCallback, selectionData). |
+| `Helper.createUserQuestionContext` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Erstellt user question context (Parameter: menu, frame). |
+| `Helper.createVentureContactContext` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Erstellt venture contact context (Parameter: menu, frame). |
+| `Helper.createVentureContacts` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Erstellt venture contacts (Parameter: menu, frame, instance, width, x, y, globalx, globaly). |
+| `Helper.createVentureContactsHeader` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Erstellt venture contacts header (Parameter: menu, frame, instance, x, y). |
+| `Helper.createVentureContactsTab` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Erstellt venture contacts tab (Parameter: menu, frame, instance, mode, width, x, y, globalx, globaly). |
 | `Helper.diffpercent` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt diffpercent aus (Parameter: x, isbuyoffer). |
 | `Helper.disableAutoMouseEmulation` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt disable auto mouse emulation aus (Parameter: menu). |
 | `Helper.displaySkill` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt display skill aus (Parameter: skill, usebold, noemptystars). |
 | `Helper.displayStars` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt display stars aus (Parameter: progress, total, usebold, noemptystars). |
-| `Helper.drawCircle` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt draw circle aus (Parameter: radius, centerx, centery, z, color, noscaling). |
-| `Helper.drawEllipse` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt draw ellipse aus (Parameter: radiusx, radiusy, centerx, centery, z, color, noscaling). |
-| `Helper.drawLine` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt draw line aus (Parameter: startpos, endpos, thickness, z, color, noscaling). |
-| `Helper.drawRectangle` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt draw rectangle aus (Parameter: width, height, offsetx, offsety, angle, z, color, noscaling). |
-| `Helper.drawTriangle` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt draw triangle aus (Parameter: width, height, offsetx, offsety, angle, z, color, noscaling). |
+| `Helper.drawCircle` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Zeichnet circle (Parameter: radius, centerx, centery, z, color, noscaling). |
+| `Helper.drawEllipse` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Zeichnet ellipse (Parameter: radiusx, radiusy, centerx, centery, z, color, noscaling). |
+| `Helper.drawLine` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Zeichnet line (Parameter: startpos, endpos, thickness, z, color, noscaling). |
+| `Helper.drawRectangle` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Zeichnet rectangle (Parameter: width, height, offsetx, offsety, angle, z, color, noscaling). |
+| `Helper.drawTriangle` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Zeichnet triangle (Parameter: width, height, offsetx, offsety, angle, z, color, noscaling). |
 | `Helper.dropdownAssignment` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt dropdown assignment aus (Parameter: _, ship, subordinategroupid, commander, newassignment). |
 | `Helper.dropdownDropWaresLockbox` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt dropdown drop wares lockbox aus (Parameter: menu, id). |
 | `Helper.dropdownTradeRule` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt dropdown trade rule aus (Parameter: menu, container, type, ware, id). |
@@ -190,7 +190,7 @@ Automatisch generierte Liste aller in den Skripten definierten Lua-Funktionen.
 | `Helper.onTransactionLogEditBoxActivated` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt on transaction log edit box activated aus (Parameter: widget). |
 | `Helper.onTransactionLogRowChanged` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt on transaction log row changed aus (Parameter: rowdata). |
 | `Helper.onTransactionLogUpdate` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt on transaction log update aus. |
-| `Helper.openInteractMenu` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt open interact menu aus (Parameter: menu, param). |
+| `Helper.openInteractMenu` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Öffnet interact menu (Parameter: menu, param). |
 | `Helper.orderedKeys` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt ordered keys aus (Parameter: t, sorter). |
 | `Helper.orderedNext` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt ordered next aus (Parameter: t, state). |
 | `Helper.orderedNextByWareName` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt ordered next by ware name aus (Parameter: t, state). |
@@ -231,8 +231,8 @@ Automatisch generierte Liste aller in den Skripten definierten Lua-Funktionen.
 | `Helper.removeSliderCellScripts` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Entfernt slider cell scripts (Parameter: menu, tableobj, row, col). |
 | `Helper.removeTabScrollCallback` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Entfernt tab scroll callback (Parameter: menu, script). |
 | `Helper.removeTableScript` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Entfernt table script (Parameter: tableobj, row, col, type, script). |
-| `Helper.resetInteractMenuCallbacks` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt reset interact menu callbacks aus. |
-| `Helper.resetUpdateHandler` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt reset update handler aus. |
+| `Helper.resetInteractMenuCallbacks` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Setzt interact menu callbacks zurück. |
+| `Helper.resetUpdateHandler` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Setzt update handler zurück. |
 | `Helper.restoreMenu` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt restore menu aus (Parameter: menu). |
 | `Helper.returnFromInteractMenu` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt return from interact menu aus (Parameter: uitable, ...). |
 | `Helper.revOrderedNext` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt rev ordered next aus (Parameter: t, state). |
@@ -262,7 +262,7 @@ Automatisch generierte Liste aller in den Skripten definierten Lua-Funktionen.
 | `Helper.setSliderCellValue` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Setzt slider cell value (Parameter: tableobj, row, col, value, newmaxselect). |
 | `Helper.setTabScrollCallback` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Setzt tab scroll callback (Parameter: menu, script). |
 | `Helper.setupDAGLayout` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt setup daglayout aus (Parameter: nodes). |
-| `Helper.showVentureFriendListContext` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt show venture friend list context aus (Parameter: menu, frame). |
+| `Helper.showVentureFriendListContext` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Zeigt venture friend list context (Parameter: menu, frame). |
 | `Helper.slidercellBuyLimitOverride` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt slidercell buy limit override aus (Parameter: menu, container, ware, value, sellslider). |
 | `Helper.slidercellDropWares` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt slidercell drop wares aus (Parameter: menu, ware, value). |
 | `Helper.slidercellSellLimitOverride` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt slidercell sell limit override aus (Parameter: menu, container, ware, value, buyslider). |
@@ -297,13 +297,13 @@ Automatisch generierte Liste aller in den Skripten definierten Lua-Funktionen.
 | `Helper.unlockInfo` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt unlock info aus (Parameter: unlocked, cellcontent). |
 | `Helper.unregisterStationEditorChanges` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt unregister station editor changes aus. |
 | `Helper.unregisterVentureContactCallbacks` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt unregister venture contact callbacks aus. |
-| `Helper.updateButtonColor` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt update button color aus (Parameter: tableobj, row, col, newcolor). |
-| `Helper.updateCellText` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt update cell text aus (Parameter: tableobj, row, col, newtext, newcolor). |
-| `Helper.updateEditBoxText` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt update edit box text aus (Parameter: tableobj, row, col, newtext). |
-| `Helper.updateLSOStorageNode` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt update lsostorage node aus (Parameter: menu, node, container, ware). |
-| `Helper.updateStorageLevel` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt update storage level aus (Parameter: menu, container, ware, value, buyslider, sellslider). |
-| `Helper.updateTradeRules` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt update trade rules aus. |
-| `Helper.updateVenturePlatforms` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt update venture platforms aus. |
+| `Helper.updateButtonColor` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Aktualisiert button color (Parameter: tableobj, row, col, newcolor). |
+| `Helper.updateCellText` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Aktualisiert cell text (Parameter: tableobj, row, col, newtext, newcolor). |
+| `Helper.updateEditBoxText` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Aktualisiert edit box text (Parameter: tableobj, row, col, newtext). |
+| `Helper.updateLSOStorageNode` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Aktualisiert lsostorage node (Parameter: menu, node, container, ware). |
+| `Helper.updateStorageLevel` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Aktualisiert storage level (Parameter: menu, container, ware, value, buyslider, sellslider). |
+| `Helper.updateTradeRules` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Aktualisiert trade rules. |
+| `Helper.updateVenturePlatforms` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Aktualisiert venture platforms. |
 | `Helper.ventureEndTimeLeftText` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt venture end time left text aus (Parameter: endtime). |
 | `Helper.ventureOperationTimeLeftText` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt venture operation time left text aus. |
 | `Helper.ventureSeasonTimeLeftText` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt venture season time left text aus. |
@@ -315,14 +315,14 @@ Automatisch generierte Liste aller in den Skripten definierten Lua-Funktionen.
 | `SetScript` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Setzt script (Parameter: widget, handle, scriptFunction). |
 | `ToReprString` | 1 | `08/ui/addons/ego_debug/debug.lua` | Führt to repr string aus (Parameter: value, recursiondepth, indent). |
 | `UnregisterEvent` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt unregister event aus (Parameter: eventName, scriptFunction). |
-| `View.clearMenus` | 1 | `08/ui/addons/ego_viewhelper/viewhelper.lua` | Führt clear menus aus (Parameter: types). |
-| `View.createView` | 1 | `08/ui/addons/ego_viewhelper/viewhelper.lua` | Führt create view aus. |
+| `View.clearMenus` | 1 | `08/ui/addons/ego_viewhelper/viewhelper.lua` | Leert menus (Parameter: types). |
+| `View.createView` | 1 | `08/ui/addons/ego_viewhelper/viewhelper.lua` | Erstellt view. |
 | `View.generateFrameDescriptors` | 1 | `08/ui/addons/ego_viewhelper/viewhelper.lua` | Führt generate frame descriptors aus. |
 | `View.getMenu` | 1 | `08/ui/addons/ego_viewhelper/viewhelper.lua` | Gibt menu zurück (Parameter: types). |
 | `View.hasMenu` | 1 | `08/ui/addons/ego_viewhelper/viewhelper.lua` | Führt has menu aus (Parameter: types). |
 | `View.hasPlayerControls` | 1 | `08/ui/addons/ego_viewhelper/viewhelper.lua` | Führt has player controls aus. |
-| `View.hideFrame` | 1 | `08/ui/addons/ego_viewhelper/viewhelper.lua` | Führt hide frame aus (Parameter: frame). |
-| `View.hideView` | 1 | `08/ui/addons/ego_viewhelper/viewhelper.lua` | Führt hide view aus. |
+| `View.hideFrame` | 1 | `08/ui/addons/ego_viewhelper/viewhelper.lua` | Versteckt frame (Parameter: frame). |
+| `View.hideView` | 1 | `08/ui/addons/ego_viewhelper/viewhelper.lua` | Versteckt view. |
 | `View.isCloseOnUnhandledClick` | 1 | `08/ui/addons/ego_viewhelper/viewhelper.lua` | Prüft ob close on unhandled click. |
 | `View.isExclusiveInteractions` | 1 | `08/ui/addons/ego_viewhelper/viewhelper.lua` | Prüft ob exclusive interactions. |
 | `View.isSurpressDisplayErrors` | 1 | `08/ui/addons/ego_viewhelper/viewhelper.lua` | Prüft ob surpress display errors. |
@@ -333,53 +333,53 @@ Automatisch generierte Liste aller in den Skripten definierten Lua-Funktionen.
 | `View.registerMenu` | 1 | `08/ui/addons/ego_viewhelper/viewhelper.lua` | Führt register menu aus (Parameter: id, type, callback, clearCallback, framedescriptors, exclusiveInteractions, closeOnUnhandledClick, surpressDisplayErrors, playerControls, useMiniWidgetSystem, startAnimation, keepHUDVisible, keepCrosshairVisible, showTickerPermanently, menuname). |
 | `View.restoreFrame` | 1 | `08/ui/addons/ego_viewhelper/viewhelper.lua` | Führt restore frame aus (Parameter: frame). |
 | `View.restoreMenu` | 1 | `08/ui/addons/ego_viewhelper/viewhelper.lua` | Führt restore menu aus (Parameter: id). |
-| `View.showTickerPermanently` | 1 | `08/ui/addons/ego_viewhelper/viewhelper.lua` | Führt show ticker permanently aus. |
-| `View.startAnimation` | 1 | `08/ui/addons/ego_viewhelper/viewhelper.lua` | Führt start animation aus. |
+| `View.showTickerPermanently` | 1 | `08/ui/addons/ego_viewhelper/viewhelper.lua` | Zeigt ticker permanently. |
+| `View.startAnimation` | 1 | `08/ui/addons/ego_viewhelper/viewhelper.lua` | Startet animation. |
 | `View.unregisterMenu` | 1 | `08/ui/addons/ego_viewhelper/viewhelper.lua` | Führt unregister menu aus (Parameter: id, releaseFrameDescriptor). |
-| `View.updateMenu` | 1 | `08/ui/addons/ego_viewhelper/viewhelper.lua` | Führt update menu aus (Parameter: menu). |
+| `View.updateMenu` | 1 | `08/ui/addons/ego_viewhelper/viewhelper.lua` | Aktualisiert menu (Parameter: menu). |
 | `View.useMiniWidgetSystem` | 1 | `08/ui/addons/ego_viewhelper/viewhelper.lua` | Führt use mini widget system aus. |
 | `abortScan` | 1 | `08/ui/core/lua/crosshair handling.lua` | Führt abort scan aus. |
-| `activateAdditionalIcon` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt activate additional icon aus (Parameter: iconEntry). |
-| `activateAimTargetElement` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt activate aim target element aus. |
-| `activateBar` | 5 | `08/ui/core/lua/infobar4.lua` | Führt activate bar aus (Parameter: text). |
-| `activateBar2` | 1 | `08/ui/core/lua/infobar3.lua` | Führt activate bar2 aus (Parameter: state). |
-| `activateCollectable` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt activate collectable aus (Parameter: targetElement, mode). |
-| `activateCommanderElement` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt activate commander element aus (Parameter: targetElement). |
-| `activateCompass` | 1 | `08/ui/core/lua/compass.lua` | Führt activate compass aus. |
-| `activateCrosshair` | 2 | `08/ui/core/lua/crosshair handling.lua` | Führt activate crosshair aus. |
-| `activateDebugLine` | 1 | `08/ui/core/lua/debugline.lua` | Führt activate debug line aus. |
-| `activateDebugOutline` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt activate debug outline aus (Parameter: targetElement). |
-| `activateDronePanel` | 1 | `08/ui/core/lua/crosshair handling.lua` | Führt activate drone panel aus. |
-| `activateDroneType` | 1 | `08/ui/core/lua/crosshair handling.lua` | Führt activate drone type aus (Parameter: dronePanelEntry). |
-| `activateFactionLadder` | 1 | `08/ui/core/lua/monitors.lua` | Führt activate faction ladder aus. |
-| `activateFill` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt activate fill aus (Parameter: targetElement). |
-| `activateHullShield` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt activate hull shield aus (Parameter: targetElement). |
-| `activateIcon` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt activate icon aus (Parameter: targetElement). |
-| `activateIconElements` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt activate icon elements aus (Parameter: targetElement). |
-| `activateInteractElement` | 1 | `08/ui/core/lua/crosshair handling.lua` | Führt activate interact element aus. |
-| `activateMessageTickerBar` | 1 | `08/ui/core/lua/monitors.lua` | Führt activate message ticker bar aus (Parameter: line, blinking). |
-| `activateMessageTickerText` | 1 | `08/ui/core/lua/monitors.lua` | Führt activate message ticker text aus (Parameter: line). |
-| `activateMissileIncoming` | 1 | `08/ui/core/lua/crosshair handling.lua` | Führt activate missile incoming aus. |
-| `activateMissileLock` | 1 | `08/ui/core/lua/crosshair handling.lua` | Führt activate missile lock aus. |
-| `activateMissionArrow` | 2 | `08/ui/core/lua/crosshair handling.lua` | Führt activate mission arrow aus. |
-| `activateMonitor` | 1 | `08/ui/core/lua/monitors.lua` | Führt activate monitor aus (Parameter: state). |
-| `activateOutline` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt activate outline aus (Parameter: targetElement). |
-| `activateOverlay` | 2 | `08/ui/core/lua/monitors.lua` | Führt activate overlay aus. |
-| `activateOxygenBar` | 1 | `08/ui/core/lua/crosshair handling.lua` | Führt activate oxygen bar aus. |
-| `activatePlayerShieldbar` | 1 | `08/ui/core/lua/crosshair handling.lua` | Führt activate player shieldbar aus. |
-| `activateProgressbar` | 1 | `08/ui/core/lua/crosshair handling.lua` | Führt activate progressbar aus. |
-| `activatePromo` | 1 | `08/ui/core/lua/promo.lua` | Führt activate promo aus. |
-| `activateRadarPicking` | 1 | `08/ui/core/lua/monitors.lua` | Führt activate radar picking aus. |
-| `activateRectangleElements` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt activate rectangle elements aus (Parameter: targetElement, normalMode, showRelationBrackets). |
-| `activateSeparateRadar` | 1 | `08/ui/core/lua/monitors.lua` | Führt activate separate radar aus (Parameter: force). |
-| `activateSeta` | 1 | `08/ui/core/lua/crosshair handling.lua` | Führt activate seta aus (Parameter: mode). |
-| `activateSofttarget` | 1 | `08/ui/core/lua/firstperson_crosshair.lua` | Führt activate softtarget aus. |
-| `activateState` | 1 | `08/ui/core/lua/monitors.lua` | Führt activate state aus (Parameter: state, allowPlaySound, refresh). |
-| `activateTargetArrow` | 1 | `08/ui/core/lua/crosshair handling.lua` | Führt activate target arrow aus. |
-| `activateTargetIndicator` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt activate target indicator aus (Parameter: targetElement, color). |
-| `activateTargetMonitorRadar` | 1 | `08/ui/core/lua/monitors.lua` | Führt activate target monitor radar aus. |
-| `activateTargetRectangle` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt activate target rectangle aus (Parameter: targetElement). |
-| `activateWeaponPanel` | 1 | `08/ui/core/lua/crosshair handling.lua` | Führt activate weapon panel aus. |
+| `activateAdditionalIcon` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktiviert additional icon (Parameter: iconEntry). |
+| `activateAimTargetElement` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktiviert aim target element. |
+| `activateBar` | 5 | `08/ui/core/lua/infobar4.lua` | Aktiviert bar (Parameter: text). |
+| `activateBar2` | 1 | `08/ui/core/lua/infobar3.lua` | Aktiviert bar2 (Parameter: state). |
+| `activateCollectable` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktiviert collectable (Parameter: targetElement, mode). |
+| `activateCommanderElement` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktiviert commander element (Parameter: targetElement). |
+| `activateCompass` | 1 | `08/ui/core/lua/compass.lua` | Aktiviert compass. |
+| `activateCrosshair` | 2 | `08/ui/core/lua/crosshair handling.lua` | Aktiviert crosshair. |
+| `activateDebugLine` | 1 | `08/ui/core/lua/debugline.lua` | Aktiviert debug line. |
+| `activateDebugOutline` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktiviert debug outline (Parameter: targetElement). |
+| `activateDronePanel` | 1 | `08/ui/core/lua/crosshair handling.lua` | Aktiviert drone panel. |
+| `activateDroneType` | 1 | `08/ui/core/lua/crosshair handling.lua` | Aktiviert drone type (Parameter: dronePanelEntry). |
+| `activateFactionLadder` | 1 | `08/ui/core/lua/monitors.lua` | Aktiviert faction ladder. |
+| `activateFill` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktiviert fill (Parameter: targetElement). |
+| `activateHullShield` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktiviert hull shield (Parameter: targetElement). |
+| `activateIcon` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktiviert icon (Parameter: targetElement). |
+| `activateIconElements` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktiviert icon elements (Parameter: targetElement). |
+| `activateInteractElement` | 1 | `08/ui/core/lua/crosshair handling.lua` | Aktiviert interact element. |
+| `activateMessageTickerBar` | 1 | `08/ui/core/lua/monitors.lua` | Aktiviert message ticker bar (Parameter: line, blinking). |
+| `activateMessageTickerText` | 1 | `08/ui/core/lua/monitors.lua` | Aktiviert message ticker text (Parameter: line). |
+| `activateMissileIncoming` | 1 | `08/ui/core/lua/crosshair handling.lua` | Aktiviert missile incoming. |
+| `activateMissileLock` | 1 | `08/ui/core/lua/crosshair handling.lua` | Aktiviert missile lock. |
+| `activateMissionArrow` | 2 | `08/ui/core/lua/crosshair handling.lua` | Aktiviert mission arrow. |
+| `activateMonitor` | 1 | `08/ui/core/lua/monitors.lua` | Aktiviert monitor (Parameter: state). |
+| `activateOutline` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktiviert outline (Parameter: targetElement). |
+| `activateOverlay` | 2 | `08/ui/core/lua/monitors.lua` | Aktiviert overlay. |
+| `activateOxygenBar` | 1 | `08/ui/core/lua/crosshair handling.lua` | Aktiviert oxygen bar. |
+| `activatePlayerShieldbar` | 1 | `08/ui/core/lua/crosshair handling.lua` | Aktiviert player shieldbar. |
+| `activateProgressbar` | 1 | `08/ui/core/lua/crosshair handling.lua` | Aktiviert progressbar. |
+| `activatePromo` | 1 | `08/ui/core/lua/promo.lua` | Aktiviert promo. |
+| `activateRadarPicking` | 1 | `08/ui/core/lua/monitors.lua` | Aktiviert radar picking. |
+| `activateRectangleElements` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktiviert rectangle elements (Parameter: targetElement, normalMode, showRelationBrackets). |
+| `activateSeparateRadar` | 1 | `08/ui/core/lua/monitors.lua` | Aktiviert separate radar (Parameter: force). |
+| `activateSeta` | 1 | `08/ui/core/lua/crosshair handling.lua` | Aktiviert seta (Parameter: mode). |
+| `activateSofttarget` | 1 | `08/ui/core/lua/firstperson_crosshair.lua` | Aktiviert softtarget. |
+| `activateState` | 1 | `08/ui/core/lua/monitors.lua` | Aktiviert state (Parameter: state, allowPlaySound, refresh). |
+| `activateTargetArrow` | 1 | `08/ui/core/lua/crosshair handling.lua` | Aktiviert target arrow. |
+| `activateTargetIndicator` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktiviert target indicator (Parameter: targetElement, color). |
+| `activateTargetMonitorRadar` | 1 | `08/ui/core/lua/monitors.lua` | Aktiviert target monitor radar. |
+| `activateTargetRectangle` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktiviert target rectangle (Parameter: targetElement). |
+| `activateWeaponPanel` | 1 | `08/ui/core/lua/crosshair handling.lua` | Aktiviert weapon panel. |
 | `activationScan` | 1 | `08/ui/core/lua/crosshair handling.lua` | Führt activation scan aus. |
 | `addDebugMessage` | 1 | `08/ui/addons/ego_debuglog/debuglog.lua` | Fügt debug message hinzu (Parameter: id, insertionPos, allowTimestampModification). |
 | `addFlowchartEdge` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_overview.lua` | Fügt flowchart edge hinzu. |
@@ -417,9 +417,9 @@ Automatisch generierte Liste aller in den Skripten definierten Lua-Funktionen.
 | `bcsave_raw` | 1 | `08/ui/core/lua/jit/bcsave.lua` | Führt bcsave raw aus. |
 | `bcsave_tail` | 1 | `08/ui/core/lua/jit/bcsave.lua` | Führt bcsave tail aus. |
 | `bctargets` | 1 | `08/ui/core/lua/jit/bc.lua` | Führt bctargets aus. |
-| `calculateHalfMaxHorizontalScreenExtents` | 1 | `08/ui/core/lua/dialogmenu.lua` | Führt calculate half max horizontal screen extents aus (Parameter: element). |
-| `calculateHalfMaxVerticalScreenExtents` | 1 | `08/ui/core/lua/dialogmenu.lua` | Führt calculate half max vertical screen extents aus (Parameter: element). |
-| `calculateTargetPriority` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt calculate target priority aus (Parameter: x2d, y2d, cameraDistance). |
+| `calculateHalfMaxHorizontalScreenExtents` | 1 | `08/ui/core/lua/dialogmenu.lua` | Berechnet half max horizontal screen extents (Parameter: element). |
+| `calculateHalfMaxVerticalScreenExtents` | 1 | `08/ui/core/lua/dialogmenu.lua` | Berechnet half max vertical screen extents (Parameter: element). |
+| `calculateTargetPriority` | 1 | `08/ui/core/lua/targetsystem.lua` | Berechnet target priority (Parameter: x2d, y2d, cameraDistance). |
 | `callbacks.onAutotargetStateChanged` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt on autotarget state changed aus. |
 | `callbacks.onConnectElement` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt on connect element aus (Parameter: targetSystem, messageID, posID). |
 | `callbacks.onDisconnectElement` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt on disconnect element aus (Parameter: targetSystem). |
@@ -494,11 +494,11 @@ Automatisch generierte Liste aller in den Skripten definierten Lua-Funktionen.
 | `checkSofttargetChange` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt check softtarget change aus (Parameter: forceTarget, newTargetMessageID). |
 | `checkarg` | 1 | `08/ui/core/lua/jit/bcsave.lua` | Führt checkarg aus. |
 | `checkmodname` | 1 | `08/ui/core/lua/jit/bcsave.lua` | Führt checkmodname aus. |
-| `clearDataOnVersionChange` | 1 | `08/ui/addons/ego_debuglog/debuglog.lua` | Führt clear data on version change aus. |
+| `clearDataOnVersionChange` | 1 | `08/ui/addons/ego_debuglog/debuglog.lua` | Leert data on version change. |
 | `clearprefixes` | 1 | `08/ui/core/lua/jit/dis_x86.lua` | Führt clearprefixes aus. |
 | `clickDialogButton` | 1 | `08/ui/core/lua/dialogmenu.lua` | Führt click dialog button aus (Parameter: button). |
-| `closeCurrentState` | 1 | `08/ui/core/lua/monitors.lua` | Führt close current state aus (Parameter: force). |
-| `closeMenu` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt close menu aus (Parameter: menu, resultfunc, allowAutoMenu). |
+| `closeCurrentState` | 1 | `08/ui/core/lua/monitors.lua` | Schließt current state (Parameter: force). |
+| `closeMenu` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Schließt menu (Parameter: menu, resultfunc, allowAutoMenu). |
 | `colorDroneType` | 1 | `08/ui/core/lua/crosshair handling.lua` | Führt color drone type aus (Parameter: dronePanelEntry, droneTypeDetails). |
 | `colorize_ansi` | 1 | `08/ui/core/lua/jit/dump.lua` | Führt colorize ansi aus. |
 | `colorize_html` | 1 | `08/ui/core/lua/jit/dump.lua` | Führt colorize html aus. |
@@ -512,71 +512,71 @@ Automatisch generierte Liste aller in den Skripten definierten Lua-Funktionen.
 | `copyColor` | 1 | `08/ui/core/lua/monitors.lua` | Führt copy color aus (Parameter: color). |
 | `create` | 5 | `08/ui/core/lua/jit/dis_mips.lua` | Führt create aus. |
 | `create64` | 1 | `08/ui/core/lua/jit/dis_x86.lua` | Führt create64 aus. |
-| `createAxisPropertyInfo` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt create axis property info aus (Parameter: axisproperty). |
-| `createCustomHooks` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt create custom hooks aus. |
-| `createDescriptors` | 1 | `08/ui/addons/ego_debuglog/debuglog.lua` | Führt create descriptors aus. |
-| `createFrameTexturePropertyInfo` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt create frame texture property info aus (Parameter: textureproperty). |
-| `createHeaderDescription` | 1 | `08/ui/addons/ego_targetmonitor/targetmonitor.lua` | Führt create header description aus. |
-| `createHotkeyPropertyInfo` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt create hotkey property info aus (Parameter: cell, hotkeyproperty, width, height, scaling). |
-| `createIconPropertyInfo` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt create icon property info aus (Parameter: cell, iconproperty). |
-| `createOverlayPropertyInfo` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt create overlay property info aus (Parameter: widget). |
-| `createSink` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt create sink aus (Parameter: sinkname, numElements). |
-| `createTargetElement` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt create target element aus (Parameter: anarkElement, elementID). |
-| `createTargetSystemClones` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt create target system clones aus (Parameter: master). |
-| `createTextDescription` | 1 | `08/ui/addons/ego_targetmonitor/targetmonitor.lua` | Führt create text description aus. |
-| `createTextPropertyInfo` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt create text property info aus (Parameter: cell, textproperty). |
-| `create_el` | 1 | `08/ui/core/lua/jit/dis_mips.lua` | Führt create el aus. |
-| `create_r6` | 1 | `08/ui/core/lua/jit/dis_mips.lua` | Führt create r6 aus. |
-| `create_r6_el` | 1 | `08/ui/core/lua/jit/dis_mips.lua` | Führt create r6 el aus. |
+| `createAxisPropertyInfo` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Erstellt axis property info (Parameter: axisproperty). |
+| `createCustomHooks` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Erstellt custom hooks. |
+| `createDescriptors` | 1 | `08/ui/addons/ego_debuglog/debuglog.lua` | Erstellt descriptors. |
+| `createFrameTexturePropertyInfo` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Erstellt frame texture property info (Parameter: textureproperty). |
+| `createHeaderDescription` | 1 | `08/ui/addons/ego_targetmonitor/targetmonitor.lua` | Erstellt header description. |
+| `createHotkeyPropertyInfo` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Erstellt hotkey property info (Parameter: cell, hotkeyproperty, width, height, scaling). |
+| `createIconPropertyInfo` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Erstellt icon property info (Parameter: cell, iconproperty). |
+| `createOverlayPropertyInfo` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Erstellt overlay property info (Parameter: widget). |
+| `createSink` | 1 | `08/ui/core/lua/targetsystem.lua` | Erstellt sink (Parameter: sinkname, numElements). |
+| `createTargetElement` | 1 | `08/ui/core/lua/targetsystem.lua` | Erstellt target element (Parameter: anarkElement, elementID). |
+| `createTargetSystemClones` | 1 | `08/ui/core/lua/targetsystem.lua` | Erstellt target system clones (Parameter: master). |
+| `createTextDescription` | 1 | `08/ui/addons/ego_targetmonitor/targetmonitor.lua` | Erstellt text description. |
+| `createTextPropertyInfo` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Erstellt text property info (Parameter: cell, textproperty). |
+| `create_el` | 1 | `08/ui/core/lua/jit/dis_mips.lua` | Erstellt el. |
+| `create_r6` | 1 | `08/ui/core/lua/jit/dis_mips.lua` | Erstellt r6. |
+| `create_r6_el` | 1 | `08/ui/core/lua/jit/dis_mips.lua` | Erstellt r6 el. |
 | `ctlsub` | 2 | `08/ui/core/lua/jit/bc.lua` | Führt ctlsub aus. |
-| `deactivateAdditionalIcon` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt deactivate additional icon aus (Parameter: iconEntry). |
-| `deactivateAimTargetElement` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt deactivate aim target element aus. |
-| `deactivateBar` | 5 | `08/ui/core/lua/infobar4.lua` | Führt deactivate bar aus. |
-| `deactivateBar2` | 1 | `08/ui/core/lua/infobar3.lua` | Führt deactivate bar2 aus (Parameter: type). |
-| `deactivateBottomText` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt deactivate bottom text aus (Parameter: targetElement). |
-| `deactivateCollectable` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt deactivate collectable aus (Parameter: targetElement). |
-| `deactivateCommanderElement` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt deactivate commander element aus (Parameter: targetElement). |
-| `deactivateCompass` | 1 | `08/ui/core/lua/compass.lua` | Führt deactivate compass aus. |
-| `deactivateCrosshair` | 2 | `08/ui/core/lua/crosshair handling.lua` | Führt deactivate crosshair aus. |
-| `deactivateCutscene` | 1 | `08/ui/core/lua/monitors.lua` | Führt deactivate cutscene aus. |
-| `deactivateDebugLine` | 1 | `08/ui/core/lua/debugline.lua` | Führt deactivate debug line aus. |
-| `deactivateDebugOutline` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt deactivate debug outline aus (Parameter: targetElement). |
-| `deactivateDronePanel` | 1 | `08/ui/core/lua/crosshair handling.lua` | Führt deactivate drone panel aus. |
-| `deactivateDroneType` | 1 | `08/ui/core/lua/crosshair handling.lua` | Führt deactivate drone type aus (Parameter: dronePanelEntry). |
-| `deactivateFactionLadder` | 1 | `08/ui/core/lua/monitors.lua` | Führt deactivate faction ladder aus. |
-| `deactivateFill` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt deactivate fill aus (Parameter: targetElement). |
-| `deactivateHullShield` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt deactivate hull shield aus (Parameter: targetElement). |
-| `deactivateIcon` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt deactivate icon aus (Parameter: targetElement). |
-| `deactivateIconElements` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt deactivate icon elements aus (Parameter: targetElement). |
-| `deactivateInteractElement` | 1 | `08/ui/core/lua/crosshair handling.lua` | Führt deactivate interact element aus. |
-| `deactivateInteraction` | 1 | `08/ui/core/lua/monitors.lua` | Führt deactivate interaction aus. |
-| `deactivateMessageTickerLine` | 1 | `08/ui/core/lua/monitors.lua` | Führt deactivate message ticker line aus (Parameter: line). |
-| `deactivateMissileIncoming` | 1 | `08/ui/core/lua/crosshair handling.lua` | Führt deactivate missile incoming aus. |
-| `deactivateMissileLock` | 1 | `08/ui/core/lua/crosshair handling.lua` | Führt deactivate missile lock aus. |
-| `deactivateMissileLocks` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt deactivate missile locks aus. |
-| `deactivateMissionArrow` | 2 | `08/ui/core/lua/crosshair handling.lua` | Führt deactivate mission arrow aus. |
-| `deactivateMonitor` | 1 | `08/ui/core/lua/monitors.lua` | Führt deactivate monitor aus (Parameter: playSound). |
-| `deactivateOffScreenBox` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt deactivate off screen box aus (Parameter: targetElement). |
-| `deactivateOutline` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt deactivate outline aus (Parameter: targetElement). |
-| `deactivateOverlay` | 2 | `08/ui/core/lua/monitors.lua` | Führt deactivate overlay aus. |
-| `deactivateOxygenBar` | 1 | `08/ui/core/lua/crosshair handling.lua` | Führt deactivate oxygen bar aus. |
-| `deactivatePlayerShieldbar` | 1 | `08/ui/core/lua/crosshair handling.lua` | Führt deactivate player shieldbar aus. |
-| `deactivateProgressbar` | 1 | `08/ui/core/lua/crosshair handling.lua` | Führt deactivate progressbar aus (Parameter: type). |
-| `deactivatePromo` | 1 | `08/ui/core/lua/promo.lua` | Führt deactivate promo aus. |
-| `deactivateRadarPicking` | 1 | `08/ui/core/lua/monitors.lua` | Führt deactivate radar picking aus. |
-| `deactivateRectangleElements` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt deactivate rectangle elements aus (Parameter: targetElement). |
-| `deactivateSeparateRadar` | 1 | `08/ui/core/lua/monitors.lua` | Führt deactivate separate radar aus. |
-| `deactivateSeta` | 1 | `08/ui/core/lua/crosshair handling.lua` | Führt deactivate seta aus (Parameter: force). |
-| `deactivateSideText` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt deactivate side text aus (Parameter: targetElement). |
-| `deactivateSideText2` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt deactivate side text2 aus (Parameter: targetElement). |
-| `deactivateSofttarget` | 1 | `08/ui/core/lua/firstperson_crosshair.lua` | Führt deactivate softtarget aus. |
-| `deactivateState` | 1 | `08/ui/core/lua/monitors.lua` | Führt deactivate state aus (Parameter: state, refresh, keepCutscene). |
-| `deactivateTargetArrow` | 1 | `08/ui/core/lua/crosshair handling.lua` | Führt deactivate target arrow aus. |
-| `deactivateTargetIndicator` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt deactivate target indicator aus (Parameter: targetElement). |
-| `deactivateTargetMonitorNotification` | 1 | `08/ui/core/lua/monitors.lua` | Führt deactivate target monitor notification aus. |
-| `deactivateTargetMonitorRadar` | 1 | `08/ui/core/lua/monitors.lua` | Führt deactivate target monitor radar aus. |
-| `deactivateTargetRectangle` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt deactivate target rectangle aus (Parameter: targetElement). |
-| `deactivateWeaponPanel` | 1 | `08/ui/core/lua/crosshair handling.lua` | Führt deactivate weapon panel aus. |
+| `deactivateAdditionalIcon` | 1 | `08/ui/core/lua/targetsystem.lua` | Deaktiviert additional icon (Parameter: iconEntry). |
+| `deactivateAimTargetElement` | 1 | `08/ui/core/lua/targetsystem.lua` | Deaktiviert aim target element. |
+| `deactivateBar` | 5 | `08/ui/core/lua/infobar4.lua` | Deaktiviert bar. |
+| `deactivateBar2` | 1 | `08/ui/core/lua/infobar3.lua` | Deaktiviert bar2 (Parameter: type). |
+| `deactivateBottomText` | 1 | `08/ui/core/lua/targetsystem.lua` | Deaktiviert bottom text (Parameter: targetElement). |
+| `deactivateCollectable` | 1 | `08/ui/core/lua/targetsystem.lua` | Deaktiviert collectable (Parameter: targetElement). |
+| `deactivateCommanderElement` | 1 | `08/ui/core/lua/targetsystem.lua` | Deaktiviert commander element (Parameter: targetElement). |
+| `deactivateCompass` | 1 | `08/ui/core/lua/compass.lua` | Deaktiviert compass. |
+| `deactivateCrosshair` | 2 | `08/ui/core/lua/crosshair handling.lua` | Deaktiviert crosshair. |
+| `deactivateCutscene` | 1 | `08/ui/core/lua/monitors.lua` | Deaktiviert cutscene. |
+| `deactivateDebugLine` | 1 | `08/ui/core/lua/debugline.lua` | Deaktiviert debug line. |
+| `deactivateDebugOutline` | 1 | `08/ui/core/lua/targetsystem.lua` | Deaktiviert debug outline (Parameter: targetElement). |
+| `deactivateDronePanel` | 1 | `08/ui/core/lua/crosshair handling.lua` | Deaktiviert drone panel. |
+| `deactivateDroneType` | 1 | `08/ui/core/lua/crosshair handling.lua` | Deaktiviert drone type (Parameter: dronePanelEntry). |
+| `deactivateFactionLadder` | 1 | `08/ui/core/lua/monitors.lua` | Deaktiviert faction ladder. |
+| `deactivateFill` | 1 | `08/ui/core/lua/targetsystem.lua` | Deaktiviert fill (Parameter: targetElement). |
+| `deactivateHullShield` | 1 | `08/ui/core/lua/targetsystem.lua` | Deaktiviert hull shield (Parameter: targetElement). |
+| `deactivateIcon` | 1 | `08/ui/core/lua/targetsystem.lua` | Deaktiviert icon (Parameter: targetElement). |
+| `deactivateIconElements` | 1 | `08/ui/core/lua/targetsystem.lua` | Deaktiviert icon elements (Parameter: targetElement). |
+| `deactivateInteractElement` | 1 | `08/ui/core/lua/crosshair handling.lua` | Deaktiviert interact element. |
+| `deactivateInteraction` | 1 | `08/ui/core/lua/monitors.lua` | Deaktiviert interaction. |
+| `deactivateMessageTickerLine` | 1 | `08/ui/core/lua/monitors.lua` | Deaktiviert message ticker line (Parameter: line). |
+| `deactivateMissileIncoming` | 1 | `08/ui/core/lua/crosshair handling.lua` | Deaktiviert missile incoming. |
+| `deactivateMissileLock` | 1 | `08/ui/core/lua/crosshair handling.lua` | Deaktiviert missile lock. |
+| `deactivateMissileLocks` | 1 | `08/ui/core/lua/targetsystem.lua` | Deaktiviert missile locks. |
+| `deactivateMissionArrow` | 2 | `08/ui/core/lua/crosshair handling.lua` | Deaktiviert mission arrow. |
+| `deactivateMonitor` | 1 | `08/ui/core/lua/monitors.lua` | Deaktiviert monitor (Parameter: playSound). |
+| `deactivateOffScreenBox` | 1 | `08/ui/core/lua/targetsystem.lua` | Deaktiviert off screen box (Parameter: targetElement). |
+| `deactivateOutline` | 1 | `08/ui/core/lua/targetsystem.lua` | Deaktiviert outline (Parameter: targetElement). |
+| `deactivateOverlay` | 2 | `08/ui/core/lua/monitors.lua` | Deaktiviert overlay. |
+| `deactivateOxygenBar` | 1 | `08/ui/core/lua/crosshair handling.lua` | Deaktiviert oxygen bar. |
+| `deactivatePlayerShieldbar` | 1 | `08/ui/core/lua/crosshair handling.lua` | Deaktiviert player shieldbar. |
+| `deactivateProgressbar` | 1 | `08/ui/core/lua/crosshair handling.lua` | Deaktiviert progressbar (Parameter: type). |
+| `deactivatePromo` | 1 | `08/ui/core/lua/promo.lua` | Deaktiviert promo. |
+| `deactivateRadarPicking` | 1 | `08/ui/core/lua/monitors.lua` | Deaktiviert radar picking. |
+| `deactivateRectangleElements` | 1 | `08/ui/core/lua/targetsystem.lua` | Deaktiviert rectangle elements (Parameter: targetElement). |
+| `deactivateSeparateRadar` | 1 | `08/ui/core/lua/monitors.lua` | Deaktiviert separate radar. |
+| `deactivateSeta` | 1 | `08/ui/core/lua/crosshair handling.lua` | Deaktiviert seta (Parameter: force). |
+| `deactivateSideText` | 1 | `08/ui/core/lua/targetsystem.lua` | Deaktiviert side text (Parameter: targetElement). |
+| `deactivateSideText2` | 1 | `08/ui/core/lua/targetsystem.lua` | Deaktiviert side text2 (Parameter: targetElement). |
+| `deactivateSofttarget` | 1 | `08/ui/core/lua/firstperson_crosshair.lua` | Deaktiviert softtarget. |
+| `deactivateState` | 1 | `08/ui/core/lua/monitors.lua` | Deaktiviert state (Parameter: state, refresh, keepCutscene). |
+| `deactivateTargetArrow` | 1 | `08/ui/core/lua/crosshair handling.lua` | Deaktiviert target arrow. |
+| `deactivateTargetIndicator` | 1 | `08/ui/core/lua/targetsystem.lua` | Deaktiviert target indicator (Parameter: targetElement). |
+| `deactivateTargetMonitorNotification` | 1 | `08/ui/core/lua/monitors.lua` | Deaktiviert target monitor notification. |
+| `deactivateTargetMonitorRadar` | 1 | `08/ui/core/lua/monitors.lua` | Deaktiviert target monitor radar. |
+| `deactivateTargetRectangle` | 1 | `08/ui/core/lua/targetsystem.lua` | Deaktiviert target rectangle (Parameter: targetElement). |
+| `deactivateWeaponPanel` | 1 | `08/ui/core/lua/crosshair handling.lua` | Deaktiviert weapon panel. |
 | `decode_imm13` | 1 | `08/ui/core/lua/jit/dis_arm64.lua` | Führt decode imm13 aus. |
 | `deg2rad` | 1 | `08/ui/core/lua/dialogmenu.lua` | Führt deg2rad aus (Parameter: angle). |
 | `detectmodname` | 1 | `08/ui/core/lua/jit/bcsave.lua` | Führt detectmodname aus. |
@@ -678,24 +678,24 @@ Automatisch generierte Liste aller in den Skripten definierten Lua-Funktionen.
 | `hasInventory` | 1 | `08/ui/addons/ego_targetmonitor/targetmonitor.lua` | Führt has inventory aus. |
 | `hasPossibleActions` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt has possible actions aus (Parameter: targetElement). |
 | `hasVisibleActions` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt has visible actions aus (Parameter: targetElement). |
-| `hideAimTargetElement` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt hide aim target element aus. |
-| `hideBar` | 1 | `08/ui/core/lua/subchannelbar.lua` | Führt hide bar aus. |
-| `hideCells` | 1 | `08/ui/core/lua/overlay.lua` | Führt hide cells aus. |
-| `hideCompass` | 1 | `08/ui/core/lua/compass.lua` | Führt hide compass aus. |
-| `hideDebugLine` | 1 | `08/ui/core/lua/debugline.lua` | Führt hide debug line aus. |
-| `hideDebugLog` | 1 | `08/ui/addons/ego_debuglog/debuglog.lua` | Führt hide debug log aus. |
-| `hideDebugOutline` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt hide debug outline aus (Parameter: targetElement). |
-| `hideDialogMenu` | 1 | `08/ui/core/lua/dialogmenu.lua` | Führt hide dialog menu aus. |
-| `hideEnvironmentInfo` | 1 | `08/ui/core/lua/monitors.lua` | Führt hide environment info aus. |
-| `hideFPSCounter` | 1 | `08/ui/addons/ego_debuglog/debuglog.lua` | Führt hide fpscounter aus. |
-| `hideMissionDetails` | 1 | `08/ui/core/lua/monitors.lua` | Führt hide mission details aus. |
-| `hideMouseOverText` | 1 | `08/ui/core/lua/dialogmenu.lua` | Führt hide mouse over text aus. |
-| `hideNotorietyBar` | 1 | `08/ui/core/lua/monitors.lua` | Führt hide notoriety bar aus. |
-| `hideOverlay` | 1 | `08/ui/core/lua/overlay.lua` | Führt hide overlay aus. |
-| `hidePromo` | 1 | `08/ui/core/lua/promo.lua` | Führt hide promo aus. |
-| `hideSkipNote` | 1 | `08/ui/core/lua/subchannelbar.lua` | Führt hide skip note aus. |
-| `hideSofttarget` | 1 | `08/ui/core/lua/monitors.lua` | Führt hide softtarget aus. |
-| `hideTargetMonitorNotification` | 1 | `08/ui/core/lua/monitors.lua` | Führt hide target monitor notification aus. |
+| `hideAimTargetElement` | 1 | `08/ui/core/lua/targetsystem.lua` | Versteckt aim target element. |
+| `hideBar` | 1 | `08/ui/core/lua/subchannelbar.lua` | Versteckt bar. |
+| `hideCells` | 1 | `08/ui/core/lua/overlay.lua` | Versteckt cells. |
+| `hideCompass` | 1 | `08/ui/core/lua/compass.lua` | Versteckt compass. |
+| `hideDebugLine` | 1 | `08/ui/core/lua/debugline.lua` | Versteckt debug line. |
+| `hideDebugLog` | 1 | `08/ui/addons/ego_debuglog/debuglog.lua` | Versteckt debug log. |
+| `hideDebugOutline` | 1 | `08/ui/core/lua/targetsystem.lua` | Versteckt debug outline (Parameter: targetElement). |
+| `hideDialogMenu` | 1 | `08/ui/core/lua/dialogmenu.lua` | Versteckt dialog menu. |
+| `hideEnvironmentInfo` | 1 | `08/ui/core/lua/monitors.lua` | Versteckt environment info. |
+| `hideFPSCounter` | 1 | `08/ui/addons/ego_debuglog/debuglog.lua` | Versteckt fpscounter. |
+| `hideMissionDetails` | 1 | `08/ui/core/lua/monitors.lua` | Versteckt mission details. |
+| `hideMouseOverText` | 1 | `08/ui/core/lua/dialogmenu.lua` | Versteckt mouse over text. |
+| `hideNotorietyBar` | 1 | `08/ui/core/lua/monitors.lua` | Versteckt notoriety bar. |
+| `hideOverlay` | 1 | `08/ui/core/lua/overlay.lua` | Versteckt overlay. |
+| `hidePromo` | 1 | `08/ui/core/lua/promo.lua` | Versteckt promo. |
+| `hideSkipNote` | 1 | `08/ui/core/lua/subchannelbar.lua` | Versteckt skip note. |
+| `hideSofttarget` | 1 | `08/ui/core/lua/monitors.lua` | Versteckt softtarget. |
+| `hideTargetMonitorNotification` | 1 | `08/ui/core/lua/monitors.lua` | Versteckt target monitor notification. |
 | `incomplete` | 1 | `08/ui/core/lua/jit/dis_x86.lua` | Führt incomplete aus. |
 | `init` | 38 | `08/ui/addons/ego_viewhelper/viewhelper.lua` | Führt init aus. |
 | `initButtonList` | 1 | `08/ui/core/lua/dialogmenu.lua` | Führt init button list aus (Parameter: buttons). |
@@ -781,8 +781,8 @@ Automatisch generierte Liste aller in den Skripten definierten Lua-Funktionen.
 | `menu.addWareInfoButtonRow` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Fügt ware info button row hinzu (Parameter: data). |
 | `menu.agentActionIconColor` | 1 | `08/ui/addons/ego_detailmonitor/menu_diplomacy.lua` | Führt agent action icon color aus. |
 | `menu.allowResetView` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt allow reset view aus. |
-| `menu.applyFilterSettings` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt apply filter settings aus (Parameter: noupdate). |
-| `menu.applySettings` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_configuration.lua` | Führt apply settings aus. |
+| `menu.applyFilterSettings` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Wendet filter settings an (Parameter: noupdate). |
+| `menu.applySettings` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_configuration.lua` | Wendet settings an. |
 | `menu.areTurretsArmed` | 3 | `08/ui/addons/ego_interactmenu/menu_interactmenu.lua` | Führt are turrets armed aus (Parameter: defensible). |
 | `menu.budgetHeaderName` | 1 | `08/ui/addons/ego_gameoptions/customgame.lua` | Führt budget header name aus (Parameter: budgetid). |
 | `menu.budgetHeaderText` | 1 | `08/ui/addons/ego_gameoptions/customgame.lua` | Führt budget header text aus (Parameter: budgetid). |
@@ -1459,16 +1459,16 @@ Automatisch generierte Liste aller in den Skripten definierten Lua-Funktionen.
 | `menu.cleanupHelper` | 1 | `08/ui/addons/ego_detailmonitor/menu_timeline.lua` | Führt cleanup helper aus. |
 | `menu.cleanupKnownSectorsAllowedByStory` | 1 | `08/ui/addons/ego_gameoptions/customgame.lua` | Führt cleanup known sectors allowed by story aus (Parameter: oldstoryid, newstoryid). |
 | `menu.cleanupRenderTarget` | 1 | `08/ui/addons/ego_detailmonitor/menu_encyclopedia.lua` | Führt cleanup render target aus. |
-| `menu.clearExtraSubordinates` | 1 | `08/ui/addons/ego_interactmenu/menu_interactmenu.lua` | Führt clear extra subordinates aus (Parameter: selectedfleetunit, selectedreplacingcomponent). |
-| `menu.clearHelp` | 1 | `08/ui/addons/ego_helptext/helptext.lua` | Führt clear help aus (Parameter: reason). |
-| `menu.clearMouseCursorOverrides` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt clear mouse cursor overrides aus. |
-| `menu.clearSelectedComponents` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt clear selected components aus. |
-| `menu.clearUndoStack` | 1 | `08/ui/addons/ego_detailmonitor/menu_ship_configuration.lua` | Führt clear undo stack aus. |
+| `menu.clearExtraSubordinates` | 1 | `08/ui/addons/ego_interactmenu/menu_interactmenu.lua` | Leert extra subordinates (Parameter: selectedfleetunit, selectedreplacingcomponent). |
+| `menu.clearHelp` | 1 | `08/ui/addons/ego_helptext/helptext.lua` | Leert help (Parameter: reason). |
+| `menu.clearMouseCursorOverrides` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Leert mouse cursor overrides. |
+| `menu.clearSelectedComponents` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Leert selected components. |
+| `menu.clearUndoStack` | 1 | `08/ui/addons/ego_detailmonitor/menu_ship_configuration.lua` | Leert undo stack. |
 | `menu.close` | 2 | `08/ui/addons/ego_detailmonitor/menu_toplevel.lua` | Führt close aus. |
-| `menu.closeContextMenu` | 13 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Führt close context menu aus. |
-| `menu.closeMenu` | 11 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Führt close menu aus (Parameter: dueToClose). |
-| `menu.closeTabs` | 1 | `08/ui/addons/ego_detailmonitor/menu_toplevel.lua` | Führt close tabs aus. |
-| `menu.closeUserQuestionMenu` | 1 | `08/ui/addons/ego_detailmonitor/menu_diplomacy.lua` | Führt close user question menu aus. |
+| `menu.closeContextMenu` | 13 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Schließt context menu. |
+| `menu.closeMenu` | 11 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Schließt menu (Parameter: dueToClose). |
+| `menu.closeTabs` | 1 | `08/ui/addons/ego_detailmonitor/menu_toplevel.lua` | Schließt tabs. |
+| `menu.closeUserQuestionMenu` | 1 | `08/ui/addons/ego_detailmonitor/menu_diplomacy.lua` | Schließt user question menu. |
 | `menu.compareTradeWareSelection` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_overview.lua` | Führt compare trade ware selection aus. |
 | `menu.componentSorter` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt component sorter aus (Parameter: sorttype). |
 | `menu.confirm` | 1 | `08/ui/addons/ego_detailmonitor/menu_userquestion.lua` | Führt confirm aus. |
@@ -1479,155 +1479,155 @@ Automatisch generierte Liste aller in den Skripten definierten Lua-Funktionen.
 | `menu.convertDate` | 1 | `08/ui/addons/ego_detailmonitor/menu_timeline.lua` | Führt convert date aus (Parameter: date). |
 | `menu.copyDefaultOrderForPlanning` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt copy default order for planning aus (Parameter: instance). |
 | `menu.countPlayerProperty` | 1 | `08/ui/addons/ego_gameoptions/customgame.lua` | Führt count player property aus (Parameter: id, count, moneybudget, peoplebudget, totalcount). |
-| `menu.createAccounts` | 1 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Führt create accounts aus (Parameter: frame, tableProperties, tabOrderOffset). |
-| `menu.createActionConfigContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_diplomacy.lua` | Führt create action config context aus (Parameter: frame). |
-| `menu.createAgentDetailsContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_diplomacy.lua` | Führt create agent details context aus (Parameter: frame). |
-| `menu.createAgents` | 1 | `08/ui/addons/ego_detailmonitor/menu_diplomacy.lua` | Führt create agents aus (Parameter: frame, tableProperties). |
-| `menu.createBoardingContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create boarding context aus (Parameter: frame, target, boarders). |
-| `menu.createButtonTable` | 2 | `08/ui/addons/ego_detailmonitor/menu_scenario_debriefing.lua` | Führt create button table aus (Parameter: frame, tablewidth, xoffset, yoffset). |
-| `menu.createCPExportContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_configuration.lua` | Führt create cpexport context aus. |
-| `menu.createCPImportContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_configuration.lua` | Führt create cpimport context aus. |
-| `menu.createCPRemoveContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_configuration.lua` | Führt create cpremove context aus. |
-| `menu.createCPSaveContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_configuration.lua` | Führt create cpsave context aus. |
-| `menu.createChangeLogoContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create change logo context aus (Parameter: frame). |
-| `menu.createCheats` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create cheats aus (Parameter: frame). |
-| `menu.createComparisonTable` | 1 | `08/ui/addons/ego_detailmonitor/menu_ship_comparison.lua` | Führt create comparison table aus (Parameter: frame). |
-| `menu.createComponentTable` | 1 | `08/ui/addons/ego_detailmonitor/menu_mapeditor.lua` | Führt create component table aus (Parameter: frame). |
-| `menu.createConstructionRow` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create construction row aus (Parameter: ftable, component, construction, iteration). |
-| `menu.createConstructionSection` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create construction section aus (Parameter: instance, id, ftable, name, constructions). |
-| `menu.createConstructionSubSection` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create construction sub section aus (Parameter: ftable, component, constructions). |
-| `menu.createContentTable` | 1 | `08/ui/addons/ego_interactmenu/menu_interactmenu.lua` | Führt create content table aus (Parameter: frame, position). |
-| `menu.createContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Führt create context aus (Parameter: x, y). |
-| `menu.createContextFrame` | 6 | `08/ui/addons/ego_chatwindow/chatwindow.lua` | Führt create context frame aus (Parameter: data, x, y, width, nomouseout). |
-| `menu.createContextMenu` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Führt create context menu aus. |
-| `menu.createContextMenuDirectInput` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Führt create context menu direct input aus (Parameter: frame). |
-| `menu.createContextMenuEditColor` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Führt create context menu edit color aus (Parameter: frame). |
-| `menu.createContextMenuFirstGame` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Führt create context menu first game aus (Parameter: frame). |
-| `menu.createContextMenuInfo` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Führt create context menu info aus (Parameter: frame). |
-| `menu.createContextMenuModified` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Führt create context menu modified aus (Parameter: frame). |
-| `menu.createContextMenuRemap` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Führt create context menu remap aus (Parameter: frame). |
-| `menu.createContextMenuRemoveControllerInput` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Führt create context menu remove controller input aus (Parameter: frame). |
-| `menu.createContextMenuUISecurity` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Führt create context menu uisecurity aus (Parameter: frame). |
-| `menu.createContextMenuUserQuestion` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Führt create context menu user question aus (Parameter: frame). |
-| `menu.createContextMenuVentureExtension` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Führt create context menu venture extension aus (Parameter: frame). |
-| `menu.createCraftableEntry` | 2 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Führt create craftable entry aus (Parameter: ware). |
-| `menu.createCrafting` | 2 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Führt create crafting aus (Parameter: frame, tableProperties). |
-| `menu.createCrewInfoSubmenu` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create crew info submenu aus (Parameter: inputframe, instance). |
-| `menu.createCrewTransferContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create crew transfer context aus (Parameter: frame). |
-| `menu.createDescTable` | 2 | `08/ui/addons/ego_detailmonitor/menu_scenario_debriefing.lua` | Führt create desc table aus (Parameter: frame, tablewidth, xoffset, yoffset). |
-| `menu.createEmbassy` | 1 | `08/ui/addons/ego_detailmonitor/menu_diplomacy.lua` | Führt create embassy aus (Parameter: frame, tableProperties). |
-| `menu.createEmpire` | 1 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Führt create empire aus (Parameter: frame, tableProperties). |
-| `menu.createEmptyFrame` | 2 | `08/ui/addons/ego_detailmonitor/menu_scenario_debriefing.lua` | Führt create empty frame aus. |
-| `menu.createEquipmentContext` | 2 | `08/ui/addons/ego_detailmonitor/menu_ship_configuration.lua` | Führt create equipment context aus. |
-| `menu.createEquipmentFilterContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_ship_configuration.lua` | Führt create equipment filter context aus. |
-| `menu.createEquipmentModEntry` | 1 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Führt create equipment mod entry aus (Parameter: ftable, modclass, moddata). |
-| `menu.createEquipmentMods` | 1 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Führt create equipment mods aus (Parameter: frame, tableProperties). |
-| `menu.createEquipmentPropertyEntry` | 1 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Führt create equipment property entry aus (Parameter: ftable, modclass, property). |
-| `menu.createEventCompletedContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_diplomacy.lua` | Führt create event completed context aus (Parameter: frame). |
-| `menu.createEventContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_diplomacy.lua` | Führt create event context aus (Parameter: frame). |
-| `menu.createEvents` | 1 | `08/ui/addons/ego_detailmonitor/menu_diplomacy.lua` | Führt create events aus (Parameter: frame, tableProperties). |
-| `menu.createExportTable` | 1 | `08/ui/addons/ego_detailmonitor/menu_mapeditor.lua` | Führt create export table aus (Parameter: frame). |
-| `menu.createFactionDetailsContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_diplomacy.lua` | Führt create faction details context aus (Parameter: frame). |
-| `menu.createFactions` | 2 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Führt create factions aus (Parameter: frame, tableProperties). |
-| `menu.createFilterMode` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create filter mode aus (Parameter: ftable, numCols). |
-| `menu.createFilterparamWareContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create filterparam ware context aus (Parameter: frame). |
-| `menu.createFleetUnitRow` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create fleet unit row aus (Parameter: instance, ftable, fleetunit, iteration, commanderlocation, numdisplayed, sorter). |
-| `menu.createFrame` | 3 | `08/ui/addons/ego_detailmonitor/menu_transactionlog.lua` | Führt create frame aus (Parameter: toprow, selectedrow). |
-| `menu.createGraph` | 1 | `08/ui/addons/ego_detailmonitor/menu_encyclopedia.lua` | Führt create graph aus (Parameter: width, height, x, y). |
-| `menu.createHireContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create hire context aus (Parameter: frame). |
-| `menu.createHireMode` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create hire mode aus (Parameter: ftable, numCols). |
-| `menu.createIndex` | 1 | `08/ui/addons/ego_detailmonitor/menu_encyclopedia.lua` | Führt create index aus. |
-| `menu.createInfo2Frame` | 2 | `08/ui/addons/ego_detailmonitor/menu_scenario_debriefing.lua` | Führt create info2 frame aus. |
-| `menu.createInfoContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create info context aus (Parameter: frame). |
-| `menu.createInfoFrame` | 10 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create info frame aus. |
-| `menu.createInfoFrame2` | 2 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create info frame2 aus. |
-| `menu.createInfoSubmenu` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create info submenu aus (Parameter: inputframe, instance). |
-| `menu.createInventory` | 1 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Führt create inventory aus (Parameter: frame, tableProperties, mode, tabOrderOffset). |
-| `menu.createInventoryContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_crafting.lua` | Führt create inventory context aus (Parameter: wareinfo, x, y). |
-| `menu.createInventoryHeader` | 1 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Führt create inventory header aus (Parameter: frame, tableProperties). |
-| `menu.createLadderTable` | 2 | `08/ui/addons/ego_detailmonitor/menu_scenario_debriefing.lua` | Führt create ladder table aus (Parameter: frame, tablewidth, xoffset, yoffset, maxVisibleHeight). |
-| `menu.createLegend` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create legend aus. |
-| `menu.createLegendMode` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create legend mode aus (Parameter: ftable, numCols). |
-| `menu.createLoadoutInfoSubmenu` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create loadout info submenu aus (Parameter: inputframe, instance). |
-| `menu.createLoadoutSaveContext` | 2 | `08/ui/addons/ego_detailmonitor/menu_ship_configuration.lua` | Führt create loadout save context aus. |
-| `menu.createLogbook` | 1 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Führt create logbook aus (Parameter: frame, tableProperties). |
-| `menu.createLogbookHeader` | 1 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Führt create logbook header aus (Parameter: frame, tableProperties). |
-| `menu.createLogbookInfoSubmenu` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create logbook info submenu aus (Parameter: inputframe, instance). |
-| `menu.createMacroSearchTable` | 1 | `08/ui/addons/ego_detailmonitor/menu_mapeditor.lua` | Führt create macro search table aus (Parameter: frame). |
-| `menu.createMainFrame` | 5 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create main frame aus (Parameter: firsttime, height, refresh). |
-| `menu.createMessages` | 1 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Führt create messages aus (Parameter: frame, tableProperties). |
-| `menu.createMissionContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create mission context aus (Parameter: frame). |
-| `menu.createMissionInfoSection` | 1 | `08/ui/addons/ego_detailmonitor/menu_missionbriefing.lua` | Führt create mission info section aus (Parameter: frame). |
-| `menu.createMissionMode` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create mission mode aus (Parameter: frame). |
-| `menu.createMissionModeHeader` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create mission mode header aus (Parameter: frame, instance). |
-| `menu.createModuleContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_configuration.lua` | Führt create module context aus. |
-| `menu.createModuleFilterContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_configuration.lua` | Führt create module filter context aus. |
-| `menu.createModuleSection` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create module section aus (Parameter: instance, ftable, component, iteration). |
-| `menu.createNewEventContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_diplomacy.lua` | Führt create new event context aus (Parameter: frame). |
-| `menu.createNewOrderContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create new order context aus (Parameter: frame, instance). |
-| `menu.createObjectList` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create object list aus (Parameter: frame, instance). |
-| `menu.createObjectivesSection` | 1 | `08/ui/addons/ego_detailmonitor/menu_missionbriefing.lua` | Führt create objectives section aus (Parameter: frame). |
-| `menu.createOnlineModeContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create online mode context aus (Parameter: frame). |
-| `menu.createOptionsFrame` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Führt create options frame aus (Parameter: extrawide). |
-| `menu.createOrderQueue` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create order queue aus (Parameter: frame, mode, instance). |
-| `menu.createOrderparamFormationShapeContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create orderparam formation shape context aus (Parameter: frame, instance). |
-| `menu.createOrderparamSectorContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create orderparam sector context aus (Parameter: frame, instance). |
-| `menu.createOrderparamWareContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create orderparam ware context aus (Parameter: frame, instance). |
-| `menu.createOrdersMenuHeader` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create orders menu header aus (Parameter: frame, instance). |
-| `menu.createOverwriteQuestionContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_configuration.lua` | Führt create overwrite question context aus. |
-| `menu.createPersonnelInfo` | 1 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Führt create personnel info aus (Parameter: frame, tableProperties). |
-| `menu.createPlayerInfo` | 4 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create player info aus (Parameter: frame, width, height, offsetx, offsety). |
-| `menu.createPlotMode` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create plot mode aus (Parameter: inputframe). |
-| `menu.createPropertyOwned` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create property owned aus (Parameter: frame, instance). |
-| `menu.createPropertyRow` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create property row aus (Parameter: instance, ftable, component, iteration, commanderlocation, showmodules, hidesubordinates, numdisplayed, sorter). |
-| `menu.createPropertySection` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create property section aus (Parameter: instance, id, ftable, name, array, nonetext, showmodules, numdisplayed, hidesubordinates, sorter). |
-| `menu.createRenameContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create rename context aus (Parameter: frame). |
-| `menu.createRenderTarget` | 1 | `08/ui/addons/ego_detailmonitor/menu_missionbriefing.lua` | Führt create render target aus (Parameter: frame). |
-| `menu.createRendertargetAndDescription` | 1 | `08/ui/addons/ego_detailmonitor/menu_timeline.lua` | Führt create rendertarget and description aus (Parameter: frame, timelineTable). |
-| `menu.createReportContext` | 1 | `08/ui/addons/ego_chatwindow/chatwindow.lua` | Führt create report context aus (Parameter: frame). |
-| `menu.createResponsesForControllable` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create responses for controllable aus (Parameter: ftable, controllable, textproperties, mode, yoffset, instance). |
-| `menu.createRewardSection` | 1 | `08/ui/addons/ego_detailmonitor/menu_missionbriefing.lua` | Führt create reward section aus (Parameter: frame). |
-| `menu.createRightBar` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create right bar aus (Parameter: frame, width, height, offsetx, offsety). |
-| `menu.createScenarioTable` | 2 | `08/ui/addons/ego_detailmonitor/menu_scenario_debriefing.lua` | Führt create scenario table aus (Parameter: frame, yoffset). |
-| `menu.createSearchField` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create search field aus (Parameter: frame, width, height, offsetx, offsety, refresh). |
-| `menu.createSearchFieldContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create search field context aus (Parameter: frame). |
-| `menu.createSelectContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create select context aus (Parameter: frame). |
-| `menu.createSelectedShips` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create selected ships aus (Parameter: frame). |
-| `menu.createSellShipsContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create sell ships context aus (Parameter: frame). |
-| `menu.createSettingsContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_configuration.lua` | Führt create settings context aus. |
-| `menu.createSideBar` | 5 | `08/ui/addons/ego_detailmonitor/menu_ship_comparison.lua` | Führt create side bar aus (Parameter: frame). |
-| `menu.createSlotContext` | 2 | `08/ui/addons/ego_detailmonitor/menu_ship_configuration.lua` | Führt create slot context aus. |
-| `menu.createSpawnTable` | 1 | `08/ui/addons/ego_detailmonitor/menu_mapeditor.lua` | Führt create spawn table aus (Parameter: frame). |
-| `menu.createStandingOrdersMenu` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create standing orders menu aus (Parameter: frame, instance). |
-| `menu.createStats` | 1 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Führt create stats aus (Parameter: frame, tableProperties). |
-| `menu.createStatsTable` | 2 | `08/ui/addons/ego_detailmonitor/menu_scenario_debriefing.lua` | Führt create stats table aus (Parameter: frame, tablewidth, xoffset, yoffset). |
-| `menu.createSubSectionTable` | 1 | `08/ui/addons/ego_interactmenu/menu_interactmenu.lua` | Führt create sub section table aus (Parameter: frame, position). |
-| `menu.createSubordinateSection` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create subordinate section aus (Parameter: instance, ftable, component, isfleetunit, isstation, iteration, location, numdisplayed, sorter, isplayerowned, isally). |
-| `menu.createTable` | 3 | `08/ui/addons/ego_detailmonitor/menu_toplevel.lua` | Führt create table aus (Parameter: frame, tableProperties). |
-| `menu.createTimelineTable` | 1 | `08/ui/addons/ego_detailmonitor/menu_timeline.lua` | Führt create timeline table aus (Parameter: frame). |
-| `menu.createTitleBar` | 2 | `08/ui/addons/ego_detailmonitor/menu_ship_configuration.lua` | Führt create title bar aus (Parameter: frame). |
-| `menu.createTitleTable` | 2 | `08/ui/addons/ego_detailmonitor/menu_scenario_debriefing.lua` | Führt create title table aus (Parameter: frame). |
-| `menu.createTopLevel` | 11 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Führt create top level aus. |
-| `menu.createTradeContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create trade context aus (Parameter: frame). |
-| `menu.createTradeLoopContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create trade loop context aus (Parameter: frame). |
-| `menu.createUserQuestionContext` | 5 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create user question context aus (Parameter: frame). |
-| `menu.createUserQuestionFrame` | 2 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Führt create user question frame aus. |
-| `menu.createVentureSeason` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create venture season aus (Parameter: frame, instance). |
-| `menu.createVentureSeasonHeader` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create venture season header aus (Parameter: frame, instance). |
-| `menu.createWeaponConfigContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt create weapon config context aus (Parameter: frame, instance). |
+| `menu.createAccounts` | 1 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Erstellt accounts (Parameter: frame, tableProperties, tabOrderOffset). |
+| `menu.createActionConfigContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_diplomacy.lua` | Erstellt action config context (Parameter: frame). |
+| `menu.createAgentDetailsContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_diplomacy.lua` | Erstellt agent details context (Parameter: frame). |
+| `menu.createAgents` | 1 | `08/ui/addons/ego_detailmonitor/menu_diplomacy.lua` | Erstellt agents (Parameter: frame, tableProperties). |
+| `menu.createBoardingContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt boarding context (Parameter: frame, target, boarders). |
+| `menu.createButtonTable` | 2 | `08/ui/addons/ego_detailmonitor/menu_scenario_debriefing.lua` | Erstellt button table (Parameter: frame, tablewidth, xoffset, yoffset). |
+| `menu.createCPExportContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_configuration.lua` | Erstellt cpexport context. |
+| `menu.createCPImportContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_configuration.lua` | Erstellt cpimport context. |
+| `menu.createCPRemoveContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_configuration.lua` | Erstellt cpremove context. |
+| `menu.createCPSaveContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_configuration.lua` | Erstellt cpsave context. |
+| `menu.createChangeLogoContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt change logo context (Parameter: frame). |
+| `menu.createCheats` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt cheats (Parameter: frame). |
+| `menu.createComparisonTable` | 1 | `08/ui/addons/ego_detailmonitor/menu_ship_comparison.lua` | Erstellt comparison table (Parameter: frame). |
+| `menu.createComponentTable` | 1 | `08/ui/addons/ego_detailmonitor/menu_mapeditor.lua` | Erstellt component table (Parameter: frame). |
+| `menu.createConstructionRow` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt construction row (Parameter: ftable, component, construction, iteration). |
+| `menu.createConstructionSection` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt construction section (Parameter: instance, id, ftable, name, constructions). |
+| `menu.createConstructionSubSection` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt construction sub section (Parameter: ftable, component, constructions). |
+| `menu.createContentTable` | 1 | `08/ui/addons/ego_interactmenu/menu_interactmenu.lua` | Erstellt content table (Parameter: frame, position). |
+| `menu.createContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Erstellt context (Parameter: x, y). |
+| `menu.createContextFrame` | 6 | `08/ui/addons/ego_chatwindow/chatwindow.lua` | Erstellt context frame (Parameter: data, x, y, width, nomouseout). |
+| `menu.createContextMenu` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Erstellt context menu. |
+| `menu.createContextMenuDirectInput` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Erstellt context menu direct input (Parameter: frame). |
+| `menu.createContextMenuEditColor` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Erstellt context menu edit color (Parameter: frame). |
+| `menu.createContextMenuFirstGame` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Erstellt context menu first game (Parameter: frame). |
+| `menu.createContextMenuInfo` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Erstellt context menu info (Parameter: frame). |
+| `menu.createContextMenuModified` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Erstellt context menu modified (Parameter: frame). |
+| `menu.createContextMenuRemap` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Erstellt context menu remap (Parameter: frame). |
+| `menu.createContextMenuRemoveControllerInput` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Erstellt context menu remove controller input (Parameter: frame). |
+| `menu.createContextMenuUISecurity` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Erstellt context menu uisecurity (Parameter: frame). |
+| `menu.createContextMenuUserQuestion` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Erstellt context menu user question (Parameter: frame). |
+| `menu.createContextMenuVentureExtension` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Erstellt context menu venture extension (Parameter: frame). |
+| `menu.createCraftableEntry` | 2 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Erstellt craftable entry (Parameter: ware). |
+| `menu.createCrafting` | 2 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Erstellt crafting (Parameter: frame, tableProperties). |
+| `menu.createCrewInfoSubmenu` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt crew info submenu (Parameter: inputframe, instance). |
+| `menu.createCrewTransferContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt crew transfer context (Parameter: frame). |
+| `menu.createDescTable` | 2 | `08/ui/addons/ego_detailmonitor/menu_scenario_debriefing.lua` | Erstellt desc table (Parameter: frame, tablewidth, xoffset, yoffset). |
+| `menu.createEmbassy` | 1 | `08/ui/addons/ego_detailmonitor/menu_diplomacy.lua` | Erstellt embassy (Parameter: frame, tableProperties). |
+| `menu.createEmpire` | 1 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Erstellt empire (Parameter: frame, tableProperties). |
+| `menu.createEmptyFrame` | 2 | `08/ui/addons/ego_detailmonitor/menu_scenario_debriefing.lua` | Erstellt empty frame. |
+| `menu.createEquipmentContext` | 2 | `08/ui/addons/ego_detailmonitor/menu_ship_configuration.lua` | Erstellt equipment context. |
+| `menu.createEquipmentFilterContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_ship_configuration.lua` | Erstellt equipment filter context. |
+| `menu.createEquipmentModEntry` | 1 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Erstellt equipment mod entry (Parameter: ftable, modclass, moddata). |
+| `menu.createEquipmentMods` | 1 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Erstellt equipment mods (Parameter: frame, tableProperties). |
+| `menu.createEquipmentPropertyEntry` | 1 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Erstellt equipment property entry (Parameter: ftable, modclass, property). |
+| `menu.createEventCompletedContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_diplomacy.lua` | Erstellt event completed context (Parameter: frame). |
+| `menu.createEventContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_diplomacy.lua` | Erstellt event context (Parameter: frame). |
+| `menu.createEvents` | 1 | `08/ui/addons/ego_detailmonitor/menu_diplomacy.lua` | Erstellt events (Parameter: frame, tableProperties). |
+| `menu.createExportTable` | 1 | `08/ui/addons/ego_detailmonitor/menu_mapeditor.lua` | Erstellt export table (Parameter: frame). |
+| `menu.createFactionDetailsContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_diplomacy.lua` | Erstellt faction details context (Parameter: frame). |
+| `menu.createFactions` | 2 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Erstellt factions (Parameter: frame, tableProperties). |
+| `menu.createFilterMode` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt filter mode (Parameter: ftable, numCols). |
+| `menu.createFilterparamWareContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt filterparam ware context (Parameter: frame). |
+| `menu.createFleetUnitRow` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt fleet unit row (Parameter: instance, ftable, fleetunit, iteration, commanderlocation, numdisplayed, sorter). |
+| `menu.createFrame` | 3 | `08/ui/addons/ego_detailmonitor/menu_transactionlog.lua` | Erstellt frame (Parameter: toprow, selectedrow). |
+| `menu.createGraph` | 1 | `08/ui/addons/ego_detailmonitor/menu_encyclopedia.lua` | Erstellt graph (Parameter: width, height, x, y). |
+| `menu.createHireContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt hire context (Parameter: frame). |
+| `menu.createHireMode` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt hire mode (Parameter: ftable, numCols). |
+| `menu.createIndex` | 1 | `08/ui/addons/ego_detailmonitor/menu_encyclopedia.lua` | Erstellt index. |
+| `menu.createInfo2Frame` | 2 | `08/ui/addons/ego_detailmonitor/menu_scenario_debriefing.lua` | Erstellt info2 frame. |
+| `menu.createInfoContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt info context (Parameter: frame). |
+| `menu.createInfoFrame` | 10 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt info frame. |
+| `menu.createInfoFrame2` | 2 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt info frame2. |
+| `menu.createInfoSubmenu` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt info submenu (Parameter: inputframe, instance). |
+| `menu.createInventory` | 1 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Erstellt inventory (Parameter: frame, tableProperties, mode, tabOrderOffset). |
+| `menu.createInventoryContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_crafting.lua` | Erstellt inventory context (Parameter: wareinfo, x, y). |
+| `menu.createInventoryHeader` | 1 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Erstellt inventory header (Parameter: frame, tableProperties). |
+| `menu.createLadderTable` | 2 | `08/ui/addons/ego_detailmonitor/menu_scenario_debriefing.lua` | Erstellt ladder table (Parameter: frame, tablewidth, xoffset, yoffset, maxVisibleHeight). |
+| `menu.createLegend` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt legend. |
+| `menu.createLegendMode` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt legend mode (Parameter: ftable, numCols). |
+| `menu.createLoadoutInfoSubmenu` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt loadout info submenu (Parameter: inputframe, instance). |
+| `menu.createLoadoutSaveContext` | 2 | `08/ui/addons/ego_detailmonitor/menu_ship_configuration.lua` | Erstellt loadout save context. |
+| `menu.createLogbook` | 1 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Erstellt logbook (Parameter: frame, tableProperties). |
+| `menu.createLogbookHeader` | 1 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Erstellt logbook header (Parameter: frame, tableProperties). |
+| `menu.createLogbookInfoSubmenu` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt logbook info submenu (Parameter: inputframe, instance). |
+| `menu.createMacroSearchTable` | 1 | `08/ui/addons/ego_detailmonitor/menu_mapeditor.lua` | Erstellt macro search table (Parameter: frame). |
+| `menu.createMainFrame` | 5 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt main frame (Parameter: firsttime, height, refresh). |
+| `menu.createMessages` | 1 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Erstellt messages (Parameter: frame, tableProperties). |
+| `menu.createMissionContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt mission context (Parameter: frame). |
+| `menu.createMissionInfoSection` | 1 | `08/ui/addons/ego_detailmonitor/menu_missionbriefing.lua` | Erstellt mission info section (Parameter: frame). |
+| `menu.createMissionMode` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt mission mode (Parameter: frame). |
+| `menu.createMissionModeHeader` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt mission mode header (Parameter: frame, instance). |
+| `menu.createModuleContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_configuration.lua` | Erstellt module context. |
+| `menu.createModuleFilterContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_configuration.lua` | Erstellt module filter context. |
+| `menu.createModuleSection` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt module section (Parameter: instance, ftable, component, iteration). |
+| `menu.createNewEventContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_diplomacy.lua` | Erstellt new event context (Parameter: frame). |
+| `menu.createNewOrderContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt new order context (Parameter: frame, instance). |
+| `menu.createObjectList` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt object list (Parameter: frame, instance). |
+| `menu.createObjectivesSection` | 1 | `08/ui/addons/ego_detailmonitor/menu_missionbriefing.lua` | Erstellt objectives section (Parameter: frame). |
+| `menu.createOnlineModeContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt online mode context (Parameter: frame). |
+| `menu.createOptionsFrame` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Erstellt options frame (Parameter: extrawide). |
+| `menu.createOrderQueue` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt order queue (Parameter: frame, mode, instance). |
+| `menu.createOrderparamFormationShapeContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt orderparam formation shape context (Parameter: frame, instance). |
+| `menu.createOrderparamSectorContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt orderparam sector context (Parameter: frame, instance). |
+| `menu.createOrderparamWareContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt orderparam ware context (Parameter: frame, instance). |
+| `menu.createOrdersMenuHeader` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt orders menu header (Parameter: frame, instance). |
+| `menu.createOverwriteQuestionContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_configuration.lua` | Erstellt overwrite question context. |
+| `menu.createPersonnelInfo` | 1 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Erstellt personnel info (Parameter: frame, tableProperties). |
+| `menu.createPlayerInfo` | 4 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt player info (Parameter: frame, width, height, offsetx, offsety). |
+| `menu.createPlotMode` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt plot mode (Parameter: inputframe). |
+| `menu.createPropertyOwned` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt property owned (Parameter: frame, instance). |
+| `menu.createPropertyRow` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt property row (Parameter: instance, ftable, component, iteration, commanderlocation, showmodules, hidesubordinates, numdisplayed, sorter). |
+| `menu.createPropertySection` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt property section (Parameter: instance, id, ftable, name, array, nonetext, showmodules, numdisplayed, hidesubordinates, sorter). |
+| `menu.createRenameContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt rename context (Parameter: frame). |
+| `menu.createRenderTarget` | 1 | `08/ui/addons/ego_detailmonitor/menu_missionbriefing.lua` | Erstellt render target (Parameter: frame). |
+| `menu.createRendertargetAndDescription` | 1 | `08/ui/addons/ego_detailmonitor/menu_timeline.lua` | Erstellt rendertarget and description (Parameter: frame, timelineTable). |
+| `menu.createReportContext` | 1 | `08/ui/addons/ego_chatwindow/chatwindow.lua` | Erstellt report context (Parameter: frame). |
+| `menu.createResponsesForControllable` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt responses for controllable (Parameter: ftable, controllable, textproperties, mode, yoffset, instance). |
+| `menu.createRewardSection` | 1 | `08/ui/addons/ego_detailmonitor/menu_missionbriefing.lua` | Erstellt reward section (Parameter: frame). |
+| `menu.createRightBar` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt right bar (Parameter: frame, width, height, offsetx, offsety). |
+| `menu.createScenarioTable` | 2 | `08/ui/addons/ego_detailmonitor/menu_scenario_debriefing.lua` | Erstellt scenario table (Parameter: frame, yoffset). |
+| `menu.createSearchField` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt search field (Parameter: frame, width, height, offsetx, offsety, refresh). |
+| `menu.createSearchFieldContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt search field context (Parameter: frame). |
+| `menu.createSelectContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt select context (Parameter: frame). |
+| `menu.createSelectedShips` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt selected ships (Parameter: frame). |
+| `menu.createSellShipsContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt sell ships context (Parameter: frame). |
+| `menu.createSettingsContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_configuration.lua` | Erstellt settings context. |
+| `menu.createSideBar` | 5 | `08/ui/addons/ego_detailmonitor/menu_ship_comparison.lua` | Erstellt side bar (Parameter: frame). |
+| `menu.createSlotContext` | 2 | `08/ui/addons/ego_detailmonitor/menu_ship_configuration.lua` | Erstellt slot context. |
+| `menu.createSpawnTable` | 1 | `08/ui/addons/ego_detailmonitor/menu_mapeditor.lua` | Erstellt spawn table (Parameter: frame). |
+| `menu.createStandingOrdersMenu` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt standing orders menu (Parameter: frame, instance). |
+| `menu.createStats` | 1 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Erstellt stats (Parameter: frame, tableProperties). |
+| `menu.createStatsTable` | 2 | `08/ui/addons/ego_detailmonitor/menu_scenario_debriefing.lua` | Erstellt stats table (Parameter: frame, tablewidth, xoffset, yoffset). |
+| `menu.createSubSectionTable` | 1 | `08/ui/addons/ego_interactmenu/menu_interactmenu.lua` | Erstellt sub section table (Parameter: frame, position). |
+| `menu.createSubordinateSection` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt subordinate section (Parameter: instance, ftable, component, isfleetunit, isstation, iteration, location, numdisplayed, sorter, isplayerowned, isally). |
+| `menu.createTable` | 3 | `08/ui/addons/ego_detailmonitor/menu_toplevel.lua` | Erstellt table (Parameter: frame, tableProperties). |
+| `menu.createTimelineTable` | 1 | `08/ui/addons/ego_detailmonitor/menu_timeline.lua` | Erstellt timeline table (Parameter: frame). |
+| `menu.createTitleBar` | 2 | `08/ui/addons/ego_detailmonitor/menu_ship_configuration.lua` | Erstellt title bar (Parameter: frame). |
+| `menu.createTitleTable` | 2 | `08/ui/addons/ego_detailmonitor/menu_scenario_debriefing.lua` | Erstellt title table (Parameter: frame). |
+| `menu.createTopLevel` | 11 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Erstellt top level. |
+| `menu.createTradeContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt trade context (Parameter: frame). |
+| `menu.createTradeLoopContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt trade loop context (Parameter: frame). |
+| `menu.createUserQuestionContext` | 5 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt user question context (Parameter: frame). |
+| `menu.createUserQuestionFrame` | 2 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Erstellt user question frame. |
+| `menu.createVentureSeason` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt venture season (Parameter: frame, instance). |
+| `menu.createVentureSeasonHeader` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt venture season header (Parameter: frame, instance). |
+| `menu.createWeaponConfigContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Erstellt weapon config context (Parameter: frame, instance). |
 | `menu.crewTransferAllowed` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt crew transfer allowed aus. |
 | `menu.crewTransferColorHelper` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt crew transfer color helper aus (Parameter: origin, tierentry, basecolor). |
 | `menu.crewTransferSorter` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt crew transfer sorter aus (Parameter: a, b). |
 | `menu.crewTransferTotalColor` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt crew transfer total color aus (Parameter: origin). |
 | `menu.crewTransferWarningText` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt crew transfer warning text aus (Parameter: leftname, rightname, row). |
 | `menu.customOption` | 1 | `08/ui/addons/ego_detailmonitor/menu_userquestion.lua` | Führt custom option aus (Parameter: optionid, optionparameters). |
-| `menu.deactivateEncyclopediaMode` | 3 | `08/ui/addons/ego_detailmonitor/menu_ship_comparison.lua` | Führt deactivate encyclopedia mode aus. |
-| `menu.deactivateModulesMode` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_configuration.lua` | Führt deactivate modules mode aus. |
-| `menu.deactivateObjectList` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt deactivate object list aus (Parameter: confirmed). |
-| `menu.deactivatePlayerInfo` | 3 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Führt deactivate player info aus. |
-| `menu.deactivateSearchTable` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt deactivate search table aus. |
-| `menu.deactivateUpgradeMode` | 1 | `08/ui/addons/ego_detailmonitor/menu_ship_configuration.lua` | Führt deactivate upgrade mode aus. |
-| `menu.deactivateUpgradetypeMode` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_configuration.lua` | Führt deactivate upgradetype mode aus. |
+| `menu.deactivateEncyclopediaMode` | 3 | `08/ui/addons/ego_detailmonitor/menu_ship_comparison.lua` | Deaktiviert encyclopedia mode. |
+| `menu.deactivateModulesMode` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_configuration.lua` | Deaktiviert modules mode. |
+| `menu.deactivateObjectList` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Deaktiviert object list (Parameter: confirmed). |
+| `menu.deactivatePlayerInfo` | 3 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Deaktiviert player info. |
+| `menu.deactivateSearchTable` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Deaktiviert search table. |
+| `menu.deactivateUpgradeMode` | 1 | `08/ui/addons/ego_detailmonitor/menu_ship_configuration.lua` | Deaktiviert upgrade mode. |
+| `menu.deactivateUpgradetypeMode` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_configuration.lua` | Deaktiviert upgradetype mode. |
 | `menu.defaultInteraction` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt default interaction aus (Parameter: component, posrot, posrotvalid, offsetx, offsety, modified). |
 | `menu.descriptionBonusContent` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Führt description bonus content aus. |
 | `menu.descriptionExtension` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Führt description extension aus. |
@@ -1707,7 +1707,7 @@ Automatisch generierte Liste aller in den Skripten definierten Lua-Funktionen.
 | `menu.dockButtonHighlightColor` | 1 | `08/ui/addons/ego_detailmonitor/menu_docked.lua` | Führt dock button highlight color aus. |
 | `menu.dockButtonTextColor` | 1 | `08/ui/addons/ego_detailmonitor/menu_docked.lua` | Führt dock button text color aus. |
 | `menu.draw` | 1 | `08/ui/addons/ego_interactmenu/menu_interactmenu.lua` | Führt draw aus. |
-| `menu.drawLobby` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Führt draw lobby aus. |
+| `menu.drawLobby` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Zeichnet lobby. |
 | `menu.dropdownAssignEventAgent` | 1 | `08/ui/addons/ego_detailmonitor/menu_diplomacy.lua` | Führt dropdown assign event agent aus (Parameter: eventoperationid, agentid). |
 | `menu.dropdownBehaviourFormation` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt dropdown behaviour formation aus (Parameter: _, shape). |
 | `menu.dropdownBlacklistType` | 1 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Führt dropdown blacklist type aus (Parameter: _, newtype). |
@@ -2112,8 +2112,8 @@ Automatisch generierte Liste aller in den Skripten definierten Lua-Funktionen.
 | `menu.isVentureExtensionRestartRequired` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Prüft ob venture extension restart required. |
 | `menu.isWareSelectionChanged` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Prüft ob ware selection changed. |
 | `menu.ladderPending` | 2 | `08/ui/addons/ego_detailmonitor/menu_scenario_debriefing.lua` | Führt ladder pending aus. |
-| `menu.loadGameCallback` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Führt load game callback aus (Parameter: filename, checked). |
-| `menu.loadSaveCallback` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Führt load save callback aus (Parameter: _, filename). |
+| `menu.loadGameCallback` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Lädt game callback (Parameter: filename, checked). |
+| `menu.loadSaveCallback` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Lädt save callback (Parameter: _, filename). |
 | `menu.logbookSearchHelper` | 1 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Führt logbook search helper aus (Parameter: entry, text). |
 | `menu.logoButtonIcon2` | 1 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Führt logo button icon2 aus (Parameter: logo). |
 | `menu.logoButtonIcon2Color` | 1 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Führt logo button icon2 color aus (Parameter: logo). |
@@ -2128,7 +2128,7 @@ Automatisch generierte Liste aller in den Skripten definierten Lua-Funktionen.
 | `menu.moduleHeightHelper` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_configuration.lua` | Führt module height helper aus (Parameter: ftable, prevfullheight). |
 | `menu.moduleSorter` | 2 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt module sorter aus (Parameter: a, b). |
 | `menu.mouseOverTextGfxUpscaling` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Führt mouse over text gfx upscaling aus. |
-| `menu.movePerson` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt move person aus (Parameter: origin, i, j, person, k). |
+| `menu.movePerson` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Bewegt person (Parameter: origin, i, j, person, k). |
 | `menu.nameAccessibility` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Führt name accessibility aus. |
 | `menu.nameColorBlind` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Führt name color blind aus. |
 | `menu.nameConnection` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Führt name connection aus. |
@@ -2244,13 +2244,13 @@ Automatisch generierte Liste aller in den Skripten definierten Lua-Funktionen.
 | `menu.onTimelinesScoreUploaded` | 1 | `08/ui/addons/ego_detailmonitor/menu_scenario_debriefing.lua` | Führt on timelines score uploaded aus. |
 | `menu.onUpdate` | 34 | `08/ui/addons/ego_interactmenu/menu_interactmenu.lua` | Führt on update aus. |
 | `menu.onVersionIncompatible` | 2 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Führt on version incompatible aus. |
-| `menu.openComm` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt open comm aus (Parameter: component). |
-| `menu.openCommWithActor` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt open comm with actor aus (Parameter: actor). |
-| `menu.openDetails` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt open details aus (Parameter: component). |
-| `menu.openOtherMenu` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_configuration.lua` | Führt open other menu aus (Parameter: menuname). |
-| `menu.openPlayerPropertyShipConfig` | 1 | `08/ui/addons/ego_gameoptions/customgame.lua` | Führt open player property ship config aus (Parameter: row, entryid, macro, commanderid, peopledef, peoplefillpercentage, count). |
-| `menu.openShipConfig` | 1 | `08/ui/addons/ego_gameoptions/customgame.lua` | Führt open ship config aus. |
-| `menu.openSubmenu` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Führt open submenu aus (Parameter: optionParameter, selectedOption). |
+| `menu.openComm` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Öffnet comm (Parameter: component). |
+| `menu.openCommWithActor` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Öffnet comm with actor (Parameter: actor). |
+| `menu.openDetails` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Öffnet details (Parameter: component). |
+| `menu.openOtherMenu` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_configuration.lua` | Öffnet other menu (Parameter: menuname). |
+| `menu.openPlayerPropertyShipConfig` | 1 | `08/ui/addons/ego_gameoptions/customgame.lua` | Öffnet player property ship config (Parameter: row, entryid, macro, commanderid, peopledef, peoplefillpercentage, count). |
+| `menu.openShipConfig` | 1 | `08/ui/addons/ego_gameoptions/customgame.lua` | Öffnet ship config. |
+| `menu.openSubmenu` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Öffnet submenu (Parameter: optionParameter, selectedOption). |
 | `menu.orderAmountHelper` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt order amount helper aus (Parameter: sellid, buyid, newvalue). |
 | `menu.orderAssignCommander` | 1 | `08/ui/addons/ego_interactmenu/menu_interactmenu.lua` | Führt order assign commander aus (Parameter: component, commander, assignment, group, informfleetmanager). |
 | `menu.orderAttack` | 2 | `08/ui/addons/ego_interactmenu/menu_interactmenu.lua` | Führt order attack aus (Parameter: component, target, clear, immediate). |
@@ -2354,33 +2354,33 @@ Automatisch generierte Liste aller in den Skripten definierten Lua-Funktionen.
 | `menu.requestLanguageID` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Führt request language id aus (Parameter: id). |
 | `menu.researchStateText` | 2 | `08/ui/addons/ego_detailmonitor/menu_station_overview.lua` | Führt research state text aus (Parameter: researchmodule). |
 | `menu.researchTimeText` | 2 | `08/ui/addons/ego_detailmonitor/menu_station_overview.lua` | Führt research time text aus (Parameter: researchmodule, researchtime). |
-| `menu.resetAndCloseMenu` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_configuration.lua` | Führt reset and close menu aus. |
-| `menu.resetDefaultLoadout` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_configuration.lua` | Führt reset default loadout aus. |
-| `menu.resetInfoSubmenu` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt reset info submenu aus (Parameter: i, instance). |
-| `menu.resetOrderParamMode` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt reset order param mode aus. |
-| `menu.resetPlotSize` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt reset plot size aus. |
+| `menu.resetAndCloseMenu` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_configuration.lua` | Setzt and close menu zurück. |
+| `menu.resetDefaultLoadout` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_configuration.lua` | Setzt default loadout zurück. |
+| `menu.resetInfoSubmenu` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Setzt info submenu zurück (Parameter: i, instance). |
+| `menu.resetOrderParamMode` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Setzt order param mode zurück. |
+| `menu.resetPlotSize` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Setzt plot size zurück. |
 | `menu.restoreFlowchartState` | 4 | `08/ui/addons/ego_gameoptions/customgame.lua` | Führt restore flowchart state aus (Parameter: name, flowchart). |
 | `menu.restoreTableState` | 3 | `08/ui/addons/ego_detailmonitor/menu_terraforming.lua` | Führt restore table state aus (Parameter: name, ftable). |
 | `menu.returnToHub` | 1 | `08/ui/addons/ego_detailmonitor/menu_scenario_debriefing.lua` | Führt return to hub aus (Parameter: gamestartid). |
 | `menu.roleSorter` | 2 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt role sorter aus (Parameter: a, b, invert). |
 | `menu.round` | 1 | `08/ui/addons/ego_helptext/helptext.lua` | Führt round aus (Parameter: x, digits). |
-| `menu.saveEncyclopediaValue` | 1 | `08/ui/addons/ego_gameoptions/customgame.lua` | Führt save encyclopedia value aus. |
-| `menu.saveFlowchartState` | 4 | `08/ui/addons/ego_gameoptions/customgame.lua` | Führt save flowchart state aus (Parameter: name, flowchart). |
-| `menu.saveKnownValue` | 1 | `08/ui/addons/ego_gameoptions/customgame.lua` | Führt save known value aus (Parameter: property). |
-| `menu.saveMouseOverText` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Führt save mouse over text aus. |
-| `menu.saveMultiSelect` | 1 | `08/ui/addons/ego_gameoptions/customgame.lua` | Führt save multi select aus (Parameter: property). |
-| `menu.saveStoryValue` | 1 | `08/ui/addons/ego_gameoptions/customgame.lua` | Führt save story value aus (Parameter: property). |
-| `menu.saveTableState` | 3 | `08/ui/addons/ego_detailmonitor/menu_terraforming.lua` | Führt save table state aus (Parameter: name, ftable, row, col). |
+| `menu.saveEncyclopediaValue` | 1 | `08/ui/addons/ego_gameoptions/customgame.lua` | Speichert encyclopedia value. |
+| `menu.saveFlowchartState` | 4 | `08/ui/addons/ego_gameoptions/customgame.lua` | Speichert flowchart state (Parameter: name, flowchart). |
+| `menu.saveKnownValue` | 1 | `08/ui/addons/ego_gameoptions/customgame.lua` | Speichert known value (Parameter: property). |
+| `menu.saveMouseOverText` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Speichert mouse over text. |
+| `menu.saveMultiSelect` | 1 | `08/ui/addons/ego_gameoptions/customgame.lua` | Speichert multi select (Parameter: property). |
+| `menu.saveStoryValue` | 1 | `08/ui/addons/ego_gameoptions/customgame.lua` | Speichert story value (Parameter: property). |
+| `menu.saveTableState` | 3 | `08/ui/addons/ego_detailmonitor/menu_terraforming.lua` | Speichert table state (Parameter: name, ftable, row, col). |
 | `menu.savegameInfoVersion` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Führt savegame info version aus. |
 | `menu.scaleFont` | 1 | `08/ui/addons/ego_helptext/helptext.lua` | Führt scale font aus (Parameter: fontname, fontsize). |
 | `menu.scaleX` | 1 | `08/ui/addons/ego_helptext/helptext.lua` | Führt scale x aus (Parameter: x). |
 | `menu.scaleY` | 1 | `08/ui/addons/ego_helptext/helptext.lua` | Führt scale y aus (Parameter: y). |
 | `menu.searchTextChanged` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt search text changed aus (Parameter: _, text, textchanged). |
 | `menu.searchTextConfirmed` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt search text confirmed aus (Parameter: _, text, textchanged). |
-| `menu.selectCV` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt select cv aus (Parameter: component). |
-| `menu.selectEntry` | 1 | `08/ui/addons/ego_detailmonitor/menu_help.lua` | Führt select entry aus (Parameter: entry). |
-| `menu.selectMapMacroSlot` | 1 | `08/ui/addons/ego_detailmonitor/menu_ship_configuration.lua` | Führt select map macro slot aus. |
-| `menu.selectModeInfoText` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt select mode info text aus (Parameter: text). |
+| `menu.selectCV` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Wählt cv aus (Parameter: component). |
+| `menu.selectEntry` | 1 | `08/ui/addons/ego_detailmonitor/menu_help.lua` | Wählt entry aus (Parameter: entry). |
+| `menu.selectMapMacroSlot` | 1 | `08/ui/addons/ego_detailmonitor/menu_ship_configuration.lua` | Wählt map macro slot aus. |
+| `menu.selectModeInfoText` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Wählt mode info text aus (Parameter: text). |
 | `menu.selectableContinue` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Führt selectable continue aus. |
 | `menu.selectableGameMenuWidthScaleConfirm` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Führt selectable game menu width scale confirm aus. |
 | `menu.selectableGameResetUserQuestions` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Führt selectable game reset user questions aus. |
@@ -2433,10 +2433,10 @@ Automatisch generierte Liste aller in den Skripten definierten Lua-Funktionen.
 | `menu.setupRenderTarget` | 1 | `08/ui/addons/ego_detailmonitor/menu_encyclopedia.lua` | Führt setup render target aus (Parameter: renderobject, isicon, paintmod, iscomponent). |
 | `menu.shipTextColor` | 1 | `08/ui/addons/ego_detailmonitor/menu_platformundock.lua` | Führt ship text color aus (Parameter: ship). |
 | `menu.shipValue` | 1 | `08/ui/addons/ego_gameoptions/customgame.lua` | Führt ship value aus (Parameter: current). |
-| `menu.showConstructionMap` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_configuration.lua` | Führt show construction map aus. |
-| `menu.showEntry` | 1 | `08/ui/addons/ego_detailmonitor/menu_trader_blueprintsorlicences.lua` | Führt show entry aus (Parameter: entry, tag, indent). |
-| `menu.showInteractMenu` | 1 | `08/ui/addons/ego_interactmenu/menu_interactmenu.lua` | Führt show interact menu aus (Parameter: param). |
-| `menu.showMissionContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt show mission context aus (Parameter: missionid, isoffer). |
+| `menu.showConstructionMap` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_configuration.lua` | Zeigt construction map. |
+| `menu.showEntry` | 1 | `08/ui/addons/ego_detailmonitor/menu_trader_blueprintsorlicences.lua` | Zeigt entry (Parameter: entry, tag, indent). |
+| `menu.showInteractMenu` | 1 | `08/ui/addons/ego_interactmenu/menu_interactmenu.lua` | Zeigt interact menu (Parameter: param). |
+| `menu.showMissionContext` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Zeigt mission context (Parameter: missionid, isoffer). |
 | `menu.skillSorter` | 1 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Führt skill sorter aus (Parameter: a, b, invert). |
 | `menu.slidercellAccount` | 2 | `08/ui/addons/ego_detailmonitor/menu_station_overview.lua` | Führt slidercell account aus (Parameter: _, value). |
 | `menu.slidercellAccountChanged` | 1 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Führt slidercell account changed aus (Parameter: station, row, value, functable). |
@@ -2485,8 +2485,8 @@ Automatisch generierte Liste aller in den Skripten definierten Lua-Funktionen.
 | `menu.sortTechName` | 2 | `08/ui/addons/ego_gameoptions/customgame.lua` | Führt sort tech name aus (Parameter: a, b). |
 | `menu.sortWareGroupsByTier` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt sort ware groups by tier aus (Parameter: a, b). |
 | `menu.sorterModules` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_configuration.lua` | Führt sorter modules aus (Parameter: type, a, b). |
-| `menu.startMapEditorWithCopy` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Führt start map editor with copy aus. |
-| `menu.startScenario` | 2 | `08/ui/addons/ego_detailmonitor/menu_scenario_debriefing.lua` | Führt start scenario aus (Parameter: scenario). |
+| `menu.startMapEditorWithCopy` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Startet map editor with copy. |
+| `menu.startScenario` | 2 | `08/ui/addons/ego_detailmonitor/menu_scenario_debriefing.lua` | Startet scenario (Parameter: scenario). |
 | `menu.stationSearchText` | 1 | `08/ui/addons/ego_detailmonitor/menu_mapeditor.lua` | Führt station search text aus. |
 | `menu.storeCurrentPlots` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt store current plots aus. |
 | `menu.storePlanTableState` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_configuration.lua` | Führt store plan table state aus. |
@@ -2501,10 +2501,10 @@ Automatisch generierte Liste aller in den Skripten definierten Lua-Funktionen.
 | `menu.teleport` | 1 | `08/ui/addons/ego_detailmonitor/menu_platformundock.lua` | Führt teleport aus. |
 | `menu.terraformingErrorText` | 2 | `08/ui/addons/ego_detailmonitor/menu_terraforming.lua` | Führt terraforming error text aus (Parameter: project). |
 | `menu.textButton` | 1 | `08/ui/addons/ego_detailmonitor/menu_help.lua` | Führt text button aus. |
-| `menu.toggleAllNotificationSettings` | 1 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Führt toggle all notification settings aus (Parameter: notificationgroupdata, checked). |
-| `menu.toggleChatWindow` | 1 | `08/ui/addons/ego_chatwindow/chatwindow.lua` | Führt toggle chat window aus (Parameter: noeditboxactivation). |
-| `menu.toggleSelectedComponent` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt toggle selected component aus (Parameter: component). |
-| `menu.toggleStoryHQ` | 1 | `08/ui/addons/ego_gameoptions/customgame.lua` | Führt toggle story hq aus (Parameter: storyid). |
+| `menu.toggleAllNotificationSettings` | 1 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Schaltet all notification settings um (Parameter: notificationgroupdata, checked). |
+| `menu.toggleChatWindow` | 1 | `08/ui/addons/ego_chatwindow/chatwindow.lua` | Schaltet chat window um (Parameter: noeditboxactivation). |
+| `menu.toggleSelectedComponent` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Schaltet selected component um (Parameter: component). |
+| `menu.toggleStoryHQ` | 1 | `08/ui/addons/ego_gameoptions/customgame.lua` | Schaltet story hq um (Parameter: storyid). |
 | `menu.tradeContextCostAndStorageUpdateHelper` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt trade context cost and storage update helper aus (Parameter: storagetype, ware). |
 | `menu.undoHelper` | 2 | `08/ui/addons/ego_detailmonitor/menu_ship_configuration.lua` | Führt undo helper aus (Parameter: undo). |
 | `menu.undockButtonBGColor` | 1 | `08/ui/addons/ego_detailmonitor/menu_docked.lua` | Führt undock button bgcolor aus. |
@@ -2514,42 +2514,42 @@ Automatisch generierte Liste aller in den Skripten definierten Lua-Funktionen.
 | `menu.unmoveNewPostNPCHelper` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt unmove new post npchelper aus (Parameter: seed, origin). |
 | `menu.unmovePerson` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt unmove person aus (Parameter: origin, i, j, person, k). |
 | `menu.unregisterDirectInput` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Führt unregister direct input aus. |
-| `menu.updateAccountNode` | 2 | `08/ui/addons/ego_detailmonitor/menu_station_overview.lua` | Führt update account node aus (Parameter: node). |
-| `menu.updateBudgets` | 1 | `08/ui/addons/ego_gameoptions/customgame.lua` | Führt update budgets aus. |
-| `menu.updateBuildNode` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_overview.lua` | Führt update build node aus (Parameter: node, buildmodule). |
-| `menu.updateConstructionPlans` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_configuration.lua` | Führt update construction plans aus. |
-| `menu.updateDeliveredWares` | 2 | `08/ui/addons/ego_detailmonitor/menu_terraforming.lua` | Führt update delivered wares aus (Parameter: project). |
-| `menu.updateDroneInfo` | 2 | `08/ui/addons/ego_detailmonitor/menu_terraforming.lua` | Führt update drone info aus (Parameter: project). |
-| `menu.updateEdgeColorRecursively` | 2 | `08/ui/addons/ego_detailmonitor/menu_terraforming.lua` | Führt update edge color recursively aus (Parameter: edge, color). |
-| `menu.updateExpandedNode` | 3 | `08/ui/addons/ego_detailmonitor/menu_terraforming.lua` | Führt update expanded node aus. |
-| `menu.updateHolomap` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt update holomap aus. |
-| `menu.updateMapAndInfoFrame` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt update map and info frame aus. |
-| `menu.updateMissionOfferList` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt update mission offer list aus (Parameter: clear). |
-| `menu.updateMissions` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt update missions aus. |
-| `menu.updateMouseCursor` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt update mouse cursor aus. |
-| `menu.updateOverride` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_overview.lua` | Führt update override aus (Parameter: container64). |
-| `menu.updatePlotData` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt update plot data aus (Parameter: station, donotrefresh). |
-| `menu.updatePlotSize` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt update plot size aus (Parameter: dimension, axis, valchange). |
-| `menu.updatePlotSliders` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt update plot sliders aus. |
-| `menu.updatePlotWidgets` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt update plot widgets aus. |
-| `menu.updatePos` | 1 | `08/ui/addons/ego_detailmonitor/menu_followcamera.lua` | Führt update pos aus. |
-| `menu.updateProcessingNode` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_overview.lua` | Führt update processing node aus (Parameter: node, processingmodules). |
-| `menu.updateProductionNode` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_overview.lua` | Führt update production node aus (Parameter: node, productionmodules). |
-| `menu.updateRenderedComponents` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt update rendered components aus. |
-| `menu.updateResearchNode` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_overview.lua` | Führt update research node aus (Parameter: node, researchmodule). |
-| `menu.updateSelectedComponents` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt update selected components aus (Parameter: modified, keepselection, changedComponent, changedrow). |
-| `menu.updateSelectedRows` | 1 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Führt update selected rows aus. |
-| `menu.updateShipStatus` | 1 | `08/ui/addons/ego_detailmonitor/menu_platformundock.lua` | Führt update ship status aus (Parameter: datatable). |
-| `menu.updateShipStatusText` | 1 | `08/ui/addons/ego_detailmonitor/menu_platformundock.lua` | Führt update ship status text aus (Parameter: datatable). |
-| `menu.updateSliders` | 1 | `08/ui/addons/ego_detailmonitor/menu_followcamera.lua` | Führt update sliders aus. |
-| `menu.updateSpline` | 1 | `08/ui/addons/ego_detailmonitor/menu_mapeditor.lua` | Führt update spline aus. |
-| `menu.updateSubordinateGroupInfo` | 2 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt update subordinate group info aus (Parameter: controllable). |
-| `menu.updateSupplyResourceNode` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_overview.lua` | Führt update supply resource node aus (Parameter: node, ware). |
-| `menu.updateTableSelection` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt update table selection aus (Parameter: lastcomponent). |
-| `menu.updateTerraformingNode` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_overview.lua` | Führt update terraforming node aus (Parameter: node, project). |
-| `menu.updateTradeContextDimensions` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt update trade context dimensions aus (Parameter: numwarerows, numinforows). |
-| `menu.updateTradeCost` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt update trade cost aus. |
-| `menu.updateTradeData` | 1 | `08/ui/addons/ego_detailmonitor/menu_trader_inventory.lua` | Führt update trade data aus (Parameter: ware, newamount). |
+| `menu.updateAccountNode` | 2 | `08/ui/addons/ego_detailmonitor/menu_station_overview.lua` | Aktualisiert account node (Parameter: node). |
+| `menu.updateBudgets` | 1 | `08/ui/addons/ego_gameoptions/customgame.lua` | Aktualisiert budgets. |
+| `menu.updateBuildNode` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_overview.lua` | Aktualisiert build node (Parameter: node, buildmodule). |
+| `menu.updateConstructionPlans` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_configuration.lua` | Aktualisiert construction plans. |
+| `menu.updateDeliveredWares` | 2 | `08/ui/addons/ego_detailmonitor/menu_terraforming.lua` | Aktualisiert delivered wares (Parameter: project). |
+| `menu.updateDroneInfo` | 2 | `08/ui/addons/ego_detailmonitor/menu_terraforming.lua` | Aktualisiert drone info (Parameter: project). |
+| `menu.updateEdgeColorRecursively` | 2 | `08/ui/addons/ego_detailmonitor/menu_terraforming.lua` | Aktualisiert edge color recursively (Parameter: edge, color). |
+| `menu.updateExpandedNode` | 3 | `08/ui/addons/ego_detailmonitor/menu_terraforming.lua` | Aktualisiert expanded node. |
+| `menu.updateHolomap` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Aktualisiert holomap. |
+| `menu.updateMapAndInfoFrame` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Aktualisiert map and info frame. |
+| `menu.updateMissionOfferList` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Aktualisiert mission offer list (Parameter: clear). |
+| `menu.updateMissions` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Aktualisiert missions. |
+| `menu.updateMouseCursor` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Aktualisiert mouse cursor. |
+| `menu.updateOverride` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_overview.lua` | Aktualisiert override (Parameter: container64). |
+| `menu.updatePlotData` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Aktualisiert plot data (Parameter: station, donotrefresh). |
+| `menu.updatePlotSize` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Aktualisiert plot size (Parameter: dimension, axis, valchange). |
+| `menu.updatePlotSliders` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Aktualisiert plot sliders. |
+| `menu.updatePlotWidgets` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Aktualisiert plot widgets. |
+| `menu.updatePos` | 1 | `08/ui/addons/ego_detailmonitor/menu_followcamera.lua` | Aktualisiert pos. |
+| `menu.updateProcessingNode` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_overview.lua` | Aktualisiert processing node (Parameter: node, processingmodules). |
+| `menu.updateProductionNode` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_overview.lua` | Aktualisiert production node (Parameter: node, productionmodules). |
+| `menu.updateRenderedComponents` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Aktualisiert rendered components. |
+| `menu.updateResearchNode` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_overview.lua` | Aktualisiert research node (Parameter: node, researchmodule). |
+| `menu.updateSelectedComponents` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Aktualisiert selected components (Parameter: modified, keepselection, changedComponent, changedrow). |
+| `menu.updateSelectedRows` | 1 | `08/ui/addons/ego_detailmonitor/menu_playerinfo.lua` | Aktualisiert selected rows. |
+| `menu.updateShipStatus` | 1 | `08/ui/addons/ego_detailmonitor/menu_platformundock.lua` | Aktualisiert ship status (Parameter: datatable). |
+| `menu.updateShipStatusText` | 1 | `08/ui/addons/ego_detailmonitor/menu_platformundock.lua` | Aktualisiert ship status text (Parameter: datatable). |
+| `menu.updateSliders` | 1 | `08/ui/addons/ego_detailmonitor/menu_followcamera.lua` | Aktualisiert sliders. |
+| `menu.updateSpline` | 1 | `08/ui/addons/ego_detailmonitor/menu_mapeditor.lua` | Aktualisiert spline. |
+| `menu.updateSubordinateGroupInfo` | 2 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Aktualisiert subordinate group info (Parameter: controllable). |
+| `menu.updateSupplyResourceNode` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_overview.lua` | Aktualisiert supply resource node (Parameter: node, ware). |
+| `menu.updateTableSelection` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Aktualisiert table selection (Parameter: lastcomponent). |
+| `menu.updateTerraformingNode` | 1 | `08/ui/addons/ego_detailmonitor/menu_station_overview.lua` | Aktualisiert terraforming node (Parameter: node, project). |
+| `menu.updateTradeContextDimensions` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Aktualisiert trade context dimensions (Parameter: numwarerows, numinforows). |
+| `menu.updateTradeCost` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Aktualisiert trade cost. |
+| `menu.updateTradeData` | 1 | `08/ui/addons/ego_detailmonitor/menu_trader_inventory.lua` | Aktualisiert trade data (Parameter: ware, newamount). |
 | `menu.upgradeMapFilterSaveVersion` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt upgrade map filter save version aus. |
 | `menu.upgradeMapFilterVersion` | 1 | `08/ui/addons/ego_detailmonitor/menu_map.lua` | Führt upgrade map filter version aus. |
 | `menu.upgradeQueueVersion` | 1 | `08/ui/addons/ego_helptext/helptext.lua` | Führt upgrade queue version aus. |
@@ -2813,9 +2813,9 @@ Automatisch generierte Liste aller in den Skripten definierten Lua-Funktionen.
 | `prof_start` | 1 | `08/ui/core/lua/jit/p.lua` | Führt prof start aus. |
 | `prof_top` | 1 | `08/ui/core/lua/jit/p.lua` | Führt prof top aus. |
 | `prototype.confidence.calculate` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt calculate aus (Parameter: targetElement). |
-| `prototype.confidence.calculateAngle` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt calculate angle aus (Parameter: targetElement). |
-| `prototype.confidence.calculateCurrentTarget` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt calculate current target aus (Parameter: targetElement). |
-| `prototype.confidence.calculateDistance` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt calculate distance aus (Parameter: targetElement). |
+| `prototype.confidence.calculateAngle` | 1 | `08/ui/core/lua/targetsystem.lua` | Berechnet angle (Parameter: targetElement). |
+| `prototype.confidence.calculateCurrentTarget` | 1 | `08/ui/core/lua/targetsystem.lua` | Berechnet current target (Parameter: targetElement). |
+| `prototype.confidence.calculateDistance` | 1 | `08/ui/core/lua/targetsystem.lua` | Berechnet distance (Parameter: targetElement). |
 | `putop` | 5 | `08/ui/core/lua/jit/dis_mips.lua` | Führt putop aus. |
 | `putpat` | 1 | `08/ui/core/lua/jit/dis_x86.lua` | Führt putpat aus. |
 | `queueNotification` | 1 | `08/ui/core/lua/monitors.lua` | Führt queue notification aus (Parameter: notificationID, priority). |
@@ -2832,9 +2832,9 @@ Automatisch generierte Liste aller in den Skripten definierten Lua-Funktionen.
 | `removeStateRequest` | 1 | `08/ui/core/lua/monitors.lua` | Entfernt state request (Parameter: state, force). |
 | `requestSofttargetLock` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt request softtarget lock aus. |
 | `requestState` | 1 | `08/ui/core/lua/monitors.lua` | Führt request state aus (Parameter: state, force). |
-| `resetElement` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt reset element aus (Parameter: targetElement). |
-| `resetScheduledShowDialogMenu` | 1 | `08/ui/core/lua/dialogmenu.lua` | Führt reset scheduled show dialog menu aus. |
-| `resetTargetSystem` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt reset target system aus. |
+| `resetElement` | 1 | `08/ui/core/lua/targetsystem.lua` | Setzt element zurück (Parameter: targetElement). |
+| `resetScheduledShowDialogMenu` | 1 | `08/ui/core/lua/dialogmenu.lua` | Setzt scheduled show dialog menu zurück. |
+| `resetTargetSystem` | 1 | `08/ui/core/lua/targetsystem.lua` | Setzt target system zurück. |
 | `resolutionsort` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Führt resolutionsort aus (Parameter: a, b). |
 | `resolveInput` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Führt resolve input aus. |
 | `resolveOrFixFunctionInput` | 1 | `08/ui/addons/ego_gameoptions/gameoptions.lua` | Führt resolve or fix function input aus. |
@@ -2843,7 +2843,7 @@ Automatisch generierte Liste aller in den Skripten definierten Lua-Funktionen.
 | `scaleFont` | 1 | `08/ui/core/lua/monitors.lua` | Führt scale font aus (Parameter: size). |
 | `scheduleAutoLock` | 1 | `08/ui/core/lua/dialogmenu.lua` | Führt schedule auto lock aus (Parameter: time). |
 | `scheduleShowDialogMenu` | 1 | `08/ui/core/lua/dialogmenu.lua` | Führt schedule show dialog menu aus. |
-| `selectDialogButton` | 1 | `08/ui/core/lua/dialogmenu.lua` | Führt select dialog button aus (Parameter: button). |
+| `selectDialogButton` | 1 | `08/ui/core/lua/dialogmenu.lua` | Wählt dialog button aus (Parameter: button). |
 | `self:faceCamera` | 1 | `08/ui/core/lua/billboard.lua` | Führt self:face camera aus. |
 | `self:faceCameraGlobalY` | 1 | `08/ui/core/lua/billboard.lua` | Führt self:face camera global y aus. |
 | `self:getAttributeVector` | 1 | `08/ui/core/lua/billboard.lua` | Führt self:get attribute vector aus (Parameter: inElement, inAttribute, inVector). |
@@ -2921,36 +2921,36 @@ Automatisch generierte Liste aller in den Skripten definierten Lua-Funktionen.
 | `setupDAGLayoutHelper:reduceEdgeCrossings` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt setup daglayout helper:reduce edge crossings aus. |
 | `setupDAGLayoutHelper:removeCyclicEdge` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt setup daglayout helper:remove cyclic edge aus (Parameter: remainingnodes). |
 | `shouldDisplayNotorietyBar` | 1 | `08/ui/core/lua/monitors.lua` | Führt should display notoriety bar aus (Parameter: details). |
-| `showBar` | 1 | `08/ui/core/lua/subchannelbar.lua` | Führt show bar aus. |
-| `showCell` | 1 | `08/ui/core/lua/overlay.lua` | Führt show cell aus (Parameter: idx, x, y, width, height, celldata). |
-| `showCompass` | 1 | `08/ui/core/lua/compass.lua` | Führt show compass aus. |
-| `showDebugLine` | 1 | `08/ui/core/lua/debugline.lua` | Führt show debug line aus. |
-| `showDebugLog` | 1 | `08/ui/addons/ego_debuglog/debuglog.lua` | Führt show debug log aus. |
-| `showDebugOutline` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt show debug outline aus (Parameter: targetElement). |
-| `showDialogMenu` | 1 | `08/ui/core/lua/dialogmenu.lua` | Führt show dialog menu aus. |
-| `showEnvironmentInfo` | 1 | `08/ui/core/lua/monitors.lua` | Führt show environment info aus (Parameter: targetid). |
-| `showFPSCounter` | 1 | `08/ui/addons/ego_debuglog/debuglog.lua` | Führt show fpscounter aus. |
-| `showFill` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt show fill aus (Parameter: targetElement, color, animated). |
-| `showGameOver` | 1 | `08/ui/core/lua/gameover.lua` | Führt show game over aus (Parameter: duration). |
-| `showMouseOverText` | 1 | `08/ui/core/lua/dialogmenu.lua` | Führt show mouse over text aus (Parameter: button). |
-| `showNotification` | 1 | `08/ui/core/lua/monitors.lua` | Führt show notification aus (Parameter: notificationID). |
-| `showNotorietyBar` | 1 | `08/ui/core/lua/monitors.lua` | Führt show notoriety bar aus (Parameter: details). |
-| `showOutline` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt show outline aus (Parameter: targetElement, color). |
-| `showOverlay` | 1 | `08/ui/core/lua/overlay.lua` | Führt show overlay aus. |
-| `showPromo` | 1 | `08/ui/core/lua/promo.lua` | Führt show promo aus. |
-| `showSkipNote` | 1 | `08/ui/core/lua/subchannelbar.lua` | Führt show skip note aus. |
-| `showSofttarget` | 1 | `08/ui/core/lua/monitors.lua` | Führt show softtarget aus (Parameter: softtargetid, softtargetconnectionname). |
+| `showBar` | 1 | `08/ui/core/lua/subchannelbar.lua` | Zeigt bar. |
+| `showCell` | 1 | `08/ui/core/lua/overlay.lua` | Zeigt cell (Parameter: idx, x, y, width, height, celldata). |
+| `showCompass` | 1 | `08/ui/core/lua/compass.lua` | Zeigt compass. |
+| `showDebugLine` | 1 | `08/ui/core/lua/debugline.lua` | Zeigt debug line. |
+| `showDebugLog` | 1 | `08/ui/addons/ego_debuglog/debuglog.lua` | Zeigt debug log. |
+| `showDebugOutline` | 1 | `08/ui/core/lua/targetsystem.lua` | Zeigt debug outline (Parameter: targetElement). |
+| `showDialogMenu` | 1 | `08/ui/core/lua/dialogmenu.lua` | Zeigt dialog menu. |
+| `showEnvironmentInfo` | 1 | `08/ui/core/lua/monitors.lua` | Zeigt environment info (Parameter: targetid). |
+| `showFPSCounter` | 1 | `08/ui/addons/ego_debuglog/debuglog.lua` | Zeigt fpscounter. |
+| `showFill` | 1 | `08/ui/core/lua/targetsystem.lua` | Zeigt fill (Parameter: targetElement, color, animated). |
+| `showGameOver` | 1 | `08/ui/core/lua/gameover.lua` | Zeigt game over (Parameter: duration). |
+| `showMouseOverText` | 1 | `08/ui/core/lua/dialogmenu.lua` | Zeigt mouse over text (Parameter: button). |
+| `showNotification` | 1 | `08/ui/core/lua/monitors.lua` | Zeigt notification (Parameter: notificationID). |
+| `showNotorietyBar` | 1 | `08/ui/core/lua/monitors.lua` | Zeigt notoriety bar (Parameter: details). |
+| `showOutline` | 1 | `08/ui/core/lua/targetsystem.lua` | Zeigt outline (Parameter: targetElement, color). |
+| `showOverlay` | 1 | `08/ui/core/lua/overlay.lua` | Zeigt overlay. |
+| `showPromo` | 1 | `08/ui/core/lua/promo.lua` | Zeigt promo. |
+| `showSkipNote` | 1 | `08/ui/core/lua/subchannelbar.lua` | Zeigt skip note. |
+| `showSofttarget` | 1 | `08/ui/core/lua/monitors.lua` | Zeigt softtarget (Parameter: softtargetid, softtargetconnectionname). |
 | `sortDebugLog` | 1 | `08/ui/addons/ego_debuglog/debuglog.lua` | Führt sort debug log aus (Parameter: startIndex). |
 | `start` | 1 | `08/ui/core/lua/jit/p.lua` | Führt start aus. |
-| `startScan` | 1 | `08/ui/core/lua/crosshair handling.lua` | Führt start scan aus. |
-| `startSofttargetInteraction` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt start softtarget interaction aus. |
+| `startScan` | 1 | `08/ui/core/lua/crosshair handling.lua` | Startet scan. |
+| `startSofttargetInteraction` | 1 | `08/ui/core/lua/targetsystem.lua` | Startet softtarget interaction. |
 | `switchButton` | 1 | `08/ui/core/lua/dialogmenu.lua` | Führt switch button aus (Parameter: direction). |
 | `switchScreenshot` | 2 | `08/ui/core/lua/extro.lua` | Führt switch screenshot aus (Parameter: newScreen). |
 | `switchTargetMonitorNotification` | 1 | `08/ui/core/lua/monitors.lua` | Führt switch target monitor notification aus. |
 | `test1` | 1 | `08/ui/core/lua/unittests.lua` | Führt test1 aus. |
 | `test2` | 1 | `08/ui/core/lua/unittests.lua` | Führt test2 aus. |
-| `toggleDebugLog` | 1 | `08/ui/addons/ego_debuglog/debuglog.lua` | Führt toggle debug log aus. |
-| `toggleRadarMode` | 1 | `08/ui/core/lua/monitors.lua` | Führt toggle radar mode aus. |
+| `toggleDebugLog` | 1 | `08/ui/addons/ego_debuglog/debuglog.lua` | Schaltet debug log um. |
+| `toggleRadarMode` | 1 | `08/ui/core/lua/monitors.lua` | Schaltet radar mode um. |
 | `truncateLeftRightText` | 1 | `08/ui/core/lua/monitors.lua` | Führt truncate left right text aus (Parameter: lefttext, righttext, width). |
 | `unknown` | 5 | `08/ui/core/lua/jit/dis_mips.lua` | Führt unknown aus. |
 | `unlockInfo` | 1 | `08/ui/addons/ego_targetmonitor/targetmonitor.lua` | Führt unlock info aus. |
@@ -2958,87 +2958,87 @@ Automatisch generierte Liste aller in den Skripten definierten Lua-Funktionen.
 | `unselectDialogButton` | 1 | `08/ui/core/lua/dialogmenu.lua` | Führt unselect dialog button aus (Parameter: button). |
 | `unselectMouseJoystickButton` | 1 | `08/ui/core/lua/dialogmenu.lua` | Führt unselect mouse joystick button aus. |
 | `unsetPointerOverride` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt unset pointer override aus (Parameter: targetElement). |
-| `updateActiveState` | 1 | `08/ui/core/lua/monitors.lua` | Führt update active state aus (Parameter: force, refresh, allowPlaySound, keepCutscene). |
-| `updateActivityColor` | 2 | `08/ui/core/lua/crosshair handling.lua` | Führt update activity color aus. |
-| `updateAimTargetElement` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt update aim target element aus (Parameter: targetElement, isOnScreen). |
-| `updateAllOutlines` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt update all outlines aus. |
-| `updateAllPointerOverrides` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt update all pointer overrides aus. |
-| `updateArrowState` | 2 | `08/ui/core/lua/crosshair handling.lua` | Führt update arrow state aus (Parameter: arrowElement, wasHidden, isHidden). |
-| `updateBoostBar` | 1 | `08/ui/core/lua/crosshair handling.lua` | Führt update boost bar aus. |
-| `updateBottomText` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt update bottom text aus (Parameter: targetElement, onScreen, bottomText, targetElementPosX, targetElementPosY). |
-| `updateButtons` | 1 | `08/ui/addons/ego_debuglog/debuglog.lua` | Führt update buttons aus (Parameter: optionalAssertButton, assertButton, errorPopUpButton, optionalAssertPopUpButton, assertPopUpButton, showFPSButton). |
-| `updateChatNotification` | 1 | `08/ui/core/lua/monitors.lua` | Führt update chat notification aus. |
-| `updateCheckEngineLight` | 1 | `08/ui/core/lua/crosshair handling.lua` | Führt update check engine light aus. |
-| `updateColor` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt update color aus (Parameter: targetElement, relation, onScreen). |
-| `updateControllerSelection` | 1 | `08/ui/core/lua/compass.lua` | Führt update controller selection aus. |
-| `updateCountermeasures` | 1 | `08/ui/core/lua/crosshair handling.lua` | Führt update countermeasures aus. |
-| `updateCoverLine` | 1 | `08/ui/core/lua/monitors.lua` | Führt update cover line aus. |
-| `updateDebugMessage` | 1 | `08/ui/addons/ego_debuglog/debuglog.lua` | Führt update debug message aus (Parameter: messageNumber). |
-| `updateDebugOutlines` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt update debug outlines aus. |
-| `updateDialogMenuButtons` | 1 | `08/ui/core/lua/dialogmenu.lua` | Führt update dialog menu buttons aus (Parameter: oldButton, newButton). |
-| `updateDronePanel` | 1 | `08/ui/core/lua/crosshair handling.lua` | Führt update drone panel aus (Parameter: force). |
-| `updateDroneType` | 1 | `08/ui/core/lua/crosshair handling.lua` | Führt update drone type aus (Parameter: dronePanelEntry, droneTypeDetails, force). |
-| `updateDynamicRectangleIcons` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt update dynamic rectangle icons aus (Parameter: targetElement). |
-| `updateElementPosition` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt update element position aus (Parameter: element, x, y, z, yaw, pitch, roll, scale). |
-| `updateFPS` | 1 | `08/ui/addons/ego_debuglog/debuglog.lua` | Führt update fps aus. |
-| `updateFactionColor` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt update faction color aus (Parameter: targetElement). |
-| `updateHullShield` | 2 | `08/ui/core/lua/crosshair handling.lua` | Führt update hull shield aus. |
-| `updateIcon` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt update icon aus (Parameter: targetElement). |
-| `updateIconSize` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt update icon size aus (Parameter: targetElement, onScreen). |
-| `updateIndicatorScalePositionAndActivation` | 1 | `08/ui/core/lua/crosshair handling.lua` | Führt update indicator scale position and activation aus (Parameter: mode). |
-| `updateIndicators` | 1 | `08/ui/core/lua/crosshair handling.lua` | Führt update indicators aus. |
-| `updateInteractiveText` | 1 | `08/ui/core/lua/monitors.lua` | Führt update interactive text aus. |
-| `updateMailNotification` | 1 | `08/ui/core/lua/monitors.lua` | Führt update mail notification aus. |
-| `updateMatchSpeedElement` | 1 | `08/ui/core/lua/crosshair handling.lua` | Führt update match speed element aus (Parameter: matchSpeed, targetSpeed, normalTargetSpeed). |
-| `updateMessageStartTimes` | 1 | `08/ui/core/lua/monitors.lua` | Führt update message start times aus (Parameter: curtime, pausedtime). |
-| `updateMessageTicker` | 1 | `08/ui/core/lua/monitors.lua` | Führt update message ticker aus. |
-| `updateMessages` | 1 | `08/ui/core/lua/monitors.lua` | Führt update messages aus. |
-| `updateMissileLock` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt update missile lock aus (Parameter: missileLockEntry, lockPercentage, counterMeasureTarget). |
-| `updateMissileLockColor` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt update missile lock color aus (Parameter: relation). |
-| `updateMissileLocks` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt update missile locks aus. |
-| `updateMissionArrow` | 2 | `08/ui/core/lua/crosshair handling.lua` | Führt update mission arrow aus. |
-| `updateMissionDetails` | 1 | `08/ui/core/lua/monitors.lua` | Führt update mission details aus (Parameter: blinking). |
-| `updateMousePosition` | 1 | `08/ui/core/lua/compass.lua` | Führt update mouse position aus. |
-| `updateMouseSteeringLine` | 1 | `08/ui/core/lua/crosshair handling.lua` | Führt update mouse steering line aus. |
-| `updateNotorietyLadder` | 1 | `08/ui/core/lua/monitors.lua` | Führt update notoriety ladder aus (Parameter: notorietyFactionDetails, notorietyComponentDetails). |
-| `updateOffScreenBox` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt update off screen box aus (Parameter: targetElement, onScreen). |
-| `updateOutline` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt update outline aus (Parameter: targetElement). |
-| `updateOxygenBar` | 1 | `08/ui/core/lua/crosshair handling.lua` | Führt update oxygen bar aus. |
-| `updatePointerOverride` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt update pointer override aus (Parameter: targetElement, actionPointer, isSofttarget, isInstantAction). |
-| `updateProgressbar` | 1 | `08/ui/core/lua/crosshair handling.lua` | Führt update progressbar aus. |
-| `updateRadar` | 1 | `08/ui/core/lua/monitors.lua` | Führt update radar aus. |
-| `updateRadarExtents` | 1 | `08/ui/core/lua/monitors.lua` | Führt update radar extents aus. |
-| `updateRadarTarget` | 1 | `08/ui/core/lua/monitors.lua` | Führt update radar target aus (Parameter: focusComponent). |
-| `updateRectangleElements` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt update rectangle elements aus (Parameter: targetElement). |
-| `updateReenableButton` | 1 | `08/ui/addons/ego_debuglog/debuglog.lua` | Führt update reenable button aus. |
-| `updateRelation` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt update relation aus (Parameter: targetElement, newRelation, newOwningFactionID). |
-| `updateRelationStatusData` | 1 | `08/ui/core/lua/monitors.lua` | Führt update relation status data aus (Parameter: notorietyComponentDetails). |
-| `updateScenarioTexts` | 1 | `08/ui/core/lua/loading.lua` | Führt update scenario texts aus. |
-| `updateScreenshots` | 2 | `08/ui/core/lua/extro.lua` | Führt update screenshots aus. |
-| `updateSelectedButton` | 1 | `08/ui/core/lua/dialogmenu.lua` | Führt update selected button aus (Parameter: angle). |
-| `updateSelection` | 1 | `08/ui/core/lua/dialogmenu.lua` | Führt update selection aus. |
-| `updateSeta` | 1 | `08/ui/core/lua/crosshair handling.lua` | Führt update seta aus. |
-| `updateSideText` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt update side text aus (Parameter: targetElement, onScreen, distance). |
-| `updateSideText2` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt update side text2 aus (Parameter: targetElement). |
-| `updateSideTextPosition` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt update side text position aus (Parameter: targetElement, targetElementPosX, targetElementPosY). |
-| `updateSofttargetLock` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt update softtarget lock aus (Parameter: currentTargetIsHighestPriority). |
-| `updateSofttargetManager` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt update softtarget manager aus (Parameter: targetElements). |
-| `updateSofttargetManagerActivationState` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt update softtarget manager activation state aus. |
-| `updateSofttargetTargetElement` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt update softtarget target element aus (Parameter: messageID). |
-| `updateSpeedbar` | 1 | `08/ui/core/lua/crosshair handling.lua` | Führt update speedbar aus. |
-| `updateState` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt update state aus (Parameter: targetElement, force). |
-| `updateStates` | 1 | `08/ui/core/lua/dialogmenu.lua` | Führt update states aus. |
-| `updateTargetArrow` | 1 | `08/ui/core/lua/crosshair handling.lua` | Führt update target arrow aus. |
-| `updateTargetElement` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt update target element aus (Parameter: targetElement). |
-| `updateTargetElementData` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt update target element data aus (Parameter: targetElements). |
-| `updateTargetElementPosition` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt update target element position aus (Parameter: targetElement). |
-| `updateTargetMonitorDisplay` | 1 | `08/ui/core/lua/monitors.lua` | Führt update target monitor display aus (Parameter: details, enableTargetMonitorRadar, isNotification). |
-| `updateTargetMonitorNotifications` | 1 | `08/ui/core/lua/monitors.lua` | Führt update target monitor notifications aus. |
-| `updateTargetText` | 1 | `08/ui/core/lua/crosshair handling.lua` | Führt update target text aus. |
-| `updateText` | 2 | `08/ui/core/lua/crosshair handling.lua` | Führt update text aus. |
-| `updateVelocityIndicator` | 1 | `08/ui/core/lua/targetsystem.lua` | Führt update velocity indicator aus. |
-| `updateWeaponGroup` | 1 | `08/ui/core/lua/crosshair handling.lua` | Führt update weapon group aus (Parameter: element, group, playSound). |
-| `updateWeaponPanel` | 1 | `08/ui/core/lua/crosshair handling.lua` | Führt update weapon panel aus. |
+| `updateActiveState` | 1 | `08/ui/core/lua/monitors.lua` | Aktualisiert active state (Parameter: force, refresh, allowPlaySound, keepCutscene). |
+| `updateActivityColor` | 2 | `08/ui/core/lua/crosshair handling.lua` | Aktualisiert activity color. |
+| `updateAimTargetElement` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktualisiert aim target element (Parameter: targetElement, isOnScreen). |
+| `updateAllOutlines` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktualisiert all outlines. |
+| `updateAllPointerOverrides` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktualisiert all pointer overrides. |
+| `updateArrowState` | 2 | `08/ui/core/lua/crosshair handling.lua` | Aktualisiert arrow state (Parameter: arrowElement, wasHidden, isHidden). |
+| `updateBoostBar` | 1 | `08/ui/core/lua/crosshair handling.lua` | Aktualisiert boost bar. |
+| `updateBottomText` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktualisiert bottom text (Parameter: targetElement, onScreen, bottomText, targetElementPosX, targetElementPosY). |
+| `updateButtons` | 1 | `08/ui/addons/ego_debuglog/debuglog.lua` | Aktualisiert buttons (Parameter: optionalAssertButton, assertButton, errorPopUpButton, optionalAssertPopUpButton, assertPopUpButton, showFPSButton). |
+| `updateChatNotification` | 1 | `08/ui/core/lua/monitors.lua` | Aktualisiert chat notification. |
+| `updateCheckEngineLight` | 1 | `08/ui/core/lua/crosshair handling.lua` | Aktualisiert check engine light. |
+| `updateColor` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktualisiert color (Parameter: targetElement, relation, onScreen). |
+| `updateControllerSelection` | 1 | `08/ui/core/lua/compass.lua` | Aktualisiert controller selection. |
+| `updateCountermeasures` | 1 | `08/ui/core/lua/crosshair handling.lua` | Aktualisiert countermeasures. |
+| `updateCoverLine` | 1 | `08/ui/core/lua/monitors.lua` | Aktualisiert cover line. |
+| `updateDebugMessage` | 1 | `08/ui/addons/ego_debuglog/debuglog.lua` | Aktualisiert debug message (Parameter: messageNumber). |
+| `updateDebugOutlines` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktualisiert debug outlines. |
+| `updateDialogMenuButtons` | 1 | `08/ui/core/lua/dialogmenu.lua` | Aktualisiert dialog menu buttons (Parameter: oldButton, newButton). |
+| `updateDronePanel` | 1 | `08/ui/core/lua/crosshair handling.lua` | Aktualisiert drone panel (Parameter: force). |
+| `updateDroneType` | 1 | `08/ui/core/lua/crosshair handling.lua` | Aktualisiert drone type (Parameter: dronePanelEntry, droneTypeDetails, force). |
+| `updateDynamicRectangleIcons` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktualisiert dynamic rectangle icons (Parameter: targetElement). |
+| `updateElementPosition` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktualisiert element position (Parameter: element, x, y, z, yaw, pitch, roll, scale). |
+| `updateFPS` | 1 | `08/ui/addons/ego_debuglog/debuglog.lua` | Aktualisiert fps. |
+| `updateFactionColor` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktualisiert faction color (Parameter: targetElement). |
+| `updateHullShield` | 2 | `08/ui/core/lua/crosshair handling.lua` | Aktualisiert hull shield. |
+| `updateIcon` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktualisiert icon (Parameter: targetElement). |
+| `updateIconSize` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktualisiert icon size (Parameter: targetElement, onScreen). |
+| `updateIndicatorScalePositionAndActivation` | 1 | `08/ui/core/lua/crosshair handling.lua` | Aktualisiert indicator scale position and activation (Parameter: mode). |
+| `updateIndicators` | 1 | `08/ui/core/lua/crosshair handling.lua` | Aktualisiert indicators. |
+| `updateInteractiveText` | 1 | `08/ui/core/lua/monitors.lua` | Aktualisiert interactive text. |
+| `updateMailNotification` | 1 | `08/ui/core/lua/monitors.lua` | Aktualisiert mail notification. |
+| `updateMatchSpeedElement` | 1 | `08/ui/core/lua/crosshair handling.lua` | Aktualisiert match speed element (Parameter: matchSpeed, targetSpeed, normalTargetSpeed). |
+| `updateMessageStartTimes` | 1 | `08/ui/core/lua/monitors.lua` | Aktualisiert message start times (Parameter: curtime, pausedtime). |
+| `updateMessageTicker` | 1 | `08/ui/core/lua/monitors.lua` | Aktualisiert message ticker. |
+| `updateMessages` | 1 | `08/ui/core/lua/monitors.lua` | Aktualisiert messages. |
+| `updateMissileLock` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktualisiert missile lock (Parameter: missileLockEntry, lockPercentage, counterMeasureTarget). |
+| `updateMissileLockColor` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktualisiert missile lock color (Parameter: relation). |
+| `updateMissileLocks` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktualisiert missile locks. |
+| `updateMissionArrow` | 2 | `08/ui/core/lua/crosshair handling.lua` | Aktualisiert mission arrow. |
+| `updateMissionDetails` | 1 | `08/ui/core/lua/monitors.lua` | Aktualisiert mission details (Parameter: blinking). |
+| `updateMousePosition` | 1 | `08/ui/core/lua/compass.lua` | Aktualisiert mouse position. |
+| `updateMouseSteeringLine` | 1 | `08/ui/core/lua/crosshair handling.lua` | Aktualisiert mouse steering line. |
+| `updateNotorietyLadder` | 1 | `08/ui/core/lua/monitors.lua` | Aktualisiert notoriety ladder (Parameter: notorietyFactionDetails, notorietyComponentDetails). |
+| `updateOffScreenBox` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktualisiert off screen box (Parameter: targetElement, onScreen). |
+| `updateOutline` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktualisiert outline (Parameter: targetElement). |
+| `updateOxygenBar` | 1 | `08/ui/core/lua/crosshair handling.lua` | Aktualisiert oxygen bar. |
+| `updatePointerOverride` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktualisiert pointer override (Parameter: targetElement, actionPointer, isSofttarget, isInstantAction). |
+| `updateProgressbar` | 1 | `08/ui/core/lua/crosshair handling.lua` | Aktualisiert progressbar. |
+| `updateRadar` | 1 | `08/ui/core/lua/monitors.lua` | Aktualisiert radar. |
+| `updateRadarExtents` | 1 | `08/ui/core/lua/monitors.lua` | Aktualisiert radar extents. |
+| `updateRadarTarget` | 1 | `08/ui/core/lua/monitors.lua` | Aktualisiert radar target (Parameter: focusComponent). |
+| `updateRectangleElements` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktualisiert rectangle elements (Parameter: targetElement). |
+| `updateReenableButton` | 1 | `08/ui/addons/ego_debuglog/debuglog.lua` | Aktualisiert reenable button. |
+| `updateRelation` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktualisiert relation (Parameter: targetElement, newRelation, newOwningFactionID). |
+| `updateRelationStatusData` | 1 | `08/ui/core/lua/monitors.lua` | Aktualisiert relation status data (Parameter: notorietyComponentDetails). |
+| `updateScenarioTexts` | 1 | `08/ui/core/lua/loading.lua` | Aktualisiert scenario texts. |
+| `updateScreenshots` | 2 | `08/ui/core/lua/extro.lua` | Aktualisiert screenshots. |
+| `updateSelectedButton` | 1 | `08/ui/core/lua/dialogmenu.lua` | Aktualisiert selected button (Parameter: angle). |
+| `updateSelection` | 1 | `08/ui/core/lua/dialogmenu.lua` | Aktualisiert selection. |
+| `updateSeta` | 1 | `08/ui/core/lua/crosshair handling.lua` | Aktualisiert seta. |
+| `updateSideText` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktualisiert side text (Parameter: targetElement, onScreen, distance). |
+| `updateSideText2` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktualisiert side text2 (Parameter: targetElement). |
+| `updateSideTextPosition` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktualisiert side text position (Parameter: targetElement, targetElementPosX, targetElementPosY). |
+| `updateSofttargetLock` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktualisiert softtarget lock (Parameter: currentTargetIsHighestPriority). |
+| `updateSofttargetManager` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktualisiert softtarget manager (Parameter: targetElements). |
+| `updateSofttargetManagerActivationState` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktualisiert softtarget manager activation state. |
+| `updateSofttargetTargetElement` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktualisiert softtarget target element (Parameter: messageID). |
+| `updateSpeedbar` | 1 | `08/ui/core/lua/crosshair handling.lua` | Aktualisiert speedbar. |
+| `updateState` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktualisiert state (Parameter: targetElement, force). |
+| `updateStates` | 1 | `08/ui/core/lua/dialogmenu.lua` | Aktualisiert states. |
+| `updateTargetArrow` | 1 | `08/ui/core/lua/crosshair handling.lua` | Aktualisiert target arrow. |
+| `updateTargetElement` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktualisiert target element (Parameter: targetElement). |
+| `updateTargetElementData` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktualisiert target element data (Parameter: targetElements). |
+| `updateTargetElementPosition` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktualisiert target element position (Parameter: targetElement). |
+| `updateTargetMonitorDisplay` | 1 | `08/ui/core/lua/monitors.lua` | Aktualisiert target monitor display (Parameter: details, enableTargetMonitorRadar, isNotification). |
+| `updateTargetMonitorNotifications` | 1 | `08/ui/core/lua/monitors.lua` | Aktualisiert target monitor notifications. |
+| `updateTargetText` | 1 | `08/ui/core/lua/crosshair handling.lua` | Aktualisiert target text. |
+| `updateText` | 2 | `08/ui/core/lua/crosshair handling.lua` | Aktualisiert text. |
+| `updateVelocityIndicator` | 1 | `08/ui/core/lua/targetsystem.lua` | Aktualisiert velocity indicator. |
+| `updateWeaponGroup` | 1 | `08/ui/core/lua/crosshair handling.lua` | Aktualisiert weapon group (Parameter: element, group, playSound). |
+| `updateWeaponPanel` | 1 | `08/ui/core/lua/crosshair handling.lua` | Aktualisiert weapon panel. |
 | `upgradeData` | 1 | `08/ui/addons/ego_debuglog/debuglog.lua` | Führt upgrade data aus. |
 | `usage` | 1 | `08/ui/core/lua/jit/bcsave.lua` | Führt usage aus. |
 | `widgetHelpers.boxtext:createDescriptor` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt boxtext:create descriptor aus. |
@@ -3186,26 +3186,26 @@ Automatisch generierte Liste aller in den Skripten definierten Lua-Funktionen.
 | `widgetPrototypes.table:setTopRow` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt table:set top row aus (Parameter: row). |
 | `widgetPrototypes.text:getMinTextHeight` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt text:get min text height aus (Parameter: scaling). |
 | `widgetPrototypes.text:getTextHeight` | 1 | `08/ui/addons/ego_detailmonitorhelper/helper.lua` | Führt text:get text height aus (Parameter: scaling). |
-| `widgetSystem.activateEditBox` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt activate edit box aus (Parameter: editboxID, cursorpos, shiftstartpos). |
-| `widgetSystem.activateEditBoxInternal` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt activate edit box internal aus (Parameter: frameElement, editboxID, editboxElement, cursorpos, shiftstartpos). |
-| `widgetSystem.activateSliderCellInput` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt activate slider cell input aus (Parameter: slidercellID). |
-| `widgetSystem.activateSliderCellInputInternal` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt activate slider cell input internal aus (Parameter: slidercellID, slidercellElement). |
+| `widgetSystem.activateEditBox` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktiviert edit box (Parameter: editboxID, cursorpos, shiftstartpos). |
+| `widgetSystem.activateEditBoxInternal` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktiviert edit box internal (Parameter: frameElement, editboxID, editboxElement, cursorpos, shiftstartpos). |
+| `widgetSystem.activateSliderCellInput` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktiviert slider cell input (Parameter: slidercellID). |
+| `widgetSystem.activateSliderCellInputInternal` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktiviert slider cell input internal (Parameter: slidercellID, slidercellElement). |
 | `widgetSystem.addDeferredElementInitializer` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Fügt deferred element initializer hinzu (Parameter: element, initializer, precedence, totalCount, numInitAtStartup, numInitPerFrame). |
 | `widgetSystem.addFlowchartConnector` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Fügt flowchart connector hinzu (Parameter: connectorTable, x, y, xUseHalfPixel, yUseHalfPixel, size, color). |
 | `widgetSystem.addHelpOverlay` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Fügt help overlay hinzu (Parameter: frameElement, widgetID, x, y, width, height, standardbutton, backgroundcolspanwidth, overrideinfo). |
 | `widgetSystem.addToAssociationList` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Fügt to association list hinzu (Parameter: widgetID, elementEntry, rootAnarkElement, parentX, parentY, parentWidth, textComponent, activeSlide, inactiveSlide, curSlide). |
-| `widgetSystem.calculateFixedRowHeight` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt calculate fixed row height aus (Parameter: tableID, tableElement). |
-| `widgetSystem.calculateMinRowHeight` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt calculate min row height aus (Parameter: tableID, tableElement). |
-| `widgetSystem.calculateRowsToMoveByBottomRow` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt calculate rows to move by bottom row aus (Parameter: tableID, tableElement, newBottomRow). |
-| `widgetSystem.calculateRowsToMoveByPixelDiff` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt calculate rows to move by pixel diff aus (Parameter: tableID, tableElement, pixeldiff). |
-| `widgetSystem.calculateRowsToMoveByTopRow` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt calculate rows to move by top row aus (Parameter: tableID, tableElement, newTopRow). |
-| `widgetSystem.calculateSliderScrollBarPageStep` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt calculate slider scroll bar page step aus (Parameter: singleStepSliderWidth, sliderWidth, granularity). |
+| `widgetSystem.calculateFixedRowHeight` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Berechnet fixed row height (Parameter: tableID, tableElement). |
+| `widgetSystem.calculateMinRowHeight` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Berechnet min row height (Parameter: tableID, tableElement). |
+| `widgetSystem.calculateRowsToMoveByBottomRow` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Berechnet rows to move by bottom row (Parameter: tableID, tableElement, newBottomRow). |
+| `widgetSystem.calculateRowsToMoveByPixelDiff` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Berechnet rows to move by pixel diff (Parameter: tableID, tableElement, pixeldiff). |
+| `widgetSystem.calculateRowsToMoveByTopRow` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Berechnet rows to move by top row (Parameter: tableID, tableElement, newTopRow). |
+| `widgetSystem.calculateSliderScrollBarPageStep` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Berechnet slider scroll bar page step (Parameter: singleStepSliderWidth, sliderWidth, granularity). |
 | `widgetSystem.cancelEditBoxInput` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt cancel edit box input aus (Parameter: editboxID). |
 | `widgetSystem.cancelEditBoxInputInternal` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt cancel edit box input internal aus (Parameter: editboxID, editboxElement). |
 | `widgetSystem.cancelSliderCellInputInternal` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt cancel slider cell input internal aus (Parameter: slidercellID, slidercellElement). |
 | `widgetSystem.checkElementByRootAnarkElement` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt check element by root anark element aus (Parameter: type, widgetElement, rootAnarkElement). |
-| `widgetSystem.clearHelpOverlays` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt clear help overlays aus (Parameter: frameElement). |
-| `widgetSystem.closeDropDownOptions` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt close drop down options aus (Parameter: dropdownID). |
+| `widgetSystem.clearHelpOverlays` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Leert help overlays (Parameter: frameElement). |
+| `widgetSystem.closeDropDownOptions` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Schließt drop down options (Parameter: dropdownID). |
 | `widgetSystem.combinedScrollDownRenderTarget` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt combined scroll down render target aus (Parameter: renderTargetID, step). |
 | `widgetSystem.combinedScrollUpRenderTarget` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt combined scroll up render target aus (Parameter: renderTargetID, step). |
 | `widgetSystem.confirmEditBoxInput` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt confirm edit box input aus (Parameter: editboxID). |
@@ -3213,20 +3213,20 @@ Automatisch generierte Liste aller in den Skripten definierten Lua-Funktionen.
 | `widgetSystem.confirmSliderCellInputInternal` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt confirm slider cell input internal aus (Parameter: slidercellID, slidercellElement). |
 | `widgetSystem.convertAlignment` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt convert alignment aus (Parameter: alignment). |
 | `widgetSystem.convertColumnWidth` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt convert column width aus (Parameter: columnWidths, columnWidthsInPercent, tablewidth). |
-| `widgetSystem.deactivateDirectInputElements` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt deactivate direct input elements aus. |
-| `widgetSystem.deactivateEditBox` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt deactivate edit box aus (Parameter: editboxID, editboxElement, isconfirmed, wastableclick). |
-| `widgetSystem.deactivateSliderCellInput` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt deactivate slider cell input aus (Parameter: slidercellElement). |
-| `widgetSystem.drawCircle` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt draw circle aus (Parameter: id, radiusx, radiusy, centerx, centery, z, color). |
-| `widgetSystem.drawFlowchartBackground` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt draw flowchart background aus (Parameter: anarkElement, x, y, width, height, backgroundelementname, materialname, color, slide). |
-| `widgetSystem.drawFlowchartConnectors` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt draw flowchart connectors aus (Parameter: flowchartNodeElement, connectorTable). |
-| `widgetSystem.drawFlowchartContent` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt draw flowchart content aus (Parameter: frameElement, flowchartID, flowchartElement). |
-| `widgetSystem.drawFlowchartEdge` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt draw flowchart edge aus (Parameter: frameElement, flowchartEdgeID, flowchartEdgeElement, edge, flowchartData). |
-| `widgetSystem.drawFlowchartJunction` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt draw flowchart junction aus (Parameter: flowchartNodeID, flowchartNodeElement). |
-| `widgetSystem.drawFlowchartNode` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt draw flowchart node aus (Parameter: flowchartNodeID, flowchartNodeElement). |
-| `widgetSystem.drawRect` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt draw rect aus (Parameter: id, width, height, offsetx, offsety, angle, z, color). |
-| `widgetSystem.drawTableCells` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt draw table cells aus (Parameter: frameElement, tableID, tableElement, firstRow, lastRow, curRow, firsttime, modified). |
-| `widgetSystem.drawTableSection` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt draw table section aus (Parameter: frameElement, tableID, tableElement, firstRow, lastRow, displayedRows, cellposy, curtableheight, cellIndexOffset, isFixedRowSection, firsttime). |
-| `widgetSystem.drawTriangle` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt draw triangle aus (Parameter: id, width, height, offsetx, offsety, angle, z, color). |
+| `widgetSystem.deactivateDirectInputElements` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Deaktiviert direct input elements. |
+| `widgetSystem.deactivateEditBox` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Deaktiviert edit box (Parameter: editboxID, editboxElement, isconfirmed, wastableclick). |
+| `widgetSystem.deactivateSliderCellInput` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Deaktiviert slider cell input (Parameter: slidercellElement). |
+| `widgetSystem.drawCircle` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Zeichnet circle (Parameter: id, radiusx, radiusy, centerx, centery, z, color). |
+| `widgetSystem.drawFlowchartBackground` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Zeichnet flowchart background (Parameter: anarkElement, x, y, width, height, backgroundelementname, materialname, color, slide). |
+| `widgetSystem.drawFlowchartConnectors` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Zeichnet flowchart connectors (Parameter: flowchartNodeElement, connectorTable). |
+| `widgetSystem.drawFlowchartContent` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Zeichnet flowchart content (Parameter: frameElement, flowchartID, flowchartElement). |
+| `widgetSystem.drawFlowchartEdge` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Zeichnet flowchart edge (Parameter: frameElement, flowchartEdgeID, flowchartEdgeElement, edge, flowchartData). |
+| `widgetSystem.drawFlowchartJunction` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Zeichnet flowchart junction (Parameter: flowchartNodeID, flowchartNodeElement). |
+| `widgetSystem.drawFlowchartNode` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Zeichnet flowchart node (Parameter: flowchartNodeID, flowchartNodeElement). |
+| `widgetSystem.drawRect` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Zeichnet rect (Parameter: id, width, height, offsetx, offsety, angle, z, color). |
+| `widgetSystem.drawTableCells` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Zeichnet table cells (Parameter: frameElement, tableID, tableElement, firstRow, lastRow, curRow, firsttime, modified). |
+| `widgetSystem.drawTableSection` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Zeichnet table section (Parameter: frameElement, tableID, tableElement, firstRow, lastRow, displayedRows, cellposy, curtableheight, cellIndexOffset, isFixedRowSection, firsttime). |
+| `widgetSystem.drawTriangle` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Zeichnet triangle (Parameter: id, width, height, offsetx, offsety, angle, z, color). |
 | `widgetSystem.findEditBoxWordAtPos` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt find edit box word at pos aus (Parameter: editboxElement, curpos). |
 | `widgetSystem.getBackgroundColumnSpanInfo` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Gibt background column span info zurück (Parameter: tableID, tableElement, row, col, isFixedRowSection). |
 | `widgetSystem.getColors` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Gibt colors zurück. |
@@ -3286,41 +3286,41 @@ Automatisch generierte Liste aller in den Skripten definierten Lua-Funktionen.
 | `widgetSystem.getWidgetIDByElementEntry` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Gibt widget idby element entry zurück (Parameter: elementEntry). |
 | `widgetSystem.getWidgetSystemSize` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Gibt widget system size zurück. |
 | `widgetSystem.hasNonFixedRows` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt has non fixed rows aus (Parameter: tableElement). |
-| `widgetSystem.hideAllElements` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt hide all elements aus. |
-| `widgetSystem.hideAllShapes` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt hide all shapes aus. |
-| `widgetSystem.hideBoxText` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt hide box text aus (Parameter: boxtextElement). |
-| `widgetSystem.hideButton` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt hide button aus (Parameter: buttonElement, iconActive, icon2Active, textActive, text2Active, hotkeyIconActive). |
-| `widgetSystem.hideCheckBox` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt hide check box aus (Parameter: checkboxElement). |
-| `widgetSystem.hideCircle` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt hide circle aus (Parameter: id). |
-| `widgetSystem.hideCircles` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt hide circles aus. |
-| `widgetSystem.hideDropDown` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt hide drop down aus (Parameter: dropdownElement, iconActive, hotykeyIconActive). |
-| `widgetSystem.hideDropDownOptions` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt hide drop down options aus (Parameter: dropdownID, dropdownElement). |
-| `widgetSystem.hideEditBox` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt hide edit box aus (Parameter: editboxElement, hotkeyIconActive). |
-| `widgetSystem.hideFlowchart` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt hide flowchart aus (Parameter: frameElement, flowchartElement). |
-| `widgetSystem.hideFlowchartContent` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt hide flowchart content aus (Parameter: frameElement, flowchartElement). |
-| `widgetSystem.hideFlowchartEdge` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt hide flowchart edge aus (Parameter: frameElement, edge, flowchartEdgeElement). |
-| `widgetSystem.hideFlowchartNode` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt hide flowchart node aus (Parameter: frameElement, flowchartNodeElement). |
-| `widgetSystem.hideFrame` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt hide frame aus (Parameter: frameElement, keepMinimizedState). |
-| `widgetSystem.hideGraph` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt hide graph aus (Parameter: graphElement). |
-| `widgetSystem.hideHelpOverlay` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt hide help overlay aus (Parameter: keepsignals). |
-| `widgetSystem.hideHelpOverlayID` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt hide help overlay id aus (Parameter: id). |
-| `widgetSystem.hideHorizontalScrollBar` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt hide horizontal scroll bar aus (Parameter: scrollbar). |
-| `widgetSystem.hideIcon` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt hide icon aus (Parameter: iconelement). |
-| `widgetSystem.hideMinimizedMenuName` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt hide minimized menu name aus (Parameter: frameElement). |
-| `widgetSystem.hideMouseOverText` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt hide mouse over text aus (Parameter: widgetID, ignorecount). |
-| `widgetSystem.hideRect` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt hide rect aus (Parameter: id). |
-| `widgetSystem.hideRects` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt hide rects aus. |
-| `widgetSystem.hideRenderTarget` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt hide render target aus (Parameter: frameElement, renderTargetElement). |
-| `widgetSystem.hideShieldHullBar` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt hide shield hull bar aus (Parameter: shieldHullBarElement). |
-| `widgetSystem.hideSliderCell` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt hide slider cell aus (Parameter: slidercellElement). |
-| `widgetSystem.hideStandardButtons` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt hide standard buttons aus (Parameter: frameElement). |
-| `widgetSystem.hideStatusBar` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt hide status bar aus (Parameter: statusBarElement). |
-| `widgetSystem.hideTable` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt hide table aus (Parameter: frameElement, tableElement). |
-| `widgetSystem.hideTableCells` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt hide table cells aus (Parameter: frameElement, tableElement). |
-| `widgetSystem.hideText` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt hide text aus (Parameter: text, hide). |
-| `widgetSystem.hideTriangle` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt hide triangle aus (Parameter: id). |
-| `widgetSystem.hideTriangles` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt hide triangles aus. |
-| `widgetSystem.hideVerticalScrollBar` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt hide vertical scroll bar aus (Parameter: scrollbar). |
+| `widgetSystem.hideAllElements` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Versteckt all elements. |
+| `widgetSystem.hideAllShapes` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Versteckt all shapes. |
+| `widgetSystem.hideBoxText` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Versteckt box text (Parameter: boxtextElement). |
+| `widgetSystem.hideButton` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Versteckt button (Parameter: buttonElement, iconActive, icon2Active, textActive, text2Active, hotkeyIconActive). |
+| `widgetSystem.hideCheckBox` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Versteckt check box (Parameter: checkboxElement). |
+| `widgetSystem.hideCircle` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Versteckt circle (Parameter: id). |
+| `widgetSystem.hideCircles` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Versteckt circles. |
+| `widgetSystem.hideDropDown` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Versteckt drop down (Parameter: dropdownElement, iconActive, hotykeyIconActive). |
+| `widgetSystem.hideDropDownOptions` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Versteckt drop down options (Parameter: dropdownID, dropdownElement). |
+| `widgetSystem.hideEditBox` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Versteckt edit box (Parameter: editboxElement, hotkeyIconActive). |
+| `widgetSystem.hideFlowchart` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Versteckt flowchart (Parameter: frameElement, flowchartElement). |
+| `widgetSystem.hideFlowchartContent` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Versteckt flowchart content (Parameter: frameElement, flowchartElement). |
+| `widgetSystem.hideFlowchartEdge` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Versteckt flowchart edge (Parameter: frameElement, edge, flowchartEdgeElement). |
+| `widgetSystem.hideFlowchartNode` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Versteckt flowchart node (Parameter: frameElement, flowchartNodeElement). |
+| `widgetSystem.hideFrame` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Versteckt frame (Parameter: frameElement, keepMinimizedState). |
+| `widgetSystem.hideGraph` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Versteckt graph (Parameter: graphElement). |
+| `widgetSystem.hideHelpOverlay` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Versteckt help overlay (Parameter: keepsignals). |
+| `widgetSystem.hideHelpOverlayID` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Versteckt help overlay id (Parameter: id). |
+| `widgetSystem.hideHorizontalScrollBar` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Versteckt horizontal scroll bar (Parameter: scrollbar). |
+| `widgetSystem.hideIcon` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Versteckt icon (Parameter: iconelement). |
+| `widgetSystem.hideMinimizedMenuName` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Versteckt minimized menu name (Parameter: frameElement). |
+| `widgetSystem.hideMouseOverText` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Versteckt mouse over text (Parameter: widgetID, ignorecount). |
+| `widgetSystem.hideRect` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Versteckt rect (Parameter: id). |
+| `widgetSystem.hideRects` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Versteckt rects. |
+| `widgetSystem.hideRenderTarget` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Versteckt render target (Parameter: frameElement, renderTargetElement). |
+| `widgetSystem.hideShieldHullBar` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Versteckt shield hull bar (Parameter: shieldHullBarElement). |
+| `widgetSystem.hideSliderCell` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Versteckt slider cell (Parameter: slidercellElement). |
+| `widgetSystem.hideStandardButtons` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Versteckt standard buttons (Parameter: frameElement). |
+| `widgetSystem.hideStatusBar` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Versteckt status bar (Parameter: statusBarElement). |
+| `widgetSystem.hideTable` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Versteckt table (Parameter: frameElement, tableElement). |
+| `widgetSystem.hideTableCells` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Versteckt table cells (Parameter: frameElement, tableElement). |
+| `widgetSystem.hideText` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Versteckt text (Parameter: text, hide). |
+| `widgetSystem.hideTriangle` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Versteckt triangle (Parameter: id). |
+| `widgetSystem.hideTriangles` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Versteckt triangles. |
+| `widgetSystem.hideVerticalScrollBar` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Versteckt vertical scroll bar (Parameter: scrollbar). |
 | `widgetSystem.highlightBorderTableRow` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt highlight border table row aus (Parameter: tableID, tableElement, row, col). |
 | `widgetSystem.highlightTableRow` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt highlight table row aus (Parameter: tableID, tableElement, row, col). |
 | `widgetSystem.highlightTableRows` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt highlight table rows aus (Parameter: tableID, tableElement, startrow, endrow). |
@@ -3346,18 +3346,18 @@ Automatisch generierte Liste aller in den Skripten definierten Lua-Funktionen.
 | `widgetSystem.initializeTableRowElements` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt initialize table row elements aus. |
 | `widgetSystem.interpolateColor` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt interpolate color aus (Parameter: color0, color1, value). |
 | `widgetSystem.invertColor` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt invert color aus (Parameter: r, g, b). |
-| `widgetSystem.moveAnarkElementBetweenFrameLayers` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt move anark element between frame layers aus (Parameter: anarkElement, fromLayer, toLayer). |
-| `widgetSystem.moveAnarkElementFrameLayer` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt move anark element frame layer aus (Parameter: frameElement, anarkElement, direction). |
-| `widgetSystem.moveDown` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt move down aus (Parameter: tableID, tableElement, newCurRow, modified). |
-| `widgetSystem.moveDropDownElementFrameLayer` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt move drop down element frame layer aus (Parameter: frameElement, dropdownElement, direction). |
-| `widgetSystem.moveDropDownSelection` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt move drop down selection aus (Parameter: dropdownID, dropdownElement, step). |
-| `widgetSystem.moveFlowchartElementFrameLayer` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt move flowchart element frame layer aus (Parameter: frameElement, flowchartElement, direction). |
-| `widgetSystem.moveFlowchartNodeBetweenFrameLayers` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt move flowchart node between frame layers aus (Parameter: flowchartNodeElement, fromLayer, toLayer). |
-| `widgetSystem.moveGraphElementFrameLayer` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt move graph element frame layer aus (Parameter: frameElement, graphElement, direction). |
-| `widgetSystem.moveLeft` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt move left aus (Parameter: tableID, tableElement). |
-| `widgetSystem.moveRight` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt move right aus (Parameter: tableID, tableElement). |
-| `widgetSystem.moveTableElementFrameLayer` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt move table element frame layer aus (Parameter: frameElement, tableElement, direction). |
-| `widgetSystem.moveUp` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt move up aus (Parameter: tableID, tableElement, newCurRow, modified). |
+| `widgetSystem.moveAnarkElementBetweenFrameLayers` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Bewegt anark element between frame layers (Parameter: anarkElement, fromLayer, toLayer). |
+| `widgetSystem.moveAnarkElementFrameLayer` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Bewegt anark element frame layer (Parameter: frameElement, anarkElement, direction). |
+| `widgetSystem.moveDown` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Bewegt down (Parameter: tableID, tableElement, newCurRow, modified). |
+| `widgetSystem.moveDropDownElementFrameLayer` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Bewegt drop down element frame layer (Parameter: frameElement, dropdownElement, direction). |
+| `widgetSystem.moveDropDownSelection` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Bewegt drop down selection (Parameter: dropdownID, dropdownElement, step). |
+| `widgetSystem.moveFlowchartElementFrameLayer` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Bewegt flowchart element frame layer (Parameter: frameElement, flowchartElement, direction). |
+| `widgetSystem.moveFlowchartNodeBetweenFrameLayers` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Bewegt flowchart node between frame layers (Parameter: flowchartNodeElement, fromLayer, toLayer). |
+| `widgetSystem.moveGraphElementFrameLayer` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Bewegt graph element frame layer (Parameter: frameElement, graphElement, direction). |
+| `widgetSystem.moveLeft` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Bewegt left (Parameter: tableID, tableElement). |
+| `widgetSystem.moveRight` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Bewegt right (Parameter: tableID, tableElement). |
+| `widgetSystem.moveTableElementFrameLayer` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Bewegt table element frame layer (Parameter: frameElement, tableElement, direction). |
+| `widgetSystem.moveUp` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Bewegt up (Parameter: tableID, tableElement, newCurRow, modified). |
 | `widgetSystem.onAutoClose` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt on auto close aus. |
 | `widgetSystem.onBack` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt on back aus. |
 | `widgetSystem.onBoxTextUpdate` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt on box text update aus (Parameter: _, boxtextID). |
@@ -3565,12 +3565,12 @@ Automatisch generierte Liste aller in den Skripten definierten Lua-Funktionen.
 | `widgetSystem.scrollUp` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt scroll up aus (Parameter: tableID, tableElement, step). |
 | `widgetSystem.scrollUpDropDown` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt scroll up drop down aus (Parameter: dropdownID, dropdownElement, steps). |
 | `widgetSystem.scrollUpRenderTarget` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt scroll up render target aus (Parameter: renderTargetID). |
-| `widgetSystem.selectColumn` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt select column aus (Parameter: tableID, column). |
-| `widgetSystem.selectGraphDataPoint` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt select graph data point aus (Parameter: graphID, recordIdx, dataIdx, selected). |
-| `widgetSystem.selectInteractiveElement` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt select interactive element aus (Parameter: tableID, tableElement, row, col, alternateCol, direction, modified). |
-| `widgetSystem.selectRow` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt select row aus (Parameter: tableID, row, modified, input, source). |
-| `widgetSystem.selectRowExternal` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt select row external aus (Parameter: tableID, row, modified, input, source, settableinteractive). |
-| `widgetSystem.selectRowInternal` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt select row internal aus (Parameter: tableID, tableElement, row, modified, input, source). |
+| `widgetSystem.selectColumn` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Wählt column aus (Parameter: tableID, column). |
+| `widgetSystem.selectGraphDataPoint` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Wählt graph data point aus (Parameter: graphID, recordIdx, dataIdx, selected). |
+| `widgetSystem.selectInteractiveElement` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Wählt interactive element aus (Parameter: tableID, tableElement, row, col, alternateCol, direction, modified). |
+| `widgetSystem.selectRow` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Wählt row aus (Parameter: tableID, row, modified, input, source). |
+| `widgetSystem.selectRowExternal` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Wählt row external aus (Parameter: tableID, row, modified, input, source, settableinteractive). |
+| `widgetSystem.selectRowInternal` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Wählt row internal aus (Parameter: tableID, tableElement, row, modified, input, source). |
 | `widgetSystem.setActiveFrame` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Setzt active frame (Parameter: frameElement, checked). |
 | `widgetSystem.setButtonElementState` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Setzt button element state (Parameter: buttonID, buttonElement, state, value). |
 | `widgetSystem.setCheckBoxElementState` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Setzt check box element state (Parameter: checkboxID, checkboxElement, state, value). |
@@ -3626,87 +3626,87 @@ Automatisch generierte Liste aller in den Skripten definierten Lua-Funktionen.
 | `widgetSystem.setUpStatusBar` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Setzt up status bar (Parameter: statusBarID, statusBarElement, cellElement, parentx, parenty, parentwidth, parentheight, istitle). |
 | `widgetSystem.setUpTable` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Setzt up table (Parameter: frameElement, tableID, tableElement). |
 | `widgetSystem.setUpVerticalScrollBar` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Setzt up vertical scroll bar (Parameter: scrollBar, posx, posy, scrollbarHeight, visibleParentHeight, fullParentHeight). |
-| `widgetSystem.showDropDownOptions` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt show drop down options aus (Parameter: frameElement, dropdownID, dropdownElement). |
-| `widgetSystem.showFlowchartJunction` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt show flowchart junction aus (Parameter: frameElement, flowchartNodeID, flowchartNodeElement, x, y, xUseHalfPixel, yUseHalfPixel). |
-| `widgetSystem.showFlowchartNode` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt show flowchart node aus (Parameter: frameElement, flowchartNodeID, flowchartNodeElement, x, y, cellwidth, cellheight). |
-| `widgetSystem.showHelpOverlay` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt show help overlay aus. |
-| `widgetSystem.showHelpOverlayID` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt show help overlay id aus (Parameter: id, borderonly). |
-| `widgetSystem.showHighlightOverlay` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt show highlight overlay aus (Parameter: id). |
-| `widgetSystem.showMinimizedMenuName` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt show minimized menu name aus (Parameter: frameElement, text). |
-| `widgetSystem.showMouseOverText` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt show mouse over text aus (Parameter: widgetID, ignorecount, posOverride). |
-| `widgetSystem.startDropDownScrollBarDrag` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt start drop down scroll bar drag aus (Parameter: dropdownID, dropdownElement). |
-| `widgetSystem.startFlowchartNodeSliderDrag` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt start flowchart node slider drag aus (Parameter: flowchartNodeElement, slideridx). |
-| `widgetSystem.startFlowchartScrollBarDrag` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt start flowchart scroll bar drag aus (Parameter: flowchartElement, scrollbar). |
-| `widgetSystem.startScrollBarDrag` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt start scroll bar drag aus (Parameter: tableElement). |
-| `widgetSystem.startScrollLeft` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt start scroll left aus (Parameter: scrollingElement). |
-| `widgetSystem.startScrollRight` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt start scroll right aus (Parameter: scrollingElement). |
-| `widgetSystem.startSliderCellScroll` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt start slider cell scroll aus (Parameter: slidercellElement, direction). |
-| `widgetSystem.stopDropDownScrollBarDrag` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt stop drop down scroll bar drag aus (Parameter: dropdownID, dropdownElement). |
-| `widgetSystem.stopFlowchartNodeSliderDrag` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt stop flowchart node slider drag aus (Parameter: flowchartNodeElement, slideridx). |
-| `widgetSystem.stopFlowchartScrollBarDrag` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt stop flowchart scroll bar drag aus (Parameter: flowchartElement, scrollbar). |
-| `widgetSystem.stopLeft` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt stop left aus (Parameter: tableID, tableElement). |
-| `widgetSystem.stopRight` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt stop right aus (Parameter: tableID, tableElement). |
-| `widgetSystem.stopScroll` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt stop scroll aus. |
-| `widgetSystem.stopScrollBarDrag` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt stop scroll bar drag aus (Parameter: tableElement). |
-| `widgetSystem.stopSliderCellScroll` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt stop slider cell scroll aus (Parameter: slidercellElement). |
+| `widgetSystem.showDropDownOptions` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Zeigt drop down options (Parameter: frameElement, dropdownID, dropdownElement). |
+| `widgetSystem.showFlowchartJunction` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Zeigt flowchart junction (Parameter: frameElement, flowchartNodeID, flowchartNodeElement, x, y, xUseHalfPixel, yUseHalfPixel). |
+| `widgetSystem.showFlowchartNode` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Zeigt flowchart node (Parameter: frameElement, flowchartNodeID, flowchartNodeElement, x, y, cellwidth, cellheight). |
+| `widgetSystem.showHelpOverlay` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Zeigt help overlay. |
+| `widgetSystem.showHelpOverlayID` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Zeigt help overlay id (Parameter: id, borderonly). |
+| `widgetSystem.showHighlightOverlay` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Zeigt highlight overlay (Parameter: id). |
+| `widgetSystem.showMinimizedMenuName` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Zeigt minimized menu name (Parameter: frameElement, text). |
+| `widgetSystem.showMouseOverText` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Zeigt mouse over text (Parameter: widgetID, ignorecount, posOverride). |
+| `widgetSystem.startDropDownScrollBarDrag` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Startet drop down scroll bar drag (Parameter: dropdownID, dropdownElement). |
+| `widgetSystem.startFlowchartNodeSliderDrag` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Startet flowchart node slider drag (Parameter: flowchartNodeElement, slideridx). |
+| `widgetSystem.startFlowchartScrollBarDrag` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Startet flowchart scroll bar drag (Parameter: flowchartElement, scrollbar). |
+| `widgetSystem.startScrollBarDrag` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Startet scroll bar drag (Parameter: tableElement). |
+| `widgetSystem.startScrollLeft` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Startet scroll left (Parameter: scrollingElement). |
+| `widgetSystem.startScrollRight` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Startet scroll right (Parameter: scrollingElement). |
+| `widgetSystem.startSliderCellScroll` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Startet slider cell scroll (Parameter: slidercellElement, direction). |
+| `widgetSystem.stopDropDownScrollBarDrag` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Stoppt drop down scroll bar drag (Parameter: dropdownID, dropdownElement). |
+| `widgetSystem.stopFlowchartNodeSliderDrag` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Stoppt flowchart node slider drag (Parameter: flowchartNodeElement, slideridx). |
+| `widgetSystem.stopFlowchartScrollBarDrag` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Stoppt flowchart scroll bar drag (Parameter: flowchartElement, scrollbar). |
+| `widgetSystem.stopLeft` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Stoppt left (Parameter: tableID, tableElement). |
+| `widgetSystem.stopRight` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Stoppt right (Parameter: tableID, tableElement). |
+| `widgetSystem.stopScroll` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Stoppt scroll. |
+| `widgetSystem.stopScrollBarDrag` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Stoppt scroll bar drag (Parameter: tableElement). |
+| `widgetSystem.stopSliderCellScroll` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Stoppt slider cell scroll (Parameter: slidercellElement). |
 | `widgetSystem.summarize` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt summarize aus (Parameter: array). |
 | `widgetSystem.swapButtonIcon` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt swap button icon aus (Parameter: buttonID, buttonElement). |
 | `widgetSystem.swapButtonIcon2` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt swap button icon2 aus (Parameter: buttonID, buttonElement). |
 | `widgetSystem.swapInteractiveRegion` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt swap interactive region aus (Parameter: tableID, tableElement). |
 | `widgetSystem.switchFromMiniWidgetSystem` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt switch from mini widget system aus. |
 | `widgetSystem.switchToMiniWidgetSystem` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt switch to mini widget system aus. |
-| `widgetSystem.toggleCheckBox` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt toggle check box aus (Parameter: checkboxID, checkboxElement). |
-| `widgetSystem.toggleHelpOverlay` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt toggle help overlay aus. |
-| `widgetSystem.toggleHighlight` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt toggle highlight aus (Parameter: tableID, tableElement, modified, input, source). |
-| `widgetSystem.toggleHighlightedTableRow` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt toggle highlighted table row aus (Parameter: tableID, tableElement). |
-| `widgetSystem.toggleMouseOverText` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt toggle mouse over text aus (Parameter: value). |
+| `widgetSystem.toggleCheckBox` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Schaltet check box um (Parameter: checkboxID, checkboxElement). |
+| `widgetSystem.toggleHelpOverlay` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Schaltet help overlay um. |
+| `widgetSystem.toggleHighlight` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Schaltet highlight um (Parameter: tableID, tableElement, modified, input, source). |
+| `widgetSystem.toggleHighlightedTableRow` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Schaltet highlighted table row um (Parameter: tableID, tableElement). |
+| `widgetSystem.toggleMouseOverText` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Schaltet mouse over text um (Parameter: value). |
 | `widgetSystem.truncateDropDownOptionText` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt truncate drop down option text aus (Parameter: dropdownElement, option). |
 | `widgetSystem.unsetInteractiveChildElement` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt unset interactive child element aus (Parameter: tableElement, childWidgetID, childTableElement). |
-| `widgetSystem.updateBoxText` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update box text aus (Parameter: boxtextID, boxtextElement). |
-| `widgetSystem.updateButton` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update button aus (Parameter: buttonID, buttonElement). |
-| `widgetSystem.updateButtonColor` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update button color aus (Parameter: buttonID, buttonElement, colorMode). |
-| `widgetSystem.updateButtonState` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update button state aus (Parameter: buttonID, buttonElement). |
-| `widgetSystem.updateCheckBox` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update check box aus (Parameter: checkboxID, checkboxElement). |
-| `widgetSystem.updateCheckBoxColor` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update check box color aus (Parameter: checkbox, checkboxElement, colorMode). |
-| `widgetSystem.updateCheckBoxState` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update check box state aus (Parameter: checkbox, checkboxElement). |
-| `widgetSystem.updateDropDown` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update drop down aus (Parameter: dropdownID, dropdownElement). |
-| `widgetSystem.updateDropDownColor` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update drop down color aus (Parameter: dropdownID, dropdownElement, colorMode). |
-| `widgetSystem.updateDropDownOption` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update drop down option aus (Parameter: dropdownElement). |
-| `widgetSystem.updateDropDownOptionState` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update drop down option state aus (Parameter: dropdownElement, oldhighlighted). |
-| `widgetSystem.updateDropDownOptions` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update drop down options aus (Parameter: frameElement, dropdownID, dropdownElement, topOption, force). |
-| `widgetSystem.updateDropDownScrollBarPos` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update drop down scroll bar pos aus (Parameter: dropdownID, dropdownElement). |
-| `widgetSystem.updateDropDownState` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update drop down state aus (Parameter: dropdownID, dropdownElement). |
-| `widgetSystem.updateEditBoxColor` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update edit box color aus (Parameter: editboxID, editboxElement, highlighted). |
-| `widgetSystem.updateEditBoxCursor` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update edit box cursor aus (Parameter: editboxElement, curTime, scrolling). |
-| `widgetSystem.updateEditBoxCursorPosition` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update edit box cursor position aus (Parameter: editboxElement). |
-| `widgetSystem.updateEditBoxTextDisplay` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update edit box text display aus (Parameter: editboxElement). |
-| `widgetSystem.updateEditBoxTextHighlight` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update edit box text highlight aus (Parameter: editboxElement). |
-| `widgetSystem.updateEmulatedMouseCursorPosition` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update emulated mouse cursor position aus (Parameter: tableID, tableElement, row, col). |
-| `widgetSystem.updateFlowchart` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update flowchart aus (Parameter: flowchartElement). |
-| `widgetSystem.updateFlowchartEdge` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update flowchart edge aus (Parameter: flowchartEdgeID, edge). |
-| `widgetSystem.updateFlowchartNode` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update flowchart node aus (Parameter: flowchartNodeID, flowchartNodeElement). |
-| `widgetSystem.updateFlowchartNodeSliderColor` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update flowchart node slider color aus (Parameter: flowchartNodeElement, slideridx). |
-| `widgetSystem.updateFlowchartNodeSliderPos` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update flowchart node slider pos aus. |
-| `widgetSystem.updateFlowchartScrollBarPos` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update flowchart scroll bar pos aus (Parameter: flowchartElement, scrollbar). |
-| `widgetSystem.updateFlowchartScrollBars` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update flowchart scroll bars aus (Parameter: flowchartElement). |
-| `widgetSystem.updateFontString` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update font string aus (Parameter: fontstringID, textcomponent, textelement, activeSlide, inactiveSlide, curSlide). |
-| `widgetSystem.updateFrame` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update frame aus (Parameter: frameID). |
-| `widgetSystem.updateHelpOverlay` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update help overlay aus (Parameter: helpOverlayElement, overlayinfo). |
-| `widgetSystem.updateHelpOverlayColor` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update help overlay color aus (Parameter: helpOverlayElement, highlight, iconsize, borderonly, curtime). |
-| `widgetSystem.updateHelpStandardButton` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update help standard button aus. |
-| `widgetSystem.updateHorizontalScrollBar` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update horizontal scroll bar aus (Parameter: scrollBar, relativePos). |
-| `widgetSystem.updateIcon` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update icon aus (Parameter: iconID, iconelement, parentx, parenty, parentwidth). |
-| `widgetSystem.updateMouseOverText` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update mouse over text aus (Parameter: widgetID). |
-| `widgetSystem.updateSceneState` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update scene state aus. |
-| `widgetSystem.updateScrollBarPos` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update scroll bar pos aus (Parameter: tableElement). |
-| `widgetSystem.updateShapes` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update shapes aus. |
-| `widgetSystem.updateShieldHullBar` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update shield hull bar aus (Parameter: shieldHullBarElement, shieldHullBarID). |
-| `widgetSystem.updateSliderCellArrowSlide` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update slider cell arrow slide aus (Parameter: slidercellElement, leftRight). |
-| `widgetSystem.updateSliderCellBackground` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update slider cell background aus (Parameter: slidercellElement). |
-| `widgetSystem.updateSliderCellCursor` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update slider cell cursor aus (Parameter: slidercellElement, curTime). |
-| `widgetSystem.updateSliderCellValue` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update slider cell value aus (Parameter: slidercellElement). |
-| `widgetSystem.updateStandardButtonState` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update standard button state aus (Parameter: frameElement, button). |
-| `widgetSystem.updateStatusBar` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update status bar aus (Parameter: statusBarElement, statusBarID). |
-| `widgetSystem.updateTable` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update table aus (Parameter: tableID, tableElement, shiftRows, newRow, modified). |
-| `widgetSystem.updateVerticalScrollBar` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update vertical scroll bar aus (Parameter: scrollBar, relativePos). |
-| `widgetSystem.updateView` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Führt update view aus. |
+| `widgetSystem.updateBoxText` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert box text (Parameter: boxtextID, boxtextElement). |
+| `widgetSystem.updateButton` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert button (Parameter: buttonID, buttonElement). |
+| `widgetSystem.updateButtonColor` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert button color (Parameter: buttonID, buttonElement, colorMode). |
+| `widgetSystem.updateButtonState` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert button state (Parameter: buttonID, buttonElement). |
+| `widgetSystem.updateCheckBox` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert check box (Parameter: checkboxID, checkboxElement). |
+| `widgetSystem.updateCheckBoxColor` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert check box color (Parameter: checkbox, checkboxElement, colorMode). |
+| `widgetSystem.updateCheckBoxState` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert check box state (Parameter: checkbox, checkboxElement). |
+| `widgetSystem.updateDropDown` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert drop down (Parameter: dropdownID, dropdownElement). |
+| `widgetSystem.updateDropDownColor` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert drop down color (Parameter: dropdownID, dropdownElement, colorMode). |
+| `widgetSystem.updateDropDownOption` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert drop down option (Parameter: dropdownElement). |
+| `widgetSystem.updateDropDownOptionState` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert drop down option state (Parameter: dropdownElement, oldhighlighted). |
+| `widgetSystem.updateDropDownOptions` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert drop down options (Parameter: frameElement, dropdownID, dropdownElement, topOption, force). |
+| `widgetSystem.updateDropDownScrollBarPos` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert drop down scroll bar pos (Parameter: dropdownID, dropdownElement). |
+| `widgetSystem.updateDropDownState` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert drop down state (Parameter: dropdownID, dropdownElement). |
+| `widgetSystem.updateEditBoxColor` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert edit box color (Parameter: editboxID, editboxElement, highlighted). |
+| `widgetSystem.updateEditBoxCursor` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert edit box cursor (Parameter: editboxElement, curTime, scrolling). |
+| `widgetSystem.updateEditBoxCursorPosition` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert edit box cursor position (Parameter: editboxElement). |
+| `widgetSystem.updateEditBoxTextDisplay` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert edit box text display (Parameter: editboxElement). |
+| `widgetSystem.updateEditBoxTextHighlight` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert edit box text highlight (Parameter: editboxElement). |
+| `widgetSystem.updateEmulatedMouseCursorPosition` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert emulated mouse cursor position (Parameter: tableID, tableElement, row, col). |
+| `widgetSystem.updateFlowchart` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert flowchart (Parameter: flowchartElement). |
+| `widgetSystem.updateFlowchartEdge` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert flowchart edge (Parameter: flowchartEdgeID, edge). |
+| `widgetSystem.updateFlowchartNode` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert flowchart node (Parameter: flowchartNodeID, flowchartNodeElement). |
+| `widgetSystem.updateFlowchartNodeSliderColor` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert flowchart node slider color (Parameter: flowchartNodeElement, slideridx). |
+| `widgetSystem.updateFlowchartNodeSliderPos` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert flowchart node slider pos. |
+| `widgetSystem.updateFlowchartScrollBarPos` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert flowchart scroll bar pos (Parameter: flowchartElement, scrollbar). |
+| `widgetSystem.updateFlowchartScrollBars` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert flowchart scroll bars (Parameter: flowchartElement). |
+| `widgetSystem.updateFontString` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert font string (Parameter: fontstringID, textcomponent, textelement, activeSlide, inactiveSlide, curSlide). |
+| `widgetSystem.updateFrame` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert frame (Parameter: frameID). |
+| `widgetSystem.updateHelpOverlay` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert help overlay (Parameter: helpOverlayElement, overlayinfo). |
+| `widgetSystem.updateHelpOverlayColor` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert help overlay color (Parameter: helpOverlayElement, highlight, iconsize, borderonly, curtime). |
+| `widgetSystem.updateHelpStandardButton` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert help standard button. |
+| `widgetSystem.updateHorizontalScrollBar` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert horizontal scroll bar (Parameter: scrollBar, relativePos). |
+| `widgetSystem.updateIcon` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert icon (Parameter: iconID, iconelement, parentx, parenty, parentwidth). |
+| `widgetSystem.updateMouseOverText` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert mouse over text (Parameter: widgetID). |
+| `widgetSystem.updateSceneState` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert scene state. |
+| `widgetSystem.updateScrollBarPos` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert scroll bar pos (Parameter: tableElement). |
+| `widgetSystem.updateShapes` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert shapes. |
+| `widgetSystem.updateShieldHullBar` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert shield hull bar (Parameter: shieldHullBarElement, shieldHullBarID). |
+| `widgetSystem.updateSliderCellArrowSlide` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert slider cell arrow slide (Parameter: slidercellElement, leftRight). |
+| `widgetSystem.updateSliderCellBackground` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert slider cell background (Parameter: slidercellElement). |
+| `widgetSystem.updateSliderCellCursor` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert slider cell cursor (Parameter: slidercellElement, curTime). |
+| `widgetSystem.updateSliderCellValue` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert slider cell value (Parameter: slidercellElement). |
+| `widgetSystem.updateStandardButtonState` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert standard button state (Parameter: frameElement, button). |
+| `widgetSystem.updateStatusBar` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert status bar (Parameter: statusBarElement, statusBarID). |
+| `widgetSystem.updateTable` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert table (Parameter: tableID, tableElement, shiftRows, newRow, modified). |
+| `widgetSystem.updateVerticalScrollBar` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert vertical scroll bar (Parameter: scrollBar, relativePos). |
+| `widgetSystem.updateView` | 1 | `08/ui/widget/lua/widget_fullscreen.lua` | Aktualisiert view. |
